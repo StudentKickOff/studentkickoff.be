@@ -18,3 +18,7 @@ end
 get '/meetthecrew' do
   erb :meetthecrew
 end
+
+get '/partners' do
+  erb :partners
+end

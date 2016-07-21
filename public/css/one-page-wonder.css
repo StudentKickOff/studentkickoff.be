@@ -4,10 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
-    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
 .header-image {
     display: block;
     width: 100%;
@@ -53,10 +49,6 @@ body {
 
 .featurette-heading {
     font-size: 50px;
-}
-
-footer {
-    margin: 50px 0;
 }
 
 @media(max-width:1200px) {
