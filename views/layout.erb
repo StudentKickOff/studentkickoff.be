@@ -43,6 +43,12 @@
           <li>
             <a href="/faq">FAQ</a>
           </li>
+          <li>
+            <a href="http://blog.studentkickoff.be">Nieuws</a>
+          </li>
+          <li>
+            <a href="http://datacaptatie.studentkickoff.be">Doe Mee</a>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -50,14 +56,15 @@
     <!-- /.container -->
   </nav>
   <div id="main">
+
     <!-- genereer de inhoud van de geselecteerde pagina -->
     <%= yield %>
+    <!-- Footer -->
+    <footer>
+      <hr>
+      <p>Copyright &copy; Your Website 2014</p>
+    </footer>
   </div>
-      <!-- Footer -->
-  <footer>
-    <hr>
-    <p>Copyright &copy; Your Website 2014</p>
-  </footer>
 </body>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
