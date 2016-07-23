@@ -33,7 +33,7 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-left">
           <li>
             <a href="/historiek">Historiek</a>
           </li>
@@ -46,11 +46,13 @@
           <li>
             <a href="/partners">Partners</a>
           </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="http://blog.studentkickoff.be">Nieuws</a>
           </li>
           <li>
-            <a href="http://datacaptatie.studentkickoff.be">Doe Mee</a>
+            <a href="http://datacaptatie.studentkickoff.be">Wedstrijd</a>
           </li>
         </ul>
       </div>
@@ -62,9 +64,19 @@
     <!-- genereer de inhoud van de geselecteerde pagina -->
     <%= yield %>
     <!-- Footer -->
-    <footer>
-      <hr>
-      <p>Copyright &copy; Team Tof 2016</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="pull-left">
+          <p class="text-muted">Copyright Team Tof 2016</p>
+        </div>
+        <div class="pull-right">
+            <ul class="list-inline">
+               <li><a href="https://www.facebook.com/StudentKickOff">Facebook</a></li>
+               <li><a href="https://twitter.com/studentkickoff">Twitter</a></li>
+               <li><a href="https://www.instagram.com/studentkickoff/">Instagram</a></li>
+            </ul>
+        </div>
+      </div>
     </footer>
 </body>
 <!-- jQuery -->
