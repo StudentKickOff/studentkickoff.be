@@ -1,7 +1,29 @@
 
+@font-face {
+  font-family: 'LeagueGothic-Regular';
+  src: url('/fonts/LeagueGothic-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/fonts/UNIVERSL_5.TTF') format('truetype');
+}
 
 body {
   margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  font-family: 'Univers';
+}
+
+h1, h2, h3, h4, h4, .navbar {
+  font-family: 'LeagueGothic-Regular';
+}
+
+.navbar {
+  font-size: x-large;
+}
+
+.navbar-brand {
+  font-size: xx-large;
 }
 
 .portfolio-item {
