@@ -18,8 +18,21 @@ h1, h2, h3, h4, h4, .navbar {
   font-family: 'LeagueGothic-Regular';
 }
 
+a, a:hover {
+  color: #e43026;
+}
+
 .navbar {
   font-size: x-large;
+  background-color: #e43026;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
+  color: #f0f0f0;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-brand:hover {
+  color: #ffd24f;
 }
 
 .navbar-brand {
@@ -30,8 +43,14 @@ h1, h2, h3, h4, h4, .navbar {
   margin-bottom: 25px;
 }
 
+.page-header, hr {
+  border-color: #0087c2;
+}
+
+.question-toggle:hover {
+  cursor: pointer;
+}
+
 footer {
   margin: 50px 0;
 }
-
-

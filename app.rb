@@ -30,4 +30,6 @@ namespace '/meetthecrew' do
   get('/teampr/?') { erb :'teams/teampr' }
   get('/teamproductie/?') { erb :'teams/teamproductie' }
   get('/teamsite/?') { erb :'teams/teamsite' }
+  get('/algemeencoordinator/?') { erb :'teams/algemeencoordinator' }
+  get('/juridische/?') { erb :'teams/juridische' }
 end
