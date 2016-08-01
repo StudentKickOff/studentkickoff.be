@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.css">
-<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/one-page-wonder.css" rel="stylesheet">
+<%= stylesheet_link_tag 'one-page-wonder' %>
+<%= stylesheet_link_tag 'bootstrap-image-gallery' %>
 
 <!-- Full Width Image Header -->
 <header class="header-image">
@@ -15,9 +15,8 @@
 <!-- Page Content -->
 <div class="container">
     <div class="row">
-        <div class="col-md-1"></div>
         <!-- 16:9 aspect ratio -->
-        <div class="col-md-10">
+        <div class="col-md-10 col-md-offset-1">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3xJdoG0zQgA"></iframe>
             </div>
@@ -36,34 +35,13 @@
             </div>
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-            <script src="js/bootstrap-image-gallery.js"></script>
             <div id="links">
+                <% 8.times do %>
                 <a href="http://placehold.it/1920x1080" title="Banana" data-gallery>
                     <img src="http://placehold.it/90x90" alt="Banana">
                 </a>
-                <a href="http://placehold.it/1920x1080" title="Apple" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="Apple">
-                </a>
-                <a href="http://placehold.it/1920x1080" title="Orange" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="Orange">
-                </a>
-                <a href="http://placehold.it/1920x1080" title="fruit" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="fruit">
-                </a>
-                <a href="http://placehold.it/1920x1080" title="groente" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="groente">
-                </a>
-                <a href="http://placehold.it/1920x1080" title="iets" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="iets">
-                </a>
-                <a href="http://placehold.it/1920x1080" title="ding" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="ding">
-                </a>
-                <a href="http://placehold.it/1920x1080" title="hallo" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="hallo">
-                </a>
+                <% end %>
             </div>
         </div>
-        <div class="col-md-1"></div>
     </div>
 </div>
