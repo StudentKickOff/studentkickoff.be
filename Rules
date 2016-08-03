@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+compile '/**/*.erb' do
+  layout '/default.*'
+  filter :erb
+end
+
+route '/**/*.{erb,html,md}' do
+  if item.identifier =~ '/index.*'
+    '/index.html'
+  else
+    "#{item.identifier.without_ext}/index.html"
+  end
+end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*', :erb

@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.css">
+<link rel="stylesheet" href="/assets/stylesheets/one-page-wonder.css">
+<link rel="stylesheet" href="/assets/stylesheets/bootstrap-image-gallery.css">
+
+<!-- Full Width Image Header -->
+<header class="header-image">
+    <div class="headline">
+        <div class="container">
+            <h1>Student Kick-Off</h1>
+            <h2>ᕕ(ᐛ)ᕗ</h2>
+        </div>
+    </div>
+</header>
+<br>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <!-- 16:9 aspect ratio -->
+        <div class="col-md-10 col-md-offset-1">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3xJdoG0zQgA"></iframe>
+            </div>
+            <h3>Bekijk de fotos van voorbije edities</h3>
+            <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+            <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+                <!-- The container for the modal slides -->
+                <div class="slides"></div>
+                <!-- Controls for the borderless lightbox -->
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+            <div id="links">
+                <% 8.times do %>
+                <a href="http://placehold.it/1920x1080" title="Banana" data-gallery>
+                    <img src="http://placehold.it/90x90" alt="Banana">
+                </a>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
