@@ -88,3 +88,9 @@ checks:
     # E.g.:
     #   exclude_files: ['blog/page']
     exclude_files: []
+
+deploy:
+  public:
+    kind: rsync
+    dst:  beta@beta.studentkickoff.be:/var/www/beta.studentkickoff.be/build
+    options: [ '-aP', '--delete-after' ]
