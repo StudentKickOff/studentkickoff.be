@@ -7,16 +7,25 @@
   <% jaren.each do |hist| %>
   <div class="row">
     <div class="col-md-3"></div>
-    <div class="col-md-9"><h3><%= hist[:jaar] %></h3></div>
-    <img class="img-responsive col-md-3" src="<%= hist[:affiche] %>" alt="">
+    <div class="col-md-9"><h2><%= hist[:jaar] %></h2></div>
+    <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
     <div class="col-md-9">
       <%= hist.compiled_content %>
-      <h4>Line-Up</h4>
+      <h3>Line-Up</h3>
       <ul class="list-inline">
         <% hist[:lineup].each do |a| %>
           <li><%= a %></li>
         <% end %>
       </ul>
+      <% if hist[:secondstage] %>
+        <h3>Second Stage Line-Up</h3>
+        <ul class="list-inline">
+
+          <% hist[:secondstage].each do |a| %>
+            <li><%= a %></li>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
   </div>
   <hr>
