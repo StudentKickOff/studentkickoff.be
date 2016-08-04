@@ -17,6 +17,9 @@ compile '/meetthecrew/*.md' do
   layout '/teampagina.*'
   layout '/default.*'
   filter :erb
+
+  ident = item.identifier.without_ext.split('/').last
+  write "/meetthecrew/#{ident}/index.html"
 end
 
 compile '/historiek/*.md' do
