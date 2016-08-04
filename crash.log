@@ -1,8 +1,8 @@
-Crashlog created at 2016-08-03 23:46:08 +0200
+Crashlog created at 2016-08-04 12:45:12 +0200
 
 ===== MESSAGE:
 
-Errno::ENOENT: No such file or directory @ rb_sysopen - data/teamsite.yaml
+Nanoc::Extra::Piper::Error: command exited with a nonzero status code 5888 (command: rsync -aP --delete-after output/ beta@beta.studentkickoff.be:/var/www/beta.studentkickoff.be/build)
 
 ===== COMPILATION STACK:
 
@@ -10,67 +10,51 @@ Errno::ENOENT: No such file or directory @ rb_sysopen - data/teamsite.yaml
 
 ===== STACK TRACE:
 
-  0. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/psych.rb:471:in `initialize'
-  1. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/psych.rb:471:in `open'
-  2. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/psych.rb:471:in `load_file'
-  3. lib/helpers/data.rb:3:in `data_from'
-  4. item /meetthecrew/teamsite.erb (rep default):64:in `get_binding'
-  5. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/erb.rb:864:in `eval'
-  6. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/erb.rb:864:in `result'
-  7. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/filters/erb.rb:32:in `run'
-  8. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/filter.rb:130:in `setup_and_run'
-  9. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/services/executor.rb:25:in `filter'
-  10. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:252:in `block in recalculate_content_for_rep'
-  11. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/entities/rule_memory.rb:57:in `block in each'
-  12. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/entities/rule_memory.rb:57:in `each'
-  13. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/entities/rule_memory.rb:57:in `each'
-  14. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:249:in `recalculate_content_for_rep'
-  15. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:224:in `compile_rep'
-  16. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:197:in `block in compile_reps'
-  17. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/services/item_rep_selector.rb:18:in `block in each'
-  18. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/services/item_rep_selector.rb:13:in `loop'
-  19. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/services/item_rep_selector.rb:13:in `each'
-  20. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:195:in `compile_reps'
-  21. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:89:in `run'
-  22. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/compilation/compiler.rb:77:in `run_all'
-  23. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/base/entities/site.rb:30:in `compile'
-  24. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-nanoc-2.0.0/lib/guard/nanoc.rb:64:in `block in recompile'
-  25. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-nanoc-2.0.0/lib/guard/nanoc.rb:62:in `chdir'
-  26. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-nanoc-2.0.0/lib/guard/nanoc.rb:62:in `recompile'
-  27. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-nanoc-2.0.0/lib/guard/nanoc.rb:27:in `run_on_changes'
-  28. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:82:in `block in _supervise'
-  29. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:79:in `catch'
-  30. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:79:in `_supervise'
-  31. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:61:in `block (3 levels) in run_on_changes'
-  32. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:56:in `each'
-  33. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:56:in `block (2 levels) in run_on_changes'
-  34. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:119:in `block (2 levels) in _run_group_plugins'
-  35. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:117:in `each'
-  36. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:117:in `block in _run_group_plugins'
-  37. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:116:in `catch'
-  38. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:116:in `_run_group_plugins'
-  39. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:54:in `block in run_on_changes'
-  40. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:53:in `each'
-  41. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/runner.rb:53:in `run_on_changes'
-  42. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/internals/queue.rb:24:in `process'
-  43. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/commander.rb:43:in `start'
-  44. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/cli/environments/valid.rb:16:in `start_guard'
-  45. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/cli.rb:122:in `start'
-  46. /Users/don/.rvm/gems/ruby-2.3.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
-  47. /Users/don/.rvm/gems/ruby-2.3.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
-  48. /Users/don/.rvm/gems/ruby-2.3.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
-  49. /Users/don/.rvm/gems/ruby-2.3.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
-  50. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/aruba_adapter.rb:32:in `execute'
-  51. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib/guard/aruba_adapter.rb:19:in `execute!'
+  0. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/piper.rb:42:in `block in run'
+  1. /usr/lib/ruby/2.3.0/open3.rb:205:in `popen_run'
+  2. /usr/lib/ruby/2.3.0/open3.rb:95:in `popen3'
+  3. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/piper.rb:28:in `run'
+  4. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/deployers/rsync.rb:62:in `run_shell_cmd'
+  5. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/deployers/rsync.rb:54:in `run'
+  6. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:55:in `deploy'
+  7. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:23:in `run'
+  8. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  9. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  10. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  11. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:11:in `call'
+  12. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  13. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  14. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  15. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
+  16. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli.rb:46:in `block in run'
+  17. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  18. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  19. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli.rb:44:in `run'
+  20. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/bin/nanoc:9:in `<top (required)>'
+  21. /home/jeroen/.gem/ruby/2.3.0/bin/nanoc:22:in `load'
+  22. /home/jeroen/.gem/ruby/2.3.0/bin/nanoc:22:in `<top (required)>'
+  23. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+  24. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+  25. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+  26. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+  27. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  28. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  29. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  30. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  31. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+  32. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+  33. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+  34. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+  35. /home/jeroen/.gem/ruby/2.3.0/bin/bundle:22:in `load'
 
 ===== VERSION INFORMATION:
 
 Nanoc 4.2.4 © 2007-2016 Denis Defreyne.
-Running ruby 2.3.1 (2016-04-26) on x86_64-darwin15 with RubyGems 2.6.6.
+Running ruby 2.3.1 (2016-04-26) on x86_64-linux with RubyGems 2.5.2.
 
 ===== SYSTEM INFORMATION:
 
-Darwin skye.local 15.5.0 Darwin Kernel Version 15.5.0: Tue Apr 19 18:36:36 PDT 2016; root:xnu-3248.50.21~8/RELEASE_X86_64 x86_64
+Linux Iepoev 3.16.36-1-MANJARO #1 SMP PREEMPT Fri Jun 17 18:07:11 UTC 2016 x86_64 GNU/Linux
 
 ===== INSTALLED GEMS:
 
@@ -86,6 +70,7 @@ Darwin skye.local 15.5.0 Darwin Kernel Version 15.5.0: Tue Apr 19 18:36:36 PDT 2
   guard-compat 1.2.1
   guard-nanoc 2.0.0
   hamster 3.0.0
+  kramdown 1.11.1
   listen 3.1.5
   lumberjack 1.0.10
   method_source 0.8.2
@@ -132,6 +117,7 @@ GEM
       nanoc (~> 4.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
+    kramdown (1.11.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -166,6 +152,7 @@ PLATFORMS
 DEPENDENCIES
   adsf
   guard-nanoc
+  kramdown
   nanoc
 
 BUNDLED WITH
@@ -173,40 +160,41 @@ BUNDLED WITH
 
 ===== LOAD PATHS:
 
-  0. /Users/don/.rvm/gems/ruby-2.3.1/gems/ref-2.0.0/lib
-  1. /Users/don/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib
-  2. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-nanoc-2.0.0/lib
-  3. /Users/don/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib
-  4. /Users/don/.rvm/gems/ruby-2.3.1/gems/ref-2.0.0/lib
-  5. /Users/don/.rvm/gems/ruby-2.3.1/gems/hamster-3.0.0/lib
-  6. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-compat-1.2.1/lib
-  7. /Users/don/.rvm/gems/ruby-2.3.1/gems/guard-2.14.0/lib
-  8. /Users/don/.rvm/gems/ruby-2.3.1/gems/thor-0.19.1/lib
-  9. /Users/don/.rvm/gems/ruby-2.3.1/gems/pry-0.10.4/lib
-  10. /Users/don/.rvm/gems/ruby-2.3.1/gems/slop-3.6.0/lib
-  11. /Users/don/.rvm/gems/ruby-2.3.1/gems/method_source-0.8.2/lib
-  12. /Users/don/.rvm/gems/ruby-2.3.1/gems/notiffany-0.1.1/lib
-  13. /Users/don/.rvm/gems/ruby-2.3.1/gems/shellany-0.0.1/lib
-  14. /Users/don/.rvm/gems/ruby-2.3.1/gems/nenv-0.3.0/lib
-  15. /Users/don/.rvm/gems/ruby-2.3.1/gems/lumberjack-1.0.10/lib
-  16. /Users/don/.rvm/gems/ruby-2.3.1/gems/listen-3.1.5/lib
-  17. /Users/don/.rvm/gems/ruby-2.3.1/gems/ruby_dep-1.3.1/lib
-  18. /Users/don/.rvm/gems/ruby-2.3.1/gems/rb-inotify-0.9.7/lib
-  19. /Users/don/.rvm/gems/ruby-2.3.1/gems/rb-fsevent-0.9.7/lib
-  20. /Users/don/.rvm/gems/ruby-2.3.1/gems/formatador-0.2.5/lib
-  21. /Users/don/.rvm/gems/ruby-2.3.1@global/gems/ffi-1.9.14/lib
-  22. /Users/don/.rvm/gems/ruby-2.3.1@global/extensions/x86_64-darwin-15/2.3.0/ffi-1.9.14
-  23. /Users/don/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib
-  24. /Users/don/.rvm/gems/ruby-2.3.1@global/gems/concurrent-ruby-1.0.2/lib
-  25. /Users/don/.rvm/gems/ruby-2.3.1/gems/colored-1.2/lib
-  26. /Users/don/.rvm/gems/ruby-2.3.1/gems/coderay-1.1.1/lib
-  27. /Users/don/.rvm/gems/ruby-2.3.1/gems/adsf-1.2.1/lib
-  28. /Users/don/.rvm/gems/ruby-2.3.1@global/gems/rack-2.0.1/lib
-  29. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0
-  30. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0/x86_64-darwin15
-  31. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby
-  32. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0
-  33. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0/x86_64-darwin15
-  34. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby
-  35. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0
-  36. /Users/don/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/x86_64-darwin15
+  0. /usr/lib/ruby/gems/2.3.0/gems/ref-2.0.0/lib
+  1. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib
+  2. /home/jeroen/.gem/ruby/2.3.0/gems/kramdown-1.11.1/lib
+  3. /usr/lib/ruby/gems/2.3.0/gems/guard-nanoc-2.0.0/lib
+  4. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib
+  5. /usr/lib/ruby/gems/2.3.0/gems/ref-2.0.0/lib
+  6. /usr/lib/ruby/gems/2.3.0/gems/hamster-3.0.0/lib
+  7. /usr/lib/ruby/gems/2.3.0/gems/guard-compat-1.2.1/lib
+  8. /usr/lib/ruby/gems/2.3.0/gems/guard-2.14.0/lib
+  9. /home/jeroen/.gem/ruby/2.3.0/gems/thor-0.19.1/lib
+  10. /usr/lib/ruby/gems/2.3.0/gems/pry-0.10.4/lib
+  11. /usr/lib/ruby/gems/2.3.0/gems/slop-3.6.0/lib
+  12. /usr/lib/ruby/gems/2.3.0/gems/method_source-0.8.2/lib
+  13. /usr/lib/ruby/gems/2.3.0/gems/notiffany-0.1.1/lib
+  14. /usr/lib/ruby/gems/2.3.0/gems/shellany-0.0.1/lib
+  15. /usr/lib/ruby/gems/2.3.0/gems/nenv-0.3.0/lib
+  16. /usr/lib/ruby/gems/2.3.0/gems/lumberjack-1.0.10/lib
+  17. /usr/lib/ruby/gems/2.3.0/gems/listen-3.1.5/lib
+  18. /usr/lib/ruby/gems/2.3.0/gems/ruby_dep-1.3.1/lib
+  19. /usr/lib/ruby/gems/2.3.0/gems/rb-inotify-0.9.7/lib
+  20. /usr/lib/ruby/gems/2.3.0/gems/rb-fsevent-0.9.7/lib
+  21. /usr/lib/ruby/gems/2.3.0/gems/formatador-0.2.5/lib
+  22. /usr/lib/ruby/gems/2.3.0/gems/ffi-1.9.14/lib
+  23. /usr/lib/ruby/gems/2.3.0/extensions/x86_64-linux/2.3.0/ffi-1.9.14
+  24. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib
+  25. /usr/lib/ruby/gems/2.3.0/gems/concurrent-ruby-1.0.2/lib
+  26. /home/jeroen/.gem/ruby/2.3.0/gems/colored-1.2/lib
+  27. /usr/lib/ruby/gems/2.3.0/gems/coderay-1.1.1/lib
+  28. /home/jeroen/.gem/ruby/2.3.0/gems/adsf-1.2.1/lib
+  29. /usr/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib
+  30. /usr/lib/ruby/site_ruby/2.3.0
+  31. /usr/lib/ruby/site_ruby/2.3.0/x86_64-linux
+  32. /usr/lib/ruby/site_ruby
+  33. /usr/lib/ruby/vendor_ruby/2.3.0
+  34. /usr/lib/ruby/vendor_ruby/2.3.0/x86_64-linux
+  35. /usr/lib/ruby/vendor_ruby
+  36. /usr/lib/ruby/2.3.0
+  37. /usr/lib/ruby/2.3.0/x86_64-linux

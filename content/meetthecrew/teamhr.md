@@ -1,19 +1,50 @@
 ---
 teamnaam: Team HR
-foto: http://placehold.it/750x500
+foto: /assets/images/teamhr.jpg
 teamleden:
   -
-    naam: Peter Peeters
-    functie: Coördinator Willekeurige Dingen
-    opleiding: Student ditten en datten aan UGent
-    email: persoon.a@studentkickoff.be
-    foto: http://placehold.it/500x300
+    naam: Lennert Noppe
+    functie: Team Lead
+    opleiding: ????
+    school: ????
+    email: lennert.noppe@studentkickoff.be
+    foto: /assets/images/org/lennertnoppe.jpg
   -
-    naam: Jan Jansens
-    functie: Coördinator Resterende Dingen
-    opleiding: Student datten en ditten aan HoGent
-    email: persoon.b@studentkickoff.be
-    foto: http://placehold.it/500x300
+    naam: Babbette Demeester
+    functie: Coördinator Planning
+    opleiding: ????
+    school: ????
+    email: babette.demeester@studentkickoff.be
+    foto: /assets/images/org/babettedemeester.jpg
+  -
+    naam: Sylvia Beeckman
+    functie: Coördinator Hospitality
+    opleiding: ????
+    school: ????
+    email: sylvia.beeckman@studentkickoff.be
+    foto: /assets/images/org/sylviabeeckman.jpg
+  -
+    naam: Dina Boshra
+    functie: Coördinator Recruitment
+    opleiding: ????
+    school: ????
+    email: dina.boshra@studentkickoff.be
+    foto: /assets/images/org/dinaboshra.jpg
+  -
+    naam: Sara Carton
+    functie: Interne HR
+    opleiding: ????
+    school: ????
+    email: sara.carton@studentkickoff.be
+    foto: /assets/images/org/saracarton.jpg
 ---
 
-beschrijving van wat het team doet komt hier
+Team HR is het team dat ervoor zorgt dat alle mensen die helpen om SKO te doen draaien graag afkomen en goed worden verzorgt.
+
+De Coördinator recruitment zorgt ervoor dat er meer dan 500 vrijwilligers aanwezig zijn om alle festivalgangers van drank te voorzien. Dat er mensen zijn om te helpen bij de artiesten enz. Deze persoon heeft meestal wel een grijs haar of vijf gekregen in de week van de opbouw als er ergens mensen wegvallen.
+
+De Coördinator Planning is degene die verantwoordelijk is om al die 500 vrijwilligers bij een taak te zetten. Hij of zij coördineert met de andere teams om te kijken dat er overal volk staat.
+
+De Coördinator Hospitality zorgt ervoor dat al die 500 vrijwilligers goed ontvangen worden op de dag van het event. Zij zorgt ervoor dat die mensen weten waar ze moeten zijn en dat ze hun t-shirt krijgen en iets kunnen eten en drinken.
+
+De Coördinator Interne HR zorgt voor de teambuildings die SKO doet met heel de groep. Zij zorgt ervoor dat iedereen vriendjes is met elkaar voor we aan de opbouw beginnen. Zij zorgt ook voor de catering voor de hele ploeg tijdens de opbouw week.

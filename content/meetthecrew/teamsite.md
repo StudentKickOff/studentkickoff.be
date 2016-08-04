@@ -1,6 +1,5 @@
 ---
 teamnaam: Team Site & Safety
-beschrijving: beschrijving van wat het team doet komt hier
 foto: /assets/images/teamsite.jpg
 teamleden:
   -
