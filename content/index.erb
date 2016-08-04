@@ -36,10 +36,10 @@
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
             <div id="links">
-                <% 8.times do %>
-                <a href="http://placehold.it/1920x1080" title="Banana" data-gallery>
-                    <img src="http://placehold.it/90x90" alt="Banana">
-                </a>
+                <% galleryimage.each do %>
+                    <a href="http://placehold.it/1920x1080" title="Banana" data-gallery>
+                        <img src="http://placehold.it/90x90" alt="Banana">
+                    </a>
                 <% end %>
             </div>
         </div>

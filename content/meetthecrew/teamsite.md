@@ -23,7 +23,7 @@ teamleden:
     opleiding: ????
     school: ????
     email: valerie.vermeire
-    foto: valerievermeire.png
+    foto: valerievermeire.jpg
   -
     naam: Wannes Van Dorpe
     functie: Coördinator Elektriciteit
@@ -44,7 +44,7 @@ teamleden:
     opleiding: Bestuurskunde en Publiek Management
     school: Universiteit Gent
     email: ben.deckers
-    foto: bendeckers.png
+    foto: bendeckers.jpg
   -
     naam: Jeroen De Lange
     functie: Crew Lead

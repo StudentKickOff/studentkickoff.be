@@ -4,3 +4,4 @@ include Nanoc::Helpers::LinkTo
 include DataHelper
 include HistoriekHelper
 include TeamHelper
+include GalleryHelper
