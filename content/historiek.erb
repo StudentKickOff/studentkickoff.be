@@ -4,17 +4,17 @@
           <h1 class="page-header">Historiek van de Student Kick-Off</h1>
       </div>
   </div>
-  <% item[:historiek].each do |hist| %>
+  <% jaren.each do |hist| %>
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-9"><h3><%= hist[:jaar] %></h3></div>
     <img class="img-responsive col-md-3" src="<%= hist[:affiche] %>" alt="">
     <div class="col-md-9">
-      <%= hist[:tekst] %>
+      <%= hist.compiled_content %>
       <h4>Line-Up</h4>
       <ul class="list-inline">
         <% hist[:lineup].each do |a| %>
-          <li><%= a[:artist] %></li>
+          <li><%= a %></li>
         <% end %>
       </ul>
     </div>
@@ -22,5 +22,3 @@
   <hr>
   <% end %>
 </div>
-
-

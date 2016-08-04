@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby
 
+preprocess do
+  jaren.each do |item|
+    jaar = item.identifier.without_ext.split('/').last.to_i
+    item[:jaar] = jaar
+  end
+end
+
 compile '/**/*.erb' do
   layout '/default.*'
   filter :erb
@@ -12,9 +19,14 @@ compile '/meetthecrew/*.md' do
   filter :erb
 end
 
-compile '/historiek.md' do
+compile '/historiek/*.md' do
   filter :kramdown
-  layout '/historiek.*'
+end
+
+# Empty route block prevents item from being written out
+route '/historiek/*.md' do; end
+
+compile '/historiek.erb' do
   layout '/default.*'
   filter :erb
 end
