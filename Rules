@@ -26,11 +26,6 @@ end
 # Empty route block prevents item from being written out
 route '/historiek/*.md' do; end
 
-compile '/historiek.erb' do
-  layout '/default.*'
-  filter :erb
-end
-
 route '/**/*.{erb,html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
