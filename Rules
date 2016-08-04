@@ -5,6 +5,9 @@ preprocess do
     jaar = item.identifier.without_ext.split('/').last.to_i
     item[:jaar] = jaar
   end
+  galleryimage.each do |img|
+    img[:nr] = img.identifier.without_ext.split('/').last.to_i
+  end
 end
 
 compile '/**/*.erb' do
