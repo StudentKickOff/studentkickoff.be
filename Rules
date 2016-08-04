@@ -12,6 +12,13 @@ compile '/meetthecrew/*.md' do
   filter :erb
 end
 
+compile '/historiek.md' do
+  filter :kramdown
+  layout '/historiek.*'
+  layout '/default.*'
+  filter :erb
+end
+
 route '/**/*.{erb,html,md}' do
   if item.identifier =~ '/index.*'
     '/index.html'
