@@ -6,13 +6,13 @@ teamleden:
     naam: Peter Peeters
     functie: Coördinator Willekeurige Dingen
     opleiding: Student ditten en datten aan UGent
-    email: persoon.a@studentkickoff.be
+    email: persoon.a
     foto: http://placehold.it/500x300
   -
     naam: Jan Jansens
     functie: Coördinator Resterende Dingen
     opleiding: Student datten en ditten aan HoGent
-    email: persoon.b@studentkickoff.be
+    email: persoon.b
     foto: http://placehold.it/500x300
 ---
 

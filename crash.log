@@ -1,8 +1,8 @@
-Crashlog created at 2016-08-04 12:45:12 +0200
+Crashlog created at 2016-08-04 17:46:07 +0200
 
 ===== MESSAGE:
 
-Nanoc::Extra::Piper::Error: command exited with a nonzero status code 5888 (command: rsync -aP --delete-after output/ beta@beta.studentkickoff.be:/var/www/beta.studentkickoff.be/build)
+RuntimeError: Could not parse YAML for content/meetthecrew/teamhr.md: (<unknown>): could not find expected ':' while scanning a simple key at line 10 column 5
 
 ===== COMPILATION STACK:
 
@@ -10,42 +10,46 @@ Nanoc::Extra::Piper::Error: command exited with a nonzero status code 5888 (comm
 
 ===== STACK TRACE:
 
-  0. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/piper.rb:42:in `block in run'
-  1. /usr/lib/ruby/2.3.0/open3.rb:205:in `popen_run'
-  2. /usr/lib/ruby/2.3.0/open3.rb:95:in `popen3'
-  3. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/piper.rb:28:in `run'
-  4. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/deployers/rsync.rb:62:in `run_shell_cmd'
-  5. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/extra/deployers/rsync.rb:54:in `run'
-  6. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:55:in `deploy'
-  7. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:23:in `run'
-  8. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:12:in `block in call'
-  9. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
-  10. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
-  11. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:11:in `call'
-  12. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
-  13. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
-  14. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
-  15. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
-  16. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli.rb:46:in `block in run'
-  17. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
-  18. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
-  19. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli.rb:44:in `run'
-  20. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/bin/nanoc:9:in `<top (required)>'
-  21. /home/jeroen/.gem/ruby/2.3.0/bin/nanoc:22:in `load'
-  22. /home/jeroen/.gem/ruby/2.3.0/bin/nanoc:22:in `<top (required)>'
-  23. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
-  24. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
-  25. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
-  26. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
-  27. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
-  28. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
-  29. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
-  30. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
-  31. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
-  32. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
-  33. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
-  34. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
-  35. /home/jeroen/.gem/ruby/2.3.0/bin/bundle:22:in `load'
+  0. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:362:in `rescue in parse_metadata'
+  1. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:359:in `parse_metadata'
+  2. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:351:in `parse_with_frontmatter'
+  3. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:326:in `parse'
+  4. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:122:in `read_proto_document'
+  5. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:154:in `block (2 levels) in load_objects'
+  6. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:150:in `each'
+  7. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:150:in `block in load_objects'
+  8. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:149:in `each'
+  9. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:149:in `load_objects'
+  10. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/data_sources/filesystem.rb:67:in `items'
+  11. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/base/repos/site_loader.rb:31:in `block (2 levels) in site_from_config'
+  12. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/base/repos/site_loader.rb:30:in `each'
+  13. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/base/repos/site_loader.rb:30:in `block in site_from_config'
+  14. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/base/repos/site_loader.rb:55:in `with_data_sources'
+  15. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/base/repos/site_loader.rb:29:in `site_from_config'
+  16. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/base/repos/site_loader.rb:12:in `new_from_cwd'
+  17. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:24:in `site'
+  18. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:156:in `site'
+  19. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:161:in `compiler'
+  20. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:166:in `stack'
+  21. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:268:in `write_compilation_stack'
+  22. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:116:in `write_compact_error'
+  23. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:92:in `print_error'
+  24. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:71:in `rescue in handle_while'
+  25. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:45:in `handle_while'
+  26. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  27. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:11:in `call'
+  28. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  29. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  30. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  31. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/commands/nanoc.rb:37:in `block in define'
+  32. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  33. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  34. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli.rb:46:in `block in run'
+  35. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  36. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  37. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib/nanoc/cli.rb:44:in `run'
+  38. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/bin/nanoc:9:in `<top (required)>'
+  39. /home/jeroen/.gem/ruby/2.3.0/bin/nanoc:22:in `load'
 
 ===== VERSION INFORMATION:
 
@@ -58,34 +62,206 @@ Linux Iepoev 3.16.36-1-MANJARO #1 SMP PREEMPT Fri Jun 17 18:07:11 UTC 2016 x86_6
 
 ===== INSTALLED GEMS:
 
+  actionmailer 4.2.5.1, 4.2.6
+  actionpack 4.2.5.1, 4.2.6
+  actionview 4.2.5.1, 4.2.6
+  activejob 4.2.5.1, 4.2.6
+  activemodel 4.2.5.1, 4.2.6
+  activerecord 4.2.5.1, 4.2.6
+  activesupport 4.2.5.1, 4.2.6, 4.2.7
+  addressable 2.4.0
   adsf 1.2.1
-  bundler 1.12.5
+  airbrake 4.3.5, 5.3.0
+  airbrake-ruby 1.3.2
+  airbrussh 1.0.1, 1.1.0
+  arel 6.0.3, 7.0.0
+  autoprefixer-rails 6.3.3.1, 6.3.6.2
+  backports 3.6.8
+  bcrypt 3.1.10, 3.1.11
+  bcrypt-ruby 3.1.5
+  bigdecimal 1.2.8
+  binding_of_caller 0.7.2
+  bootstrap-sass 3.2.0.0, 3.3.6
+  bootstrap-switch-rails 3.3.3
+  bootstrap-typeahead-rails 0.10.5.1
+  bootstrap-will_paginate 0.0.10
+  bootstrap_form 2.3.0
+  builder 3.2.2
+  bundler 1.11.2, 1.12.5
+  byebug 8.2.2, 8.2.5, 9.0.5
+  cancancan 1.13.1, 1.14.0
+  capistrano 3.5.0, 3.6.0
+  capistrano-bundler 1.1.4
+  capistrano-harrow 0.5.0, 0.5.3
+  capistrano-middleman 0.2.0
+  capistrano-passenger 0.2.0
+  chunky_png 1.3.5, 1.3.6
   coderay 1.1.1
+  coffee-rails 4.1.1
+  coffee-script 2.4.1
+  coffee-script-source 1.10.0
   colored 1.2
-  concurrent-ruby 1.0.2
+  compass 1.0.3
+  compass-core 1.0.3
+  compass-import-once 1.0.5
+  concurrent-ruby 1.0.0, 1.0.1, 1.0.2
+  contracts 0.13.0
+  crack 0.4.3
   cri 2.7.0
+  daemons 1.2.3
+  data_mapper 1.2.0
+  data_objects 0.10.17
+  datamapper 1.2.0
+  date_validator 0.9.0
+  debug_inspector 0.0.2
+  did_you_mean 1.0.0, 1.0.1
+  diff-lcs 1.2.5
+  dm-aggregates 1.2.0
+  dm-constraints 1.2.0
+  dm-core 1.2.1
+  dm-do-adapter 1.2.0
+  dm-migrations 1.2.0
+  dm-mysql-adapter 1.2.0
+  dm-serializer 1.2.2
+  dm-sqlite-adapter 1.2.0
+  dm-timestamps 1.2.0
+  dm-transactions 1.2.0
+  dm-types 1.2.2
+  dm-validations 1.2.0
+  do_mysql 0.10.17
+  do_sqlite3 0.10.17
+  docile 1.1.5
+  dotenv 2.1.1
+  em-websocket 0.5.1
+  email_validator 1.6.0
+  erubis 2.7.0
+  eventmachine 1.2.0.1
+  execjs 2.6.0, 2.7.0
+  faker 1.4.2, 1.6.3
+  faraday 0.9.2
+  fast_blank 1.0.0
+  fastercsv 1.5.5
+  fastimage 2.0.0
   ffi 1.9.14
   formatador 0.2.5
+  formkeeper 0.0.15
+  globalid 0.3.6
   guard 2.14.0
   guard-compat 1.2.1
   guard-nanoc 2.0.0
+  haml 4.0.7
   hamster 3.0.0
-  kramdown 1.11.1
-  listen 3.1.5
+  hashdiff 0.2.3, 0.3.0
+  hashie 3.4.3, 3.4.4
+  hike 1.2.3, 2.1.3
+  hpricot 0.8.6
+  http_parser.rb 0.6.0
+  httparty 0.13.7
+  i18n 0.7.0
+  identicon 0.0.5
+  io-console 0.4.5, 0.4.6
+  jbuilder 2.4.1, 2.5.0
+  jquery-rails 4.1.0, 4.1.1
+  json 1.8.3
+  json_pure 1.8.3
+  jwt 1.5.1, 1.5.4
+  kramdown 1.10.0, 1.11.1
+  listen 3.0.8, 3.1.5
+  lolcat 42.1.43
+  loofah 2.0.3
   lumberjack 1.0.10
+  mail 2.6.3, 2.6.4
+  memoist 0.14.0
   method_source 0.8.2
-  nanoc 4.2.4
+  middleman 4.1.10
+  middleman-cli 4.1.10
+  middleman-compass 4.0.1
+  middleman-core 4.1.10
+  middleman-livereload 3.4.6
+  mime-types 2.99, 2.99.1, 3.0, 3.1
+  mime-types-data 3.2016.0221, 3.2016.0521
+  mimemagic 0.3.0, 0.3.1
+  mini_portile2 2.0.0, 2.1.0
+  minitest 5.8.3, 5.8.4, 5.9.0
+  multi_json 1.11.2, 1.12.0, 1.12.1
+  multi_xml 0.5.5
+  multipart-post 2.0.0
+  nanoc 4.1.6, 4.2.4
   nenv 0.3.0
+  net-scp 1.2.1
+  net-ssh 3.0.2, 3.1.1, 3.2.0
+  net-telnet 0.1.1
+  netrc 0.11.0
+  nokogiri 1.6.7.2
   notiffany 0.1.1
+  omniauth 1.3.1
+  orm_adapter 0.5.0
+  padrino-helpers 0.13.2
+  padrino-support 0.13.2
+  paint 1.0.1
+  parallel 1.9.0
+  power_assert 0.2.6, 0.3.0
   pry 0.10.4
-  rack 2.0.1
+  psych 2.0.17
+  rack 1.6.4, 2.0.1
+  rack-livereload 0.3.16
+  rack-protection 1.5.3
+  rack-test 0.6.3
+  rails 4.2.5.1, 4.2.6
+  rails-deprecated_sanitizer 1.0.3
+  rails-dom-testing 1.0.7, 2.0.1
+  rails-html-sanitizer 1.0.3
+  railties 4.2.5.1, 4.2.6
+  rake 10.4.2, 10.5.0, 11.1.2, 11.2.2
   rb-fsevent 0.9.7
   rb-inotify 0.9.7
+  rdoc 4.2.1, 4.2.2
   ref 2.0.0
+  rename 1.0.2
+  rspec-support 3.4.1
   ruby_dep 1.3.1
+  ruby_parser 3.7.3, 3.8.2
+  rubygems-update 2.5.2, 2.6.4
+  rubyzip 1.1.7
+  safe_yaml 1.0.4
+  sass 3.2.19, 3.4.21, 3.4.22
+  sass-rails 5.0.4
+  sdoc 0.4.1
+  servolux 0.12.0
+  sexp_processor 4.6.1, 4.7.0
   shellany 0.0.1
+  simplecov 0.11.2
+  simplecov-html 0.10.0
+  sinatra 1.4.7
+  sinatra-contrib 1.4.7
+  sinatra-formkeeper 0.0.7
+  slackistrano 3.0.1
+  slim 3.0.7
   slop 3.6.0
+  spring 1.6.2, 1.6.3, 1.6.4, 1.7.1
+  sprockets 2.12.4, 3.5.2, 3.6.0, 3.6.2
+  sprockets-rails 3.0.1, 3.0.2, 3.0.3, 3.0.4
+  sqlite3 1.3.11
+  sshkit 1.10.0, 1.11.2
+  stringex 1.5.1, 2.6.0
+  temple 0.7.7
+  term-ansicolor 1.3.2
+  test-unit 3.1.5, 3.1.9
   thor 0.19.1
+  thread_safe 0.3.5
+  tilt 1.4.1, 2.0.2, 2.0.4, 2.0.5
+  tins 1.6.0, 1.10.2
+  trollop 2.1.2
+  turbolinks 2.5.3
+  tzinfo 1.2.2
+  tzinfo-data 1.2016.1, 1.2016.4
+  uglifier 2.7.2, 3.0.0, 3.0.1
+  unf 0.1.4
+  unf_ext 0.0.7.2
+  uuidtools 2.1.5
+  warden 1.2.6
+  web-console 2.3.0, 3.1.1
+  will_paginate 3.0.7, 3.1.0
 
 ===== GEMFILE.LOCK:
 
@@ -161,40 +337,19 @@ BUNDLED WITH
 ===== LOAD PATHS:
 
   0. /usr/lib/ruby/gems/2.3.0/gems/ref-2.0.0/lib
-  1. /home/jeroen/.gem/ruby/2.3.0/gems/bundler-1.12.5/lib
-  2. /home/jeroen/.gem/ruby/2.3.0/gems/kramdown-1.11.1/lib
-  3. /usr/lib/ruby/gems/2.3.0/gems/guard-nanoc-2.0.0/lib
-  4. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib
+  1. /home/jeroen/.gem/ruby/2.3.0/gems/did_you_mean-1.0.1/lib
+  2. /home/jeroen/.gem/ruby/2.3.0/gems/colored-1.2/lib
+  3. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib
+  4. /usr/lib/ruby/gems/2.3.0/gems/hamster-3.0.0/lib
   5. /usr/lib/ruby/gems/2.3.0/gems/ref-2.0.0/lib
-  6. /usr/lib/ruby/gems/2.3.0/gems/hamster-3.0.0/lib
-  7. /usr/lib/ruby/gems/2.3.0/gems/guard-compat-1.2.1/lib
-  8. /usr/lib/ruby/gems/2.3.0/gems/guard-2.14.0/lib
-  9. /home/jeroen/.gem/ruby/2.3.0/gems/thor-0.19.1/lib
-  10. /usr/lib/ruby/gems/2.3.0/gems/pry-0.10.4/lib
-  11. /usr/lib/ruby/gems/2.3.0/gems/slop-3.6.0/lib
-  12. /usr/lib/ruby/gems/2.3.0/gems/method_source-0.8.2/lib
-  13. /usr/lib/ruby/gems/2.3.0/gems/notiffany-0.1.1/lib
-  14. /usr/lib/ruby/gems/2.3.0/gems/shellany-0.0.1/lib
-  15. /usr/lib/ruby/gems/2.3.0/gems/nenv-0.3.0/lib
-  16. /usr/lib/ruby/gems/2.3.0/gems/lumberjack-1.0.10/lib
-  17. /usr/lib/ruby/gems/2.3.0/gems/listen-3.1.5/lib
-  18. /usr/lib/ruby/gems/2.3.0/gems/ruby_dep-1.3.1/lib
-  19. /usr/lib/ruby/gems/2.3.0/gems/rb-inotify-0.9.7/lib
-  20. /usr/lib/ruby/gems/2.3.0/gems/rb-fsevent-0.9.7/lib
-  21. /usr/lib/ruby/gems/2.3.0/gems/formatador-0.2.5/lib
-  22. /usr/lib/ruby/gems/2.3.0/gems/ffi-1.9.14/lib
-  23. /usr/lib/ruby/gems/2.3.0/extensions/x86_64-linux/2.3.0/ffi-1.9.14
-  24. /home/jeroen/.gem/ruby/2.3.0/gems/cri-2.7.0/lib
-  25. /usr/lib/ruby/gems/2.3.0/gems/concurrent-ruby-1.0.2/lib
-  26. /home/jeroen/.gem/ruby/2.3.0/gems/colored-1.2/lib
-  27. /usr/lib/ruby/gems/2.3.0/gems/coderay-1.1.1/lib
-  28. /home/jeroen/.gem/ruby/2.3.0/gems/adsf-1.2.1/lib
-  29. /usr/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib
-  30. /usr/lib/ruby/site_ruby/2.3.0
-  31. /usr/lib/ruby/site_ruby/2.3.0/x86_64-linux
-  32. /usr/lib/ruby/site_ruby
-  33. /usr/lib/ruby/vendor_ruby/2.3.0
-  34. /usr/lib/ruby/vendor_ruby/2.3.0/x86_64-linux
-  35. /usr/lib/ruby/vendor_ruby
-  36. /usr/lib/ruby/2.3.0
-  37. /usr/lib/ruby/2.3.0/x86_64-linux
+  6. /usr/lib/ruby/gems/2.3.0/gems/nanoc-4.2.4/lib
+  7. /usr/lib/ruby/gems/2.3.0/gems/concurrent-ruby-1.0.2/lib
+  8. /usr/lib/ruby/gems/2.3.0/gems/contracts-0.13.0/lib
+  9. /usr/lib/ruby/site_ruby/2.3.0
+  10. /usr/lib/ruby/site_ruby/2.3.0/x86_64-linux
+  11. /usr/lib/ruby/site_ruby
+  12. /usr/lib/ruby/vendor_ruby/2.3.0
+  13. /usr/lib/ruby/vendor_ruby/2.3.0/x86_64-linux
+  14. /usr/lib/ruby/vendor_ruby
+  15. /usr/lib/ruby/2.3.0
+  16. /usr/lib/ruby/2.3.0/x86_64-linux

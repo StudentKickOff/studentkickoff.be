@@ -5,38 +5,38 @@ teamleden:
   -
     naam: Lennert Noppe
     functie: Team Lead
-    opleiding: ????
-    school: ????
-    email: lennert.noppe@studentkickoff.be
-    foto: /assets/images/org/lennertnoppe.jpg
+    opleiding: Politieke en Sociale wetenschappen
+    school: Universiteit Gent
+    email: lennert.noppe
+    foto: lennertnoppe.jpg
   -
-    naam: Babbette Demeester
+    naam: Babette Demeester
     functie: Coördinator Planning
-    opleiding: ????
-    school: ????
-    email: babette.demeester@studentkickoff.be
-    foto: /assets/images/org/babettedemeester.jpg
+    opleiding: Audiologie
+    school: Universiteit Gent
+    email: babette.demeester
+    foto: babettedemeester.jpg
   -
     naam: Sylvia Beeckman
     functie: Coördinator Hospitality
-    opleiding: ????
-    school: ????
-    email: sylvia.beeckman@studentkickoff.be
-    foto: /assets/images/org/sylviabeeckman.jpg
+    opleiding: Management Assistent
+    school: Arteveldehogeschool
+    email: sylvia.beeckman
+    foto: sylviabeeckman.jpg
   -
     naam: Dina Boshra
     functie: Coördinator Recruitment
-    opleiding: ????
-    school: ????
-    email: dina.boshra@studentkickoff.be
-    foto: /assets/images/org/dinaboshra.jpg
+    opleiding: Music and Entertainment
+    school: hogeschool VIVES
+    email: dina.boshra
+    foto: dinaboshra.jpg
   -
     naam: Sara Carton
     functie: Interne HR
     opleiding: ????
     school: ????
-    email: sara.carton@studentkickoff.be
-    foto: /assets/images/org/saracarton.jpg
+    email: sara.carton
+    foto: saracarton.jpg
 ---
 
 Team HR is het team dat ervoor zorgt dat alle mensen die helpen om SKO te doen draaien graag afkomen en goed worden verzorgt.

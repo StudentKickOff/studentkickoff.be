@@ -28,10 +28,10 @@
           <%= lid[:functie] %><br>
           <%= lid[:opleiding] %><br>
           <%= lid[:school] %><br>
-          <a href="mailto:<%= lid[:email] %>"><%= lid[:email] %></a>
+          <a href="mailto:<%= lid[:email]%>@studentkickoff.be"><%= lid[:email] %>@studentkickoff.be</a>
         </p>
       </div>
-      <img src="<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
+      <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
     </div>
     <% end %>
   </div>

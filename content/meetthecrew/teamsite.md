@@ -7,106 +7,99 @@ teamleden:
     functie: Team Lead
     opleiding: Project- en Eventmanagement
     school: Artevelde Hogeschool
-    email: bram.denil@studentkickoff.be
-    foto: /assets/images/org/bramdenil.jpg
+    email: bram.denil
+    foto: bramdenil.jpg
   -
     naam: Sébastien Vandenhouten
     functie: Coördinator Site
-    opleiding: ????
-    school: ????
-    email: sebastien.vandenhouten@studentkickoff.be
-    foto: /assets/images/org/sebastienvandenhouten.jpg
+    opleiding: Maatschappelijke veiligheid
+    school: Hogeschool VIVES
+    email: sebastien.vandenhouten
+    foto: sebastienvandenhouten.jpg
   -
     naam: Valerie Vermeire
     functie: Coördinator Veiligheid
     opleiding: ????
     school: ????
-    email: valerie.vermeire@studentkickoff.be
-    foto: http://placehold.it/300x300
+    email: valerie.vermeire
+    foto: valerievermeire.png
   -
     naam: Wannes Van Dorpe
     functie: Coördinator Elektriciteit
     opleiding: ????
     school: ????
-    email: wannes.vandorpe@studentkickoff.be
-    foto: http://placehold.it/300x300
+    email: wannes.vandorpe
+    foto: wannesvandorpe.jpg
   -
     naam: Julien Marbaix
     functie: Coördinator Mobiliteit
     opleiding: Informatica
     school: Universiteit Gent
-    email: julien.marbaix@studentkickoff.be
-    foto: /assets/images/org/julienmarbaix.jpg
+    email: julien.marbaix
+    foto: julienmarbaix.jpg
   -
     naam: Ben Deckers
     functie: Crew Lead
-    opleiding: ????
-    school: ????
-    email: ben.deckers@studentkickoff.be
-    foto: http://placehold.it/300x300
+    opleiding: Bestuurskunde en Publiek Management
+    school: Universiteit Gent
+    email: ben.deckers
+    foto: bendeckers.png
   -
-    naam: Jeroen De Langhe
+    naam: Jeroen De Lange
     functie: Crew Lead
     opleiding: ????
     school: ????
-    email: jeroen.delanghe@studentkickoff.be
-    foto: /assets/images/org/jeroendelanghe.jpg
+    email: jeroen.delanghe
+    foto: jeroendelanghe.jpg
   -
     naam: Benny Reubens
     functie: Crew Lead
     opleiding: ????
     school: ????
-    email: benny.reubens@studentkickoff.be
-    foto: http://placehold.it/300x300
+    email: benny.reubens
+    foto: bennyreubens.jpg
   -
     naam: Caroline De Brouwer
     functie: Crew Lead
-    opleiding: Informatica
+    opleiding: Burgerlijk Ingenieur CW
     school: Universiteit Gent
-    email: caroline.debrouwer@studentkickoff.be
-    foto: /assets/images/org/carolinedebrouwer.jpg
+    email: caroline.debrouwer
+    foto: carolinedebrouwer.jpg
   -
     naam: Yannick Dandois
     functie: Crew Lead
-    opleiding: ????
-    school: ????
-    email: yannick.dandois@studentkickoff.be
-    foto: /assets/images/org/yannickdandois.jpg
+    opleiding: Chemie
+    school: Universiteit Gent
+    email: yannick.dandois
+    foto: yannickdandois.jpg
   -
     naam: Tijl Garré
     functie: Crew Lead
     opleiding: ????
-    school: ????
-    email: tijl.garre@studentkickoff.be
-    foto: http://placehold.it/300x300
+    school: Universiteit Gent
+    email: tijl.garre
+    foto: tijlgarre.jpg
   -
     naam: Francis Begyn
     functie: Crew Lead
-    opleiding: ????
-    school: ????
-    email: francis.begyn@studentkickoff.be
-    foto: /assets/images/org/francisbegyn.jpg
-  -
-    naam: Francis Begyn
-    functie: Crew Lead
-    opleiding: ????
-    school: ????
-    email: francis.begyn@studentkickoff.be
-    foto: /assets/images/org/francisbegyn.jpg
+    opleiding: Industrieel Ingenieur
+    school: Universiteit Gent
+    email: francis.begyn
+    foto: francisbegyn.jpg
   -
     naam: Michiel Dasseville
     functie: Crew Lead
-    opleiding: ????
-    school: ????
-    email: michiel.dasseville@studentkickoff.be
-    foto: http://placehold.it/300x300
+    opleiding: Preventieadviseur
+    school: KaHo Sint-Lieven
+    email: michiel.dasseville
+    foto: michieldasseville.jpg
   -
     naam: Daan Schaubroeck
     functie: Crew Lead
-    opleiding: ????
-    school: ????
-    email: daan.schaubroeck@studentkickoff.be
-    foto: /assets/images/org/daanschaubroeck.jpg
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+    email: daan.schaubroeck
+    foto: daanschaubroeck.jpg
 ---
 
 Team SS staat in voor alles wat zich op het terrein afspeelt. Dit gaat van het plaatsen van herashekken tot het contacteren van leveranciers voor bijvoorbeeld kassa’s. Daarnaast zorgen wij er ook voor dat elke stand/bar/podium voorzien wordt van elektriciteit. Binnen team Site & Safety zijn er verschillende coördinatoren werkzaam met elk hun vakgebied.
