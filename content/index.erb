@@ -37,8 +37,8 @@
             <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
             <div id="links">
                 <% galleryimage.each do |img| %>
-                    <a href="/assets/images/gallery/<%= img[:nr]%>.jpg" title="Placeholder" data-gallery>
-                        <img src="/assets/images/gallerythumbs/<%= img[:nr]%>.jpg" alt="Placeholder">
+                    <a href="<%= img.path %>" title="Placeholder" data-gallery>
+                        <img src="<%= img.path(rep: :thumbnail) %>" alt="Placeholder">
                     </a>
                 <% end %>
             </div>

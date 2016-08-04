@@ -5,9 +5,6 @@ preprocess do
     jaar = item.identifier.without_ext.split('/').last.to_i
     item[:jaar] = jaar
   end
-  galleryimage.each do |img|
-    img[:nr] = img.identifier.without_ext.split('/').last.to_i
-  end
 end
 
 compile '/**/*.erb' do
@@ -27,6 +24,11 @@ end
 
 compile '/historiek/*.md' do
   filter :kramdown
+end
+
+compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do
+  filter :resize
+  write "#{item.identifier.without_ext}_thumbnail.jpg"
 end
 
 # Empty route block prevents item from being written out
