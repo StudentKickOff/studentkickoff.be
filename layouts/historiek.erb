@@ -11,22 +11,16 @@
     <img class="img-responsive col-md-3" src="<%= hist[:affiche] %>" alt="">
     <div class="col-md-9">
       <%= hist[:tekst] %>
+      <h4>Line-Up</h4>
+      <ul class="list-inline">
+        <% hist[:lineup].each do |a| %>
+          <li><%= a[:artist] %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
   <hr>
   <% end %>
-
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-9"><h3>2006</h3></div>
-    <img class="img-responsive col-md-3" src="http://placehold.it/250x400" alt="">
-    <div class="col-md-9">
-        <p>Student Kick-Off ontstond in het voorjaar van 2006 toen zeven studenten aan de Gentse Universiteit een evenement wilden organiseren naar voorbeeld van andere studentensteden als Kortrijk en Antwerpen. Amper enkele maanden later, op 27 september 2006, wisten ze maar liefst 9.000 studenten naar het Gentse Kramersplein te lokken!</p>
-        <h4>Line-Up</h4>
-        <p>Radio Urgent Live – Eddy Wally – Aiko - Myopia – The Go Go Prophecy – Delavega – ‘t Hof van Commerce – Das Pop – DJ Maximilian</p>
-        </div>
-  </div>
-
 </div>
 
 
