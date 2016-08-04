@@ -1,4 +1,5 @@
 ---
+crew: team
 teamnaam: Team Partners
 foto: http://placehold.it/750x500
 teamleden:
