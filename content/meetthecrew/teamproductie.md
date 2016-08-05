@@ -1,6 +1,6 @@
 ---
 crew: team
-teamnaam: Team HR
+teamnaam: Team Productie
 foto: http://placehold.it/750x500
 teamleden:
   -
