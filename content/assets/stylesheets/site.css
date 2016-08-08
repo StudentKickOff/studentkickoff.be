@@ -23,6 +23,9 @@ a, a:hover {
   color: #e43026;
 }
 
+.headerlogo {
+  max-height: 250px;
+}
 .navbar {
   font-size: x-large;
   background-color: #e43026;
