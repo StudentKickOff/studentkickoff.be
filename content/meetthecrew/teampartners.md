@@ -56,4 +56,4 @@ De drie coördinatoren commercial partners staan enerzijds in om het contact met
 De coördinator non-commercial partners is diegene die het contact met de onderwijsinstellingen onderhoudt en hen op de hoogte houdt van alle nieuwe ontwikkelingen binnen onze organisatie.
 
 
-Tot slot zorgt de coördinator Student Village ervoor dat alle onderwijsinstellingen, studentenverenigingen en niet-commerciële organisatieseen plaats hebben op ons terrein waar ze de studenten kunnen informeren over onder andere alle faciliteiten en mogelijkheden voor studenten in Gent.
+Tot slot zorgt de coördinator Student Village ervoor dat alle onderwijsinstellingen, studentenverenigingen en niet-commerciële organisaties een plaats hebben op ons terrein waar ze de studenten kunnen informeren over onder andere alle faciliteiten en mogelijkheden voor studenten in Gent.
