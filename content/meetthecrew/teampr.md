@@ -20,35 +20,35 @@ teamleden:
   -
     naam: Jasper Bergeman
     functie: Coördinator Pers
-    opleiding: ????
-    school: ????
+    opleiding: Communicatiewetenschappen
+    school: Universiteit Gent
     email: jasper.bergeman
     foto: jasperbergeman.jpg
   -
     naam: Roeland Bolle
     functie: Coördinator Design
-    opleiding: Advertising
+    opleiding: Grafische Vormgeving
     school: Sint-Lucas
     email: roeland.bolle
     foto: roelandbolle.jpg
   -
     naam: Indra De Clercq
     functie: Coördinator Design
-    opleiding: Interieurvormgeving
-    school: Thomas More
+    opleiding: Grafische Vormgeving
+    school: Sint-Lucas
     email: indra.declercq
     foto: indradeclercq.jpg
   -
     naam: Anne-Laure De Clercq
     functie: Coördinator Marketing & Campus Tour
-    opleiding: ????
-    school: ????
+    opleiding: Communicatiewetenschappen
+    school: Universiteit Gent
     email: annelaure.declercq
     foto: annelauredeclercq.jpg
   -
     naam: Kelly Vandenbouhede
     functie: Coördinator Social Media
-    opleiding: Communicatie
+    opleiding: Communicatiemanagement
     school: Arteveldehogeschool
     email: kelly.vandenbouhede
     foto: kellyvandenbouhede.jpg
