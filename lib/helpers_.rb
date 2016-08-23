@@ -5,3 +5,4 @@ include DataHelper
 include HistoriekHelper
 include TeamHelper
 include GalleryHelper
+include PartnerHelper

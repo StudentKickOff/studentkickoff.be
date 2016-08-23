@@ -12,10 +12,10 @@
 
     <!-- Projects Row -->
     <div class="row">
-        <% 4.times do %>
+        <% item[:presentingpartners].each do |partner| %>
             <div class="col-md-3 portfolio-item">
-                <a href="http://www.google.be">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                <a href="http://www.<%= partner[:url] %>">
+                    <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
                 </a>
             </div>
         <% end %>
@@ -31,10 +31,10 @@
     <!-- Projects Row -->
 
     <div class="row">
-        <% 18.times do %>
+        <% item[:partners].each do |partner| %>
             <div class="col-md-2 portfolio-item">
-                <a href="http://www.google.be">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                <a href="http://www.<%= partner[:url] %>">
+                    <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
                 </a>
             </div>
         <% end %>

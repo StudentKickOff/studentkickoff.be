@@ -29,6 +29,13 @@ compile '/faq.md' do
   filter :erb
 end
 
+compile '/partners.md' do
+  filter :kramdown
+  layout '/partners.*'
+  layout '/default.*'
+  filter :erb
+end
+
 compile '/historiek/*.md' do
   filter :kramdown
 end
