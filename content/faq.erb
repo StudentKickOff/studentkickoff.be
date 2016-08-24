@@ -44,3 +44,29 @@ questions:
     a: Er wordt aangeraden zoveel mogelijk met de fiets/te voet te komen. Als je toch de drukte wilt wagen, kan je je aan de <gentse parkeergarages> in de buurt of in de omliggende straten parkeren. De parkeergarage van het Sint-Pietersplein is onbereikbaar.
 
 ---
+
+<div class="container ">
+
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 class="page-header">FAQ</h1>
+          </div>
+      </div>
+
+    <div class="panel-group" id="faqAccordion">
+
+        <% item[:questions].each_with_index do |lid, index| %>
+            <div class="panel ">
+                <div class="accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question<%= index %>">
+                     <h3>Q: <%= lid[:q] %>?</h3>
+                </div>
+                <div class="panel-collapse collapse" id="question<%= index %>">
+                    <div class="panel-body">
+                        <%= lid[:a] %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+
+    </div>
+</div>

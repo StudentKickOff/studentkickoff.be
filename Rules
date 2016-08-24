@@ -29,9 +29,8 @@ compile '/faq.md' do
   filter :erb
 end
 
-compile '/partners.md' do
+compile '/partners.erb' do
   filter :kramdown
-  layout '/partners.*'
   layout '/default.*'
   filter :erb
 end
