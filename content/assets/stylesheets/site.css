@@ -1,4 +1,4 @@
-@charset "utf-8";
+  @charset "utf-8";
 @import "normalize";
 @font-face {
   font-family: 'LeagueGothic-Regular';
@@ -10,8 +10,25 @@
   src: url('/assets/fonts/UNIVERSL_5.TTF') format('truetype');
 }
 
+@media only screen and (min-width: 768px) {
+  .diagonal {
+    transform: rotate(-7deg) translateX(-10px) translateY(-200px);
+    padding-top: 200px;
+  }
+
+  .navbar {
+    background-color:rgba(228,48,38,0.7);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color:rgba(228,48,38,1.0);
+  }
+}
+
+
 body {
-  margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
   font-family: 'Univers';
 }
 
@@ -26,9 +43,9 @@ a, a:hover {
 .headerlogo {
   max-height: 250px;
 }
+
 .navbar {
   font-size: x-large;
-  background-color: #e43026;
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
