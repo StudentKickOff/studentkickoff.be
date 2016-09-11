@@ -8,7 +8,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    background: url('/assets/images/header.jpg') no-repeat center center scroll;
+    background: url('http://lorempixel.com/1920/1080/nightlife') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -16,7 +16,7 @@
 }
 
 .headline {
-    padding: 120px 0;
+    padding: 20% 0;
     mix-blend-mode: hard-light;
 }
 

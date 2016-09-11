@@ -21,8 +21,15 @@
   }
 
   .section1 {
+    margin-top: 160px;
     position: relative;
     background-color: #ffd24f;
+  }
+
+  .section2 {
+    margin-top: 160px;
+    position: relative;
+    background-color: #555555;
   }
 
   footer {
@@ -34,7 +41,7 @@
     background-image: url('/assets/images/design/peetjes.svg');
   }
 
-  footer:before, .section1:before, .section1:after {
+  footer:before, .section1:before, .section1:after, .section2:before, .section2:after  {
     position: absolute;
     transform: rotate(-4deg);
     transform-origin: 3% 0;
@@ -72,6 +79,7 @@ a, a:hover {
 
 .navbar {
   font-size: x-large;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
