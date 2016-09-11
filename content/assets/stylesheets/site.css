@@ -12,32 +12,38 @@
 
 @media only screen and (min-width: 768px) {
 
-  footer {
-    position: relative;
-    text-align: center;
-    padding-bottom: 150px;
-    margin-top: 200px;
-    background-color: #0087c2;
-  }
-
-  footer:before {
-    position: absolute;
-    transform: rotate(-4deg);
-    transform-origin: 3% 0;
-    left: -25%;
-    width: 150%;
-    z-index: -1;
-    height: 90%;
-    background: inherit;
-    content:'';
-  }
-
   .navbar {
     background-color:rgba(228,48,38,0.7);
     padding-top: 200px;
     transform: rotate(-4deg) translateY(-200px);
     width: 110%;
     margin-left: -10px;
+  }
+
+  .section1 {
+    position: relative;
+    background-color: #ffd24f;
+  }
+
+  footer {
+    position: relative;
+    text-align: center;
+    padding-bottom: 150px;
+    margin-top: 160px;
+    background-color: #0087c2;
+    background-image: url('/assets/images/design/peetjes.svg');
+  }
+
+  footer:before, .section1:before, .section1:after {
+    position: absolute;
+    transform: rotate(-4deg);
+    transform-origin: 3% 0;
+    left: -25%;
+    width: 150%;
+    z-index: -1;
+    height: 160px;
+    background: inherit;
+    content:'';
   }
 
 }
@@ -86,6 +92,11 @@ a, a:hover {
 
 .page-header, hr {
   border-color: #0087c2;
+}
+
+.header-image {
+  position: relative;
+  z-index: -5;
 }
 
 .question-toggle:hover {

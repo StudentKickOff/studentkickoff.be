@@ -14,38 +14,40 @@
 </header>
 <br>
 <!-- Page Content -->
-<div class="container">
-<!--     <h1 class="text-center">Discover #SKO2016 in an unique way, join our crew now!</h1>
-     -->    <div class="row">
+<div class="section1">
+    <div class="container">
+        <div class="row">
         <!-- 16:9 aspect ratio -->
-        <div class="col-md-10 col-md-offset-1">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/140273059"></iframe>
-            </div>
-            <h3 class="text-center">Bekijk de fotos van voorbije edities</h3>
-            <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-            <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
-                <!-- The container for the modal slides -->
-                <div class="slides"></div>
-                <!-- Controls for the borderless lightbox -->
-                <h3 class="title"></h3>
-                <a class="prev">‹</a>
-                <a class="next">›</a>
-                <a class="close">×</a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>
-            </div>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-            <div id="links">
-                <% galleryimage.each_with_index do |img, index| %>
-                    <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>
-                    <a href="<%= img.path %>" title="<%= title %>" data-gallery>
-                        <% if index < 20  %>
-                            <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= title %>">
-                        <% end %>
-                    </a>
-                <% end %>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/140273059"></iframe>
+                </div>
+                <h3 class="text-center">Bekijk de fotos van voorbije edities</h3>
+                <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+                    <!-- The container for the modal slides -->
+                    <div class="slides"></div>
+                    <!-- Controls for the borderless lightbox -->
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+                <div id="links">
+                    <% galleryimage.each_with_index do |img, index| %>
+                        <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>
+                        <a href="<%= img.path %>" title="<%= title %>" data-gallery>
+                            <% if index < 20  %>
+                                <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= title %>">
+                            <% end %>
+                        </a>
+                    <% end %>
+                </div>
             </div>
         </div>
     </div>
