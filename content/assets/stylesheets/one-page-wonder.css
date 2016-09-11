@@ -5,6 +5,8 @@
  */
 
 .header-image {
+    position: relative;
+    margin-top: -256px;
     display: block;
     width: 100%;
     text-align: center;
