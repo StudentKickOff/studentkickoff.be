@@ -11,36 +11,25 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .diagonal {
-      z-index: 1;
-/*      padding: 3em;
-*/  }
-  .diagonal:before {
-      transform: rotate(-4deg);
-      transform-origin: 3% 0;
-      top: 0;
-      left: -25%;
-      z-index: -1;
-      width: 150%;
-      height: 90%;
-      background: inherit;
-  }
 
   footer {
     position: relative;
-    color: #fff;
     text-align: center;
     padding-bottom: 150px;
     margin-top: 200px;
+    background-color: #0087c2;
   }
 
   footer:before {
-      position: absolute;
-      content:'';
-  }
-
-  footer.diagonal {
-    background-color: #0087c2;
+    position: absolute;
+    transform: rotate(-4deg);
+    transform-origin: 3% 0;
+    left: -25%;
+    width: 150%;
+    z-index: -1;
+    height: 90%;
+    background: inherit;
+    content:'';
   }
 
   .navbar {
@@ -50,14 +39,7 @@
     width: 110%;
     margin-left: -10px;
   }
-/*
-  footer{
-    padding-bottom: 200px;
-    transform: rotate(-7deg) translateY(200px);
-    width: 110%;
-    margin-left: -50px;
-    position: relative;
-  }*/
+
 }
 
 @media only screen and (max-width: 768px) {
