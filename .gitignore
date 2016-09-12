@@ -1,5 +1,6 @@
 #### joe made this: http://goel.io/joe
 # For projects using nanoc (http://nanoc.ws/)
+.sass-cache/
 
 # Default location for output, needs to match output_dir's value found in config.yaml
 output/
@@ -10,4 +11,3 @@ tmp/
 
 # Crash Log
 crash.log
-
