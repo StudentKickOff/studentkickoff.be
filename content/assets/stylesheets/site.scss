@@ -30,13 +30,14 @@ html {
 @media only screen and (min-width: 768px) {
 
   .navbar {
-    background-color: $colred;
+    position: relative;
+
+    background-color: $colblue;
+
     padding-top: 200px;
     transform: rotate($rot) translateY(-200px);
     width: 110%;
     margin-left: -10px;
-
-    position: relative;
 
     text-transform: uppercase;
   }
@@ -105,10 +106,17 @@ html {
     padding-bottom: 150px;
     margin-top: 160px;
     background-color: $colblue;
-    background-image: url('/assets/images/design/peetjes.svg');
 
     &:before {
       @extend .diag;
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      background-color: $colblue;
+      transform: rotate($rot);
+      width: 110%;
     }
   }
 }
