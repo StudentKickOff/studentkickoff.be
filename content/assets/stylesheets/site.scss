@@ -217,7 +217,11 @@ blockquote:before {
 
       .number {
         position: relative;
-        color: red;
+        color: $colred;
+
+        line-height: 130px;
+        font-size: 90pt;
+        text-align: center;
 
         height: 100%;
 
