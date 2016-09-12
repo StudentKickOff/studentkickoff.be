@@ -1,10 +1,8 @@
 /* ==variables== */
-$rot: -7deg;
+$rot: -4deg;
 $colblue: #0087c2;
 $colyel: #ffd24f;
 $colred: #e94b43;
-
-/* ==abstract classes== */
 
 /* ==fontshit== */
 
@@ -27,14 +25,19 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-  .section{
-    position: relative;
-    margin-bottom: 160px;  
+
+  .navbar {
+    background-color:rgba(228,48,38,0.7);
+    padding-top: 200px;
+    transform: rotate($rot) translateY(-200px);
+    width: 110%;
+    margin-left: -10px;
   }
 
+  /* ==abstract sections== */
   .diag{
     position: absolute;
-    transform: rotate(-4deg);
+    transform: rotate($rot);
     transform-origin: 3% 0;
     left: -25%;
     width: 150%;
@@ -44,12 +47,13 @@ html {
     content:'';
   }
 
-  .navbar {
-    background-color:rgba(228,48,38,0.7);
-    padding-top: 200px;
-    transform: rotate(-4deg) translateY(-200px);
-    width: 110%;
-    margin-left: -10px;
+  .section{
+    position: relative;
+    margin-bottom: 160px;
+
+    &:before, &:after {
+      @extend .diag;
+    }
   }
 
   .section1 {
@@ -62,6 +66,21 @@ html {
     background-color: $colred;
   }
 
+  .section3 {
+    background-color: $colblue;
+  }
+
+  .photoslider {
+    @extend .diag;
+    z-index: 10;
+    position: relative;
+    width: 300vw;
+
+    img {
+      margin-left: -5px;
+    }
+  }
+
   footer {
     position: relative;
     text-align: center;
@@ -69,12 +88,11 @@ html {
     margin-top: 160px;
     background-color: $colblue;
     background-image: url('/assets/images/design/peetjes.svg');
-  }
 
-  footer:before, .section1:before, .section1:after, .section2:before, .section2:after  {
-    @extend .diag;
+    &:before {
+      @extend .diag;
+    }
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -107,7 +125,7 @@ a, a:hover {
 
 .navbar-inverse .navbar-nav {
   li  {
-    
+
     a, .navbar-inverse .navbar-brand {
       color: #f0f0f0;
     }
