@@ -200,6 +200,12 @@ blockquote:before {
     display: flex;
     justify-content: center;
 
+    height: 160px;
+
+    img {
+      width: 95px;
+    }
+
     > * {
       margin-left: 25px;
       margin-right: 25px;
