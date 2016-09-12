@@ -1,5 +1,14 @@
+/* ==variables== */
+$rot: -7deg;
+$colblue: #0087c2;
+$colyel: #ffd24f;
+$colred: #e94b43;
+
+/* ==abstract classes== */
+
+/* ==fontshit== */
+
 @charset "utf-8";
-@import "normalize";
 @font-face {
   font-family: 'LeagueGothic-Regular';
   src: url('/assets/fonts/LeagueGothic-Regular.otf') format('opentype');
@@ -10,12 +19,30 @@
   src: url('/assets/fonts/UNIVERSL_5.TTF') format('truetype');
 }
 
+/* ==markup== */
+
 /* Make sure divs dont overflow to the right */
 html {
   overflow-x: hidden;
 }
 
 @media only screen and (min-width: 768px) {
+  .section{
+    position: relative;
+    margin-bottom: 160px;  
+  }
+
+  .diag{
+    position: absolute;
+    transform: rotate(-4deg);
+    transform-origin: 3% 0;
+    left: -25%;
+    width: 150%;
+    z-index: -1;
+    height: 160px;
+    background: inherit;
+    content:'';
+  }
 
   .navbar {
     background-color:rgba(228,48,38,0.7);
@@ -26,14 +53,13 @@ html {
   }
 
   .section1 {
-    position: relative;
-    background-color: #ffd24f;
+    @extend .section;
+    background-color: $colyel;
   }
 
   .section2 {
-    margin-top: 160px;
-    position: relative;
-    background-color: #555555;
+    @extend .section;
+    background-color: $colred;
   }
 
   footer {
@@ -41,20 +67,12 @@ html {
     text-align: center;
     padding-bottom: 150px;
     margin-top: 160px;
-    background-color: #0087c2;
+    background-color: $colblue;
     background-image: url('/assets/images/design/peetjes.svg');
   }
 
   footer:before, .section1:before, .section1:after, .section2:before, .section2:after  {
-    position: absolute;
-    transform: rotate(-4deg);
-    transform-origin: 3% 0;
-    left: -25%;
-    width: 150%;
-    z-index: -1;
-    height: 160px;
-    background: inherit;
-    content:'';
+    @extend .diag;
   }
 
 }
@@ -86,12 +104,19 @@ a, a:hover {
   margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
-  color: #f0f0f0;
-}
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-brand:hover {
-  color: #ffd24f;
+.navbar-inverse .navbar-nav {
+  li  {
+    
+    a, .navbar-inverse .navbar-brand {
+      color: #f0f0f0;
+    }
+
+    a:hover, .navbar-inverse .navbar-brand:hover {
+      color: #ffd24f;
+    }
+  }
+
 }
 
 .navbar-brand {
@@ -122,6 +147,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;

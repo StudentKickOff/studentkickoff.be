@@ -22,6 +22,15 @@
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/140273059"></iframe>
                 </div>
+             </div>
+        </div>
+    </div>    
+</div>           
+<div class="section2">
+    <div class="container">
+        <div class="row">
+        <!-- 16:9 aspect ratio -->
+            <div class="col-md-10 col-md-offset-1">
                 <h3 class="text-center">Bekijk de fotos van voorbije edities</h3>
                 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
                 <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
@@ -37,15 +46,6 @@
                 </div>
                 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
                 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-             </div>
-        </div>
-    </div>    
-</div>           
-<div class="section2">
-    <div class="container">
-        <div class="row">
-        <!-- 16:9 aspect ratio -->
-            <div class="col-md-10 col-md-offset-1">
                 <div id="links">
                     <% galleryimage.each_with_index do |img, index| %>
                         <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>

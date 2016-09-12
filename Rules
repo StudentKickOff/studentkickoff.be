@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+
 preprocess do
   jaren.each do |item|
     jaar = item.identifier.without_ext.split('/').last.to_i
@@ -55,8 +56,14 @@ route '/**/*.{erb,html,md}' do
   end
 end
 
+compile '/**/*.scss' do
+  filter :sass, syntax: :scss
+  write item.identifier.without_ext+'.css'
+end
+
 compile '/**/*' do
   write item.identifier.to_s
 end
+
 
 layout '/**/*', :erb

@@ -6,5 +6,5 @@ gem 'nanoc'
 gem 'adsf'
 gem 'guard-nanoc'
 gem 'kramdown'
-
+gem 'sass'
 gem 'mini_magick'
