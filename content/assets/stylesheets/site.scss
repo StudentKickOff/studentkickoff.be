@@ -66,20 +66,6 @@ html {
     margin-bottom: 160px;
     margin-top: -10px;
 
-    &:before, &:after {
-      @extend .diag;
-    }
-  }
-
-  .section1 {
-    @extend .section;
-    background-color: $colred;
-  }
-
-  .section2 {
-    @extend .section;
-    background-color: $colyel;
-
     color: white;
 
     h1 {
@@ -97,6 +83,21 @@ html {
     .text {
       margin-top: 20px;
     }
+
+    &:before, &:after {
+      @extend .diag;
+    }
+  }
+
+  .section1 {
+    @extend .section;
+    background-color: $colred;
+  }
+
+  .section2 {
+    @extend .section;
+    background-color: $colyel;
+
   }
 
   .section3 {
