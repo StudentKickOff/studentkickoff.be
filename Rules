@@ -58,7 +58,12 @@ end
 
 compile '/**/*.scss' do
   filter :sass, syntax: :scss
-  write item.identifier.without_ext+'.css'
+  write "#{item.identifier.without_ext}.css"
+end
+
+compile '/**/*.coffee' do
+  filter :coffeescript
+  write "#{item.identifier.without_ext}.js"
 end
 
 compile '/**/*' do

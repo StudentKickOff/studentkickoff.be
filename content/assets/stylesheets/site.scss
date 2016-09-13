@@ -1,6 +1,7 @@
 /* ==variables== */
 $rot: -4deg;
-$colblue: #0087c2;
+$colblue: #1B95D4;
+$header-color: rgba(27, 149, 212, 0.6);
 $colyel: rgb(258, 181, 75);
 $colred: #e94b43;
 
@@ -32,7 +33,7 @@ html {
   .navbar {
     position: relative;
 
-    background-color: $colblue;
+    background-color: $header-color;
 
     padding-top: 200px;
     transform: rotate($rot) translateY(-200px);

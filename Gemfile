@@ -6,6 +6,7 @@ gem 'nanoc', '~>4.3.2'
 gem 'kramdown'
 gem 'sass'
 gem 'mini_magick'
+gem 'coffee-script'
 
 group :nanoc do
   gem 'guard-nanoc'
