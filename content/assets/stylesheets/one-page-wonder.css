@@ -11,6 +11,7 @@
     width: 100%;
     text-align: center;
     background: url('/assets/images/background.jpg') no-repeat center center scroll;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
