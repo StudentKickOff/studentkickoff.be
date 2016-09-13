@@ -106,9 +106,14 @@ html {
     @extend .section;
     background-color: $colblue;
 
-    h1 {
+    h1, h2 {
       color: $colyel;
     }
+  }
+
+  .running-order {
+    font-family: 'LeagueGothic-Regular';
+    font-size: 2em;
   }
 
   .photoslider {
