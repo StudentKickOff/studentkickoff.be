@@ -67,12 +67,12 @@ html {
 
   .section1 {
     @extend .section;
-    background-color: $colyel;
+    background-color: $colred;
   }
 
   .section2 {
     @extend .section;
-    background-color: $colred;
+    background-color: $colyel
   }
 
   .section3 {
@@ -117,6 +117,27 @@ html {
       background-color: $colblue;
       transform: rotate($rot);
       width: 110%;
+      clip-path: inset(0px 0px 50px 0px);
+    }
+  }
+
+  .videosection {
+    position: relative;
+    height: 50vw;
+    width: 50vw;
+
+    img {
+      position: absolute;
+      height: auto;
+      width: inherit;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: auto;
     }
   }
 }
