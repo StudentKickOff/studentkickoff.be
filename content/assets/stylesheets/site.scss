@@ -2,7 +2,7 @@
 $rot: -4deg;
 $colblue: #1B95D4;
 $header-color: rgba(27, 149, 212, 0.6);
-$colyel: rgb(258, 181, 75);
+$colyel: #FAB73E;
 $colred: #e94b43;
 
 $photosliderheight: 250px;
@@ -39,8 +39,13 @@ html {
     transform: rotate($rot) translateY(-200px);
     width: 110%;
     margin-left: -10px;
-
     text-transform: uppercase;
+
+    border: none;
+
+    a {
+      color: $colyel !important;
+    }
   }
 
   /* ==abstract sections== */
@@ -73,7 +78,25 @@ html {
 
   .section2 {
     @extend .section;
-    background-color: $colyel
+    background-color: $colyel;
+
+    color: white;
+
+    h1 {
+      transform: rotate($rot);
+      color: $colred;
+      font-size: 6em;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      color: $colred;
+      font-size: 4em;
+    }
+
+    .text {
+      margin-top: 20px;
+    }
   }
 
   .section3 {
@@ -270,7 +293,7 @@ blockquote:before {
         position: relative;
         color: $colred;
 
-        line-height: 130px;
+        line-height: 135px;
         font-size: 90pt;
         text-align: center;
 
