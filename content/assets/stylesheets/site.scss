@@ -70,7 +70,6 @@ html {
 
     h1 {
       transform: rotate($rot);
-      color: $colred;
       font-size: 6em;
       padding-bottom: 20px;
     }
@@ -98,10 +97,18 @@ html {
     @extend .section;
     background-color: $colyel;
 
+    h1 {
+      color: $colred;
+    }
   }
 
   .section3 {
+    @extend .section;
     background-color: $colblue;
+
+    h1 {
+      color: $colyel;
+    }
   }
 
   .photoslider {
