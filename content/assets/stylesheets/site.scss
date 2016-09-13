@@ -132,6 +132,10 @@ html {
     margin-top: 160px;
     background-color: $colblue;
 
+    h1 {
+      transform: rotate($rot);
+    }
+
     &:before {
       @extend .diag;
     }

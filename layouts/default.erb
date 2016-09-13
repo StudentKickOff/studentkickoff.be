@@ -64,25 +64,29 @@
   </nav>
 
   <%= yield %>
-  <footer class="diagonal">
+  <footer>
     <div class="container">
+      <h1>Contact Us</h1>
       <div class="pull-left">
-      <h1>Contacteer ons ofzo</h1>
-      <p>hier komt een form i guess</p>
-      <p>en nog wat dingen?</p>
-      <p>emptyparaf</p>
-      <p>emptyparaf</p>
-      <p>emptyparaf</p>
-      <p>emptyparaf</p>
-      <p>emptyparaf</p>
-        <p class="text-muted">Copyright Team Tof 2016</p>
+        <form action="https://formspree.io/jeroen.declerck@studentkickoff.be" method="POST">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="E-Mail" name="_replyto">
+            <input type="text" class="form-control" placeholder="Naam" name="Naam">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="GSM" name="GSM">
+            <input type="text" class="form-control" placeholder="Onderwerp" name="Onderwerp">
+          </div>
+            <textarea class="form-control" rows="3"></textarea>
+          <button type="submit" class="btn btn-default">Verzenden</button>
+        </form>
       </div>
       <div class="pull-right">
-          <ul class="list-inline">
-             <li><a href="https://www.facebook.com/StudentKickOff">Facebook</a></li>
-             <li><a href="https://twitter.com/studentkickoff">Twitter</a></li>
-             <li><a href="https://www.instagram.com/studentkickoff/">Instagram</a></li>
-          </ul>
+        <ul class="list-inline">
+           <li><a href="https://www.facebook.com/StudentKickOff">Facebook</a></li>
+           <li><a href="https://twitter.com/studentkickoff">Twitter</a></li>
+           <li><a href="https://www.instagram.com/studentkickoff/">Instagram</a></li>
+        </ul>
       </div>
     </div>
     <img src="/assets/images/design/peetjes2.svg">
