@@ -75,7 +75,6 @@ html {
     }
 
     h2 {
-      color: $colred;
       font-size: 4em;
     }
 
@@ -90,15 +89,19 @@ html {
 
   .section1 {
     @extend .section;
-    background-color: $colred;
+    background-color: $colyel;
+
+    h1, h2 {
+      color: $colred;
+    }
   }
 
   .section2 {
     @extend .section;
-    background-color: $colyel;
+    background-color: $colred;
 
-    h1 {
-      color: $colred;
+    h1, h2 {
+      color: $colblue;
     }
   }
 
@@ -139,23 +142,60 @@ html {
 
   footer {
     position: relative;
-    text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 300px;
     margin-top: 160px;
     background-color: $colblue;
 
     h1 {
       transform: rotate($rot);
+      font-size: 6em;
+      padding-bottom: 20px;
+      color: $colyel
+    }
+
+    h2 {
+      text-align: left;
+      color: white;
+    }
+
+    p {
+      text-align: left;
+      color: white;
+      font-size: 120%;
     }
 
     &:before {
       @extend .diag;
     }
 
+    input, button {
+      border: 3px solid white;
+      border-radius: 0px;
+      background-color: #7eb4e2;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 20px;
+      width: 47.5%;
+      padding: 10px;
+    }
+
+    .buttonrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .inputleft {
+      margin-right: 4%;
+    }
+
+    textarea {
+      @extend input;
+      width: 100%;
+    }
+
     img {
       position: absolute;
       left: 0;
-      background-color: $colblue;
       transform: rotate($rot);
       width: 110%;
       clip-path: inset(0px 0px 50px 0px);
