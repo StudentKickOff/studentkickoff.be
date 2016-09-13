@@ -130,14 +130,15 @@ html {
       position: absolute;
       height: auto;
       width: inherit;
+      pointer-events: none;
     }
 
     iframe {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: inherit;
-      height: auto;
+      top: 31%;
+      left: 9%;
+      width: 71.5%;
+      height: 43%;
     }
   }
 }
