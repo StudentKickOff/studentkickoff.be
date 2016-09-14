@@ -12,7 +12,6 @@ $colred: #e94b43;
     transform-origin: 3% 0;
     left: -25%;
     width: 150%;
-    z-index: -1;
     height: 200px;
     background: inherit;
     content:'';
@@ -20,9 +19,8 @@ $colred: #e94b43;
 
   .section{
     position: relative;
-    margin-bottom: 160px;
+    margin-bottom: 200px;
     margin-top: -10px;
-
     color: white;
 
     h1 {
@@ -43,6 +41,7 @@ $colred: #e94b43;
 
     &:before, &:after {
       @extend .diag;
+      z-index: -1;
     }
   }
 }

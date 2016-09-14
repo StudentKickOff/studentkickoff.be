@@ -1,18 +1,13 @@
-<div class="container">
-  <div class="row">
-      <div class="col-lg-12">
-          <h1 class="page-header">Historiek van de Student Kick-Off</h1>
-      </div>
+<div class="section1">
+  <div class="container">
+    <h1>Historiek van de Student Kick-Off</h1>
   </div>
 </div>
 <% jaren.each_with_index do |hist,ind| %>
 <div class="section<%= (ind % 3) +1 %>">
   <div class="container">
     <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-9">
-        <h2><%= hist[:jaar] %></h2>
-      </div>
+        <h1><%= hist[:jaar] %></h1>
       <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
       <div class="col-md-9">
         <%= hist.compiled_content %>
