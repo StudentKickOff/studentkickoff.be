@@ -17,8 +17,13 @@
 /* ==markup== */
 
 /* Make sure divs dont overflow to the right */
+/* I don't know how this works ¯\_(ツ)_/¯ */
 html {
-  overflow-x: hidden;
+  position: relative;
+
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -220,12 +225,10 @@ blockquote:before {
 
 .presentingpartner {
   min-height: 250px;
-  background-color: #aaaaaa
 }
 
 .partner {
   min-height: 150px;
-  background-color: #aaaaaa
 }
 
 .vertical-center {
