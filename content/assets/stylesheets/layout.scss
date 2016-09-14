@@ -1,0 +1,226 @@
+/* imports */
+@import 'abstracts';
+@import 'index';
+
+/* ==fontshit== */
+@charset "utf-8";
+@font-face {
+  font-family: 'LeagueGothic-Regular';
+  src: url('/assets/fonts/LeagueGothic-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/assets/fonts/UNIVERSL_5.TTF') format('truetype');
+}
+
+/* ==markup== */
+
+/* Make sure divs dont overflow to the right */
+html {
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .navbar {
+    position: relative;
+
+    background-color: $header-color;
+
+    padding-top: 200px;
+    transform: rotate($rot) translateY(-200px);
+    width: 110%;
+    margin-left: -10px;
+    text-transform: uppercase;
+
+    border: none;
+
+    a {
+      color: $colyel !important;
+    }
+  }
+
+  /* ==abstract sections== */
+
+
+  .section1 {
+    @extend .section;
+    background-color: $colyel;
+
+    h1, h2 {
+      color: $colred;
+    }
+  }
+
+  .section2 {
+    @extend .section;
+    background-color: $colred;
+
+    h1, h2 {
+      color: $colyel;
+    }
+  }
+
+  .section3 {
+    @extend .section;
+    background-color: $colblue;
+
+    h1, h2 {
+      color: $colyel;
+    }
+  }
+
+
+  footer {
+    position: relative;
+    padding-bottom: 341px;
+    margin-top: 160px;
+    background-color: $colblue;
+
+    h1 {
+      transform: rotate($rot);
+      font-size: 6em;
+      padding-bottom: 20px;
+      color: $colyel
+    }
+
+    h2 {
+      text-align: left;
+      color: white;
+    }
+
+    p {
+      text-align: left;
+      color: white;
+      font-size: 120%;
+    }
+
+    &:before {
+      @extend .diag;
+    }
+
+    input, button {
+      border: 3px solid white;
+      border-radius: 0px;
+      background-color: #7eb4e2;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 20px;
+      width: 47.5%;
+      padding: 10px;
+    }
+
+    .buttonrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .inputleft {
+      margin-right: 4%;
+    }
+
+    textarea {
+      @extend input;
+      width: 100%;
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 400px;
+      width: 100%;
+      opacity: 0.7;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color:rgba(228,48,38,1.0);
+  }
+}
+
+body {
+  font-family: 'Univers';
+}
+
+h1, h2, h3, h4, h4, .navbar {
+  font-family: 'LeagueGothic-Regular';
+}
+
+a, a:hover {
+  color: #e43026;
+}
+
+
+
+.navbar {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+
+.navbar-inverse .navbar-nav {
+  li  {
+
+    a, .navbar-inverse .navbar-brand {
+      color: #f0f0f0;
+    }
+
+    a:hover, .navbar-inverse .navbar-brand:hover {
+      color: #ffd24f;
+    }
+  }
+
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.page-header, hr {
+  border-color: #0087c2;
+}
+
+.question-toggle:hover {
+  cursor: pointer;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.presentingpartner {
+  min-height: 250px;
+  background-color: #aaaaaa
+}
+
+.partner {
+  min-height: 150px;
+  background-color: #aaaaaa
+}
+
+.vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
