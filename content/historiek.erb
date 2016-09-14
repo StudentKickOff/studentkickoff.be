@@ -5,8 +5,8 @@
       </div>
   </div>
 </div>
-<% jaren.each do |hist| %>
-<div class="section1">
+<% jaren.each_with_index do |hist,ind| %>
+<div class="section<%= (ind % 3) +1 %>">
   <div class="container">
     <div class="row">
       <div class="col-md-3"></div>
