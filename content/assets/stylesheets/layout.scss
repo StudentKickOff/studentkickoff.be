@@ -1,6 +1,8 @@
 /* imports */
 @import 'abstracts';
 @import 'index';
+@import 'meetthecrew';
+@import 'faq';
 
 /* ==fontshit== */
 @charset "utf-8";
@@ -23,6 +25,7 @@ html {
 
   body {
     overflow-x: hidden;
+    font-size: 18px;
   }
 }
 
@@ -45,37 +48,6 @@ html {
       color: $colyel !important;
     }
   }
-
-  /* ==abstract sections== */
-
-
-  .section1 {
-    @extend .section;
-    background-color: $colyel;
-
-    h1, h2 {
-      color: $colred;
-    }
-  }
-
-  .section2 {
-    @extend .section;
-    background-color: $colred;
-
-    h1, h2 {
-      color: $colyel;
-    }
-  }
-
-  .section3 {
-    @extend .section;
-    background-color: $colblue;
-
-    h1, h2 {
-      color: $colyel;
-    }
-  }
-
 
   footer {
     position: relative;
@@ -206,22 +178,7 @@ a, a:hover {
   cursor: pointer;
 }
 
-blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
 
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
 
 .presentingpartner {
   min-height: 250px;

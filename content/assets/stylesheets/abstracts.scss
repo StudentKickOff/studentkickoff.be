@@ -44,4 +44,32 @@ $colred: #e94b43;
       z-index: -1;
     }
   }
+
+  .section1 {
+    @extend .section;
+    background-color: $colyel;
+
+    h1, h2, h3 {
+      color: $colred;
+    }
+  }
+
+  .section2 {
+    @extend .section;
+    background-color: $colred;
+
+    h1, h2, h3 {
+      color: $colyel;
+    }
+  }
+
+  .section3 {
+    @extend .section;
+    background-color: $colblue;
+
+    h1, h2, h3 {
+      color: $colyel;
+    }
+  }
+
 }
