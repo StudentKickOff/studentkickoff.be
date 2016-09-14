@@ -95,13 +95,13 @@ partners:
   <div class="container">
 
     <h1>Presenting Partners</h1>
-    <div class="row">
+    <div class="grid-presenting">
       <% item[:presentingpartners].each do |partner| %>
-        <div class="col-md-3 col-sm-6 portfolio-item presentingpartner">
-          <a href="http://www.<%= partner[:url] %>">
-            <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
-          </a>
-        </div>
+      <div class="grid-item-presenting partner">
+        <a href="http://www.<%= partner[:url] %>">
+          <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
+        </a>
+      </div>
       <% end %>
     </div>
   </div>
@@ -110,9 +110,9 @@ partners:
   <div class="container">
 
     <h1>Partners</h1>
-    <div class="row">
+    <div class="grid">
       <% item[:partners].each do |partner| %>
-        <div class="col-md-2 col-sm-4 col-xs-6 portfolio-item partner">
+        <div class="grid-item partner">
           <a href="http://www.<%= partner[:url] %>">
             <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
           </a>
@@ -121,3 +121,8 @@ partners:
     </div>
   </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+<script src="/assets/javascripts/masonry.js"></script>
