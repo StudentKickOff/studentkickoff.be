@@ -1,5 +1,5 @@
 # * 1000 because milliseconds
-sko_time = 1475064000
+sko_time = 1475056800
 
 time_parts = () ->
 
@@ -8,7 +8,7 @@ time_parts = () ->
 
   [
     Math.floor(time_until/(60*60*24)),
-    Math.floor((time_until/(60*60)) % 60),
+    Math.floor((time_until/(60*60)) % 24),
     Math.floor((time_until/60) % 60),
     time_until % 60,
   ]
