@@ -2,6 +2,7 @@
 @import 'abstracts';
 @import 'index';
 @import 'meetthecrew';
+@import 'faq';
 
 /* ==fontshit== */
 @charset "utf-8";
@@ -20,6 +21,7 @@
 /* Make sure divs dont overflow to the right */
 body {
   overflow-x: hidden;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -41,37 +43,6 @@ body {
       color: $colyel !important;
     }
   }
-
-  /* ==abstract sections== */
-
-
-  .section1 {
-    @extend .section;
-    background-color: $colyel;
-
-    h1, h2 {
-      color: $colred;
-    }
-  }
-
-  .section2 {
-    @extend .section;
-    background-color: $colred;
-
-    h1, h2 {
-      color: $colyel;
-    }
-  }
-
-  .section3 {
-    @extend .section;
-    background-color: $colblue;
-
-    h1, h2 {
-      color: $colyel;
-    }
-  }
-
 
   footer {
     position: relative;
