@@ -1,6 +1,6 @@
 ---
 name: Cleymans & Van Geel
-start: 19u20
+start: 28 september 19:20
 end: 20u50
 image: cleymans.jpg
 ---

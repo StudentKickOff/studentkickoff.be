@@ -1,6 +1,6 @@
 ---
 name: Momma said so
-start: 15u20
+start: 28 september 15:20
 end: 16u00
 image: momma.jpg
 ---

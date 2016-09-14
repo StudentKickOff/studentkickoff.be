@@ -1,6 +1,6 @@
 ---
 name: Gestapo Knallmuzik
-start: 16u20
+start: 28 september 16:20
 end: 17u15
 image: gestapo.jpg
 ---

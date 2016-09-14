@@ -1,6 +1,6 @@
 ---
 name: Wallace vanborn
-start: 17u45
+start: 28 september 17:45
 end: 18u45
 image: wallace.jpg
 ---

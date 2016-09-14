@@ -1,10 +1,13 @@
 #!/usr/bin/env ruby
 
-
 preprocess do
   jaren.each do |item|
     jaar = item.identifier.without_ext.split('/').last.to_i
     item[:jaar] = jaar
+  end
+
+  artists.each do |artist|
+    artist[:start] = DateTime.parse(artist[:start])
   end
 end
 
@@ -36,7 +39,7 @@ compile '/partners.erb' do
   filter :erb
 end
 
-compile '/**/*.md' do
+compile '/artists/*.md' do
   filter :kramdown
   layout '/artist_page.*'
   layout '/default.*'

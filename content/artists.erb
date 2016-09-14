@@ -13,7 +13,7 @@
                 <% artists.each do |artist| %>
                     <tr>
                         <td>
-                            <%= artist[:start] %>
+                            <%= pretty_time(artist[:start]) %>
                         </td>
                         <td>
                             <a href="<%= relative_path_to(artist) %>">

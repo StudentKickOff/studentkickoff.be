@@ -1,6 +1,6 @@
 ---
 name: Skyve Soundsystem
-start: 00u25
+start: 29 september 00:25
 end: 01u55
 image: skyve.jpg
 ---

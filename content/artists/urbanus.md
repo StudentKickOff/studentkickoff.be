@@ -1,6 +1,6 @@
 ---
 name: Urbanus en de fanfaar
-start: 13u00
+start: 28 september 13:00
 end: 14u00
 image: urbanus.jpg
 ---
