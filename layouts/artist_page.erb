@@ -1,0 +1,10 @@
+<header class="header-image" style="background-image: url('/assets/images/artists/<%= item[:image] %>');">
+  <div class="headline"></div>
+</header>
+<div class="section1">
+  <div class="container">
+    <h1><%= item[:name] %></h1>
+    <h2><%= item[:start] %> | Main Stage</h2>
+    <%= yield %>
+  </div>
+</div>

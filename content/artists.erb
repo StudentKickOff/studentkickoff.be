@@ -1,0 +1,28 @@
+<header class="header-image">
+    <div class="headline"></div>
+</header>
+
+<div class="section1">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <% artists.each do |artist| %>
+                    <tr>
+                        <td>
+                            <%= artist[:start] %>
+                        </td>
+                        <td>
+                            <a href="<%= relative_path_to(artist) %>">
+                                <%= artist[:name] %>
+                            </a>
+                        </td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 ---
-name: Cleymans &quot; Van Geel
+name: Cleymans & Van Geel
 start: 19u20
 end: 20u50
 image: cleymans.jpg

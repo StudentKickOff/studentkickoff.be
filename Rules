@@ -36,8 +36,11 @@ compile '/partners.erb' do
   filter :erb
 end
 
-compile '/historiek/*.md' do
+compile '/**/*.md' do
   filter :kramdown
+  layout '/artist_page.*'
+  layout '/default.*'
+  filter :erb
 end
 
 compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do

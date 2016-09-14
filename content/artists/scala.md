@@ -1,5 +1,5 @@
 ---
-name: Scala &quot; The Kolancy Brothers
+name: Scala & The Kolacny Brothers
 start: 21u35
 end: 22u55
 image: scala.jpg
