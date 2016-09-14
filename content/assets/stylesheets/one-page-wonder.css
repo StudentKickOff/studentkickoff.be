@@ -20,6 +20,7 @@
 
 .headline {
     padding: 20% 0;
+    mix-blend-mode: hard-light;
 }
 
 .headline h1 {
