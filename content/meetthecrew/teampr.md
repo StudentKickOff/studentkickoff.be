@@ -1,6 +1,6 @@
 ---
 crew: team
-teamnaam: Team PR
+teamnaam: PR
 foto: /assets/images/teampr.jpg
 teamleden:
   -

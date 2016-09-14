@@ -1,6 +1,6 @@
 ---
 crew: team
-teamnaam: Team IT
+teamnaam: IT
 foto: /assets/images/teamit.jpg
 teamleden:
   -

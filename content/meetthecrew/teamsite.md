@@ -1,6 +1,6 @@
 ---
 crew: team
-teamnaam: Team Site & Safety
+teamnaam: Site & Safety
 foto: /assets/images/teamsite.jpg
 teamleden:
   -
