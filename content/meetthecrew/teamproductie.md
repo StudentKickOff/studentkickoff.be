@@ -1,6 +1,6 @@
 ---
 crew: team
-teamnaam: Team Productie
+teamnaam: Productie
 foto: /assets/images/teamproductie.jpg
 teamleden:
   -

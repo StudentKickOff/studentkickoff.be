@@ -1,6 +1,6 @@
 ---
 crew: team
-teamnaam: Team Beverages
+teamnaam: Beverages
 foto: http://placehold.it/750x500
 teamleden:
   -
