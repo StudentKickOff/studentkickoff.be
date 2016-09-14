@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: Team PR
-foto: http://placehold.it/750x500
+foto: /assets/images/teampr.jpg
 teamleden:
   -
     naam: Julie Poppe
