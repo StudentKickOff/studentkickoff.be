@@ -34,7 +34,7 @@
       <h1>Teamleden</h1>
 
       <% item[:teamleden].each do |lid| %>
-      <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
         <div class="teamlidcard">
           <div class="caption">
             <h3><%= lid[:naam] %></h3>
@@ -42,7 +42,6 @@
               <%= lid[:functie] %><br>
               <%= lid[:opleiding] %><br>
               <%= lid[:school] %><br>
-              <a href="mailto:<%= lid[:email]%>@studentkickoff.be"><%= lid[:email] %>@studentkickoff.be</a>
             </p>
           </div>
           <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
