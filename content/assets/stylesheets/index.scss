@@ -7,27 +7,6 @@ $photosliderheight: 250px;
 $photoslidertextsize: 50px;
 
 @media only screen and (min-width: 768px) {
-  .photoslider {
-    @extend .diag;
-    z-index: 10;
-    position: relative;
-    display: inline-flex;
-
-    img {
-      margin-left: -5px;
-      height: $photosliderheight;
-    }
-
-    p {
-      position: absolute;
-      top: ( $photosliderheight / 2) - ($photoslidertextsize / 2);
-      left: 50vw;
-
-      font-family: 'LeagueGothic-Regular';
-      font-size: $photoslidertextsize;
-    }
-  }
-
   .videorapper {
     display: flex;
     justify-content: center;
@@ -55,6 +34,12 @@ $photoslidertextsize: 50px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .videorapper {
+    display: none;
+  }
+}
+
 .headerlogo {
   max-height: 250px;
 }
@@ -63,8 +48,6 @@ $photoslidertextsize: 50px;
   position: relative;
   z-index: -5;
 }
-
-
 
 .headline {
   .container {

@@ -1,12 +1,10 @@
 @import 'abstracts';
 
-@media only screen and (min-width: 768px) {
-  .panel {
-    background-color: $colyel*0.95;
-    padding-left: 20px;
-  }
+.panel {
+  background-color: $colyel*0.95;
+  padding-left: 20px;
+}
 
-  h3 {
-    color: $colred;
-  }
+h3 {
+  color: $colred;
 }

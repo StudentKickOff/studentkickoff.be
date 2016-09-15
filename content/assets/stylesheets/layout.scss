@@ -30,6 +30,13 @@ html {
   }
 }
 
+
+.navbar {
+  a {
+    color: $colyel !important;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 
   .navbar {
@@ -44,92 +51,84 @@ html {
     text-transform: uppercase;
 
     border: none;
-
-    a {
-      color: $colyel !important;
-    }
   }
-
-  .list-group {
-    background: none;
-  }
-
-  footer {
-    position: relative;
-    padding-bottom: 341px;
-    margin-top: 160px;
-    background-color: $colblue;
-
-    h1 {
-      transform: rotate($rot);
-      font-size: 6em;
-      padding-bottom: 20px;
-      color: $colyel
-    }
-
-    h2 {
-      text-align: left;
-      color: white;
-    }
-
-    p {
-      text-align: left;
-      color: white;
-      font-size: 120%;
-    }
-
-    &:before {
-      @extend .diag;
-    }
-
-    input, button {
-      border: 3px solid white;
-      border-radius: 0px;
-      background-color: #7eb4e2;
-      color: white;
-      font-weight: bold;
-      margin-bottom: 20px;
-      width: 47.5%;
-      padding: 10px;
-    }
-
-    .buttonrapper {
-      display: flex;
-      justify-content: center;
-    }
-
-    .inputleft {
-      margin-right: 4%;
-    }
-
-    textarea {
-      @extend input;
-      width: 100%;
-    }
-
-    img {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      opacity: 0.7;
-    }
-
-    h3 {
-      position: absolute;
-      font-weight: bold;
-      font-family: 'LeagueGothic-Regular';
-      color: $colyel;
-      left: 50%;
-      bottom: 20px;
-    }
-  }
-
 }
+
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color:rgba(228,48,38,1.0);
+    background-color: $colblue;
+  }
+}
+
+footer {
+  position: relative;
+  padding-bottom: 341px;
+  margin-top: 160px;
+  background-color: $colblue;
+
+  h1 {
+    transform: rotate($rot);
+    font-size: 6em;
+    padding-bottom: 20px;
+    color: $colyel
+  }
+
+  h2 {
+    text-align: left;
+    color: white;
+  }
+
+  p {
+    text-align: left;
+    color: white;
+    font-size: 120%;
+  }
+
+  &:before {
+    @extend .diag;
+  }
+
+  input, button {
+    border: 3px solid white;
+    border-radius: 0px;
+    background-color: #7eb4e2;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 47.5%;
+    padding: 10px;
+  }
+
+  .buttonrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputleft {
+    margin-right: 4%;
+  }
+
+  textarea {
+    @extend input;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  h3 {
+    position: absolute;
+    font-weight: bold;
+    font-family: 'LeagueGothic-Regular';
+    color: $colyel;
+    left: 50%;
+    bottom: 20px;
   }
 }
 
