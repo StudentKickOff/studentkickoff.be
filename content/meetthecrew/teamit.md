@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: IT
-foto: /assets/images/teamit.jpg
+foto: /assets/images/org/teamit.jpg
 teamleden:
   -
     naam: Jeroen De Clerck
@@ -17,6 +17,13 @@ teamleden:
     school: Universiteit Gent
     email: lorin.werthen
     foto: lorinwerthen.jpg
+  -
+    naam: Benjamin Coussaert
+    functie: Crew Lead Access Managent
+    opleiding: Informatica
+    school: Universiteit Gent
+    email: benjamin.coussaert
+    foto: benjamincoussaert.jpg
   -
     naam: Mats Myncke
     functie: Coordinator Hardware

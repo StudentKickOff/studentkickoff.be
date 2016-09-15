@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: PR
-foto: /assets/images/teampr.jpg
+foto: /assets/images/org/teampr.jpg
 teamleden:
   -
     naam: Julie Poppe

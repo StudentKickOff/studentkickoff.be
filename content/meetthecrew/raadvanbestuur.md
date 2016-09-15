@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: Raad Van Bestuur
-foto: http://placehold.it/750x500
+foto: http://placehold.it/1920x1080
 teamleden:
   -
     naam: Peter Peeters
