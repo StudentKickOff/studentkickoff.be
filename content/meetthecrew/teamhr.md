@@ -7,7 +7,7 @@ teamleden:
   -
     naam: Lennert Noppe
     functie: Team Lead
-    opleiding: Politieke en Sociale wetenschappen
+    opleiding: Politieke Wetenschappen
     school: Universiteit Gent
     email: lennert.noppe
     foto: lennertnoppe.jpg
