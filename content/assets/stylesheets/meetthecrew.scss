@@ -50,18 +50,13 @@ blockquote {
 
   p {
     font-family: 'LeagueGothic-Regular';
-    position: absolute;
-    top: 20%;
     text-align: center;
     width: 100%;
-    left: 0;
-    font-size: 3em;
-    text-shadow: 2px 2px 0 $colred, -2px -2px 0 $colred, 2px -2px 0 $colred,
-            -2px 2px 0 $colred
+    font-size: 2em;
   }
 
   a {
-    color: white;
+    color: $colyel;
   }
 }
 

@@ -6,16 +6,15 @@ title: Historiek
     <div class="headline"></div>
 </header>
 
-<div class="section1">
-  <div class="container">
-    <h1>Historiek van de Student Kick-Off</h1>
-  </div>
-</div>
 <% jaren.each_with_index do |hist,ind| %>
 <div class="section<%= (ind % 3) +1 %>">
   <div class="container">
     <div class="row">
-        <h1><%= hist[:jaar] %></h1>
+      <% if ind == 0 %>
+        <h1>Historiek van de Student Kick-Off</h1>
+      <% end %>
+
+      <h1><%= hist[:jaar] %></h1>
       <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
       <div class="col-md-9">
         <%= hist.compiled_content %>

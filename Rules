@@ -9,7 +9,6 @@ preprocess do
   artists.each do |artist|
     artist[:start] = DateTime.parse(artist[:start])
     artist[:title] = artist[:name]
-    puts artist[:title]
   end
 end
 
