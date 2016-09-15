@@ -137,6 +137,16 @@ footer {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  footer {
+    padding-bottom: 170px;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
 body {
   font-family: 'Univers';
 }
