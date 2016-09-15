@@ -19,15 +19,7 @@ figure {
   background-color: $colred *0.90;
   padding: 20px;
   margin-bottom: 30px;
-
-  a {
-    color: white;
-
-    &:hover {
-      color: $colblue
-    }
-  }
-
+  display: inline-block;
 }
 
 
@@ -59,14 +51,30 @@ blockquote {
   p {
     font-family: 'LeagueGothic-Regular';
     position: absolute;
-    top: 40%;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 0 $colred, -2px -2px 0 $colred, 2px -2px 0 $colred,
+            -2px 2px 0 $colred
+  }
+
+  a {
+    color: white;
   }
 }
 
 .teamheader {
   .headline {
     padding: 25% 0;
-    mix-blend-mode: hard-light;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .teamheader {
+    .headline {
+      padding: 50% 0;
+    }
+  }
+}

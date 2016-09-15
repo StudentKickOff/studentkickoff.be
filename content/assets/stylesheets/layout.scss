@@ -30,7 +30,6 @@ html {
   }
 }
 
-
 .navbar {
   a {
     color: $colyel !important;
@@ -63,7 +62,6 @@ html {
   .navbar {
     background-color: $colblue;
   }
-
 }
 
 footer {
@@ -135,6 +133,15 @@ footer {
     left: 50%;
     bottom: 20px;
   }
+
+  .totop {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    left: 85%;
+    bottom: 150px;
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -144,8 +151,13 @@ footer {
     input {
       width: 100%;
     }
+
+    h1 {
+      font-size: 4em;
+    }
   }
 }
+
 
 body {
   font-family: 'Univers';

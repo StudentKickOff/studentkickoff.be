@@ -1,4 +1,5 @@
 ---
+title: Team HR
 crew: team
 teamnaam: HR
 foto: /assets/images/org/teamhr.jpg

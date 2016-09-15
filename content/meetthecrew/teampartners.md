@@ -1,4 +1,5 @@
 ---
+title: Team Partners
 crew: team
 teamnaam: Partners
 foto: /assets/images/org/teampartners.jpg

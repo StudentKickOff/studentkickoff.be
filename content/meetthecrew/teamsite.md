@@ -1,4 +1,5 @@
 ---
+title: Team Site & Safety
 crew: team
 teamnaam: Site & Safety
 foto: /assets/images/org/teamsite.jpg

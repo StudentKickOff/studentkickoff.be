@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Team IT 2016">
 
-  <title>Student Kick-Off</title>
-  <title><%= item[:title] || "Student Kick-Off" %></title>
+  <title><%= "#{item[:title]} - Student Kick-Off" %></title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -17,13 +16,13 @@
   <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.css">
   <link rel="stylesheet" href="/assets/stylesheets/one-page-wonder.css">
   <link rel="stylesheet" href="/assets/stylesheets/bootstrap-image-gallery.css">
-
   <link rel="stylesheet" href="/assets/stylesheets/layout.css">
-
+  <link rel="icon" href="/assets/images/logo_sko.png">
   <script src="/assets/javascripts/bootstrap-image-gallery.js"></script>
 </head>
 
 <body>
+  <a name="top"></a>
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -47,7 +46,7 @@
             <a href="/meetthecrew">Meet The Crew</a>
           </li>
           <li>
-            <a href="/faq">FAQ</a>
+            <a href="/info">Info</a>
           </li>
           <li>
             <a href="/partners">Partners</a>
@@ -67,12 +66,12 @@
   <footer>
     <div class="container">
       <h1>Contact Us</h1>
-      <div class="col-md-6">
-      <h2>ADRES</h2>
-      <p>Maatschappelijke zetel<br>
-      Blekerijstraat 75, bus 3<br>
-      9000 Gent</p>
-      <p>BTW BE 0886.847.343</p>
+      <div class="col-md-6 adres">
+        <h2>ADRES</h2>
+        <p>Maatschappelijke zetel<br>
+        Blekerijstraat 75, bus 3<br>
+        9000 Gent</p>
+        <p>BTW BE 0886.847.343</p>
       </div>
       <div class="col-md-6">
         <form action="https://formspree.io/jeroen.declerck@studentkickoff.be" method="POST">
@@ -93,6 +92,9 @@
       </div>
     </div>
     <img src="/assets/images/design/peetjes.png">
+    <a href="#top">
+      <img class="totop" src="/assets/images/design/back_to_top.png">
+    </a>
     <h3>COPYRIGHT 2016, STUDENT KICK-OFF. ALL RIGHTS RESERVED.</h3>
   </footer>
 </body>

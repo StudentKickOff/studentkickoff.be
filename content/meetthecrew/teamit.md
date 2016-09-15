@@ -1,4 +1,5 @@
 ---
+title: Team IT
 crew: team
 teamnaam: IT
 foto: /assets/images/org/teamit.jpg
