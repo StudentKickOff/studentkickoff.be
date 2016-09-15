@@ -1,4 +1,5 @@
 ---
+title: Team PR
 crew: team
 teamnaam: PR
 foto: /assets/images/org/teampr.jpg

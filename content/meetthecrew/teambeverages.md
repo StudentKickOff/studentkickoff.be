@@ -1,4 +1,5 @@
 ---
+Title: Team Beverages
 crew: team
 teamnaam: Beverages
 foto: http://placehold.it/1920x1080

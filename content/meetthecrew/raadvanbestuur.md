@@ -1,4 +1,5 @@
 ---
+title: Raad Van Bestuur
 crew: team
 teamnaam: Raad Van Bestuur
 foto: http://placehold.it/1920x1080
