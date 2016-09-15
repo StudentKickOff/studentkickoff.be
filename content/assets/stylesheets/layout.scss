@@ -198,14 +198,19 @@ a, a:hover {
 }
 
 
-
-.presentingpartner {
-  width: 200px;
+@mixin partner($width, $margin) {
+  width: $width - ($margin * 2);
+  margin: $margin;
 }
 
 .partner {
-  width: 200px;
+  @include partner(200px, 20px);
 }
+
+.presentingpartner {
+  @include partner(400px, 40px);
+}
+
 
 .vertical-center {
   display: inline-block;
