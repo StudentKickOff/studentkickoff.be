@@ -21,17 +21,31 @@
 }
 
 
-@media only screen and (min-width: 768px) {
-    .headline {
-        padding: 20% 0;
-    }
+@media only screen and (min-width: 1100px) {
+  .headline {
+    padding: 25% 0;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-    .headline {
-        padding: 30% 0;
-    }
+@media only screen and (max-width: 1100px) {
+  .headline {
+    padding: 35% 0;
+  }
 }
+
+@media only screen and (max-width: 750px) {
+  .headline {
+    padding: 45% 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headline {
+      padding: 55% 0;
+   }
+}
+
+
 
 .headline h1 {
     font-size: 130px;
