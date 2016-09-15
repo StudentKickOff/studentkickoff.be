@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: Partners
-foto: /assets/images/teampartners.jpg
+foto: /assets/images/org/teampartners.jpg
 teamleden:
   -
     naam: Valerie Appelmans

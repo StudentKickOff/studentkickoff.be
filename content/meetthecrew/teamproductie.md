@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: Productie
-foto: /assets/images/teamproductie.jpg
+foto: /assets/images/org/teamproductie.jpg
 teamleden:
   -
     naam: Wouter Schelfhout

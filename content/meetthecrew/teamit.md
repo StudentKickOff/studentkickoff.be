@@ -1,7 +1,7 @@
 ---
 crew: team
 teamnaam: IT
-foto: /assets/images/teamit.jpg
+foto: /assets/images/org/teamit.jpg
 teamleden:
   -
     naam: Jeroen De Clerck
