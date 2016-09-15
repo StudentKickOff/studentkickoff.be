@@ -56,9 +56,14 @@ html {
 
 
 @media only screen and (max-width: 768px) {
+  .header-image {
+    margin-top: 0;
+  }
+
   .navbar {
     background-color: $colblue;
   }
+
 }
 
 footer {
