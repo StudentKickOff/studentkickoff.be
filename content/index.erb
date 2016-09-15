@@ -71,8 +71,9 @@ title: Home
                             <%= pretty_time(artist[:start]) %>
                         </td>
                         <td>
-                            <a href="<%= relative_path_to(artist) %>">
+                            <a class="lineupartist" href="<%= relative_path_to(artist) %>">
                                 <%= artist[:name] %>
+                                <img src="/assets/images/design/arrowsprite.png" height= "25" width= "25"/>
                             </a>
                         </td>
                     </tr>
@@ -132,7 +133,7 @@ title: Home
 
 <div class="section2">
     <div class="container">
-                <h1>Bekijk de fotos van voorbije edities</h1>
+                <h1>Fotos van voorbije edities</h1>
         <div class="row">
         <!-- 16:9 aspect ratio -->
             <div class="col-md-10 col-md-offset-1">
