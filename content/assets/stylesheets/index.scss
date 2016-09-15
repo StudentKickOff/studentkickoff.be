@@ -6,28 +6,35 @@
 $photosliderheight: 250px;
 $photoslidertextsize: 50px;
 
-@media only screen and (min-width: 768px) {
-  .videorapper {
-    display: flex;
-    justify-content: center;
+
+.videorapper {
+  display: flex;
+  justify-content: center;
+}
+
+.videosection {
+  position: relative;
+
+  iframe {
+    position: absolute;
   }
 
-  .videosection {
-    position: relative;
-    height: 50vw;
-    width: 50vw;
+  img {
+    position: absolute;
+    height: auto;
+    width: inherit;
+    pointer-events: none;
+  }
+}
 
-    img {
-      position: absolute;
-      height: auto;
-      width: inherit;
-      pointer-events: none;
-    }
+@media only screen and (min-width: 768px) {
+  .videosection {
+  height: 50vw;
+  width: 50vw;
 
     iframe {
-      position: absolute;
       top: 31%;
-      left: 9%;
+      left: 7%;
       width: 71.5%;
       height: 43%;
     }
@@ -35,10 +42,19 @@ $photoslidertextsize: 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  .videorapper {
-    display: none;
+  .videosection {
+  height: 70vw;
+  width: 90vw;
+  }
+
+  iframe {
+    top: 40%;
+    left: 7%;
+    width: 72%;
+    height: 55%;
   }
 }
+
 
 .headerlogo {
   max-height: 250px;
