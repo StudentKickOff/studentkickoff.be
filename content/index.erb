@@ -1,5 +1,5 @@
 <!-- Full Width Image Header -->
-<header class="header-image">
+<header class="header-image" style="background-image:url(/assets/images/design/header0.jpg);">
     <div class="headline">
         <div class="container">
             <div class="counter">
@@ -61,80 +61,18 @@
         <div class="col-md-10 text">
             <h2>MAIN STAGE</h2>
             <table class="table running-order">
-                <tbody>
+                <% artists.each do |artist| %>
                     <tr>
                         <td>
-                            13:00
+                            <%= artist[:start] %>
                         </td>
                         <td>
-                            Urbanus en de Fanfaar
+                            <a href="<%= relative_path_to(artist) %>">
+                                <%= artist[:name] %>
+                            </a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            14:20
-                        </td>
-                        <td>
-                            Suspenders' Gravity
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            15:20
-                        </td>
-                        <td>
-                            Momma Said So
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            16:20
-                        </td>
-                        <td>
-                            Gestapo Knallmuzik
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            17:45
-                        </td>
-                        <td>
-                            Wallace Vanborn
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            19u20
-                        </td>
-                        <td>
-                            Cleymans &amp; Van Geel
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            21u35
-                        </td>
-                        <td>
-                            Scala &amp; The Kolacny Brothers
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            23u00
-                        </td>
-                        <td>
-                            Soul Shakers ft. MC Mota
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            00u25
-                        </td>
-                        <td>
-                            Skyve Soundsystem
-                        </td>
-                    </tr>
-                </tbody>
+                <% end %>
             </table>
             <h2>RED BULL PRESENTS DECADANCE</h2>
             <table class="table running-order">
