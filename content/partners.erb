@@ -3,90 +3,91 @@ title: Partners
 presentingpartners:
   -
     img: destandaard.png
-    url: standaard.be
+    url: http://www.standaard.be/
   -
     img: kbc.png
-    url: kbc.be
+    url: https://www.kbc.be/
   -
     img: accent.png
-    url: google.be
+    url: https://www.accentjobs.be/
 
 partners:
   -
     img: wep.png
-    url: google.com
+    url: https://www.wep.be
   -
     img: desperados.png
-    url: google.be
+    url: https://www.desperados.com
   -
     img: marmalade.png
-    url: google.be
+    url: http://marmaladecontent.com/
   -
     img: gigant.png
-    url: google.be
+    url: http://www.gigantinternational.com/
   -
     img: thescreamshop.png
-    url: google.be
+    url: http://www.screamshop.be/
   -
     img: stadgent.png
-    url: google.be
+    url: https://stad.gent/
   -
     img: mentos.png
-    url: google.be
+    url: http://www.mentos.be
   -
     img: medialed.png
-    url: google.be
+    url: http://www.medialed.be/
   -
     img: kuleuven.png
-    url: google.be
+    url: https://www.kuleuven.be/kuleuven/
   -
     img: artevelde.png
-    url: google.be
+    url: https://www.arteveldehogeschool.be/
   -
     img: studiobrussel.png
-    url: google.be
+    url: http://www.stubru.be/
   -
     img: stadium.png
-    url: google.be
+    url: http://www.stadium.be
   -
     img: skikot.png
-    url: google.be
+    url: http://winter.skikot.be/
   -
     img: redbull.png
-    url: google.be
+    url: http://www.redbull.com
   -
     img: studentingent.png
-    url: google.be
+    url: https://stad.gent/trefwoord/student-gent
   -
     img: peterman.png
-    url: google.be
+    url: http://peterman.be/
   -
     img: odisee.png
-    url: google.be
+    url: http://www.odisee.be/
   -
     img: bevers.png
-    url: google.be
+    url: http://www.fransbevers.be/
   -
     img: gsr.png
-    url: google.be
+    url: http://gsr.ugent.be/
   -
     img: ef.png
-    url: google.be
+    url: http://www.ef.be/
   -
     img: cocacola.png
-    url: google.be
+    url: http://www.cocacola.be/
   -
     img: deezer.png
-    url: google.be
+    url: http://www.deezer.com/
   -
     img: bondmoyson.png
-    url: google.be
+    url: http://www.bondmoyson.be/
   -
     img: captainmorgan.png
+    url: https://www.captainmorgan.com/
     url: google.be
   -
     img: vdab.png
-    url: vdab.be
+    url: https://www.vdab.be
 ---
 
 <header class="header-image" style="background-image:url(/assets/images/design/header4.png);">
@@ -101,8 +102,8 @@ partners:
     <h1>Presenting Partners</h1>
     <div class="grid-presenting">
       <% item[:presentingpartners].each do |partner| %>
-      <div class="grid-item-presenting partner">
-        <a href="http://www.<%= partner[:url] %>">
+      <div class="grid-item-presenting presentingpartner">
+        <a href="<%= partner[:url] %>">
           <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
         </a>
       </div>
@@ -117,7 +118,7 @@ partners:
     <div class="grid">
       <% item[:partners].each do |partner| %>
         <div class="grid-item partner">
-          <a href="http://www.<%= partner[:url] %>">
+          <a href="<%= partner[:url] %>">
             <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
           </a>
         </div>
