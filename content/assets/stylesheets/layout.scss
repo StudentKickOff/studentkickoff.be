@@ -134,11 +134,13 @@ footer {
     bottom: 20px;
   }
 
-  a {
+  .totop {
     position: absolute;
-    font-weight: bold;
-    left: 80%;
-    bottom: 20px;
+    height: 200px;
+    width: auto;
+    left: 85%;
+    bottom: 150px;
+    opacity: 1;
   }
 }
 
