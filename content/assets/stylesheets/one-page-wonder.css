@@ -5,20 +5,47 @@
  */
 
 .header-image {
+    position: relative;
+    margin-top: -256px;
     display: block;
     width: 100%;
     text-align: center;
-    background: url('/assets/images/header.jpg') no-repeat center center scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    z-index: -5;
 }
 
-.headline {
-    padding: 120px 0;
-    mix-blend-mode: hard-light;
+
+@media only screen and (min-width: 1100px) {
+  .headline {
+    padding: 25% 0;
+  }
 }
+
+@media only screen and (max-width: 1100px) {
+  .headline {
+    padding: 35% 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .headline {
+    padding: 45% 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headline {
+      padding: 55% 0;
+   }
+}
+
+
 
 .headline h1 {
     font-size: 130px;
@@ -144,7 +171,7 @@
 
 @media(max-width:640px) {
     .headline {
-        padding: 75px 0 25px 0;
+        /* padding: 75px 0 25px 0; */
     }
 
     .headline h1 {

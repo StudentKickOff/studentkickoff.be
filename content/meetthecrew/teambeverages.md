@@ -1,7 +1,8 @@
 ---
+Title: Team Beverages
 crew: team
-teamnaam: Team Beverages
-foto: http://placehold.it/750x500
+teamnaam: Beverages
+foto: /assets/images/org/teambeverages.jpg
 teamleden:
   -
     naam: Cedric Philippe

@@ -8,18 +8,29 @@
   <meta name="description" content="">
   <meta name="author" content="Team IT 2016">
 
-  <title>Student Kick-Off</title>
-  <title><%= item[:title] || "Student Kick-Off" %></title>
+  <title><%= "#{item[:title]} - Student Kick-Off" %></title>
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="/assets/stylesheets/site.css">
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.css">
+  <link rel="stylesheet" href="/assets/stylesheets/one-page-wonder.css">
+  <link rel="stylesheet" href="/assets/stylesheets/bootstrap-image-gallery.css">
+  <link rel="stylesheet" href="/assets/stylesheets/layout.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link rel="icon" href="/assets/images/logo_sko.png">
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="/assets/javascripts/bootstrap-image-gallery.js"></script>
+
 </head>
 
 <body>
+  <a name="top"></a>
   <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -43,18 +54,16 @@
             <a href="/meetthecrew">Meet The Crew</a>
           </li>
           <li>
-            <a href="/faq">FAQ</a>
+            <a href="/info">Info</a>
           </li>
           <li>
             <a href="/partners">Partners</a>
           </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="http://blog.studentkickoff.be">Nieuws</a>
           </li>
           <li>
-            <a href="http://datacaptatie.studentkickoff.be">Wedstrijd</a>
+            <a href="http://wedstrijd.studentkickoff.be">Wedstrijd</a>
           </li>
         </ul>
       </div>
@@ -62,25 +71,52 @@
   </nav>
 
   <%= yield %>
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <div class="pull-left">
-        <p class="text-muted">Copyright Team Tof 2016</p>
+      <h1>Contact Us</h1>
+      <div class="col-md-6 adres">
+        <h2>ADRES</h2>
+        <p>Maatschappelijke zetel<br>
+        Blekerijstraat 75, bus 3<br>
+        9000 Gent</p>
+        <p>BTW BE 0886.847.343</p>
       </div>
-      <div class="pull-right">
-          <ul class="list-inline">
-             <li><a href="https://www.facebook.com/StudentKickOff">Facebook</a></li>
-             <li><a href="https://twitter.com/studentkickoff">Twitter</a></li>
-             <li><a href="https://www.instagram.com/studentkickoff/">Instagram</a></li>
-          </ul>
+      <div class="col-md-6">
+        <form action="https://formspree.io/jeroen.declerck@studentkickoff.be" method="POST">
+          <div class="form-inline">
+            <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
+            <input type="text" placeholder="Naam" name="Naam">
+          </div>
+          <div class="form-inline">
+            <input class="inputleft" type="text" placeholder="GSM" name="GSM">
+            <input type="text" placeholder="Onderwerp" name="Onderwerp">
+          </div>
+            <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
+          <div class="buttonrapper">
+            <button type="submit">Verzenden</button>
+          </div>
+        </form>
+
       </div>
+    </div>
+    <img class="peetjes" src="/assets/images/design/peetjes.png">
+    <a href="#top">
+      <img class="totop" src="/assets/images/design/back_to_top.png">
+    </a>
+    <div class="bottom-text">
+      2016 &copy;, STUDENT KICK-OFF. ALL RIGHTS RESERVED.
+      <span class="social-buttons">
+        <a href="https://www.facebook.com/StudentKickOff">
+          <%= fa 'facebook-square', fw: true %>
+        </a>
+        <a href="https://www.instagram.com/studentkickoff/">
+          <%= fa 'instagram', fw: true %>
+        </a>
+        <a href="https://twitter.com/studentkickoff">
+          <%= fa 'twitter-square', fw: true %>
+        </a>
+      </span>
     </div>
   </footer>
 </body>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 </html>

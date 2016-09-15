@@ -1,0 +1,86 @@
+/* ==variables== */
+$rot: -4deg;
+$colblue: #1B95D4;
+$header-color: rgba(27, 149, 212, 0.6);
+$colyel: #FAB73E;
+$colred: #e94b43;
+
+.diag{
+  position: absolute;
+  transform: rotate($rot);
+  transform-origin: 3% 0;
+  left: -25%;
+  width: 150%;
+  height: 200px;
+  background: inherit;
+  content:'';
+}
+
+.section{
+  position: relative;
+  margin-bottom: 200px;
+  margin-top: -10px;
+  color: white;
+
+  h1 {
+    transform: rotate($rot);
+    font-size: 6em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+
+  &:before, &:after {
+    @extend .diag;
+    z-index: -1;
+  }
+}
+
+.section1 {
+  @extend .section;
+  background-color: $colyel;
+
+  h1, h2, h3 {
+    color: $colred;
+  }
+}
+
+.section2 {
+  @extend .section;
+  background-color: $colred;
+
+  h1, h2, h3 {
+    color: $colyel;
+  }
+}
+
+.section3 {
+  @extend .section;
+  background-color: $colblue;
+
+  h1, h2, h3 {
+    color: $colyel;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .section {
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 3em;
+
+    }
+  }
+}

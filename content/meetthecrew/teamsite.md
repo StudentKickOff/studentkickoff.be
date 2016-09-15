@@ -1,7 +1,8 @@
 ---
+title: Team Site & Safety
 crew: team
-teamnaam: Team Site & Safety
-foto: /assets/images/teamsite.jpg
+teamnaam: Site & Safety
+foto: /assets/images/org/teamsite.jpg
 teamleden:
   -
     naam: Bram De Nil

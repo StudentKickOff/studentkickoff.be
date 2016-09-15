@@ -1,128 +1,133 @@
 ---
+title: Partners
 presentingpartners:
   -
-    img: destandaard.jpg
-    url: standaard.be
+    img: destandaard.png
+    url: http://www.standaard.be/
   -
-    img: kbc.jpg
-    url: kbc.be
+    img: kbc.png
+    url: https://www.kbc.be/
+  -
+    img: accent.png
+    url: https://www.accentjobs.be/
 
 partners:
   -
-    img: wep.jpg
-    url: google.com
+    img: wep.png
+    url: https://www.wep.be
   -
-    img: desperados.jpg
+    img: desperados.png
+    url: https://www.desperados.com
+  -
+    img: marmalade.png
+    url: http://marmaladecontent.com/
+  -
+    img: gigant.png
+    url: http://www.gigantinternational.com/
+  -
+    img: thescreamshop.png
+    url: http://www.screamshop.be/
+  -
+    img: stadgent.png
+    url: https://stad.gent/
+  -
+    img: mentos.png
+    url: http://www.mentos.be
+  -
+    img: medialed.png
+    url: http://www.medialed.be/
+  -
+    img: kul.png
+    url: https://www.kuleuven.be/kuleuven/
+  -
+    img: artevelde.png
+    url: https://www.arteveldehogeschool.be/
+  -
+    img: studiobrussel.png
+    url: http://www.stubru.be/
+  -
+    img: stadium.png
+    url: http://www.stadium.be
+  -
+    img: skikot.png
+    url: http://winter.skikot.be/
+  -
+    img: redbull.png
+    url: http://www.redbull.com
+  -
+    img: studentingent.png
+    url: https://stad.gent/trefwoord/student-gent
+  -
+    img: peterman.png
+    url: http://peterman.be/
+  -
+    img: odisee.png
+    url: http://www.odisee.be/
+  -
+    img: bevers.png
+    url: http://www.fransbevers.be/
+  -
+    img: gsr.png
+    url: http://gsr.ugent.be/
+  -
+    img: ef.png
+    url: http://www.ef.be/
+  -
+    img: cocacola.png
+    url: http://www.cocacola.be/
+  -
+    img: deezer.png
+    url: http://www.deezer.com/
+  -
+    img: bondmoyson.png
+    url: http://www.bondmoyson.be/
+  -
+    img: captainmorgan.png
+    url: https://www.captainmorgan.com/
     url: google.be
   -
-    img: marmalade.jpg
-    url: google.be
-  -
-    img: gigant.jpg
-    url: google.be
-  -
-    img: thescreamshop.jpg
-    url: google.be
-  -
-    img: stadgent.jpg
-    url: google.be
-  -
-    img: mentos.jpg
-    url: google.be
-  -
-    img: medialed.jpg
-    url: google.be
-  -
-    img: kuleuven.jpg
-    url: google.be
-  -
-    img: artevelde.jpg
-    url: google.be
-  -
-    img: accent.jpg
-    url: google.be
-  -
-    img: studiobrussel.jpg
-    url: google.be
-  -
-    img: stadium.jpg
-    url: google.be
-  -
-    img: skikot.jpg
-    url: google.be
-  -
-    img: redbull.jpg
-    url: google.be
-  -
-    img: studentingent.jpg
-    url: google.be
-  -
-    img: peterman.jpg
-    url: google.be
-  -
-    img: odisee.jpg
-    url: google.be
-  -
-    img: bevers.jpg
-    url: google.be
-  -
-    img: gsr.jpg
-    url: google.be
-  -
-    img: ef.jpg
-    url: google.be
-  -
-    img: cocacola.jpg
-    url: google.be
-  -
-    img: deezer.jpg
-    url: google.be
-  -
-    img: bondmoyson.jpg
-    url: google.be
-  -
-    img: captainmorgan.jpg
-    url: google.be
+    img: vdab.png
+    url: https://www.vdab.be
 ---
 
+<header class="header-image" style="background-image:url(/assets/images/design/header4.png);">
+  <div class="headline"></div>
+</header>
+
+
 <!-- Page Content -->
-<div class="container">
+<div class="section1">
+  <div class="container">
 
-    <!-- Page Heading -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Presenting Partners</h1>
-        </div>
+    <h1>Presenting Partners</h1>
+    <div class="grid-presenting">
+      <% item[:presentingpartners].each do |partner| %>
+      <div class="grid-item-presenting presentingpartner">
+        <a href="<%= partner[:url] %>">
+          <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
+        </a>
+      </div>
+      <% end %>
     </div>
-    <!-- /.row -->
-
-    <!-- Projects Row -->
-    <div class="row">
-        <% item[:presentingpartners].each do |partner| %>
-            <div class="col-md-3 col-sm-6 portfolio-item presentingpartner">
-                <a href="http://www.<%= partner[:url] %>">
-                    <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
-                </a>
-            </div>
-        <% end %>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Partners</h1>
-        </div>
-    </div>
-
-    <!-- Projects Row -->
-
-    <div class="row">
-        <% item[:partners].each do |partner| %>
-            <div class="col-md-2 col-sm-4 col-xs-6 portfolio-item partner">
-                <a href="http://www.<%= partner[:url] %>">
-                    <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
-                </a>
-            </div>
-        <% end %>
-    </div>
+  </div>
 </div>
+<div class="section2">
+  <div class="container">
+
+    <h1>Partners</h1>
+    <div class="grid">
+      <% item[:partners].each do |partner| %>
+        <div class="grid-item partner">
+          <a href="<%= partner[:url] %>">
+            <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+<script src="/assets/javascripts/masonry.js"></script>

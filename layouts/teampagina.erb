@@ -1,48 +1,53 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header"><%= item[:teamnaam] %></h1>
+<header class="header-image teamheader" style="background-image:url(<%= item[:foto] %>);">
+    <div class="headline"></div>
+</header>
+<div class="section1">
+  <div class="container">
+    <div class="row">
+      <h1><%= item[:teamnaam] %></h1>
     </div>
+
+    <div class="row">
+  <!--     <div class="col-md-6">
+    <img class="img-responsive center-block" src="<%= item[:foto] %>" alt="">
   </div>
+  <div class="col-md-6">
 
-  <div class="row">
-<!--     <div class="col-md-6">
-  <img class="img-responsive center-block" src="<%= item[:foto] %>" alt="">
-</div>
-<div class="col-md-6">
-
-</div> -->
-    <div class="col-sm-12 col-md-12">
-        <div class="thumbnail">
-            <img src="<%= item[:foto] %>" alt="...">
-
-            <div class="caption">
-                <blockquote >
-                  <%= yield %>
-                  <footer><%= item[:teamleden].first[:naam] %>, Team Lead (<%= item[:teamnaam] %>)</footer>
-                </blockquote>
+  </div> -->
+      <div class="col-sm-12 col-md-12">
+<!--           <img src="<%= item[:foto] %>" alt="...">
+ -->
+          <blockquote >
+            <%= yield %>
+            <div class="quoteteamlead">
+              <%= item[:teamleden].first[:naam] %>, Team Lead (<%= item[:teamnaam] %>)
             </div>
+          </blockquote>
         </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <h3 class="page-header">Teamleden</h3>
-    </div>
+</div>
+<div class="section2">
+  <div class="container">
+    <div class="row">
+      <h1>Teamleden</h1>
 
-    <% item[:teamleden].each do |lid| %>
-    <div class="col-md-3 col-sm-6 col-xs-12" class="thumbnail">
-      <div class="caption">
-        <h3><%= lid[:naam] %></h3>
-        <p>
-          <%= lid[:functie] %><br>
-          <%= lid[:opleiding] %><br>
-          <%= lid[:school] %><br>
-          <a href="mailto:<%= lid[:email]%>@studentkickoff.be"><%= lid[:email] %>@studentkickoff.be</a>
-        </p>
+      <% item[:teamleden].each do |lid| %>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <div class="teamlidcard">
+          <div class="caption">
+            <h3><%= lid[:naam] %></h3>
+            <p>
+              <%= lid[:functie] %><br>
+              <%= lid[:opleiding] %><br>
+              <%= lid[:school] %><br>
+            </p>
+          </div>
+          <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
+        </div>
       </div>
-      <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>

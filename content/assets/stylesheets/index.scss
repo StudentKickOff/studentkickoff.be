@@ -1,0 +1,150 @@
+
+@import 'abstracts';
+
+
+/* ==variables== */
+$photosliderheight: 250px;
+$photoslidertextsize: 50px;
+
+
+.videorapper {
+  display: flex;
+  justify-content: center;
+}
+
+.videosection {
+  position: relative;
+
+  iframe {
+    position: absolute;
+  }
+
+  img {
+    position: absolute;
+    height: auto;
+    width: inherit;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .videosection {
+  height: 50vw;
+  width: 50vw;
+
+    iframe {
+      top: 31%;
+      left: 7%;
+      width: 71.5%;
+      height: 43%;
+    }
+  }
+}
+
+
+.headerlogo {
+  max-height: 250px;
+}
+
+.headline {
+  .container {
+    display: flex;
+    justify-content: center;
+
+    height: 160px;
+
+    img {
+      width: 95px;
+    }
+
+    > * {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .counter {
+      font-family: 'LeagueGothic-Regular';
+
+      width: 100px;
+      text-align: left;
+      color: white;
+
+      text-transform: uppercase;
+      font-size: 1.5em;
+
+      .number {
+        position: relative;
+        color: $colred;
+
+        line-height: 135px;
+        font-size: 90pt;
+        text-align: center;
+
+        height: 100%;
+
+        background-image: url("/assets/images/TELLER2.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+#links {
+  img {
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .videosection {
+  height: 70vw;
+  width: 90vw;
+  }
+
+  iframe {
+    top: 40%;
+    left: 7%;
+    width: 72%;
+    height: 55%;
+  }
+
+  .headline .container {
+    > * {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .counter {
+      font-size: 1em;
+
+      background-size: 100%;
+
+      .number {
+        line-height: 110%;
+        font-size: 7em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .counter {
+    display: none;
+  }
+}
+
+.lineupartist {
+  img {
+    float: right;
+  }
+  a {
+    float: left;
+  }
+}

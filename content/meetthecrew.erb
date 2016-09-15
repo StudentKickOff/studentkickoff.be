@@ -1,50 +1,58 @@
-<div class="container">
+---
+title: Meet The Crew
+---
 
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Meet The Crew</h1>
+<header class="header-image" style="background-image: url(/assets/images/design/header1.png);">
+    <div class="headline"></div>
+</header>
+<div class="section1">
+  <div class="container">
+    <h1>Meet The Crew</h1>
+
+    <div class="row">
+      <div class="col-md-8">
+        <figure>
+          <img class="img-responsive" src="/assets/images/organisatie.jpg" alt="">
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <h3>De organisatie</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+        <p>De kern bestaat uit:</p>
+        <ul>
+          <li>1 <a href="/meetthecrew/algemeencoordinator">Algemeen Coordinator</a></li>
+          <li>1 <a href="/meetthecrew/juridische">Juridische verantwoordelijke</a></li>
+          <li>7 Team Leads</li>
+        </ul>
+
+        <p>Ieder team bestaat uit:</p>
+        <ul>
+          <li>1 Team Lead</li>
+          <li>Coordinatoren</li>
+          <li>Crew Leads</li>
+        </ul>
+      </div>
     </div>
+
   </div>
+</div>
+<div class="section2">
+  <div class="container">
+    <div class="row">
 
-  <div class="row">
-    <div class="col-md-8">
-      <img class="img-responsive" src="/assets/images/organisatie.jpg" alt="">
-    </div>
-    <div class="col-md-4">
-      <h3>De organisatie</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-      <p>De kern bestaat uit:</p>
-      <ul>
-        <li>1 <a href="/meetthecrew/algemeencoordinator">Algemeen Coordinator</a></li>
-        <li>1 <a href="/meetthecrew/juridische">Juridische verantwoordelijke</a></li>
-        <li>7 Team Leads</li>
-      </ul>
+      <h1>Meet the Teams</h1>
 
-      <p>Ieder team bestaat uit:</p>
-      <ul>
-        <li>1 Team Lead</li>
-        <li>Coordinatoren</li>
-        <li>Crew Leads</li>
-      </ul>
+      <% teams.each do |team| %>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="teamcard">
+          <a href="<%= team.path %>">
+            <p><%= team[:teamnaam] %></p>
+            <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
+          </a>
+        </div>
+      </div>
+      <% end %>
     </div>
+
   </div>
-
-  <div class="row">
-
-    <div class="col-lg-12">
-      <h3 class="page-header">Meet the Teams</h3>
-    </div>
-
-    <% teams.each do |team| %>
-    <div class="col-md-3 col-sm-6 col-xs-12">
-      <p>
-        <a href="<%= team.path %>"><%= team[:teamnaam] %></a>
-      </p>
-      <a href="<%= team.path %>">
-        <img class="img-responsive portfolio-item" src="http://placehold.it/750x500?text=<%= team[:teamnaam] %>" alt="">
-      </a>
-    </div>
-    <% end %>
-  </div>
-
 </div>

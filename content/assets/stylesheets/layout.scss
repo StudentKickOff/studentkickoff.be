@@ -1,0 +1,248 @@
+/* imports */
+@import 'abstracts';
+@import 'index';
+@import 'meetthecrew';
+@import 'faq';
+
+/* ==fontshit== */
+@charset "utf-8";
+@font-face {
+  font-family: 'LeagueGothic-Regular';
+  src: url('https://github.com/theleagueof/league-gothic/blob/master/LeagueGothic-Regular.otf?raw=true') format('opentype');
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/assets/fonts/UNIVERSL_5.TTF') format('truetype');
+}
+
+/* ==markup== */
+
+/* Make sure divs dont overflow to the right */
+/* I don't know how this works ¯\_(ツ)_/¯ */
+html {
+  position: relative;
+  overflow-x: hidden;
+
+  body {
+    overflow-x: hidden;
+    font-size: 20px;
+  }
+}
+
+.navbar {
+  a {
+    color: $colyel !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .navbar {
+    position: relative;
+
+    background-color: $header-color;
+
+    padding-top: 200px;
+    transform: rotate($rot) translateY(-200px);
+    width: 110%;
+    margin-left: -10px;
+    text-transform: uppercase;
+
+    border: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .header-image {
+    margin-top: 0;
+  }
+
+  .navbar {
+    background-color: $colblue;
+  }
+}
+
+footer {
+  position: relative;
+  padding-bottom: 341px;
+  margin-top: 160px;
+  background-color: $colblue;
+
+  h1 {
+    transform: rotate($rot);
+    font-size: 6em;
+    padding-bottom: 20px;
+    color: $colyel
+  }
+
+  h2 {
+    text-align: left;
+    color: white;
+  }
+
+  p {
+    text-align: left;
+    color: white;
+    font-size: 120%;
+  }
+
+  &:before {
+    @extend .diag;
+  }
+
+  input, button {
+    border: 3px solid white;
+    border-radius: 0px;
+    background-color: #7eb4e2;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 47.5%;
+    padding: 10px;
+  }
+
+  .buttonrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputleft {
+    margin-right: 4%;
+  }
+
+  textarea {
+    @extend input;
+    width: 100%;
+  }
+
+  .peetjes {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  .bottom-text {
+    position: absolute;
+    font-family: 'LeagueGothic-Regular';
+    color: $colyel;
+    right: 10%;
+    bottom: 20px;
+
+    .social-buttons {
+      margin-left: 20px;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: $colred;
+        }
+      }
+    }
+
+  }
+
+  .totop {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right: 30px;
+    bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding-bottom: 200px;
+
+    input {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 4em;
+    }
+
+    .totop {
+      width: 150px;
+      bottom: 100px;
+    }
+  }
+}
+
+
+body {
+  font-family: 'Univers';
+}
+
+h1, h2, h3, h4, h4, .navbar {
+  font-family: 'LeagueGothic-Regular';
+}
+
+a, a:hover {
+  color: #e43026;
+}
+
+
+
+.navbar {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+
+
+.navbar-inverse .navbar-nav {
+  li  {
+
+    a, .navbar-inverse .navbar-brand {
+      color: #f0f0f0;
+    }
+
+    a:hover, .navbar-inverse .navbar-brand:hover {
+      color: #ffd24f;
+    }
+  }
+
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.page-header, hr {
+  border-color: #0087c2;
+}
+
+.question-toggle:hover {
+  cursor: pointer;
+}
+
+
+@mixin partner($width, $margin) {
+  width: $width - ($margin * 2);
+  margin: $margin;
+}
+
+.partner {
+  @include partner(200px, 20px);
+}
+
+.presentingpartner {
+  @include partner(400px, 40px);
+}
+
+
+.vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}

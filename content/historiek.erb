@@ -1,33 +1,40 @@
-<div class="container">
-  <div class="row">
-      <div class="col-lg-12">
-          <h1 class="page-header">Historiek van de Student Kick-Off</h1>
-      </div>
-  </div>
-  <% jaren.each do |hist| %>
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-9"><h2><%= hist[:jaar] %></h2></div>
-    <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
-    <div class="col-md-9">
-      <%= hist.compiled_content %>
-      <h3>Line-Up</h3>
-      <ul class="list-inline">
-        <% hist[:lineup].each do |a| %>
-          <li><%= a %></li>
-        <% end %>
-      </ul>
-      <% if hist[:secondstage] %>
-        <h3>Second Stage Line-Up</h3>
-        <ul class="list-inline">
+---
+title: Historiek
+---
 
-          <% hist[:secondstage].each do |a| %>
+<header class="header-image" style="background-image:url(/assets/images/design/header3.png);">
+    <div class="headline"></div>
+</header>
+
+<% jaren.each_with_index do |hist,ind| %>
+<div class="section<%= (ind % 3) +1 %>">
+  <div class="container">
+    <div class="row">
+      <% if ind == 0 %>
+        <h1>Historiek van de Student Kick-Off</h1>
+      <% end %>
+
+      <h1><%= hist[:jaar] %></h1>
+      <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
+      <div class="col-md-9">
+        <%= hist.compiled_content %>
+        <h3>Line-Up</h3>
+        <ul class="list-inline">
+          <% hist[:lineup].each do |a| %>
             <li><%= a %></li>
           <% end %>
         </ul>
-      <% end %>
+        <% if hist[:secondstage] %>
+          <h3>Second Stage Line-Up</h3>
+          <ul class="list-inline">
+
+            <% hist[:secondstage].each do |a| %>
+              <li><%= a %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
     </div>
   </div>
-  <hr>
-  <% end %>
 </div>
+<% end %>
