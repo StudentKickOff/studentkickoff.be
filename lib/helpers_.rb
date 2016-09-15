@@ -7,3 +7,4 @@ include TeamHelper
 include GalleryHelper
 include PartnerHelper
 include ArtistHelper
+include FontAwesomeHelper

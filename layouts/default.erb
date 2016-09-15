@@ -17,8 +17,16 @@
   <link rel="stylesheet" href="/assets/stylesheets/one-page-wonder.css">
   <link rel="stylesheet" href="/assets/stylesheets/bootstrap-image-gallery.css">
   <link rel="stylesheet" href="/assets/stylesheets/layout.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <link rel="icon" href="/assets/images/logo_sko.png">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="/assets/javascripts/bootstrap-image-gallery.js"></script>
+
 </head>
 
 <body>
@@ -95,13 +103,20 @@
     <a href="#top">
       <img class="totop" src="/assets/images/design/back_to_top.png">
     </a>
-    <h3>COPYRIGHT 2016, STUDENT KICK-OFF. ALL RIGHTS RESERVED.</h3>
+    <div class="bottom-text">
+      2016 &copy;, STUDENT KICK-OFF. ALL RIGHTS RESERVED.
+      <span class="social-buttons">
+        <a href="https://www.facebook.com/StudentKickOff">
+          <%= fa 'facebook-square', fw: true %>
+        </a>
+        <a href="https://www.instagram.com/studentkickoff/">
+          <%= fa 'instagram', fw: true %>
+        </a>
+        <a href="https://twitter.com/studentkickoff">
+          <%= fa 'twitter-square', fw: true %>
+        </a>
+      </span>
+    </div>
   </footer>
 </body>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 </html>
