@@ -254,6 +254,7 @@ a, a:hover {
 @mixin partner($width, $margin) {
   width: $width - ($margin * 2);
   margin: $margin;
+  min-height: $width/2
 }
 
 .partner {

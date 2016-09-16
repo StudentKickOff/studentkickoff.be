@@ -1,5 +1,5 @@
 jQuery.noConflict()
-jQuery(window).imagesLoaded ->
+jQuery(window).on 'load', ->
   elem = document.querySelector('.grid-presenting')
   msnry = new Masonry(elem,
     itemSelector: '.grid-item-presenting'
