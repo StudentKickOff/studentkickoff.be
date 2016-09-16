@@ -45,22 +45,10 @@ title: Home
 
             <p>SKO pakte reeds uit met grote namen zoals Gorki, Absynthe Minded, Nicole &amp; Hugo, Eddy Wally, Regi, Intergalactic Lovers en Samson &amp; Gert!</p>
 
-            <p>Ook dit jaar, op 28 september, betreden toppers zoals Urbanus, Cleymans &amp; Van Geel, Scala en Gestapo Knallmuzik ons Student Kick-Off podium op het Sint-Pietersplein!</p>
+            <p>Ook dit jaar, <strong>op 28 september</strong>, betreden toppers zoals Urbanus, Cleymans &amp; Van Geel, Scala en Gestapo Knallmuzik ons Student Kick-Off podium op het Sint-Pietersplein!</p>
         </div>
     </div>
 </div>
-
-<div class="section2">
-    <div class="container videorapper">
-        <!-- 16:9 aspect ratio -->
-        <div class="videosection">
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FStudentKickOff%2Fvideos%2F1232437703474238%2F&show_text=0"></iframe>
-            <img src="/assets/images/design/TV.png"></i>
-         </div>
-    </div>
-</div>
-
-
 <div class="section3">
     <div class="container">
         <h1>ZEG ME WIE &amp; WANNEER?</h1>
@@ -76,7 +64,7 @@ title: Home
                         </td>
                         <td>
                             <a class="lineupartist" href="<%= relative_path_to(artist) %>">
-                                <%= artist[:name] %>
+                                <strong><%= artist[:name] %></strong>
                                 <img src="/assets/images/design/arrowsprite.png" height= "25" width= "25"/>
                             </a>
                         </td>
@@ -124,6 +112,16 @@ title: Home
     </div>
 </div>
 
+<div class="section2">
+    <div class="container videorapper">
+        <!-- 16:9 aspect ratio -->
+        <div class="videosection">
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FStudentKickOff%2Fvideos%2F1232437703474238%2F&show_text=0"></iframe>
+            <img src="/assets/images/design/TV.png"></i>
+         </div>
+    </div>
+</div>
+
 <!-- <div class="photoslider">
     <img src="http://placehold.it/350x150" height="200">
     <img src="http://placehold.it/350x150" height="200">
@@ -135,7 +133,7 @@ title: Home
     <p>FOTOS<p>
 </div> -->
 
-<div class="section2">
+<div class="section1">
     <div class="container">
                 <h1>#throwback</h1>
         <div class="row">
@@ -159,7 +157,7 @@ title: Home
                     <% galleryimage.each_with_index do |img, index| %>
                         <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>
                         <a href="<%= img.path %>" title="<%= title %>" data-gallery>
-                            <% if index < 40  %>
+                            <% if index < 36  %>
                                 <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= title %>">
                             <% end %>
                         </a>

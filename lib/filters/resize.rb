@@ -4,13 +4,13 @@ class ResizeFilter < Nanoc::Filter
   identifier :resize
   type :binary
 
-  def run(filename, size: '90x90^', **params)
+  def run(filename, size: '150x150^', **params)
     puts "processing image #{filename}"
     img = MiniMagick::Image.open(filename)
     img.resize(size)
     img.format('jpg')
     img.gravity('Center')
-    img.crop '90x90+0+0'
+    img.crop '150x150+0+0'
     # img.repage
     img.write(output_filename)
   end
