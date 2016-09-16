@@ -1,13 +1,13 @@
 @import 'abstracts';
 
-
-
 @media only screen and (min-width: 1200px) {
   figure {
     transform: rotate($rot);
     display: inline-block;
     overflow: hidden;
     height: 400px;
+
+    margin-bottom: 100px;
 
     padding-left: 20px;
     padding-right: 20px;
