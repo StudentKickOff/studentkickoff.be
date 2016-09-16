@@ -20,7 +20,9 @@
           <blockquote >
             <%= yield %>
             <div class="quoteteamlead">
+            <% if item.key?(:teamleden) %>
               <%= item[:teamleden].first[:naam] %>, Team Lead (<%= item[:teamnaam] %>)
+            <% end %>
             </div>
           </blockquote>
         </div>
@@ -28,26 +30,28 @@
     </div>
   </div>
 </div>
-<div class="section2">
-  <div class="container">
-    <div class="row">
-      <h1>Teamleden</h1>
+<% if item.key?(:teamleden) %>
+  <div class="section2">
+    <div class="container">
+      <div class="row">
+        <h1>Teamleden</h1>
 
-      <% item[:teamleden].each do |lid| %>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-        <div class="teamlidcard">
-          <div class="caption">
-            <h3><%= lid[:naam] %></h3>
-            <p>
-              <%= lid[:functie] %><br>
-              <%= lid[:opleiding] %><br>
-              <%= lid[:school] %><br>
-            </p>
+        <% item[:teamleden].each do |lid| %>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+          <div class="teamlidcard">
+            <div class="caption">
+              <h3><%= lid[:naam] %></h3>
+              <p>
+                <%= lid[:functie] %><br>
+                <%= lid[:opleiding] %><br>
+                <%= lid[:school] %><br>
+              </p>
+            </div>
+            <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
           </div>
-          <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
         </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>
-</div>
+<% end %>

@@ -144,6 +144,7 @@ footer {
   }
 
   .bottom-text {
+    font-size: 1em;
     position: absolute;
     font-family: 'LeagueGothic-Regular';
     color: $colyel;
@@ -151,6 +152,7 @@ footer {
     bottom: 20px;
 
     .social-buttons {
+      font-size: 2em;
       margin-left: 20px;
 
       a {

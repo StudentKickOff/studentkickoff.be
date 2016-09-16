@@ -2,20 +2,7 @@
 title: Raad Van Bestuur
 crew: team
 teamnaam: Raad Van Bestuur
-foto: http://placehold.it/1920x1080
-teamleden:
-  -
-    naam: Peter Peeters
-    functie: Coördinator Willekeurige Dingen
-    opleiding: Student ditten en datten aan UGent
-    email: persoon.a
-    foto: http://placehold.it/500x300
-  -
-    naam: Jan Jansens
-    functie: Coördinator Resterende Dingen
-    opleiding: Student datten en ditten aan HoGent
-    email: persoon.b
-    foto: http://placehold.it/500x300
+foto: /assets/images/org/rvb.jpg
 ---
 
-beschrijving van wat het team doet komt hier
+De raad van bestuur zorgt voor de dagdagelijkse werking van de vzw en bestaat daarvoor uit 7 doorwinterde SKO'ers die proberen om de organisatie op een vlotte manier te laten verlopen, en daarvoor de nodige ondersteuning zoeken en bieden. Zij staan in voor de rekrutering van het kernteam, de veilige werking en de financiële gezondheid van de vzw. Waar moet SKO binnen 5 jaar staan? Wat kan er verbeteren? Hoe kunnen de doelstellingen bereikt worden? Dat zijn vragen waar deze bestuurders hun hand niet voor omdraaien.
