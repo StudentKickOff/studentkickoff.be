@@ -65,6 +65,7 @@ end
 
 compile '/**/*.scss' do
   filter :sass, syntax: :scss
+  filter :autoprefixer
   write "#{item.identifier.without_ext}.css"
 end
 
