@@ -4,7 +4,12 @@
 <div class="section1">
   <div class="container">
     <div class="row">
-      <h1><%= item[:teamnaam] %></h1>
+      <h1><%= item[:teamnaam] %>
+      <% if item[:teamnaam] == 'IT' %>
+        <span class="hiddenh1">aka team best<span>
+      <% end %>
+
+      </h1>
     </div>
 
     <div class="row">
@@ -31,7 +36,7 @@
   </div>
 </div>
 <% if item.key?(:teamleden) %>
-  <div class="section2">
+  <div class="section3">
     <div class="container">
       <div class="row">
         <h1>Teamleden</h1>
@@ -55,3 +60,23 @@
     </div>
   </div>
 <% end %>
+<div class="section2">
+  <div class="container">
+    <div class="row">
+
+      <h1>Meet the Teams</h1>
+
+      <% teams.each do |team| %>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="teamcard">
+          <a href="<%= team.path %>">
+            <p><%= team[:teamnaam] %></p>
+            <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
+          </a>
+        </div>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
