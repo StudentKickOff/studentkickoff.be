@@ -1,5 +1,5 @@
 ---
-name: Urbanus en de fanfaar
+name: Urbanus & De Fanfaar
 start: 28 september 13:00
 end: 14u00
 image: urbanus.jpg

@@ -1,5 +1,5 @@
 ---
-name: Suspenders' gravity
+name: Suspenders' Gravity
 start: 28 september 14:20
 end: 15u00
 image: suspenders.jpg

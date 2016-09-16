@@ -1,5 +1,5 @@
 ---
-name: Soul shakers ft mc mota
+name: Soul Shakers ft. MC Mota
 start: 28 september 23:00
 end: 00u20
 image: soulshakers.jpg

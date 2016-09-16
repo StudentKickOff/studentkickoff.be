@@ -1,5 +1,5 @@
 ---
-name: Scala & The Kolacny Brothers
+name: Scala & Kolacny Brothers
 start: 28 september 21:35
 end: 22u55
 image: scala.jpg
