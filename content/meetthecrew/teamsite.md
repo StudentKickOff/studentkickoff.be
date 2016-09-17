@@ -42,7 +42,7 @@ teamleden:
   -
     naam: Ben Deckers
     functie: Crew Lead
-    opleiding: Bestuurskunde en Publiek Management
+    opleiding: Bestuurskunde
     school: Universiteit Gent
     email: ben.deckers
     foto: bendeckers.jpg
