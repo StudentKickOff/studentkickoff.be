@@ -8,7 +8,11 @@
   <meta name="description" content="">
   <meta name="author" content="Team IT 2016">
 
-  <title><%= "#{item[:title]} - Student Kick-Off" %></title>
+  <title>
+    <%= "#{item[:title]} -" if item[:title] %>
+    Student Kick-Off
+  </title>
+
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
