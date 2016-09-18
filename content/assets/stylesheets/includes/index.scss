@@ -101,15 +101,15 @@ $photoslidertextsize: 50px;
 
 @media only screen and (max-width: 768px) {
   .videosection {
-  height: 70vw;
-  width: 90vw;
-  }
+    height: 70vw;
+    width: 90vw;
 
-  iframe {
-    top: 40%;
-    left: 7%;
-    width: 72%;
-    height: 55%;
+    iframe {
+      top: 40%;
+      left: 7%;
+      width: 72%;
+      height: 55%;
+    }
   }
 
   .headline .container {

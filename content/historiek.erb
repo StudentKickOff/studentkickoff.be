@@ -1,19 +1,14 @@
 ---
 title: Historiek
 ---
-
-<header class="header-image" style="background-image:url(/assets/images/design/header3.png);">
-    <div class="headline"></div>
-</header>
+<% render '/partials/header.*', image: '/assets/images/design/header3.png' do %>
+Historiek van de Kick-Off
+<% end %>
 
 <% jaren.each_with_index do |hist,ind| %>
-<div class="section<%= (ind % 3) +1 %>">
+<div class="<%= "section#{(ind % 3) +1}" %>">
   <div class="container">
     <div class="row">
-      <% if ind == 0 %>
-        <h1>Historiek van de Student Kick-Off</h1>
-      <% end %>
-
       <h1><%= hist[:jaar] %></h1>
       <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
       <div class="col-md-9">

@@ -31,6 +31,10 @@ html {
   }
 }
 
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
 $placeholder-color: #eee;
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -57,7 +61,7 @@ $placeholder-color: #eee;
 @media only screen and (min-width: 769px) {
 
   .navbar {
-    position: relative;
+    position: absolute;
 
     background-color: $header-color;
 
