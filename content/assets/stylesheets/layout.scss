@@ -93,7 +93,6 @@ $placeholder-color: #eee;
 }
 
 .header-image {
-    height: 100vh;
     position: relative;
     display: block;
     width: 100%;
@@ -103,6 +102,10 @@ $placeholder-color: #eee;
     background-size: cover;
     -o-background-size: cover;
     z-index: -5;
+
+    // Magic numbah
+    padding-bottom: 220px;
+    min-height: 100vh;
 }
 
 .headline {
