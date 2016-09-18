@@ -1,0 +1,22 @@
+@mixin partner($width, $margin) {
+  width: $width - ($margin * 2);
+  margin: $margin;
+}
+
+.partner {
+  @include partner(200px, 20px);
+}
+
+.presentingpartner {
+  @include partner(300px, 40px);
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-presenting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

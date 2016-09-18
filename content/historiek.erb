@@ -17,9 +17,7 @@ title: Historiek
       <h1><%= hist[:jaar] %></h1>
       <img class="img-responsive col-md-3" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
       <div class="col-md-9">
-        <div class="text">
-          <%= hist.compiled_content %>
-        </div>
+        <%= hist.compiled_content %>
         <h3>Line-Up</h3>
         <ul class="list-inline">
           <% hist[:lineup].each do |a| %>
