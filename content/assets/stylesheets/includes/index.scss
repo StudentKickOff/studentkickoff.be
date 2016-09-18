@@ -137,13 +137,21 @@ $photoslidertextsize: 50px;
   }
 }
 
-.lineupartist {
+.section3 {
+  hr {
+    border-color: white;
+  }
+
+  a {
     color: $colyel;
+  }
+}
+
+.lineupartist {
   img {
     float: right;
   }
   a {
     float: left;
-
   }
 }
