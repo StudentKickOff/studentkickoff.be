@@ -2,7 +2,7 @@
 title: Team IT
 crew: team
 teamnaam: IT
-foto: /assets/images/org/teamit.jpg
+foto: /assets/images/teamit.png
 teamleden:
   -
     naam: Jeroen De Clerck
@@ -48,4 +48,3 @@ De Coordinator Access Management beheert een database van alle crew, leverancier
 De Coordinator Hardware houdt zich gedurende de maanden vooraf, maar vooral tijdens de festivalweek bezig met er voor te zorgen dat iedere computer op het terrein een verbinding heeft met het internet. Dit komt vooral neer op het leggen van een kleine kilometer aan ethernetkabel.
 
 De Coordinator Website/Mailing/Printing is administrator van de online aanwezigheid van de Student Kick-Off. Hij beheert de website, en zorgt dat iedere coordinator via mail bereikbaar blijft. Tijdens de festivalweek is hij het aanspreekpunt voor last-minute drukwerk.
-
