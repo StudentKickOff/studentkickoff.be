@@ -27,7 +27,7 @@ $photoslidertextsize: 50px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .videosection {
   height: 50vw;
   width: 50vw;
@@ -128,7 +128,7 @@ $photoslidertextsize: 50px;
       background-size: 100%;
 
       .number {
-        line-height: 110%;
+        line-height: 100%;
         font-size: 7em;
       }
     }
