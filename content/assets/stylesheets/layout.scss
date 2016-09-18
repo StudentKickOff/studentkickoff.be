@@ -1,8 +1,9 @@
 /* imports */
-@import 'abstracts';
-@import 'index';
-@import 'meetthecrew';
-@import 'faq';
+@import 'includes/abstracts';
+@import 'includes/index';
+@import 'includes/meetthecrew';
+@import 'includes/faq';
+@import 'includes/partners';
 
 /* ==fontshit== */
 @charset "utf-8";
@@ -251,20 +252,6 @@ a, a:hover {
   cursor: pointer;
 }
 
-
-@mixin partner($width, $margin) {
-  width: $width - ($margin * 2);
-  margin: $margin;
-  min-height: $width/2
-}
-
-.partner {
-  @include partner(200px, 20px);
-}
-
-.presentingpartner {
-  @include partner(300px, 40px);
-}
 
 
 .vertical-center {

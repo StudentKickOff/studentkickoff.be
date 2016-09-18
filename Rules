@@ -63,6 +63,7 @@ route '/**/*.{erb,html,md}' do
   end
 end
 
+ignore '/assets/stylesheets/includes/**/*'
 compile '/**/*.scss' do
   filter :sass, syntax: :scss
   filter :autoprefixer

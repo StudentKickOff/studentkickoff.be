@@ -1,17 +1,9 @@
-jQuery.noConflict()
-jQuery(window).on 'load', ->
-  elem = document.querySelector('.grid-presenting')
-  msnry = new Masonry(elem,
-    itemSelector: '.grid-item-presenting'
-    columnWidth: '.grid-item-presenting')
-  # element argument can be a selector string
-  #   for an individual element
-  msnry = new Masonry('.grid-presenting', {})
-
+$(window).on 'load', ->
   elem = document.querySelector('.grid')
-  msnry = new Masonry(elem,
-    itemSelector: '.grid-item'
-    columnWidth: '.grid-item')
-  # element argument can be a selector string
-  #   for an individual element
+  msnry = new Masonry(
+    elem,
+    itemSelector: '.grid-item',
+    fitWidth: true
+  )
+
   msnry = new Masonry('.grid', {})
