@@ -34,7 +34,7 @@ teamleden:
     foto: amondekeyser.jpg
   -
     naam: Marwein El Bekri
-    functie: Coördinator Non-Commercial Partners
+    functie: Coördinator Non-Commercial
     opleiding: Project- en Eventmanagement
     school: Artevelde Hogeschool
     email: marwein.elbekri

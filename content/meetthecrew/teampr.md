@@ -41,7 +41,7 @@ teamleden:
     foto: indradeclercq.jpg
   -
     naam: Anne-Laure De Clercq
-    functie: Coördinator Marketing & Campus Tour
+    functie: Coörd. Marketing & Campus Tour
     opleiding: Communicatiewetenschappen
     school: Universiteit Gent
     email: annelaure.declercq
