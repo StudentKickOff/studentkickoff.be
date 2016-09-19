@@ -7,19 +7,19 @@ teamleden:
   -
     naam: Cedric Philippe
     functie: Team Lead
-    opleiding: ????
-    school: ????
+    opleiding: Event- en projectmanagement
+    school: Arteveldehogeschool
     email: cedric.philippe
     foto: cedricphilippe.jpg
   -
     naam: Jonas Nuyttens
     functie: Coördinator Logistiek
-    opleiding: ????
+    opleiding: Handelsingenieur
     school: Universiteit Gent
     email: jonas.nuyttens
     foto: jonasnuyttens.jpg
   -
-    naam: charlotte maenhaut
+    naam: Charlotte Maenhaut
     functie: Coördinator Verkoop
     opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
@@ -28,7 +28,7 @@ teamleden:
   -
     naam: Dylan Sabot
     functie: Coördinator Partners
-    opleiding: ????
+    opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
     email: dylan.sabot
     foto: dylansabot.jpg
@@ -56,7 +56,7 @@ teamleden:
   -
     naam: Thomas Lauwereins
     functie: Crew Lead
-    opleiding: ????
+    opleiding: Digitale en Grafische Media
     school: Arteveldehogeschool
     email: thomas.lauwereins
     foto: thomaslauwereins.jpg

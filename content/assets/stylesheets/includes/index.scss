@@ -113,19 +113,29 @@ $photoslidertextsize: 50px;
   }
 
   .headline .container {
-    > * {
-      margin-left: 10px;
-      margin-right: 10px;
+    h1 {
+      font-size: 3em;
     }
 
-    .counter {
-      font-size: 1em;
+    h2 {
+      font-size: 2em;
+    }
 
-      background-size: 100%;
+    .countercontainer {
+      > * {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
 
-      .number {
-        line-height: 100%;
-        font-size: 7em;
+      .counter {
+        font-size: 1em;
+
+        background-size: 100%;
+
+        .number {
+          line-height: 100%;
+          font-size: 7em;
+        }
       }
     }
   }

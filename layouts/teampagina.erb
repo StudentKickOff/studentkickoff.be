@@ -1,6 +1,7 @@
-<header class="header-image teamheader" style="background-image:url(<%= item[:foto] %>);">
-    <div class="headline"></div>
-</header>
+<% render '/partials/header.*', image: item[:foto], extra_classes: 'teamheader' do %>
+Team <%= item[:teamnaam] %>
+<% end %>
+
 <div class="section1">
   <div class="container">
     <div class="row">
@@ -13,15 +14,7 @@
     </div>
 
     <div class="row">
-  <!--     <div class="col-md-6">
-    <img class="img-responsive center-block" src="<%= item[:foto] %>" alt="">
-  </div>
-  <div class="col-md-6">
-
-  </div> -->
       <div class="col-sm-12 col-md-12">
-<!--           <img src="<%= item[:foto] %>" alt="...">
- -->
           <blockquote >
             <%= yield %>
             <div class="quoteteamlead">
