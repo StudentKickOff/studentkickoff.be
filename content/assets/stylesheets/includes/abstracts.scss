@@ -46,6 +46,7 @@ $colred: #e94b43;
 .section1 {
   @extend .section;
   background-color: $colyel;
+  z-index: 10;
 
   h1, h2, h3 {
     color: $colred;
