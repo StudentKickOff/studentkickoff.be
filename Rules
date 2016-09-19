@@ -47,6 +47,18 @@ compile '/artists/*.md' do
   filter :erb
 end
 
+compile '/artists/*.md', rep: :json do
+  filter :kramdown
+  filter :strip_html
+  filter :json, item.attributes
+  write "#{item.identifier.without_ext}.json"
+end
+
+compile '/**/*.json' do
+  filter :erb
+  write item.identifier.to_s
+end
+
 compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do
   filter :resize
   write "#{item.identifier.without_ext}_thumbnail.jpg"
@@ -78,6 +90,5 @@ end
 compile '/**/*' do
   write item.identifier.to_s
 end
-
 
 layout '/**/*', :erb
