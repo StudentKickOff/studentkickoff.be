@@ -1,1 +1,3 @@
-<%= items.find_all('/artists/*.md').map { |x| JSON.parse(x.reps[:json].compiled_content) }.to_json %>
+[
+  <%= items.find_all('/artists/*.md').map { |x| x.reps[:json].compiled_content }.join(',') %>
+]
