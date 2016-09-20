@@ -17,6 +17,10 @@ compile '/**/*.erb' do
   filter :erb
 end
 
+compile '/historiek/*.md' do
+  filter :kramdown
+end
+
 compile '/meetthecrew/*.md' do
   filter :kramdown
   layout '/teampagina.*'
