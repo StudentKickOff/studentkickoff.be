@@ -1,6 +1,6 @@
 module ArtistHelper
   def artists
-    items.find_all('/artists/*.md').sort_by { |artist| artist[:start] }
+    items.find_all('/artists/*/*.md').sort_by { |artist| artist[:start] }
   end
 
   def pretty_time(t)
