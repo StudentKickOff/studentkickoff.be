@@ -3,7 +3,7 @@
 <% end %>
 <div class="section1">
   <div class="container">
-    <h2><%= pretty_time(item[:start]) %> | Main Stage</h2>
+    <h2><%= "#{pretty_time(item[:start])} | #{item[:stage]}" %></h2>
     <%= yield %>
   </div>
 </div>

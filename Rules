@@ -58,9 +58,9 @@ end
 compile '/artists/*/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
-  filter :json, item.attributes.merge(image: "http://studentkickoff.be/assets/images/artists/#{item[:image]}")
-  p item.attributes
-  write "#{item.identifier.without_ext}.json"
+  filter :json, item.attributes.merge(
+    image: "http://studentkickoff.be/assets/images/artists/#{item[:image]}"
+  )
 end
 
 compile '/**/*.json' do
