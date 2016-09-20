@@ -127,10 +127,11 @@ $placeholder-color: #eee;
 }
 
 
-footer {
+.footer {
   position: relative;
   padding-bottom: 341px;
-  margin-top: 160px;
+  margin-top: 200px;
+  margin-bottom: 0;
   background-color: $colblue;
 
   h1 {

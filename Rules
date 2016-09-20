@@ -7,14 +7,22 @@ preprocess do
   end
 
   artists.each do |artist|
+    stage = artist.identifier.to_s.split('/')[-2]
+
     artist[:start] = DateTime.parse(artist[:start])
+    artist[:end]   = DateTime.parse(artist[:end])
     artist[:title] = artist[:name]
+    artist[:stage] = stage
   end
 end
 
 compile '/**/*.erb' do
   layout '/default.*'
   filter :erb
+end
+
+compile '/historiek/*.md' do
+  filter :kramdown
 end
 
 compile '/meetthecrew/*.md' do
@@ -40,18 +48,19 @@ compile '/partners.erb' do
   filter :erb
 end
 
-compile '/artists/*.md' do
+compile '/artists/*/*.md' do
   filter :kramdown
   layout '/artist_page.*'
   layout '/default.*'
   filter :erb
 end
 
-compile '/artists/*.md', rep: :json do
+compile '/artists/*/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
-  filter :json, item.attributes
-  write "#{item.identifier.without_ext}.json"
+  filter :json, item.attributes.merge(
+    image: "http://studentkickoff.be/assets/images/artists/#{item[:image]}"
+  )
 end
 
 compile '/**/*.json' do
@@ -66,6 +75,13 @@ end
 
 # Empty route block prevents item from being written out
 route '/historiek/*.md' do; end
+
+route '/artists/*/*.md' do
+  split_path = @item.identifier.without_ext.split('/')
+  split_path.delete_at(-2)
+
+  "#{split_path.join('/')}/index.html"
+end
 
 route '/**/*.{erb,html,md}' do
   if item.identifier =~ '/index.*'
