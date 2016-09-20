@@ -2,5 +2,7 @@
 naam: Home Konvent
 ---
 Het Home Konvent (HK) is de overkoepelende organisatie boven de individuele homes.
-Maandelijks vindt er een InterHomeRaad plaats, waarbij de Dienst Huisvesting ook aanwezig is. Daar worden infrastructuurproblemen aangekaart en worden er overkoepelende activiteiten georganiseerd (bijvoorbeeld het galabal, Inter Homesvoetbal, etc.). In het algemeen worden zaken op een hoger en uitgebreider niveau besproken dan van de individuele homes.
-HK Centraal vormt het dagelijks bestuur en is een aanspreekpunt voor de homeraden van de individuele homes.
+Wij voorziev op de Student Kick-Off een knus ontspanningshoekje voor bewoners van de studentenhomes.
+Hier zal informatie over de homes verstrekt worden aan studenten die hiermee niet bekend zijn.
+Deze lounge ruimte is de ideale plek om even tot rust te komen gedurende de Student Kick-Off en hiermee ook een leuke afwisseling.
+Het HK organiseert activiteiten voor de homebewoners, tijdens de Student Kick-Off kunnen wij de festivalgangers hiervan een voorsmaakje geven.

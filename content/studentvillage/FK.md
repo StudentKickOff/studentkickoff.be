@@ -1,5 +1,4 @@
 ---
 naam: Faculteiten Konvent
 ---
-Het FaculteitenKonvent (FK) is de koepel van de 29 opleidingsgebonden studentenkringen aan de Universiteit Gent. Dit zijn de studentenverenigingen die verbonden zijn aan een specifieke opleiding of faculteit. In totaal spreken we zo van een ledenaantal dat reeds de 18000 overstijgt.
-De verschillende kringen die onder het FaculteitenKonvent vallen, hebben de voorbije jaren hun werking sterk weten te professionaliseren. Al deze verenigingen bieden een breed gamma aan activiteiten aan en trachten zoveel mogelijke in te spelen op de noden van de studenten. Academische vorming, sociaal engagement en ontspanning gaan hand in hand bij de kringen en daar zijn wij oprecht trots op.
+Het FaculteitenKonvent staat klaar om jullie kennis te laten maken met de studentenkring verbonden aan jouw opleiding. Ontdek hoe studeren in Gent meer is dan enkel over je boeken neerbuigen. Studeren is ook ontspannen, de wereld ontdekken en contacten leggen maar uiteraard ook slagen op examens, lezingen bijwonen en zoveel meer.  Het FK staat paraat om al jullie vragen te beantwoorden en uiteraard zetten we samen met jullie het nieuwe academiejaar op gepaste wijze in!

@@ -1,5 +1,7 @@
 ---
 naam: Noord-Zuid studenten
 ---
-Noord-Zuid Studenten is een studentenvereniging in Gent en Leuven die allerlei activiteiten organiseert om de Noord-Zuidproblematiek en duurzaamheid in het algemeen aan te kaarten bij de studenten.
-We werken daarvoor samen met onder andere Oxfam Wereldwinkels, 11.11.11 en Broederlijk Delen. Onze leden komen uit allerlei studierichtingen, en ook werkenden zijn heel welkom.
+"Noord-Zuidt ge mee?!
+Wij zijn een studentenvereniging die allerlei activiteiten organiseert om de Noord-Zuid-problematiek aan te kaarten! We werken hiervoor samen met o.a. Oxfam Wereldwinkels, Broederlijk Delen en 11.11.11.
+Filmavonden, lezingen, feestjes, Big Brain Battle, Bio- & Fairtrade Brunch, duurzame kroegentochten,… voor iedereen wat wils!
+Kom zeker eens langs en spreek ons aan!

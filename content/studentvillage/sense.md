@@ -1,6 +1,8 @@
 ---
 naam: Sense
 ---
-SENSE is een nieuwe studentenvereniging die het debat rond dierenrechten op de kaart wil zetten. We zijn verbonden aan UGent, maar richten ons niet enkel tot studenten.
-We verstrekken informatie over de ethiek rond dierenrechten en veganisme en bieden allerlei leuke en interessante activiteiten aan: lezingen, films, uitstappen, kookworkshops, enz…
-Heb je interesse in een groeiende ethische beweging? Maak je graag bewuste keuzes? Hou je van lekker eten? Kom dan langs op onze activiteiten!
+Waarom is het ene dier ons voedsel en het andere onze vriend?
+Hoe duurzaam is veganisme?
+Welke gevolgen hebben gevangenschap op het welzijn van een dier?
+Hoe zit het met dierproeven aan de UGent?
+Wees welkom aan onze Sense stand voor een plantaardig hapje en een leuke babbel!
