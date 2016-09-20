@@ -1,5 +1,6 @@
 ---
 naam: Sense
+logo: sense.png
 ---
 Waarom is het ene dier ons voedsel en het andere onze vriend?
 Hoe duurzaam is veganisme?
