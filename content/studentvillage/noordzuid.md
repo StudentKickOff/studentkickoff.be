@@ -1,5 +1,6 @@
 ---
 naam: Noord-Zuid studenten
+logo: noordzuid.jpg
 ---
 "Noord-Zuidt ge mee?!
 Wij zijn een studentenvereniging die allerlei activiteiten organiseert om de Noord-Zuid-problematiek aan te kaarten! We werken hiervoor samen met o.a. Oxfam Wereldwinkels, Broederlijk Delen en 11.11.11.

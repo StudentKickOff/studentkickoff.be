@@ -1,5 +1,6 @@
 ---
 naam: Home Konvent
+logo: HK.png
 ---
 Het Home Konvent (HK) is de overkoepelende organisatie boven de individuele homes.
 Wij voorziev op de Student Kick-Off een knus ontspanningshoekje voor bewoners van de studentenhomes.
