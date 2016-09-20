@@ -1,0 +1,1 @@
+[<%= @items.find_all('/studentvillage/*.md').map { |x| x.reps[:json].compiled_content }.join(',') %>]

@@ -63,6 +63,13 @@ compile '/artists/*/*.md', rep: :json do
   )
 end
 
+ignore '/studentvillage/*.md'
+compile '/studentvillage/*.md', rep: :json do
+  filter :kramdown
+  filter :strip_html
+  filter :json, item.attributes
+end
+
 compile '/**/*.json' do
   filter :erb
   write item.identifier.to_s
