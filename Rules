@@ -70,10 +70,7 @@ compile '/studentvillage/*.md', rep: :json do
 
   attrs = item.attributes
   attrs[:logo] = nil unless attrs[:logo]
-
-  if attrs.include? :logo
-    attrs[:logo] = "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}"
-  end
+  attrs[:logo] = "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}" if attrs[:logo]
 
   filter :json, attrs
 end
