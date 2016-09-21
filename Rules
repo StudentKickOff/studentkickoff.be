@@ -67,9 +67,15 @@ ignore '/studentvillage/*.md'
 compile '/studentvillage/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
-  filter :json, item.attributes.merge(
-    logo: "http://studentkickoff.be/assets/images/studentvillage/#{item[:logo]}"
-  )
+
+  attrs = item.attributes
+  attrs[:logo] = nil unless attrs[:logo]
+
+  if attrs.include? :logo
+    attrs[:logo] = "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}"
+  end
+
+  filter :json, attrs
 end
 
 compile '/**/*.json' do
