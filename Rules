@@ -68,7 +68,7 @@ compile '/studentvillage/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
   filter :json, item.attributes.merge(
-    logo: "http://studentkickoff.be/assets/images/studentvillage/#{item[:image]}"
+    logo: "http://studentkickoff.be/assets/images/studentvillage/#{item[:logo]}"
   )
 end
 
