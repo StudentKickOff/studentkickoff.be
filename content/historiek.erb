@@ -11,9 +11,7 @@ Historiek
     <div class="row">
       <h1><%= hist[:jaar] %></h1>
       <div class="col-md-3">
-        <% if hist[:affiche] %>
-          <img class="img-responsive" src="/assets/images/affiches/<%= hist[:affiche] %>" alt="">
-        <% end %>
+        <img class="img-responsive" src="/assets/images/affiches/affiche<%= hist[:jaar]%>.jpg" alt="">
       </div>
       <div class="col-md-9">
         <%= hist.compiled_content %>
