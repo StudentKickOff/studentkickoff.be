@@ -48,7 +48,7 @@ $colred: #e94b43;
   background-color: $colyel;
   z-index: 10;
 
-  h1, h2, h3 {
+  h1, h2, h3, strong {
     color: $colred;
   }
 
@@ -61,7 +61,7 @@ $colred: #e94b43;
   @extend .section;
   background-color: $colred;
 
-  h1, h2, h3 {
+  h1, h2, h3, strong {
     color: $colyel;
   }
 }
@@ -70,7 +70,7 @@ $colred: #e94b43;
   @extend .section;
   background-color: $colblue;
 
-  h1, h2, h3 {
+  h1, h2, h3, strong {
     color: $colyel;
   }
 }
