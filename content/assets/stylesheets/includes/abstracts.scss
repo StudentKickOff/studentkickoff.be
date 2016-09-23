@@ -33,6 +33,10 @@ $colred: #e94b43;
     font-size: 4em;
   }
 
+  h3 {
+    font-size: 2em;
+  }
+
   .text {
     margin-top: 20px;
   }
@@ -40,6 +44,18 @@ $colred: #e94b43;
   &:before, &:after {
     @extend .diag;
     z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 768px ) {
+  .section h3 span {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px ) {
+  .section h3 {
+    font-size: 3em;
   }
 }
 
