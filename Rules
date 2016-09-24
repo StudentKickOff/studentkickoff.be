@@ -9,8 +9,8 @@ preprocess do
   artists.each do |artist|
     stage = artist.identifier.to_s.split('/')[-2]
 
-    artist[:start] = DateTime.parse(artist[:start])
-    artist[:end]   = DateTime.parse(artist[:end])
+    artist[:start] = DateTime.parse(artist[:start] + '+0200')
+    artist[:end]   = DateTime.parse(artist[:end] + '+0200')
     artist[:title] = artist[:name]
     artist[:stage] = stage
   end
