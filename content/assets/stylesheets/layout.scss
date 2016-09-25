@@ -85,11 +85,15 @@ $placeholder-color: #eee;
 
     .header-background {
       position: fixed;
-      z-index: -5;
-      left: 0;
-      top: 0;
+      background-size: cover;
 
+      height: 100%;
       width: 100%;
+
+      top: 0;
+      left: 0;
+
+      z-index: -5;
     }
 
     // Magic numbah
