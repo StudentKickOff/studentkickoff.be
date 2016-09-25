@@ -41,21 +41,17 @@ Meet The Crew
 </div>
 <div class="section2">
   <div class="container">
-    <div class="row">
+    <h1>Meet the Teams</h1>
 
-      <h1>Meet the Teams</h1>
-
-      <% teams.each do |team| %>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="teamcard">
-          <a href="<%= team.path %>">
-            <p><%= team[:teamnaam] %></p>
-            <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
-          </a>
-        </div>
+    <% teams.each do |team| %>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="teamcard">
+        <a href="<%= team.path %>">
+          <p><%= team[:teamnaam] %></p>
+          <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
+        </a>
       </div>
-      <% end %>
     </div>
-
+    <% end %>
   </div>
 </div>
