@@ -91,6 +91,14 @@ $colred: #e94b43;
   }
 }
 
+.section4 {
+  @extend .section;
+  background-color: $colred;
+
+  h1 {
+    color: $colyel;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .section {

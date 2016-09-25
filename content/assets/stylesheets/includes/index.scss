@@ -2,6 +2,18 @@
 $photosliderheight: 250px;
 $photoslidertextsize: 50px;
 
+.bagbantop {
+  width: 15%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.bagban {
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+  height: auto;
+}
 
 .videorapper {
   display: flex;
@@ -49,7 +61,7 @@ $photoslidertextsize: 50px;
 
     height: 160px;
 
-    img {
+    .sko-logo {
       width: 95px;
     }
 
@@ -143,6 +155,24 @@ $photoslidertextsize: 50px;
 
 @media only screen and (max-width: 650px) {
   .counter {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 651px) {
+  .bagban {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bagbantop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 651px) {
+  .bagbantop {
     display: none;
   }
 }

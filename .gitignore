@@ -11,3 +11,5 @@ tmp/
 
 # Crash Log
 crash.log
+
+.bundle/
