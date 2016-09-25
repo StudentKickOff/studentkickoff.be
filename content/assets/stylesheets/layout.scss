@@ -82,8 +82,15 @@ $placeholder-color: #eee;
     display: block;
     width: 100%;
     text-align: center;
-    background-size: cover;
-    // background-attachment: fixed;
+
+    .header-background {
+      position: fixed;
+      z-index: -5;
+      left: 0;
+      top: 0;
+
+      width: 100%;
+    }
 
     // Magic numbah
     padding-bottom: 220px;

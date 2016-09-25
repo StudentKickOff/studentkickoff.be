@@ -19,12 +19,12 @@ teamleden:
     email: lorin.werthen
     foto: lorinwerthen.jpg
   -
-    naam: Benjamin Coussaert
+    naam: Benjamin Cousaert
     functie: Crew Lead Access Management
     opleiding: Informatica
     school: Universiteit Gent
-    email: benjamin.coussaert
-    foto: benjamincoussaert.jpg
+    email: benjamin.cousaert
+    foto: benjamincousaert.jpg
   -
     naam: Mats Myncke
     functie: Coördinator Hardware

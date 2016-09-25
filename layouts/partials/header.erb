@@ -1,4 +1,5 @@
-<header class="header-image <%= @extra_classes%>" style="background-image:url(<%= @image %>);">
+<header class="header-image <%= @extra_classes%>">
+  <img class="header-background" src="<%= @image %>" />
   <div class="headline">
     <div class="container">
       <h1><%= yield %></h1>
