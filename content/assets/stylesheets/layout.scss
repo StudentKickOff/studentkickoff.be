@@ -43,21 +43,6 @@ h1, h2, h3, h4, h5 {
 
 $placeholder-color: #eee;
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color:    $placeholder-color;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color:    $placeholder-color;
-  opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color:    $placeholder-color;
-  opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color:    $placeholder-color;
-}
-
 .navbar {
   a {
     color: $colyel !important;
@@ -97,11 +82,20 @@ $placeholder-color: #eee;
     display: block;
     width: 100%;
     text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    -o-background-size: cover;
+
+    .header-background {
+      position: fixed;
+      background-size: cover;
+      background-position: center;
+
+      height: 100%;
+      width: 100%;
+
+      top: 0;
+      left: 0;
+
+      z-index: -5;
+    }
 
     // Magic numbah
     padding-bottom: 220px;

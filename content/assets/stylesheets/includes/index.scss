@@ -2,6 +2,35 @@
 $photosliderheight: 250px;
 $photoslidertextsize: 50px;
 
+.bagbanbasic {
+  height: auto;
+  animation: pulsate 1s ease-in-out;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation-iteration-count: 1;
+  }
+}
+
+@keyframes pulsate {
+    0% {transform: scale(0.9, 0.9);}
+    50% {transform: scale(1.0, 1.0);}
+    100% {transform: scale(0.9, 0.9);}
+}
+
+
+.bagbantop {
+  @extend .bagbanbasic;
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+.bagban {
+  @extend .bagbanbasic;
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+}
 
 .videorapper {
   display: flex;
@@ -49,7 +78,7 @@ $photoslidertextsize: 50px;
 
     height: 160px;
 
-    img {
+    .sko-logo {
       width: 95px;
     }
 
@@ -147,6 +176,24 @@ $photoslidertextsize: 50px;
   }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 651px) {
+  .bagban {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bagbantop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 651px) {
+  .bagbantop {
+    display: none;
+  }
+}
+
 .section3 {
   hr {
     border-color: white;
@@ -168,4 +215,3 @@ $photoslidertextsize: 50px;
     }
   }
 }
-

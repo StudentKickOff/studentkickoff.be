@@ -4,14 +4,12 @@ Team <%= item[:teamnaam] %>
 
 <div class="section1">
   <div class="container">
-    <div class="row">
-      <h1><%= item[:teamnaam] %>
+    <h1>
+      <%= item[:teamnaam] %>
       <% if item[:teamnaam] == 'IT' %>
         <span class="hiddenh1">aka team best<span>
       <% end %>
-
-      </h1>
-    </div>
+    </h1>
 
     <div class="row">
       <div class="col-sm-12 col-md-12">
@@ -31,9 +29,8 @@ Team <%= item[:teamnaam] %>
 <% if item.key?(:teamleden) %>
   <div class="section3">
     <div class="container">
+      <h1>Teamleden</h1>
       <div class="row">
-        <h1>Teamleden</h1>
-
         <% item[:teamleden].each do |lid| %>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
           <div class="teamlidcard">
@@ -55,10 +52,9 @@ Team <%= item[:teamnaam] %>
 <% end %>
 <div class="section2">
   <div class="container">
+    <h1>Meet the Teams</h1>
+
     <div class="row">
-
-      <h1>Meet the Teams</h1>
-
       <% teams.each do |team| %>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="teamcard">

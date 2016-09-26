@@ -11,6 +11,8 @@ class ResizeFilter < Nanoc::Filter
     img.format('jpg')
     img.gravity('Center')
     img.crop '150x150+0+0'
+    img.compress 'JPEG'
+    img.quality '75'
     # img.repage
     img.write(output_filename)
   end
