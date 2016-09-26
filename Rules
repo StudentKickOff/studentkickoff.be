@@ -115,6 +115,10 @@ compile '/**/*.coffee' do
   write "#{item.identifier.without_ext}.js"
 end
 
+compile '/assets/images/logo2013.png' do
+  write '/signature/logo2013.png'
+end
+
 compile '/**/*' do
   write item.identifier.to_s
 end
