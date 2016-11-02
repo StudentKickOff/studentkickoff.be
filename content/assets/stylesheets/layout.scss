@@ -282,3 +282,8 @@ a, a:hover {
   vertical-align: middle;
   float: none;
 }
+
+.has-content-centered {
+  display: flex;
+  justify-content: center;
+}
