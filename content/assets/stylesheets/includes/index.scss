@@ -18,28 +18,39 @@ $photoslidertextsize: 50px;
     100% {transform: scale(0.9, 0.9);}
 }
 
+@mixin headline-title($font-size) {
+  font-size: $font-size;
+  background: rgba(255,255,255,0.8);
+  color: #e94b43;
+
+  &.alt {
+    background: none;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+}
+
 .headline {
     padding-top: 200px;
 
     h1 {
-      font-size: 80px;
-      background: rgba(255,255,255,0.8);
-      color: #e94b43;
-
-      &.alt {
-        background: none;
-        color: white;
-      }
+      @include headline-title(80px);
     }
 
     h2 {
-      font-size: 50px;
-      background: rgba(255,255,255,0.8);
-      color: #e94b43;
+      @include headline-title(50px);
+    }
 
-      &.alt {
-        background: none;
-        color: white;
+    button {
+      background: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 4px;
+      padding: 10px;
+
+      &:hover {
+        background-color: white;
+        color: black;
       }
     }
 }
