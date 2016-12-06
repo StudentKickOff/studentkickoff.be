@@ -1,10 +1,7 @@
-<header class="header-image <%= @extra_classes%>">
-  <div class="header-background" style="background-image:url(<%= @image %>);">
-    <!-- Nothing -->
+<% render '/partials/header_empty.*', image: @image, extra_classes: @extra_classes do %>
+<div class="headline">
+  <div class="container">
+    <h1><%= yield %></h1>
   </div>
-  <div class="headline">
-    <div class="container">
-      <h1><%= yield %></h1>
-    </div>
-  </div>
-</header>
+</div>
+<% end %>
