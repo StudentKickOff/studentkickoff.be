@@ -69,7 +69,7 @@ compile '/studentvillage/*.md', rep: :json do
   filter :strip_html
 
   attrs = item.attributes
-  attrs[:logo] = nil unless attrs[:logo]
+  attrs[:logo] ||= nil
   attrs[:logo] = "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}" if attrs[:logo]
 
   filter :json, attrs
