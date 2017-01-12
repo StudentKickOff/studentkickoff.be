@@ -11,7 +11,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colored (1.2)
-    concurrent-ruby (1.0.2)
+    concurrent-ruby (1.0.4)
     cri (2.7.1)
       colored (~> 1.2)
     execjs (2.7.0)
@@ -41,7 +41,7 @@ GEM
     lumberjack (1.0.10)
     method_source (0.8.2)
     mini_magick (4.5.1)
-    nanoc (4.3.2)
+    nanoc (4.4.6)
       cri (~> 2.3)
       hamster (~> 3.0)
       ref (~> 2.0)
@@ -74,7 +74,7 @@ DEPENDENCIES
   guard-nanoc
   kramdown
   mini_magick
-  nanoc (= 4.3.2)
+  nanoc (= 4.4.6)
   sass
 
 BUNDLED WITH

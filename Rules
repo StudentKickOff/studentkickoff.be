@@ -68,8 +68,7 @@ compile '/studentvillage/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
 
-  attrs = item.attributes
-  attrs[:logo] ||= nil
+  attrs = item.attributes.dup
   attrs[:logo] = "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}" if attrs[:logo]
 
   filter :json, attrs
