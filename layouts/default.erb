@@ -106,6 +106,7 @@
       <div class="col-md-6">
         <form action="https://formspree.io/info@studentkickoff.be" method="POST">
           <div class="form-inline">
+            <input type="hidden" name="_format" value="plain" />
             <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
             <input type="text" placeholder="Naam" name="Naam">
           </div>
@@ -113,6 +114,7 @@
             <input class="inputleft" type="text" placeholder="GSM" name="GSM">
             <input type="text" placeholder="Onderwerp" name="Onderwerp">
           </div>
+            <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
             <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
           <div class="buttonrapper">
             <button type="submit">Verzenden</button>
