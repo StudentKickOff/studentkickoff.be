@@ -5,8 +5,8 @@ title: Historiek
 Historiek
 <% end %>
 
-<% jaren.each_with_index do |hist,ind| %>
-<div class="<%= "section#{(ind % 3) +1}" %>">
+<% jaren.zip(['yellow', 'red', 'blue'].cycle).each do |hist, colour| %>
+<% section colour do %>
   <div class="container">
     <h1><%= hist[:jaar] %></h1>
     <div class="col-md-3">
@@ -31,5 +31,5 @@ Historiek
       <% end %>
     </div>
   </div>
-</div>
+<% end %>
 <% end %>

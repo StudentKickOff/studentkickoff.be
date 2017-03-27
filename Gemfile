@@ -1,13 +1,15 @@
-# If you do not have OpenSSL installed, change
-# the following line to use 'http://'
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'nanoc', '4.4.6'
-gem 'kramdown'
-gem 'sass'
-gem 'mini_magick'
+gem 'nanoc', '4.7.3'
+
 gem 'autoprefixer-rails'
 gem 'coffee-script'
+gem 'erubi'
+gem 'kramdown'
+gem 'mini_magick'
+gem 'sass'
 
 group :nanoc do
   gem 'guard-nanoc'

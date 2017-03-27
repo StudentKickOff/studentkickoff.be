@@ -6,52 +6,49 @@ title: Meet The Crew
 Meet The Crew
 <% end %>
 
-<div class="section1">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <figure>
-          <img class="img-responsive" src="/assets/images/organisatie.jpg" alt="">
-        </figure>
-      </div>
-      <div class="col-md-4">
-        <h3>De organisatie</h3>
-        <p>De Student Kick-Off organisatie bestaat uit een groep overenthousiaste studenten die zich vrijwillig maandenlang inzetten om elk jaar opnieuw aan het begin van het academiejaar meer dan 30.000 studenten te mogen verwelkomen in hun favoriete studentenstad! Wat 11 jaar geleden begon met een groepje van 7 studenten is op vandaag uitgegroeid tot een organisatie met meer dan 55 team leden. </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p>De kern bestaat uit:</p>
-        <ul>
-          <li>1 <a href="/meetthecrew/algemeencoordinator">Algemeen Coördinator</a></li>
-          <li>1 <a href="/meetthecrew/juridische">Juridische verantwoordelijke</a></li>
-          <li>7 Team Leads</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <p>Ieder team bestaat uit:</p>
-        <ul>
-          <li>1 Team Lead</li>
-          <li>Coördinatoren</li>
-          <li>Crew Leads</li>
-        </ul>
-      </div>
-    </div>
+<% section :yellow do %>
+<div class="row">
+  <div class="col-md-8" style="z-index: 2;">
+    <figure>
+      <img class="img-responsive" src="/assets/images/organisatie.jpg" alt="">
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <h3>De organisatie</h3>
+    <p>De Student Kick-Off organisatie bestaat uit een groep overenthousiaste studenten die zich vrijwillig maandenlang inzetten om elk jaar opnieuw aan het begin van het academiejaar meer dan 30.000 studenten te mogen verwelkomen in hun favoriete studentenstad! Wat 11 jaar geleden begon met een groepje van 7 studenten is op vandaag uitgegroeid tot een organisatie met meer dan 55 team leden. </p>
   </div>
 </div>
-<div class="section2">
-  <div class="container">
-    <h1>Meet the Teams</h1>
+<div class="row">
+  <div class="col-md-6">
+    <p>De kern bestaat uit:</p>
+    <ul>
+      <li>1 <a href="/meetthecrew/algemeencoordinator">Algemeen Coördinator</a></li>
+      <li>1 <a href="/meetthecrew/juridische">Juridische verantwoordelijke</a></li>
+      <li>7 Team Leads</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <p>Ieder team bestaat uit:</p>
+    <ul>
+      <li>1 Team Lead</li>
+      <li>Coördinatoren</li>
+      <li>Crew Leads</li>
+    </ul>
+  </div>
+</div>
+<% end %>
 
-    <% teams.each do |team| %>
-    <div class="col-md-3 col-sm-6 col-xs-12">
-      <div class="teamcard">
-        <a href="<%= team.path %>">
-          <p><%= team[:teamnaam] %></p>
-          <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
-        </a>
-      </div>
-    </div>
-    <% end %>
+<% section :red do %>
+<h1>Meet the Teams</h1>
+
+<% teams.each do |team| %>
+<div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="teamcard">
+    <a href="<%= team.path %>">
+      <p><%= team[:teamnaam] %></p>
+      <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
+    </a>
   </div>
 </div>
+<% end %>
+<% end %>

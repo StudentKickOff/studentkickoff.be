@@ -1,0 +1,12 @@
+<div class="section-wrap">
+  <svg class="section-bar-<%= @colour %>" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+    <path d="m 898.41609,-33.21176 0,0 0,0 0,0 z"></path>
+    <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+    <path d="m 1925,0 0,150 -1925,0"></path>
+  </svg>
+  <div class="section-<%= @colour %> <%= @class %>">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </div>
+</div>

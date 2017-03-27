@@ -5,20 +5,25 @@ $header-color: rgba(27, 149, 212, 0.9);
 $colyel: #FAB73E;
 $colred: #e94b43;
 
-.diag {
-  position: absolute;
-  transform: rotate($rot);
-  transform-origin: 3% 0;
-  left: -25%;
-  width: 150%;
-  height: 200px;
-  background: inherit;
-  content:'';
+$section-colors: (
+  "red": $colred,
+  "yellow": $colyel,
+  "blue": $colblue,
+);
+
+$complements: (
+  $colblue: $colyel,
+  $colyel: $colred,
+  $colred: $colyel
+);
+
+.section-wrap {
+  position: relative;
 }
 
-.section{
+%section{
   position: relative;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   margin-top: -10px;
   color: white;
 
@@ -40,68 +45,22 @@ $colred: #e94b43;
   .text {
     margin-top: 20px;
   }
-
-  &:before, &:after {
-    @extend .diag;
-    z-index: -1;
-  }
 }
 
 @media only screen and (max-width: 768px ) {
-  .section h3 span {
+  %section h3 span {
     display: block;
   }
 }
 
 @media only screen and (min-width: 1200px ) {
-  .section h3 {
+  %section h3 {
     font-size: 3em;
   }
 }
 
-.section1 {
-  @extend .section;
-  background-color: $colyel;
-  z-index: 10;
-
-  h1, h2, h3, strong {
-    color: $colred;
-  }
-
-  .hiddenh1 {
-    color: $colyel;
-  }
-}
-
-.section2 {
-  @extend .section;
-  background-color: $colred;
-
-  h1, h2, h3, strong {
-    color: $colyel;
-  }
-}
-
-.section3 {
-  @extend .section;
-  background-color: $colblue;
-
-  h1, h2, h3, strong {
-    color: $colyel;
-  }
-}
-
-.section4 {
-  @extend .section;
-  background-color: $colred;
-
-  h1 {
-    color: $colyel;
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .section {
+  %section {
     h1 {
       font-size: 4em;
     }
@@ -110,5 +69,24 @@ $colred: #e94b43;
       font-size: 3em;
 
     }
+  }
+}
+
+@each $color-name, $color-code in $section-colors {
+  .section-#{$color-name} {
+    @extend %section;
+    background: $color-code;
+
+    h1, h2, h3, strong {
+      color: map-get($complements, $color-code);
+    }
+  }
+
+  .section-bar-#{$color-name} {
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+
+    fill: $color-code;
   }
 }

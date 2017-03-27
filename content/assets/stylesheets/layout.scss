@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5 {
 .footer {
   position: relative;
   padding-bottom: 341px;
-  margin-top: 200px;
   margin-bottom: 0;
   background-color: $colblue;
 
@@ -124,10 +123,6 @@ h1, h2, h3, h4, h5 {
     text-align: left;
     color: white;
     font-size: 120%;
-  }
-
-  &:before {
-    @extend .diag;
   }
 
   input, button {
@@ -203,7 +198,7 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (max-width: 768px) {
-  footer {
+  .footer {
     padding-bottom: 200px;
 
     input {

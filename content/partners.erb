@@ -130,36 +130,31 @@ partners:
 <% end %>
 
 <!-- Page Content -->
-<div class="section1">
-  <div class="container">
-
-    <h1>Presenting Partners</h1>
-    <div class="grid-presenting">
-      <% item[:presentingpartners].each do |partner| %>
-      <div class="grid-item-presenting presentingpartner">
-        <a href="<%= partner[:url] %>">
-          <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
-        </a>
-      </div>
-      <% end %>
-    </div>
+<% section :yellow do %>
+<h1>Presenting Partners</h1>
+<div class="grid-presenting">
+  <% item[:presentingpartners].each do |partner| %>
+  <div class="grid-item-presenting presentingpartner">
+    <a href="<%= partner[:url] %>">
+      <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
+    </a>
   </div>
+  <% end %>
 </div>
-<div class="section2">
-  <div class="container">
+<% end %>
 
-    <h1>Partners</h1>
-    <div class="grid">
-      <% item[:partners].each do |partner| %>
-        <div class="grid-item partner">
-          <a href="<%= partner[:url] %>">
-            <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
-          </a>
-        </div>
-      <% end %>
-    </div>
+<% section :red do %>
+<h1>Partners</h1>
+<div class="grid">
+  <% item[:partners].each do |partner| %>
+  <div class="grid-item partner">
+    <a href="<%= partner[:url] %>">
+      <img class="img-responsive" src="/assets/images/partners/<%= partner[:img] %>" alt="">
+    </a>
   </div>
+  <% end %>
 </div>
+<% end %>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
