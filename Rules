@@ -96,12 +96,14 @@ ignore '/assets/stylesheets/includes/**/*'
 compile '/**/*.scss' do
   filter :sass, syntax: :scss
   filter :autoprefixer
-  write "#{item.identifier.without_ext}.css"
+
+  write ext: 'css'
 end
 
 compile '/**/*.coffee' do
   filter :coffeescript
-  write "#{item.identifier.without_ext}.js"
+
+  write ext: 'js'
 end
 
 compile '/assets/images/logo2013.png' do

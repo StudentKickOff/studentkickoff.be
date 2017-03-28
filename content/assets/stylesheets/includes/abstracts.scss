@@ -4,6 +4,7 @@ $colblue: #1B95D4;
 $header-color: rgba(27, 149, 212, 0.9);
 $colyel: #FAB73E;
 $colred: #e94b43;
+$magic-pct: 7.9%;
 
 $section-colors: (
   "red": $colred,
@@ -19,13 +20,12 @@ $complements: (
 
 .section-wrap {
   position: relative;
+  margin-top: -$magic-pct;
 }
 
 %section{
   position: relative;
-  padding-top: 60px;
   padding-bottom: 160px;
-  margin-top: -10px;
   color: white;
 
   h1 {
@@ -85,11 +85,18 @@ $complements: (
     }
   }
 
-  .section-bar-#{$color-name} {
-    position: absolute;
-    bottom: 100%;
-    z-index: 1;
+  .svg-wrap {
+    position: relative;
+    padding-top: $magic-pct;
 
-    fill: $color-code;
+    .section-bar-#{$color-name} {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      fill: $color-code;
+    }
   }
 }

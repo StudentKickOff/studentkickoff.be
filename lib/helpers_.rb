@@ -10,3 +10,4 @@ include PartnerHelper
 include ArtistHelper
 include FontAwesomeHelper
 include SectionHelper
+include EnvironmentHelper
