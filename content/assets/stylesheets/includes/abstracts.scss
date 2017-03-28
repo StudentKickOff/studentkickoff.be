@@ -23,15 +23,14 @@ $complements: (
 
 %section{
   position: relative;
-  padding-bottom: 200px;
+  padding-top: 60px;
+  padding-bottom: 160px;
   margin-top: -10px;
   color: white;
 
   h1 {
     font-size: 6em;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   h2 {
@@ -79,6 +78,10 @@ $complements: (
 
     h1, h2, h3, strong {
       color: map-get($complements, $color-code);
+    }
+
+    .sneaky {
+      color: $color-code;
     }
   }
 

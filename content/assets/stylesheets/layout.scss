@@ -75,11 +75,15 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-.header-image {
+.header {
     position: relative;
     display: block;
     width: 100%;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .header-background {
       position: fixed;

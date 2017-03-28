@@ -2,6 +2,7 @@
 title: Team IT
 crew: team
 teamnaam: IT
+sneaky: aka Team Best
 foto: /assets/images/teamit.png
 teamleden:
   -

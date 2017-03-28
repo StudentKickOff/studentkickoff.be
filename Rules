@@ -30,19 +30,9 @@ compile '/meetthecrew/*.md' do
   layout '/teampagina.*'
   layout '/default.*'
   filter :erb
-
-  ident = item.identifier.without_ext.split('/').last
-  write "/meetthecrew/#{ident}/index.html"
 end
 
-compile '/faq.md' do
-  filter :kramdown
-  layout '/faq.*'
-  layout '/default.*'
-  filter :erb
-end
-
-compile '/partners.erb' do
+compile '/**/*.md' do
   filter :kramdown
   layout '/default.*'
   filter :erb
@@ -69,7 +59,7 @@ compile '/studentvillage/*.md', rep: :json do
   filter :strip_html
 
   attrs = item.attributes.dup
-  attrs[:logo] = "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}" if attrs[:logo]
+  attrs[:logo] &&= "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}"
 
   filter :json, attrs
 end
@@ -118,8 +108,6 @@ compile '/assets/images/logo2013.png' do
   write '/signature/logo2013.png'
 end
 
-compile '/**/*' do
-  write item.identifier.to_s
-end
+passthrough '/**/*'
 
 layout '/**/*', :erb
