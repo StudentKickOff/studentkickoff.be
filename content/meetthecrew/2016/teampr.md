@@ -1,58 +1,29 @@
 ---
 title: Team PR
-crew: team
 teamnaam: PR
 foto: /assets/images/org/teampr.jpg
 teamleden:
   -
     naam: Julie Poppe
     functie: Team Lead
-    opleiding: Project- en Eventmanagement
-    school: Arteveldehogeschool
-    email: julie.poppe
-    foto: juliepoppe.jpg
   -
     naam: Josianne Tas
     functie: Coördinator Externe Communicatie
-    opleiding: Journalistiek
-    school: Arteveldehogeschool
-    email: josianne.tas
-    foto: josiannetas.jpg
   -
     naam: Jasper Bergeman
     functie: Coördinator Pers
-    opleiding: Communicatiewetenschappen
-    school: Universiteit Gent
-    email: jasper.bergeman
-    foto: jasperbergeman.jpg
   -
     naam: Roeland Bolle
     functie: Coördinator Design
-    opleiding: Studio Reclame
-    school: Sint-Lucas
-    email: roeland.bolle
-    foto: roelandbolle.jpg
   -
     naam: Indra De Clercq
     functie: Coördinator Design
-    opleiding: Grafische Vormgeving
-    school: Sint-Lucas
-    email: indra.declercq
-    foto: indradeclercq.jpg
   -
     naam: Anne-Laure De Clercq
     functie: Coörd. Marketing & Campus Tour
-    opleiding: Communicatiemanagement
-    school: Arteveldehogeschool
-    email: annelaure.declercq
-    foto: annelauredeclercq.jpg
   -
     naam: Kelly Vandenbouhede
     functie: Coördinator Social Media
-    opleiding: Communicatiemanagement
-    school: Arteveldehogeschool
-    email: kelly.vandenbouhede
-    foto: kellyvandenbouhede.jpg
 ---
 
 Als er iets is wat de leden van team PR gemeenschappelijk hebben dan is het wel hun passie voor communicatie! Zet je oren en ogen maar wijd open want of het nu in persoon is tegen een groep journalisten, via spectaculaire affiches of gewoon online, ze zullen je overstelpen met hun informatie en acties. Geef ze een pen, een computer of een micro en ze creëren informatieve kunstwerkjes!

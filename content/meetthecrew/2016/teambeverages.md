@@ -1,79 +1,38 @@
 ---
 Title: Team Beverages
-crew: team
 teamnaam: Beverages
 foto: /assets/images/org/teambeverages.jpg
 teamleden:
   -
     naam: Cedric Philippe
     functie: Team Lead
-    opleiding: Event- en projectmanagement
-    school: Arteveldehogeschool
-    email: cedric.philippe
-    foto: cedricphilippe.jpg
   -
     naam: Jonas Nuyttens
     functie: Coördinator Logistiek
-    opleiding: Handelsingenieur
-    school: Universiteit Gent
-    email: jonas.nuyttens
-    foto: jonasnuyttens.jpg
   -
     naam: Charlotte Maenhaut
     functie: Coördinator Verkoop
-    opleiding: Event- en Projectmanagement
-    school: Arteveldehogeschool
-    email: charlotte.maenhaut
-    foto: charlottemaenhaut.jpg
   -
     naam: Dylan Sabot
     functie: Coördinator Partners
-    opleiding: Event- en Projectmanagement
-    school: Arteveldehogeschool
-    email: dylan.sabot
-    foto: dylansabot.jpg
   -
     naam: Viktor De Mulder
     functie: Coördinator VIP
-    opleiding: Marketing
-    school: Hogeschool Gent
-    email: viktor.demulder
-    foto: viktordemulder.jpg
   -
     naam: Antoine De Vogelaere
     functie: Crew Lead
-    opleiding: Event- en Projectmanagement
-    school: Arteveldehogeschool
-    email: antoine.devogelaere
-    foto: antoinedevogelaere.jpg
   -
     naam: Martijn Van Der Stap
     functie: Crew Lead
-    opleiding: Industrieel Ingenieur Chemie
-    school: Hogeschool Gent
-    email: martijn.vanderstap
-    foto: martijnvanderstap.jpg
   -
     naam: Thomas Lauwereins
     functie: Crew Lead
-    opleiding: Digitale en Grafische Media
-    school: Arteveldehogeschool
-    email: thomas.lauwereins
-    foto: thomaslauwereins.jpg
   -
-    naam: Servais Dhont
+    naam: Servais Dhondt
     functie: Crew Lead
-    opleiding: Event- en Projectmanagement
-    school: Arteveldehogeschool
-    email: servais.dhont
-    foto: servaisdhont.jpg
   -
     naam: Sander Phlips
     functie: Crew Lead
-    opleiding: International Business Management
-    school: Arteveldehogeschool
-    email: sander.phlips
-    foto: sanderphlips.jpg
 ---
 
 Team Beverages zorgt voor alle drank en catering op het terrein. Zware onderhandelingen met grote partners zoals Coca-Cola, Jet-Import, Diageo en andere is nog maar het begin van de voorbereiding. Daarnaast komt ook de logistieke inplanting van alle koeling en tapwagens, verdeeld over 10 bars. Neem daarbij nog de volledige organisatie van de VIP-ruimte, een inschatting van het aantal barmedewerkers en het alom gevreesde milieuplan en je komt tot een uitdagende mix van leuke ideeën en persoonlijkheden!

@@ -1,44 +1,23 @@
 ---
 title: Team HR
-crew: team
 teamnaam: HR
 foto: /assets/images/org/teamhr.jpg
 teamleden:
   -
     naam: Lennert Noppe
     functie: Team Lead
-    opleiding: Politieke Wetenschappen
-    school: Universiteit Gent
-    email: lennert.noppe
-    foto: lennertnoppe.jpg
   -
     naam: Babette Demeester
     functie: Coördinator Planning
-    opleiding: Audiologie
-    school: Universiteit Gent
-    email: babette.demeester
-    foto: babettedemeester.jpg
   -
     naam: Sylvia Beeckman
     functie: Coördinator Hospitality
-    opleiding: Management Assistent
-    school: Arteveldehogeschool
-    email: sylvia.beeckman
-    foto: sylviabeeckman.jpg
   -
     naam: Dina Boshra
     functie: Coördinator Recruitment
-    opleiding: Music and Entertainment
-    school: hogeschool VIVES
-    email: dina.boshra
-    foto: dinaboshra.jpg
   -
     naam: Sara Carton
     functie: Interne HR
-    opleiding: ????
-    school: ????
-    email: sara.carton
-    foto: saracarton.jpg
 ---
 
 Team HR is het team dat ervoor zorgt dat alle mensen die helpen om SKO te doen draaien graag afkomen en goed worden verzorgd.

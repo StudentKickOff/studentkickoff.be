@@ -1,51 +1,26 @@
 ---
 title: Team Partners
-crew: team
 teamnaam: Partners
 foto: /assets/images/org/teampartners.jpg
 teamleden:
   -
     naam: Valerie Appelmans
     functie: Team Lead
-    opleiding: Bedrijfscommunicatie
-    school: KU Leuven
-    email: valerie.appelmans
-    foto: valerieappelmans.jpg
   -
     naam: Phaedra Gabriels
     functie: Coördinator Commercial Partners
-    opleiding: Communicatiemanagement
-    school: Artevelde Hogeschool
-    email: Phaedra.Gabriels
-    foto: phaedragabriels.jpg
   -
     naam: Matthias Baetens
     functie: Coördinator Commercial Partners
-    opleiding: Burgerlijk Ingenieur
-    school: Universiteit Gent
-    email: matthias.baetens
-    foto: matthiasbaetens.jpg
   -
     naam: Amon De Keyser
     functie: Coördinator Commercial Partners
-    opleiding: Handelsingenieur
-    school: Universiteit Gent
-    email: amon.dekeyser
-    foto: amondekeyser.jpg
   -
     naam: Marwein El Bekri
     functie: Coördinator Non-Commercial
-    opleiding: Project- en Eventmanagement
-    school: Artevelde Hogeschool
-    email: marwein.elbekri
-    foto: marweinelbekri.jpg
   -
     naam: Manon De Winne
     functie: Coördinator Student Village
-    opleiding: Communicatiemanagement
-    school: Artevelde Hogeschool
-    email: manon.dewinne
-    foto: manondewinne.jpg
 ---
 
 Team partners verzorgt de samenwerking met zowel commerciële als non-commerciële partners die het mede mogelijk maken dat Student Kick-Off groter is dan ooit te voren.

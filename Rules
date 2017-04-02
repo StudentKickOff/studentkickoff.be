@@ -14,6 +14,15 @@ preprocess do
     artist[:title] = artist[:name]
     artist[:stage] = stage
   end
+
+  @items.find_all('/meetthecrew/*/*.md').each do |i|
+    next unless i.attributes[:teamleden]
+
+    i.attributes[:teamleden].map! do |e|
+      e.merge!(crew_map[e[:naam]]) if crew_map[e[:naam]]
+      e
+    end
+  end
 end
 
 compile '/**/*.erb' do
@@ -25,7 +34,7 @@ compile '/historiek/*.md' do
   filter :kramdown
 end
 
-compile '/meetthecrew/*.md' do
+compile '/meetthecrew/*/*.md' do
   filter :kramdown
   layout '/teampagina.*'
   layout '/default.*'
@@ -70,7 +79,7 @@ compile '/**/*.json' do
 end
 
 compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do
-  filter :resize
+  # filter :resize
   write "#{item.identifier.without_ext}_thumbnail.jpg"
 end
 

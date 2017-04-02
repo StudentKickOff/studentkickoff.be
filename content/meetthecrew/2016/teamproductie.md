@@ -1,58 +1,29 @@
 ---
 title: Team Productie
-crew: team
 teamnaam: Productie
 foto: /assets/images/org/teamproductie.jpg
 teamleden:
   -
     naam: Wouter Schelfhout
     functie: Team Lead
-    opleiding: Internationaal Ondernemen
-    school: Arteveldehogeschool
-    email: wouter.schelfhout
-    foto: wouterschelfhout.jpg
   -
     naam: Celine Marechal
     functie: Hospitality
-    opleiding: Geneeskunde
-    school: Universiteit Gent
-    email: celine.marechal
-    foto: celinemarechal.jpg
   -
     naam: Alexander Ballegeer
     functie: Productie Manager
-    opleiding: Event- en Projectmanagement
-    school: Arteveldehogeschool
-    email: alexander.ballegeer
-    foto: alexanderballegeer.jpg
   -
     naam: Jan Brain
     functie: Second Stage
-    opleiding: Toegepaste Architectuur
-    school: HoWest Brugge
-    email: jan.brain
-    foto: janbrain.jpg
   -
     naam: Bram Van De Velde
     functie: Crew Lead Productie
-    opleiding: TEW
-    school: Universiteit Gent
-    email: bram.vandevelde
-    foto: bramvandevelde.jpg
   -
     naam: Hannes Strobbe
     functie: Stage Manager
-    opleiding: Leerkracht Secundair Onderwijs
-    school: Hogeschool Gent
-    email: hannes.strobbe
-    foto: hannesstrobbe.jpg
   -
     naam: Judith Van Hoorde
     functie: Crew Lead Hospitality
-    opleiding: Journalistiek
-    school: Arteveldehogeschool
-    email: judith.vanhoorde
-    foto: judithvanhoorde.jpg
 ---
 
 Team productie is verantwoordelijk voor de muzikale kant van Student Kick-Off. Dankzij dit team kunnen de studenten genieten van de meest uiteenlopende concerten. Team productie bestaat uit zeven leden, waaronder één team lead, drie coördinatoren en drie crew leads. De leden van productie kan je terugvinden in de Sint-pietersabdij, het artiestendorp, de mainstage of second stage. Als je ze daar niet kan vinden, kan je nog eens proberen in de backstage of frontstage.

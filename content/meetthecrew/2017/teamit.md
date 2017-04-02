@@ -1,6 +1,5 @@
 ---
 title: Team IT
-crew: team
 teamnaam: IT
 sneaky: aka Team Best
 foto: /assets/images/teamit.png
@@ -8,38 +7,18 @@ teamleden:
   -
     naam: Jeroen De Clerck
     functie: Team Lead
-    opleiding: Informatica
-    school: Universiteit Gent
-    email: jeroen.declerck
-    foto: jeroendeclerck.jpg
   -
     naam: Lorin Werthen
     functie: Coördinator Access Management
-    opleiding: Informatica
-    school: Universiteit Gent
-    email: lorin.werthen
-    foto: lorinwerthen.jpg
   -
     naam: Benjamin Cousaert
-    functie: Crew Lead Access Management
-    opleiding: Informatica
-    school: Universiteit Gent
-    email: benjamin.cousaert
-    foto: benjamincousaert.jpg
+    functie: Coördinator Website
   -
     naam: Mats Myncke
     functie: Coördinator Hardware
-    opleiding: Informatica
-    school: Universiteit Gent
-    email: mats.myncke
-    foto: matsmyncke.png
   -
-    naam: Ruben Haegeman
-    functie: Coördinator Website
-    opleiding: Electronica-ICT
-    school: Odisee
-    email: ruben.haegeman
-    foto: rubenhaegeman.jpg
+    naam: Rien Maertens
+    functie: Crew Lead IT
 ---
 
 Team IT is verantwoordelijk voor alles wat te maken heeft met computers en internet op het festival.
