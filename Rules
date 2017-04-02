@@ -49,7 +49,7 @@ compile '/artists/*/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
   filter :json, item.attributes.merge(
-    image: "http://studentkickoff.be/assets/images/artists/#{item[:image]}"
+    image: "https://studentkickoff.be/assets/images/artists/#{item[:image]}"
   )
 end
 
@@ -59,7 +59,7 @@ compile '/studentvillage/*.md', rep: :json do
   filter :strip_html
 
   attrs = item.attributes.dup
-  attrs[:logo] &&= "http://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}"
+  attrs[:logo] &&= "https://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}"
 
   filter :json, attrs
 end
