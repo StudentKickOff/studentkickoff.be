@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# frozen_string_literal: true
+
 preprocess do
   jaren.each do |item|
     jaar = item.identifier.without_ext.split('/').last.to_i
@@ -15,7 +17,26 @@ preprocess do
     artist[:stage] = stage
   end
 
-  @items.find_all('/meetthecrew/*/*.md').each do |i|
+  crew_years.each do |year|
+    @items.create('', {year: year}, "/crew/#{year}.erb")
+  end
+
+  def symbolize(x)
+    case x
+    when Hash
+      x.symbolize_keys!
+      x.each { |_, v| symbolize(v) }
+    when Enumerable
+      x.each { |v| symbolize(v) }
+    end
+  end
+
+  # We want these items to populate the attributes as well
+  @items.find_all('/**/*.yml').each do |i|
+    i.update_attributes(symbolize(YAML.safe_load(i.raw_content)))
+  end
+
+  @items.find_all('/crew/*/*.md').each do |i|
     next unless i.attributes[:teamleden]
 
     i.attributes[:teamleden].map! do |e|
@@ -25,20 +46,21 @@ preprocess do
   end
 end
 
-compile '/**/*.erb' do
-  layout '/default.*'
-  filter :erb
-end
-
 compile '/historiek/*.md' do
   filter :kramdown
 end
 
-compile '/meetthecrew/*/*.md' do
+compile '/crew/*/*.md' do
   filter :kramdown
-  layout '/teampagina.*'
+  layout '/crew/teampagina.*'
   layout '/default.*'
   filter :erb
+end
+
+compile '/crew/*.erb' do
+  filter :erb
+  layout '/crew/overview.*'
+  layout '/default.*'
 end
 
 compile '/**/*.md' do
@@ -71,6 +93,11 @@ compile '/studentvillage/*.md', rep: :json do
   attrs[:logo] &&= "https://studentkickoff.be/assets/images/studentvillage/#{attrs[:logo]}"
 
   filter :json, attrs
+end
+
+compile '/**/*.erb' do
+  layout '/default.*'
+  filter :erb
 end
 
 compile '/**/*.json' do

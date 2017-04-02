@@ -15,24 +15,25 @@ module CrewHelper
     crew_list.map { |e| [e[:naam], e] }.to_h
   end
 
-  def year_to_crew(year)
-    p year
-    items.find_all("/meetthecrew/#{year}/*.md")
+  def crew_of(year)
+    @items.find_all("/crew/#{year}/*.md")
+  end
+
+  def crew_item_of(year)
+    @items["/crew/#{year}.*"]
+  end
+
+  def crew_years
+    @items.find_all('/crew/*/*.md')
+          .map { |e| e.identifier.to_s.split('/')[2] }
+          .uniq
   end
 
   def latest_crew_year
-    items.find_all('/meetthecrew/*/*.md')
-         .sort_by(&:identifier)
-         .map { |e| e.identifier.to_s.split('/')[2] }
-         .uniq
-         .last
+    crew_years.last
   end
 
   def latest_crew
-    year_to_crew(latest_crew_year)
-  end
-
-  def teams
-    items.find_all('/meetthecrew/*').select { |x| x[:crew] == 'team' }
+    crew_of(latest_crew_year)
   end
 end

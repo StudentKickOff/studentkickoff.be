@@ -1,9 +1,18 @@
----
-title: Meet The Crew
----
-
 <% render '/partials/header.*', image: '/assets/images/design/header1.png' do %>
-Meet The Crew
+Crew of
+<!-- Single button -->
+<div class="btn-group dropdown">
+  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <%= @item[:year] %> <i class="glyphicon glyphicon-menu-down"></i>
+  </span>
+  <ul class="dropdown-menu">
+    <% crew_years.each do |y| %>
+    <li>
+      <li><a href="<%= crew_item_of(y).path %>"><%= y %></a></li>
+    </li>
+    <% end %>
+  </ul>
+</div>
 <% end %>
 
 <% section :yellow do %>
@@ -22,8 +31,8 @@ Meet The Crew
   <div class="col-md-6">
     <p>De kern bestaat uit:</p>
     <ul>
-      <li>1 <a href="/meetthecrew/algemeencoordinator">Algemeen Coördinator</a></li>
-      <li>1 <a href="/meetthecrew/juridische">Juridische verantwoordelijke</a></li>
+      <li>1 <a href="/crew/<%= latest_crew_year %>/algemeencoordinator">Algemeen Coördinator</a></li>
+      <li>1 <a href="/crew/<%= latest_crew_year %>/juridische">Juridische verantwoordelijke</a></li>
       <li>7 Team Leads</li>
     </ul>
   </div>
@@ -41,7 +50,7 @@ Meet The Crew
 <% section :red do %>
 <h1>Meet the Teams</h1>
 
-<% latest_crew.each do |team| %>
+<% crew_of(@item[:year]).each do |team| %>
 <div class="col-md-3 col-sm-6 col-xs-12">
   <div class="teamcard">
     <a href="<%= team.path %>">

@@ -1,4 +1,4 @@
-require 'active_support/core_ext/string'
+require 'active_support/all'
 
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo

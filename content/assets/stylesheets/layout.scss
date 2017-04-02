@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
 
+    // Magic numbah
+    padding-bottom: 220px;
+    min-height: 100vh;
+
     .header-background {
       position: fixed;
       background-size: cover;
@@ -103,9 +107,18 @@ h1, h2, h3, h4, h5 {
       z-index: -5;
     }
 
-    // Magic numbah
-    padding-bottom: 220px;
-    min-height: 100vh;
+  .btn-group.dropdown {
+    vertical-align: baseline;
+
+    .dropdown-menu{
+      background-color: rgba(0, 0, 0, 0);
+      font-size: inherit;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
 }
 
 

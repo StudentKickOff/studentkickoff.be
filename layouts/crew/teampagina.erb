@@ -54,7 +54,7 @@ Team <%= item[:teamnaam] %>
 <h1>Meet the Teams</h1>
 
 <div class="row">
-  <% teams.each do |team| %>
+  <% latest_crew.each do |team| %>
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="teamcard">
       <a href="<%= team.path %>">

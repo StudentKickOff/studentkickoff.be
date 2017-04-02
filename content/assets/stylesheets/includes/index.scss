@@ -20,14 +20,8 @@ $photoslidertextsize: 50px;
 
 @mixin headline-title($font-size) {
   font-size: $font-size;
-  background: rgba(255,255,255,0.8);
-  color: #e94b43;
-
-  &.alt {
-    background: none;
-    color: white;
-    text-shadow: 2px 2px black;
-  }
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .headline {
