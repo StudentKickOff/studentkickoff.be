@@ -1,7 +1,7 @@
 ---
 Title: Team Beverages
 teamnaam: Beverages
-foto: /assets/images/org/teambeverages.jpg
+foto: /assets/images/org/2016/teambeverages.jpg
 teamleden:
   -
     naam: Cedric Philippe

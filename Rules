@@ -18,7 +18,11 @@ preprocess do
   end
 
   crew_years.each do |year|
-    @items.create('', {year: year}, "/crew/#{year}.erb")
+    @items.create('', { year: year }, "/crew/#{year}.erb")
+
+    crew_of(year).each do |crew|
+      crew[:year] = year
+    end
   end
 
   def symbolize(x)
@@ -36,11 +40,26 @@ preprocess do
     i.update_attributes(symbolize(YAML.safe_load(i.raw_content)))
   end
 
+  # Add extra attributes to our crewmembers
+  @items['/**/leden.*'][:leden].each do |e|
+    e[:email] = e[:naam].downcase.tr(' ', '.')
+  end
+
   @items.find_all('/crew/*/*.md').each do |i|
     next unless i.attributes[:teamleden]
 
     i.attributes[:teamleden].map! do |e|
       e.merge!(crew_map[e[:naam]]) if crew_map[e[:naam]]
+
+      # Don't infer photo name when provided
+      unless e[:photo]
+        compact_name = ActiveSupport::Inflector.transliterate(e[:naam].downcase.tr(' ', ''))
+        e[:photo] = "#{compact_name}.jpg"
+      end
+
+      # Set the photo url dependent on year
+      e[:photo] = "#{i[:year]}/#{e[:photo]}"
+
       e
     end
   end

@@ -1,7 +1,7 @@
 ---
 title: Team Partners
 teamnaam: Partners
-foto: /assets/images/org/teampartners.jpg
+foto: /assets/images/org/2016/teampartners.jpg
 teamleden:
   -
     naam: Valerie Appelmans

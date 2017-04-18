@@ -3,7 +3,7 @@ Crew of
 <!-- Single button -->
 <div class="btn-group dropdown">
   <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <%= @item[:year] %> <i class="glyphicon glyphicon-menu-down"></i>
+    <%= @item[:year] %> <%= fa 'caret-down' %>
   </span>
   <ul class="dropdown-menu">
     <% crew_years.each do |y| %>

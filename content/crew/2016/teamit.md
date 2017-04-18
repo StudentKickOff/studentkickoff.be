@@ -2,7 +2,7 @@
 title: Team IT
 teamnaam: IT
 sneaky: aka Team Best
-foto: /assets/images/teamit.png
+foto: /assets/images/org/2016/teamit.png
 teamleden:
   -
     naam: Jeroen De Clerck
@@ -16,6 +16,7 @@ teamleden:
   -
     naam: Mats Myncke
     functie: Coördinator Hardware
+    photo: matsmyncke.png
   -
     naam: Ruben Haegeman
     functie: Coördinator Website

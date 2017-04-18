@@ -1,5 +1,5 @@
 <% render '/partials/header.*', image: item[:foto], extra_classes: 'teamheader' do %>
-Team <%= item[:teamnaam] %>
+Team <%= item[:teamnaam] %> <%= item[:year] %>
 <% end %>
 
 <% section :yellow do %>
@@ -41,7 +41,7 @@ Team <%= item[:teamnaam] %>
           <%= lid[:school] %><br>
         </p>
       </div>
-      <img src="/assets/images/org/<%= lid[:foto] %>" class="img-responsive portfolio-item" alt="">
+      <img src="/assets/images/org/<%= lid[:photo] %>" class="img-responsive portfolio-item" alt="">
     </div>
   </div>
   <% end %>

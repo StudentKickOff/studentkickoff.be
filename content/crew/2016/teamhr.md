@@ -1,7 +1,7 @@
 ---
 title: Team HR
 teamnaam: HR
-foto: /assets/images/org/teamhr.jpg
+foto: /assets/images/org/2016/teamhr.jpg
 teamleden:
   -
     naam: Lennert Noppe

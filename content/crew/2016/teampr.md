@@ -1,7 +1,7 @@
 ---
 title: Team PR
 teamnaam: PR
-foto: /assets/images/org/teampr.jpg
+foto: /assets/images/org/2016/teampr.jpg
 teamleden:
   -
     naam: Julie Poppe
