@@ -19,7 +19,7 @@ Crew of
 <div class="row">
   <div class="col-md-8" style="z-index: 2;">
     <figure>
-      <img class="img-responsive" src="/assets/images/organisatie.jpg" alt="">
+      <img class="img-responsive" src="/assets/images/org/<%= @item[:year] %>/organisatie.jpg" alt="">
     </figure>
   </div>
   <div class="col-md-4">
@@ -31,8 +31,8 @@ Crew of
   <div class="col-md-6">
     <p>De kern bestaat uit:</p>
     <ul>
-      <li>1 <a href="/crew/<%= latest_crew_year %>/algemeencoordinator">Algemeen Coördinator</a></li>
-      <li>1 <a href="/crew/<%= latest_crew_year %>/juridische">Juridische verantwoordelijke</a></li>
+      <li>1 <a href="/crew/<%= @item[:year] %>/algemeencoordinator">Algemeen Coördinator</a></li>
+      <li>1 <a href="/crew/<%= @item[:year] %>/juridische">Juridische verantwoordelijke</a></li>
       <li>7 Team Leads</li>
     </ul>
   </div>
@@ -40,8 +40,8 @@ Crew of
     <p>Ieder team bestaat uit:</p>
     <ul>
       <li>1 Team Lead</li>
-      <li>Coördinatoren</li>
-      <li>Crew Leads</li>
+      <li>3 tot 6 Coördinatoren</li>
+      <li>0 tot 13 Crew Leads</li>
     </ul>
   </div>
 </div>
