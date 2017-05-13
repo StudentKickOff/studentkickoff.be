@@ -1,17 +1,11 @@
 require 'mini_magick'
 
-class ResizeFilter < Nanoc::Filter
-  identifier :resize
+class ImgCompressFilter < Nanoc::Filter
+  identifier :img_compress
   type :binary
 
-  def run(filename, size: '150x150^', **params)
-    puts "processing image #{filename}"
+  def run(filename, **_params)
     img = MiniMagick::Image.open(filename)
-
-    # Cropping
-    img.resize(size)
-    img.gravity('Center')
-    img.crop '150x150+0+0'
 
     # Compressing
     img.sampling_factor '4:2:0'

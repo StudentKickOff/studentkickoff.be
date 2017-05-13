@@ -127,8 +127,13 @@ compile '/**/*.json' do
 end
 
 compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do
-  # filter :resize
+  filter :img_resize, size: '150x150'
+  filter :img_compress
   write "#{item.identifier.without_ext}_thumbnail.jpg"
+end
+
+compile '/assets/images/**/*.{jpg,png}' do
+  # filter :img_compress
 end
 
 # Empty route block prevents item from being written out
@@ -163,10 +168,8 @@ compile '/**/*.coffee' do
   write ext: 'js'
 end
 
-compile '/assets/images/logo2013.png' do
-  write '/signature/logo2013.png'
-end
-
-passthrough '/**/*'
+passthrough '/assets/**/*'
+passthrough '/crew/leden.yml'
+passthrough '/signature/logo2013.png'
 
 layout '/**/*', :erb
