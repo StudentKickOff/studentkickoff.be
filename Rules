@@ -54,7 +54,7 @@ preprocess do
       # Don't infer photo name when provided
       unless e[:photo]
         compact_name = ActiveSupport::Inflector.transliterate(
-          e[:naam].downcase.tr(' -', '')
+          e[:naam].downcase.gsub(/[-' ]/, '')
         )
         e[:photo] = "#{compact_name}.jpg"
       end

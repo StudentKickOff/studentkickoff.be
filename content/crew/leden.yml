@@ -3,59 +3,49 @@ leden:
     naam: Cedric Philippe
     opleiding: Event- en projectmanagement
     school: Arteveldehogeschool
-
   -
     naam: Jonas Nuyttens
     opleiding: Handelsingenieur
     school: Universiteit Gent
-
   -
     naam: Charlotte Maenhaut
     opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
-
   -
     naam: Dylan Sabot
     opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
-
   -
     naam: Viktor De Mulder
     opleiding: Marketing
     school: Hogeschool Gent
-
   -
     naam: Antoine De Vogelaere
     opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
-
   -
     naam: Martijn Van Der Stap
     opleiding: Industrieel Ingenieur Chemie
     school: Hogeschool Gent
-
   -
     naam: Thomas Lauwereins
     opleiding: Digitale en Grafische Media
     school: Arteveldehogeschool
-
   -
     naam: Servais Dhont
     opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
-
   -
     naam: Sander Phlips
     opleiding: International Business Management
     school: Arteveldehogeschool
-
   -
     naam: Lennert Noppe
     opleiding: Politieke Wetenschappen
     school: Universiteit Gent
   -
     naam: Babette Demeester
-    opleiding: Audiologie
+    opleiding: Logopedie
     school: Universiteit Gent
   -
     naam: Sylvia Beeckman
@@ -69,7 +59,6 @@ leden:
     naam: Sara Carton
     opleiding: ????
     school: ????
-
   -
     naam: Jeroen De Clerck
     opleiding: Informatica
@@ -89,8 +78,7 @@ leden:
   -
     naam: Ruben Haegeman
     opleiding: Electronica-ICT
-    school: Odisee
-
+    school: Odissee
   -
     naam: Valerie Appelmans
     opleiding: Bedrijfscommunicatie
@@ -98,7 +86,7 @@ leden:
   -
     naam: Phaedra Gabriels
     opleiding: Communicatiemanagement
-    school: Artevelde Hogeschool
+    school: Arteveldehogeschool
   -
     naam: Matthias Baetens
     opleiding: Burgerlijk Ingenieur
@@ -109,16 +97,15 @@ leden:
     school: Universiteit Gent
   -
     naam: Marwein El Bekri
-    opleiding: Project- en Eventmanagement
-    school: Artevelde Hogeschool
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
   -
     naam: Manon De Winne
     opleiding: Communicatiemanagement
-    school: Artevelde Hogeschool
-
+    school: Arteveldehogeschool
   -
     naam: Julie Poppe
-    opleiding: Project- en Eventmanagement
+    opleiding: Event- en Projectmanagement
     school: Arteveldehogeschool
   -
     naam: Josianne Tas
@@ -144,7 +131,6 @@ leden:
     naam: Kelly Vandenbouhede
     opleiding: Communicatiemanagement
     school: Arteveldehogeschool
-
   -
     naam: Wouter Schelfhout
     opleiding: Internationaal Ondernemen
@@ -173,11 +159,10 @@ leden:
     naam: Judith Van Hoorde
     opleiding: Journalistiek
     school: Arteveldehogeschool
-
   -
     naam: Bram De Nil
-    opleiding: Project- en Eventmanagement
-    school: Artevelde Hogeschool
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
   -
     naam: Sébastien Vandenhouten
     opleiding: Maatschappelijke veiligheid
@@ -204,8 +189,8 @@ leden:
     school: ????
   -
     naam: Benny Reubens
-    opleiding: ????
-    school: ????
+    opleiding: Industrieel Ingenieur Electronica-ICT
+    school: Universiteit Gent
   -
     naam: Caroline De Brouwer
     opleiding: Burgerlijk Ingenieur CW
@@ -217,7 +202,7 @@ leden:
   -
     naam: Tijl Garré
     opleiding: ????
-    school: Universiteit Gent
+    school: ????
   -
     naam: Francis Begyn
     opleiding: Industrieel Ingenieur
@@ -234,3 +219,150 @@ leden:
     naam: Rien Maertens
     opleiding: Informatica
     school: Universiteit Gent
+  -
+    naam: Nick De Clercq
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Ismene Ledegen
+    opleiding: Geografie
+    school: Universiteit Gent
+  -
+    naam: Maxime Pans
+    opleiding: Pedagogie
+    school: Arteveldehogeschool
+  -
+    naam: Hannelore Higuet
+    opleiding: Muziekmanagement
+    school: PXL Hasselt
+  -
+    naam: Jacob De Vriendt
+    opleiding: Journalistiek
+    school: Arteveldehogeschool
+  -
+    naam: Jan Vanlerberghe
+    opleiding: Maatschappelijke Veiligheid
+    school: VIVES Kortrijk
+  -
+    naam: Maarten De Ridder
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Lukas Petit
+    opleiding: Electronica-ICT
+    school: Odissee
+  -
+    naam: Bryan Verfaillie
+    opleiding: Burgerlijk Ingenieur CW
+    school: Universiteit Gent
+  -
+    naam: Kjell De Meester
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Niek Valcke
+    opleiding: Afgestudeerd
+    school:
+  -
+    naam: Margot Balcaen
+    opleiding: Farmaceutische Wetenschappen
+    school: Universiteit Gent
+  -
+    naam: Lorre Platton
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Maxim Caby
+    opleiding: Industrieel Ingenieur Biochemie
+    school: Universiteit Gent
+  -
+    naam: Lies Vandevyvere
+    opleiding: Verpleegkunde
+    school: Arteveldehogeschool
+  -
+    naam: Laura Reyné
+    opleiding: Journalistiek
+    school: Arteveldehogeschool
+  -
+    naam: Pieterjan Dekeyser
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Ann-sophie Bracke
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+  -
+    naam: X
+    opleiding: X
+    school: X
+
+
+
