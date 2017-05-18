@@ -1,0 +1,13 @@
+language: ruby
+
+cache:
+    bundler: true
+    directories:
+      - output
+      - tmp
+
+bundler_args: --without nanoc development
+
+script:
+- bundle exec nanoc -e prod
+- bundle exec nanoc -e prod check --deploy
