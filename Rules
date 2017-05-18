@@ -60,7 +60,7 @@ preprocess do
       end
 
       # Set the photo url dependent on year
-      e[:photo] = "#{i[:year]}/#{e[:photo]}"
+      e[:photo] = "#{i[:year]}/members/#{e[:photo]}"
 
       e
     end
@@ -130,6 +130,10 @@ compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do
   filter :img_resize, size: '150x150'
   filter :img_compress
   write "#{item.identifier.without_ext}_thumbnail.jpg"
+end
+
+compile '/assets/images/org/*/members/*.{jpg,png}' do
+  filter :img_resize, size: '300x300'
 end
 
 compile '/assets/images/**/*.{jpg,png}' do

@@ -2,7 +2,7 @@
 title: Team IT
 teamnaam: IT
 sneaky: aka Team Best
-foto: /assets/images/org/2017/teamit.jpg
+foto: /assets/images/org/2017/teamit.png
 teamleden:
   -
     naam: Jeroen De Clerck
