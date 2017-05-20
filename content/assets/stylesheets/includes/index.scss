@@ -1,11 +1,11 @@
-/* ==variables== */
+// Variables
 $photosliderheight: 250px;
 $photoslidertextsize: 50px;
 
-.bagbanbasic {
-  height: auto;
+%bagbanbasic {
   animation: pulsate 1s ease-in-out;
   animation-iteration-count: infinite;
+  height: auto;
 
   &:hover {
     animation-iteration-count: 1;
@@ -13,53 +13,60 @@ $photoslidertextsize: 50px;
 }
 
 @keyframes pulsate {
-    0% {transform: scale(0.9, 0.9);}
-    50% {transform: scale(1.0, 1.0);}
-    100% {transform: scale(0.9, 0.9);}
+  0% {transform: scale(.9, .9);}
+  50% {transform: scale(1, 1);}
+  100% {transform: scale(.9, .9);}
 }
 
 @mixin headline-title($font-size) {
+  $font-color: #fff;
+  $shadow: #000;
+
   font-size: $font-size;
-  color: white;
-  text-shadow: 2px 2px black;
+  color: $font-color;
+  text-shadow: 2px 2px $shadow;
 }
 
 .headline {
-    padding-top: 200px;
+  padding-top: 200px;
 
-    h1 {
-      @include headline-title(150px);
+  h1 {
+    @include headline-title(150px);
+  }
+
+  h2 {
+    @include headline-title(50px);
+  }
+
+  a {
+    $color: #fff;
+    $hover-color: #000;
+
+    border: 1px solid $color;
+    border-radius: 4px;
+    color: $color;
+    padding: 10px;
+
+    &:hover {
+      background-color: $color;
+      color: $hover-color;
     }
-
-    h2 {
-      @include headline-title(50px);
-    }
-
-    a {
-      background: rgba(100,100,100,0.5);
-      color: white;
-      border: 1px solid white;
-      border-radius: 4px;
-      padding: 10px;
-
-      &:hover {
-        background-color: white;
-        color: black;
-      }
-    }
+  }
 }
 
 .bagbantop {
-  @extend .bagbanbasic;
-  width: 15%;
+  @extend %bagbanbasic;
+
   margin-bottom: 10px;
+  width: 15%;
 }
 
 .bagban {
-  @extend .bagbanbasic;
-  width: 100%;
-  min-width: 100px;
+  @extend %bagbanbasic;
+
   max-width: 150px;
+  min-width: 100px;
+  width: 100%;
 }
 
 .videorapper {
@@ -75,23 +82,23 @@ $photoslidertextsize: 50px;
   }
 
   img {
-    position: absolute;
     height: auto;
-    width: inherit;
     pointer-events: none;
+    position: absolute;
+    width: inherit;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .videosection {
-  height: 50vw;
-  width: 50vw;
+    height: 50vw;
+    width: 50vw;
 
     iframe {
-      top: 32%;
-      left: 7%;
-      width: 71.5%;
       height: 43%;
+      left: 7%;
+      top: 32%;
+      width: 71.5%;
     }
   }
 }
@@ -102,20 +109,19 @@ $photoslidertextsize: 50px;
 }
 
 .headline {
-    .livebutton {
-        transition: all 0.3s ease-out;
-        background: #fff;
-        box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
-    }
-    .livebutton:hover {
-        transform: scale(1.05, 1.05);
-        background: #e6e6e6;
-    }
+  .livebutton {
+    background: #fff;
+    box-shadow: 10px 10px 25px 0 rgba(0,0,0,0.75);
+    transition: all .3s ease-out;
+  }
+  .livebutton:hover {
+    background: #e6e6e6;
+    transform: scale(1.05, 1.05);
+  }
   .livebuttoncontainer {
     display: flex;
-    justify-content: center;
-
     height: 160px;
+    justify-content: center;
 
     .sko-logo {
       width: 110px;
@@ -127,32 +133,30 @@ $photoslidertextsize: 50px;
     }
 
     .counter {
+      color: white;
       font-family: 'LeagueGothic-Regular';
+      font-size: 1.5em;
 
       min-width: 100px;
       text-align: left;
-      color: white;
 
       text-transform: uppercase;
-      font-size: 1.5em;
 
       .number {
-        position: relative;
-        color: $colred;
+        background-image: url('/assets/images/TELLER2.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
 
-        line-height: 135px;
+        color: $colred;
         font-size: 90pt;
+        height: 100%;
+        line-height: 135px;
+        position: relative;
         text-align: center;
 
-        height: 100%;
-
-        background-image: url("/assets/images/TELLER2.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-
         img {
-          position: absolute;
           left: 0;
+          position: absolute;
           top: 0;
         }
       }
@@ -173,10 +177,10 @@ $photoslidertextsize: 50px;
     width: 90vw;
 
     iframe {
-      top: 40%;
-      left: 7%;
-      width: 72%;
       height: 55%;
+      left: 7%;
+      top: 40%;
+      width: 72%;
     }
   }
 
@@ -196,13 +200,12 @@ $photoslidertextsize: 50px;
       }
 
       .counter {
+        background-size: 100%;
         font-size: 1em;
 
-        background-size: 100%;
-
         .number {
-          line-height: 100%;
           font-size: 7em;
+          line-height: 100%;
         }
       }
     }
@@ -233,22 +236,12 @@ $photoslidertextsize: 50px;
   }
 }
 
-.section3 {
-  hr {
-    border-color: white;
-  }
-
-  a {
-    color: $colyel;
-  }
-}
-
 .running-order {
-
   .lineupartist {
     img {
       float: right;
     }
+
     a {
       float: left;
     }
@@ -264,118 +257,75 @@ $box-shadow: ();
 $box-shadow2: ();
 @for $i from 0 through $particles {
   $box-shadow: $box-shadow,
-               random($width)-$width / 2 + px
-               random($height)-$height / 1.2 + px
+               random($width) - $width / 2 + px
+               random($height) - $height / 1.2 + px
                hsl(random(360), 100, 50);
   $box-shadow2: $box-shadow2, 0 0 #fff
 }
-@mixin keyframes ($animationName) {
-    @-webkit-keyframes #{$animationName} {
-        @content;
-    }
-
-    @-moz-keyframes #{$animationName} {
-        @content;
-    }
-
-    @-o-keyframes #{$animationName} {
-        @content;
-    }
-
-    @-ms-keyframes #{$animationName} {
-        @content;
-    }
-
-    @keyframes #{$animationName} {
-        @content;
-    }
-}
-
-@mixin animation-delay ($settings) {
-    -moz-animation-delay: $settings;
-    -webkit-animation-delay: $settings;
-    -o-animation-delay: $settings;
-    -ms-animation-delay: $settings;
-    animation-delay: $settings;
-}
-
-@mixin animation-duration ($settings) {
-    -moz-animation-duration: $settings;
-    -webkit-animation-duration: $settings;
-    -o-animation-duration: $settings;
-    -ms-animation-duration: $settings;
-    animation-duration: $settings;
-}
-
-@mixin animation ($settings) {
-    -moz-animation: $settings;
-    -webkit-animation: $settings;
-    -o-animation: $settings;
-    -ms-animation: $settings;
-    animation: $settings;
-}
-
-@mixin transform ($settings) {
-    transform: $settings;
-    -moz-transform: $settings;
-    -webkit-transform: $settings;
-    -o-transform: $settings;
-    -ms-transform: $settings;
-}
 
 body {
-  margin:0;
-  padding:0;
   background: #000;
+  margin: 0;
   overflow: hidden;
+  padding: 0;
 }
 
-.pyro > .before, .pyro > .after {
-  position: absolute;
-  width: 5px;
-  height: 5px;
+.pyro > .before,
+.pyro > .after {
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
   border-radius: 50%;
   box-shadow: $box-shadow2;
-  @include animation((1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards));
+  height: 5px;
+  position: absolute;
+  width: 5px;
 }
 
 .pyro > .after {
-  @include animation-delay((1.25s, 1.25s, 1.25s));
-  @include animation-duration((1.25s, 1.25s, 6.25s));
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
 }
 
-@include keyframes(bang) {
+@keyframes bang {
   to {
-    box-shadow:$box-shadow;
+    box-shadow: $box-shadow;
   }
 }
 
-@include keyframes(gravity)  {
+@keyframes gravity {
   to {
-    @include transform(translateY(200px));
     opacity: 0;
+    transform: translateY(200px);
   }
 }
 
-@include keyframes(position) {
-  0%, 19.9% {
-    margin-top: 10%;
+@keyframes position {
+  0%,
+  19.9% {
     margin-left: 40%;
+    margin-top: 10%;
   }
-  20%, 39.9% {
-    margin-top: 40%;
+
+  20%,
+  39.9% {
     margin-left: 30%;
+    margin-top: 40%;
   }
-  40%, 59.9% {
+
+  40%,
+  59.9% {
+    margin-left: 70%;
     margin-top: 20%;
-    margin-left: 70%
   }
-  60%, 79.9% {
-    margin-top: 30%;
+
+  60%,
+  79.9% {
     margin-left: 20%;
-  }
-  80%, 99.9% {
     margin-top: 30%;
+  }
+
+  80%,
+  99.9% {
     margin-left: 80%;
+    margin-top: 30%;
   }
 }

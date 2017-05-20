@@ -1,8 +1,8 @@
-/* ==variables== */
+// Variables
 $rot: -4deg;
-$colblue: #1B95D4;
-$header-color: rgba(27, 149, 212, 0.9);
-$colyel: #FAB73E;
+$colblue: #1b95d4;
+$header-color: rgba(27, 149, 212, .9);
+$colyel: #fab73e;
 $colred: #e94b43;
 $magic-pct: 7.9%;
 
@@ -19,14 +19,16 @@ $complements: (
 );
 
 .section-wrap {
-  position: relative;
   margin-top: -$magic-pct;
+  position: relative;
 }
 
-%section{
-  position: relative;
+$section-font-color: #fff;
+
+%section {
+  color: $section-font-color;
   padding-bottom: 160px;
-  color: white;
+  position: relative;
 
   h1 {
     font-size: 6em;
@@ -46,13 +48,13 @@ $complements: (
   }
 }
 
-@media only screen and (max-width: 768px ) {
+@media only screen and (max-width: 768px) {
   %section h3 span {
     display: block;
   }
 }
 
-@media only screen and (min-width: 1200px ) {
+@media only screen and (min-width: 1200px) {
   %section h3 {
     font-size: 3em;
   }
@@ -76,7 +78,10 @@ $complements: (
     @extend %section;
     background: $color-code;
 
-    h1, h2, h3, strong {
+    h1,
+    h2,
+    h3,
+    strong {
       color: map-get($complements, $color-code);
     }
 
@@ -86,17 +91,16 @@ $complements: (
   }
 
   .svg-wrap {
-    position: relative;
     padding-top: $magic-pct;
+    position: relative;
 
     .section-bar-#{$color-name} {
+      fill: $color-code;
       height: 100%;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
       z-index: 1;
-
-      fill: $color-code;
     }
   }
 }
