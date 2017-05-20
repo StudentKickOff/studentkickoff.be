@@ -1,6 +1,11 @@
 engines:
- scss-lint:
+  scss-lint:
     enabled: true
+  rubocop:
+    enabled: true
+
 ratings:
   paths:
   - "**.scss"
+  - "**.rb"
+  - "Rules"
