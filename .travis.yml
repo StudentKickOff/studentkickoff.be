@@ -1,13 +1,21 @@
 language: ruby
-
 cache:
-    bundler: true
-    directories:
-      - output
-      - tmp
-
-bundler_args: --without nanoc development
-
+  bundler: true
+  directories:
+  - output
+  - tmp
+bundler_args: "--without nanoc development"
 script:
 - bundle exec nanoc -e prod
 - bundle exec nanoc -e prod check --deploy
+before_install:
+- openssl aes-256-cbc -K $encrypted_02ed88bbf2fa_key -iv $encrypted_02ed88bbf2fa_iv
+  -in id_rsa.enc -out id_rsa -d
+- echo -e "Host studentkickoff.be\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+script:
+- bundle exec nanoc -e prod
+- bundle exec nanoc -e prod check --deploy
+after_success:
+- mv id_rsa ~/.ssh/id_rsa
+- chmod 600 ~/.ssh/id_rsa
+- '[[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]] && bundle exec nanoc -e prod deploy public'

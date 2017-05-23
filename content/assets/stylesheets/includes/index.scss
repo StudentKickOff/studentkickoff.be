@@ -27,33 +27,6 @@ $photoslidertextsize: 50px;
   text-shadow: 2px 2px $shadow;
 }
 
-.headline {
-  padding-top: 200px;
-
-  h1 {
-    @include headline-title(150px);
-  }
-
-  h2 {
-    @include headline-title(50px);
-  }
-
-  a {
-    $color: #fff;
-    $hover-color: #000;
-
-    border: 1px solid $color;
-    border-radius: 4px;
-    color: $color;
-    padding: 10px;
-
-    &:hover {
-      background-color: $color;
-      color: $hover-color;
-    }
-  }
-}
-
 .bagbantop {
   @extend %bagbanbasic;
 
@@ -109,15 +82,42 @@ $photoslidertextsize: 50px;
 }
 
 .headline {
+  padding-top: 200px;
+
+  h1 {
+    @include headline-title(150px);
+  }
+
+  h2 {
+    @include headline-title(50px);
+  }
+
+  a {
+    $color: #fff;
+    $hover-color: #000;
+
+    border: 1px solid $color;
+    border-radius: 4px;
+    color: $color;
+    padding: 10px;
+
+    &:hover {
+      background-color: $color;
+      color: $hover-color;
+    }
+  }
+
   .livebutton {
     background: #fff;
     box-shadow: 10px 10px 25px 0 rgba(0,0,0,0.75);
     transition: all .3s ease-out;
   }
+
   .livebutton:hover {
     background: #e6e6e6;
     transform: scale(1.05, 1.05);
   }
+
   .livebuttoncontainer {
     display: flex;
     height: 160px;
