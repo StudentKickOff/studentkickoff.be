@@ -12,10 +12,11 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_02ed88bbf2fa_key -iv $encrypted_02ed88bbf2fa_iv
   -in id_rsa.enc -out id_rsa -d
 - echo -e "Host studentkickoff.be\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-script:
-- bundle exec nanoc -e prod
-- bundle exec nanoc -e prod check --deploy
 after_success:
 - mv id_rsa ~/.ssh/id_rsa
 - chmod 600 ~/.ssh/id_rsa
-- '[[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]] && bundle exec nanoc -e prod deploy public'
+- '[[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]] && bundle
+  exec nanoc -e prod deploy public'
+notifications:
+  slack:
+    secure: qzseI27vZTFCIvu5s+ZENhuWomnT/8y1XuqHkKYWXlwH07QrJMssrkyx4IlFE0oUNLHeNE/cFnXs7+kzVd4zde2AaDfMoPQO7ZB423vrrDZdjQTFeprxGZX+J45FC5K/4jdQrHPsp1xRs9R0b2IZYMXhCHbfI6J/rDOXAxGf0/gqnE2Er80jzkELdezjWAa/RoQwSASyXe8eBjWmPRWtVoJb7XorMwHYZ9EmYP1KUemRYxeBdUoYJ5jIuvjxFVTIp+popAyn6K8+VQxLWkgbQMePAx8Q9jYsYchYLxUJIAKV5mJ1vjBhwuc6U1jpoAtc8zouBoz4Z3atvS/QgmvAHZV8q/67G4UJ6GPsAxhBfUgHLIDHjsFmdffcVeGyHeuEXx2JMIhK6w4yQ2oweQFVgiNVyiQdQXAQt+16uO22obgNELhRPOjKJKu3hRM5ADkG9Rx7XlFoQfEjLFhB5sJUDGNq9hOTvF2uXjDADGG9mzbJEsXbccAjul+MqamRrPeB9fi/m3HRtS0KLUC+uvxkqqvnb3bDYOZBc8klZD/Uxaycb986H9QZosZeeMPXrZS+M43X4/aN3cipeBu9WLEs/nCPi9M+VQUzqnPjKbGSvmiXvVwFjywH61O5S5ujebv6ytAcDCfVSj62N/2/4E5qb0d9mjAEx0fD8Czt6IfUfAY=
