@@ -54,7 +54,7 @@ h5 {
   .icon-bar {
     background-color: white;
   }
-  
+
   a {
     color: $colyel !important;
   }
@@ -74,6 +74,12 @@ h5 {
     text-transform: uppercase;
 
     border: 0;
+
+    .nav>li>a:hover,
+    .navbar-brand:hover {
+      transform: scale(1.2);
+      background-color: inherit;
+    }
   }
 }
 
