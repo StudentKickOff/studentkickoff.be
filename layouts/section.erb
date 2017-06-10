@@ -1,10 +1,10 @@
-<div class="section-wrap">
-  <div class="svg-wrap">
-    <svg class="section-bar-<%= @colour %>" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1925 150">
+<div class="page-segment -<%= colour %> <%= @class %>">
+  <div class="topbar">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1925 150">
       <path d="m 1925,0 0,150 -1925,0"></path>
     </svg>
   </div>
-  <div class="section-<%= @colour %> <%= @class %>">
+  <div class="content">
     <div class="container">
       <%= yield %>
     </div>

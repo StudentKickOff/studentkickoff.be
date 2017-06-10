@@ -6,7 +6,7 @@ $colyel: #fab73e;
 $colred: #e94b43;
 $magic-pct: 7.9%;
 
-$section-colors: (
+$page-segment-colors: (
   "red": $colred,
   "yellow": $colyel,
   "blue": $colblue,
@@ -18,15 +18,10 @@ $complements: (
   $colred: $colyel
 );
 
-.section-wrap {
-  margin-top: -$magic-pct;
-  position: relative;
-}
+$page-segment-font-color: #fff;
 
-$section-font-color: #fff;
-
-%section {
-  color: $section-font-color;
+.page-segment {
+  color: $page-segment-font-color;
   padding-bottom: 160px;
   position: relative;
 
@@ -46,22 +41,33 @@ $section-font-color: #fff;
   .text {
     margin-top: 20px;
   }
+
+  & > .topbar {
+    width: 100vw;
+    position: absolute;
+
+    > svg {
+      bottom: -1px;
+      position: absolute;
+      z-index: 1;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  %section h3 span {
+  .page-segment h3 span {
     display: block;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  %section h3 {
+  .page-segment h3 {
     font-size: 3em;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  %section {
+  .page-segment {
     h1 {
       font-size: 4em;
     }
@@ -73,34 +79,25 @@ $section-font-color: #fff;
   }
 }
 
-@each $color-name, $color-code in $section-colors {
-  .section-#{$color-name} {
-    @extend %section;
-    background: $color-code;
+@each $color-name, $color-code in $page-segment-colors {
+  .page-segment.-#{$color-name} {
+    background-color: $color-code;
 
-    h1,
-    h2,
-    h3,
-    strong {
-      color: map-get($complements, $color-code);
-    }
-
-    .sneaky {
-      color: $color-code;
-    }
-  }
-
-  .svg-wrap {
-    padding-top: $magic-pct;
-    position: relative;
-
-    .section-bar-#{$color-name} {
+    & > .topbar > svg {
       fill: $color-code;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      z-index: 1;
+    }
+
+    & > .content {
+      h1,
+      h2,
+      h3,
+      strong {
+        color: map-get($complements, $color-code);
+      }
+
+      .sneaky {
+        color: $color-code;
+      }
     }
   }
 }
