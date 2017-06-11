@@ -43,13 +43,22 @@ $page-segment-font-color: #fff;
   }
 
   & > .topbar {
-    width: 100vw;
+    width: 100%;
+    height: 0;
+
+    // MAGIC
+    // PURE FUCKING MAGIC WHY
+    // Internet explorer is a bitch
+    padding-top: 7.93650794%;
     position: absolute;
+    bottom: 100%;
+
+    margin-bottom: -2px;
 
     > svg {
-      bottom: -1px;
       position: absolute;
-      z-index: 1;
+      top: 0;
+      left: 0;
     }
   }
 }
