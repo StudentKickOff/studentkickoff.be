@@ -17,7 +17,7 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
   <link rel="icon" href="/assets/images/logo_sko.png">
 
   <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.css">
   <link rel="stylesheet" href="/assets/stylesheets/bootstrap-image-gallery.css">
@@ -50,95 +50,72 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
 
 </head>
 
-<body>
-  <a name="top"></a>
+<body id="body">
   <!-- Navigation -->
-  <nav id="top" class="navbar navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Home</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-left">
-          <!--
-          <li>
-            <a href="/#lineup">Line-Up</a>
-          </li>
-          -->
-          <!--
-          <li>
-            <a href="/info">Info</a>
-          </li>
-          -->
-          <!--
-          <li>
-            <a href="http://join.studentkickoff.be">Join</a>
-          </li>
-          -->
-          <li>
-            <a href="/historiek">Historiek</a>
-          </li>
-          <!--
-          <li>
-            <a href="<%= latest_crew_overview.path %>">Crew</a>
-          </li>
-          -->
-          <li>
-            <a href="/partners">Partners</a>
-          </li>
-          <li>
-            <a href="http://blog.studentkickoff.be">Nieuws</a>
-          </li>
-          <!--
-          <li>
-            <a href="http://wedstrijd.studentkickoff.be">Wedstrijd</a>
-          </li> -->
-        </ul>
-      </div>
-    </div>
+  <nav class="nav-bar" role="navigation">
+    <!-- <button type="button" class="nav-bar-toggle">
+    </button> -->
+    <ul class="navigation">
+      <li class="brand">
+        <a href="/">Home</a>
+      </li>
+      <!-- <li>
+        <a href="/#lineup">Line-Up</a>
+      </li> -->
+      <!-- <li>
+        <a href="/info">Info</a>
+      </li> -->
+      <!-- <li>
+        <a href="http://join.studentkickoff.be">Join</a>
+      </li> -->
+      <li>
+        <a href="/historiek">Historiek</a>
+      </li>
+      <!-- <li>
+        <a href="<%= latest_crew_overview.path %>">Crew</a>
+      </li> -->
+      <li>
+        <a href="/partners">Partners</a>
+      </li>
+      <li>
+        <a href="http://blog.studentkickoff.be">Nieuws</a>
+      </li>
+      <!-- <li>
+        <a href="http://wedstrijd.studentkickoff.be">Wedstrijd</a>
+      </li> -->
+    </ul>
   </nav>
 
   <%= yield %>
 
   <% section :blue, class: 'footer' do %>
   <h1>Contact Us</h1>
-  <div class="col-md-6 adres">
+  <div class="adres">
     <h2>ADRES</h2>
     <p>Maatschappelijke zetel<br>
       Blekerijstraat 75, bus 3<br>
       9000 Gent</p>
       <p>BTW BE 0886.847.343</p>
     </div>
-    <div class="col-md-6">
-      <form action="https://formspree.io/info@studentkickoff.be" method="POST">
-        <div class="form-inline">
-          <input type="hidden" name="_format" value="plain" />
-          <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
-          <input type="text" placeholder="Naam" name="Naam">
-        </div>
-        <div class="form-inline">
-          <input class="inputleft" type="text" placeholder="GSM" name="GSM">
-          <input type="text" placeholder="Onderwerp" name="Onderwerp">
-        </div>
-        <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
-        <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
-        <div class="buttonrapper">
-          <button type="submit">Verzenden</button>
-        </div>
-      </form>
-
-    </div>
+    <form action="https://formspree.io/info@studentkickoff.be" method="POST">
+      <div class="form-inline">
+        <input type="hidden" name="_format" value="plain" />
+        <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
+        <input type="text" placeholder="Naam" name="Naam">
+      </div>
+      <div class="form-inline">
+        <input class="inputleft" type="text" placeholder="GSM" name="GSM">
+        <input type="text" placeholder="Onderwerp" name="Onderwerp">
+      </div>
+      <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
+      <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
+      <div class="buttonrapper">
+        <button type="submit">Verzenden</button>
+      </div>
+    </form>
   </div>
   <img class="peetjes" src="/assets/images/design/peetjes.png">
-  <a href="#top">
+  <a href="#body">
     <img class="totop" src="/assets/images/design/back_to_top.png">
   </a>
   <div class="bottom-text">
@@ -159,8 +136,5 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

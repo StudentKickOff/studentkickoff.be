@@ -43,6 +43,8 @@ $page-segment-font-color: #fff;
   }
 
   & > .topbar {
+    $fix-spacing: 2px;
+
     width: 100%;
     height: 0;
 
@@ -53,11 +55,15 @@ $page-segment-font-color: #fff;
     position: absolute;
     bottom: 100%;
 
-    margin-bottom: -2px;
+    margin-bottom: -$fix-spacing;
 
     > svg {
       position: absolute;
+<<<<<<< HEAD
       bottom: 0;
+=======
+      top: $fix-spacing;
+>>>>>>> screw bootstrap
       left: 0;
     }
   }

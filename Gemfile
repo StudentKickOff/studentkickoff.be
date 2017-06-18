@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'nanoc', '4.7.5'
+gem 'nanoc'
 
 gem 'autoprefixer-rails'
 gem 'coffee-script'
@@ -19,4 +19,6 @@ end
 
 group :development do
   gem 'adsf'
+  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard', '~> 1.6.1'
 end

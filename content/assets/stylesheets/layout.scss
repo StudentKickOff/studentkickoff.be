@@ -20,6 +20,7 @@
 }
 
 // imports
+@import 'includes/minireset';
 @import 'includes/abstracts';
 @import 'includes/index';
 @import 'includes/meetthecrew';
@@ -28,7 +29,7 @@
 
 // Markup
 
-// Make sure divs dont overflow to the right
+// // Make sure divs dont overflow to the right
 html {
   overflow-x: hidden;
   position: relative;
@@ -45,11 +46,14 @@ h3,
 h4,
 h5 {
   text-transform: uppercase;
+  font-weight: initial;
+  margin: 0;
 }
 
-.navbar {
+.nav-bar {
   font-size: x-large;
   margin-bottom: 0;
+  z-index: 100;
 
   .icon-bar {
     background-color: white;
@@ -60,36 +64,52 @@ h5 {
   }
 }
 
+.navigation {
+  margin-left: 10%;
+
+  & > li {
+    display: inline;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
 @media only screen and (min-width: 769px) {
 
-  .navbar {
+  .nav-bar {
     position: absolute;
 
     background-color: $header-color;
 
     padding-top: 200px;
-    transform: rotate($rot) translateY(-200px);
-    width: 110%;
-    margin-left: -10px;
+    padding-bottom: 10px;
+    // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+    transform: matrix(1, -0.07, 0.07, 1, -20, -200);
+    width: 100%;
     text-transform: uppercase;
 
     border: 0;
 
-    .nav>li>a:hover,
-    .navbar-brand:hover {
-      transform: scale(1.2);
-      background-color: inherit;
-    }
   }
 }
 
+.nav-bar>.navigation>li>a:hover {
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: inherit;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .header-image {
     margin-top: 0;
   }
 
-  .navbar {
+  .nav-bar {
     background-color: $colblue;
   }
 }
@@ -134,8 +154,6 @@ h5 {
     }
   }
 }
-
-
 
 .footer {
   position: relative;
@@ -255,7 +273,6 @@ h5 {
   }
 }
 
-
 body {
   font-family: 'Univers';
 }
@@ -264,7 +281,7 @@ h1,
 h2,
 h3,
 h4,
-.navbar {
+.nav-bar {
   font-family: 'LeagueGothic-Regular';
 }
 
@@ -274,47 +291,16 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar-inverse .navbar-nav {
-  li {
-    a,
-    .navbar-inverse .navbar-brand {
-      color: #f0f0f0;
-    }
-
-    a:hover,
-    .navbar-inverse .navbar-brand:hover {
-      color: #ffd24f;
-    }
-  }
-
-}
-
-.navbar-brand {
-  font-size: xx-large;
-}
-
 .portfolio-item {
   margin-bottom: 25px;
-}
-
-.page-header,
-hr {
-  border-color: #0087c2;
 }
 
 .question-toggle:hover {
   cursor: pointer;
 }
 
-
-
 .vertical-center {
   display: inline-block;
   float: none;
   vertical-align: middle;
-}
-
-.has-content-centered {
-  display: flex;
-  justify-content: center;
 }

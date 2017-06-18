@@ -12,6 +12,12 @@ $photoslidertextsize: 50px;
   }
 }
 
+.sko-logo {
+  .trans {
+    transform: translate(20px, 20px);
+  }
+}
+
 @keyframes pulsate {
   0% {transform: scale(.9, .9);}
   50% {transform: scale(1, 1);}
@@ -122,10 +128,6 @@ $photoslidertextsize: 50px;
     display: flex;
     height: 160px;
     justify-content: center;
-
-    .sko-logo {
-      width: 110px;
-    }
 
     > * {
       margin-left: 25px;
@@ -261,13 +263,6 @@ $box-shadow2: ();
                random($height) - $height / 1.2 + px
                hsl(random(360), 100, 50);
   $box-shadow2: $box-shadow2, 0 0 #fff
-}
-
-body {
-  background: #000;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
 }
 
 .pyro > .before,

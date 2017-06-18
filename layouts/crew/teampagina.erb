@@ -11,41 +11,33 @@ Team <%= item[:teamnaam] %> <%= item[:year] %>
   </span>
 </h1>
 
-<div class="row">
-  <div class="col-sm-12 col-md-12">
-    <blockquote >
-      <%= yield %>
-      <div class="quoteteamlead">
-        <% if item[:teamleden] %>
-        <%= item[:teamleden].first[:naam] %>, Team Lead (<%= item[:teamnaam] %>)
-        <% end %>
-      </div>
-    </blockquote>
+<blockquote >
+  <%= yield %>
+  <div class="quoteteamlead">
+    <% if item[:teamleden] %>
+    <%= item[:teamleden].first[:naam] %>, Team Lead (<%= item[:teamnaam] %>)
+    <% end %>
   </div>
-</div>
+</blockquote>
 </div>
 <% end %>
 
 <% if item[:teamleden] %>
 <% section :blue do %>
 <h1>Teamleden</h1>
-<div class="row">
-  <% item[:teamleden].each do |lid| %>
-  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-    <div class="teamlidcard">
-      <div class="caption">
-        <h3><%= lid[:naam] %></h3>
-        <p>
-          <%= lid[:functie] %><br>
-          <%= lid[:opleiding] %><br>
-          <%= lid[:school] %><br>
-        </p>
-      </div>
-      <img src="/assets/images/org/<%= lid[:photo] %>" class="img-responsive portfolio-item" alt="">
-    </div>
+<% item[:teamleden].each do |lid| %>
+<div class="teamlidcard">
+  <div class="caption">
+    <h3><%= lid[:naam] %></h3>
+    <p>
+      <%= lid[:functie] %><br>
+      <%= lid[:opleiding] %><br>
+      <%= lid[:school] %><br>
+    </p>
   </div>
-  <% end %>
+  <img src="/assets/images/org/<%= lid[:photo] %>" class="img-responsive portfolio-item" alt="">
 </div>
+<% end %>
 <% end %>
 <% end %>
 
@@ -53,16 +45,12 @@ Team <%= item[:teamnaam] %> <%= item[:year] %>
 <% section :red do %>
 <h1>Meet the Teams</h1>
 
-<div class="row">
-  <% crew_of(item[:year]).each do |team| %>
-  <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="teamcard">
-      <a href="<%= team.path %>">
-        <p><%= team[:teamnaam] %></p>
-        <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
-      </a>
-    </div>
-  </div>
-  <% end %>
+<% crew_of(item[:year]).each do |team| %>
+<div class="teamcard">
+  <a href="<%= team.path %>">
+    <p><%= team[:teamnaam] %></p>
+    <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
+  </a>
 </div>
+<% end %>
 <% end %>

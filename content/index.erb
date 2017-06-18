@@ -17,8 +17,13 @@ title: Home
   </div>
   <div class="headline">
     <div class="container">
+<<<<<<< HEAD
       <img class="sko-logo" src="/assets/images/logo_sko_animated.svg" style="width:150px;">
       
+=======
+      <!-- <object class="sko-logo" data="/assets/images/logo_sko.svg" type="image/svg+xml"></object> -->
+      <img class="sko-logo" src="/assets/images/logo_sko.svg" style="width:150px;">
+>>>>>>> screw bootstrap
       <h2 class="alt">27 september 2017</h2>
       <h1 class="alt">See you then!</h1>
     </div>
@@ -38,10 +43,8 @@ title: Home
 <!-- Page Content -->
 <% section :yellow do %>
 <h1>STUDENT KICK-OFF</h1>
-<div class="col-md-2">
   <h2>ABOUT</h2>
-</div>
-<div class="col-md-10 text">
+<div class="text">
   <p>Student Kick-Off is hét grootste studentenwelkomsfestival in Vlaanderen. Wat in 2006 begon met 7 studenten en 9000 toeschouwers op het Kramersplein is uitgegroeid tot een vaste waarde onder de Gentse muziekevenementen. Een evenement dat jaarlijks over de 30.000 toeschouwers naar het Sint-Pietersplein lokt.</p>
 
   <p>SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole &amp; Hugo, Eddy Wally, Regi, Intergalactic Lovers en Samson &amp; Gert!</p>
@@ -50,33 +53,29 @@ title: Home
 
 <% section :red do %>
 <h1>#throwback</h1>
-<div class="row">
-  <!-- 16:9 aspect ratio -->
-  <div class="col-md-10 col-md-offset-1">
-    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-    <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
-      <!-- The container for the modal slides -->
-      <div class="slides"></div>
-      <!-- Controls for the borderless lightbox -->
-      <h3 class="title"></h3>
-      <a class="prev">‹</a>
-      <a class="next">›</a>
-      <a class="close">×</a>
-      <a class="play-pause"></a>
-      <ol class="indicator"></ol>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <div id="links">
-      <% galleryimage.each_with_index do |img, index| %>
-      <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>
-      <a href="<%= img.path %>" title="<%= title %>" data-gallery>
-        <% if index < 36  %>
-        <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= title %>">
-        <% end %>
-      </a>
-      <% end %>
-    </div>
-  </div>
+<!-- 16:9 aspect ratio -->
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<div id="links">
+  <% galleryimage.each_with_index do |img, index| %>
+  <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>
+  <a href="<%= img.path %>" title="<%= title %>" data-gallery>
+    <% if index < 36  %>
+    <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= title %>">
+    <% end %>
+  </a>
+  <% end %>
 </div>
 <% end %>
