@@ -3,17 +3,23 @@
 @charset "utf-8";
 
 // imports
+@import 'includes/_variables';
 @import 'includes/_mixins';
 @import 'includes/minireset';
 @import 'includes/base';
 
 @import 'includes/page-segment';
+@import 'includes/historiek-section';
+@import 'includes/contact-form';
+@import 'includes/team-member-card';
+@import 'includes/team-grid';
+@import 'includes/team-card';
+@import 'includes/team-members-grid';
+
 @import 'includes/index';
 @import 'includes/meetthecrew';
 @import 'includes/faq';
 @import 'includes/partners';
-@import 'includes/historiek-section';
-@import 'includes/contact-form';
 @import 'includes/generic';
 
 .container {
@@ -176,10 +182,6 @@
       }
     }
   }
-}
-
-.portfolio-item {
-  margin-bottom: 25px;
 }
 
 .question-toggle:hover {

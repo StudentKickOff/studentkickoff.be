@@ -11,7 +11,7 @@ Team <%= item[:teamnaam] %> <%= item[:year] %>
   </span>
 </h1>
 
-<blockquote >
+<blockquote>
   <%= yield %>
   <div class="quoteteamlead">
     <% if item[:teamleden] %>
@@ -23,22 +23,22 @@ Team <%= item[:teamnaam] %> <%= item[:year] %>
 <% end %>
 
 <% if item[:teamleden] %>
-<% section :blue do %>
-<h1>Teamleden</h1>
-<% item[:teamleden].each do |lid| %>
-<div class="teamlidcard">
-  <div class="caption">
-    <h3><%= lid[:naam] %></h3>
-    <p>
-      <%= lid[:functie] %><br>
-      <%= lid[:opleiding] %><br>
-      <%= lid[:school] %><br>
-    </p>
-  </div>
-  <img src="/assets/images/org/<%= lid[:photo] %>" class="img-responsive portfolio-item" alt="">
-</div>
-<% end %>
-<% end %>
+  <% section :blue do %>
+    <h1>Teamleden</h1>
+    <div class="team-members-grid">
+      <% item[:teamleden].each do |lid| %>
+        <div class="team-member-card">
+          <h3 class="name"><%= lid[:naam] %></h3>
+          <p>
+            <%= lid[:functie] %><br>
+            <%= lid[:opleiding] %><br>
+            <%= lid[:school] %><br>
+          </p>
+          <img class="picture" src="/assets/images/org/<%= lid[:photo] %>" alt="">
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 <% end %>
 
 

@@ -1,0 +1,10 @@
+.team-member-card {
+  background-color: $colblue * .9;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+
+  > .name {
+    font-size: 1.5em;
+  }
+}

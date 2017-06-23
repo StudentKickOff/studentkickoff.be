@@ -41,55 +41,6 @@
   }
 }
 
-.teamlidcard {
-  background-color: $colblue * .9;
-  padding: 20px;
-  margin-bottom: 30px;
-  display: inline-block;
-
-  h3 {
-    font-size: 1.5em;
-  }
-}
-
-
-blockquote {
-  background: $colyel*0.95;
-  border-left: 10px solid $colblue;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: '\201C''\201D''\2018''\2019';
-  padding: 30px;
-
-  &:before {
-    color: $colblue;
-    content: open-quote;
-    font-size: 4em;
-    line-height: .1em;
-    margin-right: .25em;
-    vertical-align: -.4em;
-  }
-
-  .quoteteamlead {
-    text-align: right;
-  }
-}
-
-.teamcard {
-  text-align: center;
-
-  p {
-    font-family: 'LeagueGothic-Regular';
-    text-align: center;
-    width: 100%;
-    font-size: 2em;
-  }
-
-  a {
-    color: $colyel;
-  }
-}
-
 .teamheader {
   .headline {
     padding: 25% 0;

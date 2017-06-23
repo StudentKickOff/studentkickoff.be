@@ -1,0 +1,8 @@
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  > .team-card {
+    width: 25%;
+  }
+}
