@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'LeagueGothic-Regular';
+  src: url('/assets/fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/leaguegothic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/assets/fonts/universl_5-webfont.woff2') format('woff2'),
+       url('/assets/fonts/universl_5-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+
+  body {
+    font-size: 20px;
+    overflow-x: hidden;
+
+    font-family: 'Univers';
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, {
+  font-family: 'LeagueGothic-Regular';
+  text-transform: uppercase;
+  font-weight: initial;
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+a,
+a:hover {
+  color: #e43026;
+  text-decoration: none;
+}
+
+input, button {
+  border: 3px solid white;
+  background-color: #7eb4e2;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+textarea {
+  @extend input;
+  width: 100%;
+  color: white;
+}

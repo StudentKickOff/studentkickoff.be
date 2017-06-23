@@ -1,0 +1,33 @@
+.historiek-section {
+  $poster-width: 20%;
+  $margin: 2%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  > h1 {
+    width: 100%;
+  }
+
+  > .poster {
+    @include fullwidth-mobile;
+
+    width: $poster-width - $margin;
+    height: auto;
+    margin-right: $margin;
+  }
+
+  > .description {
+    @include fullwidth-mobile;
+
+    width: 100% - $poster-width - $margin;
+    margin-left: $margin;
+  }
+
+  .lineup {
+    li {
+      display: inline;
+      margin-right: 15px;
+    }
+  }
+}

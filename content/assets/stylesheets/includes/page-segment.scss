@@ -22,6 +22,7 @@ $page-segment-font-color: #fff;
 
 .page-segment {
   color: $page-segment-font-color;
+  padding-top: 60px;
   padding-bottom: 160px;
   position: relative;
 
@@ -49,11 +50,6 @@ $page-segment-font-color: #fff;
       font-size: 3em;
     }
   }
-
-  .text {
-    margin-top: 20px;
-  }
-
 
   & > .topbar {
     $fix-spacing: 2px;
@@ -102,5 +98,40 @@ $page-segment-font-color: #fff;
         color: $color-code;
       }
     }
+  }
+}
+
+.page-segment.-footer {
+  // We use the before pseudo element to get opacity working
+  padding-bottom: 341px;
+
+  @include mobile {
+    padding-bottom: 200px;
+
+    input {
+      width: 100%;
+    }
+
+    .bottom-text {
+      font-size: .7em;
+    }
+
+    .totop {
+      bottom: 80px;
+      width: 130px;
+    }
+  }
+
+  &::before {
+    content: '';
+    margin-top: -60px;
+    height: 100%;
+    position: absolute;
+    opacity: .7;
+    width: 100%;
+    background-image: url('/assets/images/design/peetjes.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

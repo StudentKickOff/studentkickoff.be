@@ -132,7 +132,7 @@ partners:
 <!-- Page Content -->
 <% section :yellow do %>
 <h1>Presenting Partners</h1>
-<div class="grid-presenting">
+<div class="presenting-partner-grid">
   <% item[:presentingpartners].each do |partner| %>
   <div class="grid-item-presenting presentingpartner">
     <a href="<%= partner[:url] %>">
@@ -145,7 +145,7 @@ partners:
 
 <% section :red do %>
 <h1>Partners</h1>
-<div class="grid">
+<div class="partner-grid">
   <% item[:partners].each do |partner| %>
   <div class="grid-item partner">
     <a href="<%= partner[:url] %>">

@@ -2,32 +2,19 @@
 
 @charset "utf-8";
 
-@font-face {
-  font-family: 'LeagueGothic-Regular';
-  src: url('/assets/fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-       url('/assets/fonts/leaguegothic-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url('/assets/fonts/universl_5-webfont.woff2') format('woff2'),
-       url('/assets/fonts/universl_5-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 // imports
 @import 'includes/_mixins';
 @import 'includes/minireset';
-@import 'includes/abstracts';
+@import 'includes/base';
+
+@import 'includes/page-segment';
 @import 'includes/index';
 @import 'includes/meetthecrew';
 @import 'includes/faq';
 @import 'includes/partners';
-@import 'includes/historiek';
+@import 'includes/historiek-section';
+@import 'includes/contact-form';
+@import 'includes/generic';
 
 .container {
   position: relative;
@@ -55,41 +42,15 @@
 }
 // Markup
 
-// // Make sure divs dont overflow to the right
-html {
-  overflow-x: hidden;
-  position: relative;
-
-  body {
-    font-size: 20px;
-    overflow-x: hidden;
-
-    font-family: 'Univers';
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-.nav-bar {
-  font-family: 'LeagueGothic-Regular';
-  text-transform: uppercase;
-  font-weight: initial;
-  margin: 0;
-}
-
-a,
-a:hover {
-  color: #e43026;
-  text-decoration: none;
-}
-
 .nav-bar {
   font-size: x-large;
   margin-bottom: 0;
   z-index: 100;
+
+  font-family: 'LeagueGothic-Regular';
+  text-transform: uppercase;
+  font-weight: initial;
+  margin: 0;
 
   background-color: $header-color;
 
@@ -171,40 +132,6 @@ a:hover {
 
     z-index: -5;
   }
-
-  .btn-group.dropdown {
-    vertical-align: baseline;
-
-    .dropdown-menu {
-      background-color: rgba(0, 0, 0, 0);
-      font-size: inherit;
-
-      a {
-        color: inherit;
-      }
-    }
-  }
-}
-
-.contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-input, button {
-  border: 3px solid white;
-  background-color: #7eb4e2;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 20px;
-  width: 50%;
-  padding: 10px;
-}
-
-textarea {
-  @extend input;
-  width: 100%;
-  color: white;
 }
 
 .gotcha {
@@ -247,42 +174,6 @@ textarea {
       &:hover {
         color: $colred;
       }
-    }
-  }
-}
-
-.page-segment.-footer {
-  // We use the before pseudo element to get opacity working
-  &::before {
-    content: '';
-    height: 100%;
-    position: absolute;
-    opacity: .7;
-    width: 100%;
-    background-image: url('/assets/images/design/peetjes.png');
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-.footer {
-  padding-bottom: 341px;
-
-  @include mobile {
-    padding-bottom: 200px;
-
-    input {
-      width: 100%;
-    }
-
-    .bottom-text {
-      font-size: .7em;
-    }
-
-    .totop {
-      bottom: 80px;
-      width: 130px;
     }
   }
 }

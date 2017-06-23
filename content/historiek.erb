@@ -8,27 +8,36 @@ Historiek
 <% jaren.zip([:yellow, :red, :blue].cycle).each do |hist, colour| %>
   <% section colour do %>
   <div class="container">
-    <h1><%= hist[:jaar] %></h1>
-    <img class="img-responsive" src="/assets/images/affiches/affiche<%= hist[:jaar]%>.jpg" alt="">
-    <%= hist.compiled_content %>
-    <div class="line-up">
-      <h3>Line-Up</h3>
-      <ul>
-        <% hist[:lineup].each do |a| %>
-        <li><%= a %></li>
+    <div class="historiek-section">
+      <h1><%= hist[:jaar] %></h1>
+      <!-- Wrapping class needed, flexbox doesnt maintain aspect ratio -->
+      <div class="poster">
+        <img src="/assets/images/affiches/affiche<%= hist[:jaar]%>.jpg" alt="">
+      </div>
+      <div class="description">
+        <%= hist.compiled_content %>
+        <div class="lineup">
+          <h3>Line-Up</h3>
+          <ul>
+            <% hist[:lineup].each do |a| %>
+            <li><%= a %></li>
+            <% end %>
+          </ul>
+        </div>
+
+        <% if hist[:secondstage] %>
+        <div class="lineup">
+          <h3>Second Stage Line-Up</h3>
+          <ul>
+            <% hist[:secondstage].each do |a| %>
+            <li><%= a %></li>
+            <% end %>
+          </ul>
+        </div>
         <% end %>
-      </ul>
+
+      </div>
     </div>
-    <% if hist[:secondstage] %>
-    <div class="line-up">
-      <h3>Second Stage Line-Up</h3>
-      <ul>
-        <% hist[:secondstage].each do |a| %>
-        <li><%= a %></li>
-        <% end %>
-      </ul>
-    </div>
-    <% end %>
   </div>
   <% end %>
 <% end %>

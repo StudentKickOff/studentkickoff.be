@@ -3,21 +3,21 @@
   margin: $margin;
 }
 
-.partner {
-  @include partner(200px, 20px);
-}
-
-.presentingpartner {
-  @include partner(300px, 40px);
-}
-
-.grid {
+.partner-grid {
   margin: 0 auto;
+
+  > .partner {
+    @include partner(200px, 20px);
+  }
 }
 
-.grid-presenting {
+.presenting-partner-grid {
   align-items: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  > .presentingpartner {
+    @include partner(300px, 40px);
+  }
 }

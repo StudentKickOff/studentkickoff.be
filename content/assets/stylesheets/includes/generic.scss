@@ -1,0 +1,34 @@
+.subsection-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  > *:nth-child(odd) {
+    width: 32%;
+    text-align: right;
+    vertical-align: top;
+    line-height: 1;
+
+    &.-align-left {
+      text-align: left;
+    }
+
+    @include mobile {
+      width: 100%;
+
+      text-align: left;
+    }
+  }
+
+  > *:nth-child(even) {
+    width: 65%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  > * {
+    margin-bottom: 20px;
+  }
+}

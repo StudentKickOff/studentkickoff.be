@@ -43,7 +43,14 @@ $fullhd: 1384px !default;
 }
 
 @mixin fluid {
-  margin: 0 20px;
+  margin: 0 10px;
   max-width: none;
   width: auto;
+}
+
+@mixin fullwidth-mobile {
+  @include mobile {
+    margin: 0;
+    width: 100%;
+  }
 }

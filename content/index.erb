@@ -10,16 +10,8 @@ title: Home
 
 -->
 
-<!-- Full Width Image Header -->
-      <!-- <object class="sko-logo" data="/assets/images/logo_sko.svg" type="image/svg+xml"></object> -->
-      <img class="sko-logo" src="/assets/images/logo_sko.svg" style="width:150px;">
-      <h2 class="alt">27 september 2017</h2>
-      <h1 class="alt">See you then!</h1>
-    </div>
-    </div>
-</header>
-=======
 
+=======
 <% render '/partials/header.*', image: '/assets/images/design/header5.jpg' do %>
   <img src="/assets/images/logo_sko.svg" width="150">
   <h2>27 september 2017</h2>
@@ -40,11 +32,17 @@ title: Home
 <!-- Page Content -->
 <% section :yellow do %>
 <h1>STUDENT KICK-OFF</h1>
+<div class="subsection-columns">
   <h2>ABOUT</h2>
-<div class="text">
-  <p>Student Kick-Off is hét grootste studentenwelkomsfestival in Vlaanderen. Wat in 2006 begon met 7 studenten en 9000 toeschouwers op het Kramersplein is uitgegroeid tot een vaste waarde onder de Gentse muziekevenementen. Een evenement dat jaarlijks over de 30.000 toeschouwers naar het Sint-Pietersplein lokt.</p>
+  <div class="text">
+    <p>Student Kick-Off is hét grootste studentenwelkomsfestival in Vlaanderen. Wat in 2006 begon met 7 studenten en 9000 toeschouwers op het Kramersplein is uitgegroeid tot een vaste waarde onder de Gentse muziekevenementen. Een evenement dat jaarlijks over de 30.000 toeschouwers naar het Sint-Pietersplein lokt.</p>
 
-  <p>SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole &amp; Hugo, Eddy Wally, Regi, Intergalactic Lovers en Samson &amp; Gert!</p>
+    <p>SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole &amp; Hugo, Eddy Wally, Regi, Intergalactic Lovers en Samson &amp; Gert!</p>
+  </div>
+  <h2>Lorem Ipsum</h2>
+  <div class="text">
+    dolor sit amet, consectetur adipisicing elit. Nam fuga soluta minus, expedita aliquid officiis sed accusamus architecto sint, unde accusantium repellendus ex incidunt eveniet, vero! Voluptas harum quos, earum distinctio! Nihil impedit culpa corporis nobis, quas consequatur tempore nisi vero, debitis tempora commodi dolorum! Iusto amet provident est et saepe illo ad nemo, eaque error similique libero suscipit tenetur, id nulla velit nesciunt voluptatibus numquam officiis doloribus perspiciatis! Totam magnam explicabo quas, nam voluptatum sed numquam voluptate voluptatibus architecto.
+  </div>
 </div>
 <% end %>
 
@@ -63,11 +61,9 @@ title: Home
   <a class="play-pause"></a>
   <ol class="indicator"></ol>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <div id="links">
   <% galleryimage.each_with_index do |img, index| %>
-  <% title = (index+1).to_s + "/" + galleryimage.length.to_s %>
+  <% title = "#{index+1}/#{galleryimage.length}" %>
   <a href="<%= img.path %>" title="<%= title %>" data-gallery>
     <% if index < 36  %>
     <img src="<%= img.path(rep: :thumbnail) %>" alt="<%= title %>">
@@ -75,4 +71,6 @@ title: Home
   </a>
   <% end %>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <% end %>

@@ -90,25 +90,34 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
 
   <% section :blue, class: '-footer' do %>
   <h1>Contact Us</h1>
-  <div class="adres">
-    <h2>ADRES</h2>
-    <p>Maatschappelijke zetel<br>
-      Blekerijstraat 75, bus 3<br>
-      9000 Gent</p>
-      <p>BTW BE 0886.847.343</p>
-    </div>
-    <form class="contact-form" action="https://formspree.io/info@studentkickoff.be" method="POST">
-      <input type="hidden" name="_format" value="plain" />
-      <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
-      <input type="text" placeholder="Naam" name="Naam">
-      <input class="inputleft" type="text" placeholder="GSM" name="GSM">
-      <input type="text" placeholder="Onderwerp" name="Onderwerp">
-      <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
-      <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
-      <div class="buttonrapper">
-        <button type="submit">Verzenden</button>
+  <div class="subsection-columns">
+    <div class="adres -align-left">
+      <h2>ADRES</h2>
+      <p>Maatschappelijke zetel<br>
+        Blekerijstraat 75, bus 3<br>
+        9000 Gent</p>
+        <p>BTW BE 0886.847.343</p>
       </div>
-    </form>
+      <form class="contact-form" action="https://formspree.io/info@studentkickoff.be" method="POST">
+        <input type="hidden" name="_format" value="plain" />
+        <div class="row">
+          <input type="email" placeholder="E-Mail" name="_replyto">
+          <input type="text" placeholder="Naam" name="Naam">
+        </div>
+        <div class="row">
+          <input type="text" placeholder="GSM" name="GSM">
+          <input type="text" placeholder="Onderwerp" name="Onderwerp">
+        </div>
+
+        <div class="row">
+          <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
+        </div>
+  
+        <button type="submit">Verzenden</button>
+
+        <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
+      </form>
+    </div>
   </div>
   <a href="#body">
     <img class="totop" src="/assets/images/design/back_to_top.png">
