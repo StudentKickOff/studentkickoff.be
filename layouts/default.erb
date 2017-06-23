@@ -52,7 +52,7 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
 
 <body id="body">
   <!-- Navigation -->
-  <nav class="nav-bar" role="navigation">
+  <nav class="nav-bar">
     <!-- <button type="button" class="nav-bar-toggle">
     </button> -->
     <ul class="navigation">
@@ -88,7 +88,7 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
 
   <%= yield %>
 
-  <% section :blue, class: 'footer' do %>
+  <% section :blue, class: '-footer' do %>
   <h1>Contact Us</h1>
   <div class="adres">
     <h2>ADRES</h2>
@@ -97,16 +97,12 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
       9000 Gent</p>
       <p>BTW BE 0886.847.343</p>
     </div>
-    <form action="https://formspree.io/info@studentkickoff.be" method="POST">
-      <div class="form-inline">
-        <input type="hidden" name="_format" value="plain" />
-        <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
-        <input type="text" placeholder="Naam" name="Naam">
-      </div>
-      <div class="form-inline">
-        <input class="inputleft" type="text" placeholder="GSM" name="GSM">
-        <input type="text" placeholder="Onderwerp" name="Onderwerp">
-      </div>
+    <form class="contact-form" action="https://formspree.io/info@studentkickoff.be" method="POST">
+      <input type="hidden" name="_format" value="plain" />
+      <input class="inputleft" type="email" placeholder="E-Mail" name="_replyto">
+      <input type="text" placeholder="Naam" name="Naam">
+      <input class="inputleft" type="text" placeholder="GSM" name="GSM">
+      <input type="text" placeholder="Onderwerp" name="Onderwerp">
       <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
       <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
       <div class="buttonrapper">
@@ -114,7 +110,6 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
       </div>
     </form>
   </div>
-  <img class="peetjes" src="/assets/images/design/peetjes.png">
   <a href="#body">
     <img class="totop" src="/assets/images/design/back_to_top.png">
   </a>

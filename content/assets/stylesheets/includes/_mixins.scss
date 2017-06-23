@@ -1,0 +1,49 @@
+// Responsiveness
+// 960, 1152, and 1344 have been chosen because
+// they are divisible by both 12 and 16
+$tablet: 769px !default;
+
+// 960px container + 40px
+$desktop: 1000px !default;
+
+// 1152px container + 40
+$widescreen: 1192px !default;
+
+// 1344px container + 40
+$fullhd: 1384px !default;
+
+@mixin mobile {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen) {
+    @content;
+  }
+}
+
+@mixin fullhd {
+  @media screen and (min-width: $fullhd) {
+    @content;
+  }
+}
+
+@mixin fluid {
+  margin: 0 20px;
+  max-width: none;
+  width: auto;
+}

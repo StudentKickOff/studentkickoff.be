@@ -28,19 +28,32 @@ $page-segment-font-color: #fff;
   h1 {
     font-size: 6em;
     margin-bottom: 60px;
+
+    @include mobile {
+      font-size: 4em;
+    }
   }
 
   h2 {
     font-size: 4em;
+
+    @include mobile {
+      font-size: 3em;
+    }
   }
 
   h3 {
     font-size: 2em;
+
+    @include desktop {
+      font-size: 3em;
+    }
   }
 
   .text {
     margin-top: 20px;
   }
+
 
   & > .topbar {
     $fix-spacing: 2px;
@@ -65,31 +78,6 @@ $page-segment-font-color: #fff;
       top: $fix-spacing;
 >>>>>>> screw bootstrap
       left: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .page-segment h3 span {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .page-segment h3 {
-    font-size: 3em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .page-segment {
-    h1 {
-      font-size: 4em;
-    }
-
-    h2 {
-      font-size: 3em;
-
     }
   }
 }

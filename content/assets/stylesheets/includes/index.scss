@@ -12,12 +12,6 @@ $photoslidertextsize: 50px;
   }
 }
 
-.sko-logo {
-  .trans {
-    transform: translate(20px, 20px);
-  }
-}
-
 @keyframes pulsate {
   0% {transform: scale(.9, .9);}
   50% {transform: scale(1, 1);}
@@ -82,14 +76,7 @@ $photoslidertextsize: 50px;
   }
 }
 
-
-.headerlogo {
-  max-height: 250px;
-}
-
 .headline {
-  padding-top: 200px;
-
   h1 {
     @include headline-title(150px);
   }

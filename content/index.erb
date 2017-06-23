@@ -11,31 +11,28 @@ title: Home
 -->
 
 <!-- Full Width Image Header -->
-<header class="header">
-  <div class="header-background" style="background-image:url(/assets/images/design/header5.jpg);">
-    <!-- Nothing -->
-  </div>
-  <div class="headline">
-    <div class="container">
-<<<<<<< HEAD
-      <img class="sko-logo" src="/assets/images/logo_sko_animated.svg" style="width:150px;">
-      
-=======
       <!-- <object class="sko-logo" data="/assets/images/logo_sko.svg" type="image/svg+xml"></object> -->
       <img class="sko-logo" src="/assets/images/logo_sko.svg" style="width:150px;">
->>>>>>> screw bootstrap
       <h2 class="alt">27 september 2017</h2>
       <h1 class="alt">See you then!</h1>
     </div>
     </div>
 </header>
+=======
+
+<% render '/partials/header.*', image: '/assets/images/design/header5.jpg' do %>
+  <img src="/assets/images/logo_sko.svg" width="150">
+  <h2>27 september 2017</h2>
+  <h1>See you then!</h1>
+<% end %>
+>>>>>>> progress!
 
 <% section :red do %>
 <h1>Bekijk de aftermovie</h1>
 <div class="videorapper">
   <div id='video' class="videosection">
     <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FStudentKickOff%2Fvideos%2F1263575390360469%2F&show_text=0" allowFullscreen="true" ></iframe>
-    <img id='tv' src="/assets/images/design/TV.png"></i>
+    <img id='tv' src="/assets/images/design/TV.png">
   </div>
 </div>
 <% end %>

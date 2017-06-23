@@ -20,13 +20,39 @@
 }
 
 // imports
+@import 'includes/_mixins';
 @import 'includes/minireset';
 @import 'includes/abstracts';
 @import 'includes/index';
 @import 'includes/meetthecrew';
 @import 'includes/faq';
 @import 'includes/partners';
+@import 'includes/historiek';
 
+.container {
+  position: relative;
+  @include fluid;
+
+  @include desktop {
+    margin: 0 auto;
+    max-width: $desktop - 40px;
+    width: $desktop - 40px;
+    // Modifiers
+    &.is-fluid {
+      @include fluid;
+    }
+  }
+
+  @include widescreen {
+    max-width: $widescreen - 40px;
+    width: $widescreen - 40px;
+  }
+
+  @include fullhd {
+    max-width: $fullhd - 40px;
+    width: $fullhd - 40px;
+  }
+}
 // Markup
 
 // // Make sure divs dont overflow to the right
@@ -37,6 +63,8 @@ html {
   body {
     font-size: 20px;
     overflow-x: hidden;
+
+    font-family: 'Univers';
   }
 }
 
@@ -44,10 +72,18 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.nav-bar {
+  font-family: 'LeagueGothic-Regular';
   text-transform: uppercase;
   font-weight: initial;
   margin: 0;
+}
+
+a,
+a:hover {
+  color: #e43026;
+  text-decoration: none;
 }
 
 .nav-bar {
@@ -55,12 +91,33 @@ h5 {
   margin-bottom: 0;
   z-index: 100;
 
+  background-color: $header-color;
+
+  // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+  transform: matrix(1, -0.07, 0.07, 1, -20, -200);
+
+  position: absolute;
+
+  padding-top: 200px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-transform: uppercase;
+
+  border: 0;
+
   .icon-bar {
     background-color: white;
   }
 
   a {
     color: $colyel !important;
+  }
+
+  @include mobile {
+    background-color: $colblue;
+    padding: 0;
+    transform: none;
+    position: fixed;
   }
 }
 
@@ -76,25 +133,6 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 769px) {
-
-  .nav-bar {
-    position: absolute;
-
-    background-color: $header-color;
-
-    padding-top: 200px;
-    padding-bottom: 10px;
-    // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
-    transform: matrix(1, -0.07, 0.07, 1, -20, -200);
-    width: 100%;
-    text-transform: uppercase;
-
-    border: 0;
-
-  }
-}
-
 .nav-bar>.navigation>li>a:hover {
   display: inline-block;
 
@@ -104,17 +142,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .header-image {
-    margin-top: 0;
-  }
-
-  .nav-bar {
-    background-color: $colblue;
-  }
-}
-
-.header {
+.main-hero {
   position: relative;
   width: 100%;
   text-align: center;
@@ -123,11 +151,14 @@ h5 {
   justify-content: center;
   align-items: center;
 
-  // Magic numbah
-  padding-bottom: 220px;
   min-height: 100vh;
 
-  .header-background {
+  // Variants
+  &.-large {
+    margin-bottom: 7.93650794%;
+  }
+
+  .background {
     position: fixed;
     background-size: cover;
     background-position: center;
@@ -155,111 +186,94 @@ h5 {
   }
 }
 
-.footer {
-  position: relative;
-  padding-bottom: 341px;
-  margin-bottom: 0;
-  background-color: $colblue;
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input, button {
+  border: 3px solid white;
+  background-color: #7eb4e2;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 10px;
+}
 
-  h1 {
-    color: $colyel;
-    font-size: 6em;
-    padding-bottom: 20px;
-  }
+textarea {
+  @extend input;
+  width: 100%;
+  color: white;
+}
 
-  h2 {
-    color: white;
-    text-align: left;
-  }
+.gotcha {
+  display: none;
+}
 
-  p {
-    text-align: left;
-    color: white;
-    font-size: 120%;
-  }
+.peetjes {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: .7;
+  pointer-events: none;
+}
 
-  input, button {
-    border: 3px solid white;
-    border-radius: 0;
-    background-color: #7eb4e2;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 20px;
-    width: 47%;
-    padding: 10px;
-  }
+.totop {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  right: 30px;
+  bottom: 150px;
+}
 
-  .buttonrapper {
-    display: flex;
-    justify-content: center;
-  }
+.bottom-text {
+  font-size: 1em;
+  position: absolute;
+  font-family: 'LeagueGothic-Regular';
+  color: $colyel;
+  right: 10%;
+  bottom: 20px;
 
-  .inputleft {
-    margin-right: 4%;
-  }
+  .social-buttons {
+    font-size: 2em;
+    margin-left: 20px;
 
-  textarea {
-    @extend input;
-    width: 100%;
-    color: white;
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
 
-  .gotcha {
-    display: none;
-  }
-
-  .peetjes {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    opacity: .7;
-    pointer-events: none;
-  }
-
-  .bottom-text {
-    font-size: 1em;
-    position: absolute;
-    font-family: 'LeagueGothic-Regular';
-    color: $colyel;
-    right: 10%;
-    bottom: 20px;
-
-    .social-buttons {
-      font-size: 2em;
-      margin-left: 20px;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-          color: $colred;
-        }
+      &:hover {
+        color: $colred;
       }
     }
-
-  }
-
-  .totop {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    right: 30px;
-    bottom: 150px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .footer {
+.page-segment.-footer {
+  // We use the before pseudo element to get opacity working
+  &::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    opacity: .7;
+    width: 100%;
+    background-image: url('/assets/images/design/peetjes.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer {
+  padding-bottom: 341px;
+
+  @include mobile {
     padding-bottom: 200px;
 
     input {
       width: 100%;
-    }
-
-    h1 {
-      font-size: 3em;
     }
 
     .bottom-text {
@@ -273,34 +287,10 @@ h5 {
   }
 }
 
-body {
-  font-family: 'Univers';
-}
-
-h1,
-h2,
-h3,
-h4,
-.nav-bar {
-  font-family: 'LeagueGothic-Regular';
-}
-
-a,
-a:hover {
-  color: #e43026;
-  text-decoration: none;
-}
-
 .portfolio-item {
   margin-bottom: 25px;
 }
 
 .question-toggle:hover {
   cursor: pointer;
-}
-
-.vertical-center {
-  display: inline-block;
-  float: none;
-  vertical-align: middle;
 }
