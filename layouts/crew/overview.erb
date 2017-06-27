@@ -1,53 +1,50 @@
 <% render '/partials/header.*', image: '/assets/images/design/header1.png' do %>
 Crew of
 <!-- Single button -->
-<div class="btn-group dropdown">
-  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="team-selector">
+  <span class="toggle">
     <%= @item[:year] %> <%= fa 'caret-down' %>
   </span>
-  <ul class="dropdown-menu">
+  <div class="menu">
     <% crew_years.each do |y| %>
-    <li>
-      <li><a href="<%= crew_item_of(y).path %>"><%= y %></a></li>
+    <a class="item" href="<%= crew_item_of(y).path %>"><%= y %></a>
     </li>
     <% end %>
-  </ul>
+  </div>
 </div>
 <% end %>
 
 <% section :yellow do %>
-<div style="z-index: 2;">
-  <figure>
-    <img class="img-responsive" src="/assets/images/org/<%= @item[:year] %>/organisatie.jpg" alt="">
-  </figure>
-</div>
-<h3>De organisatie</h3>
-<p>De Student Kick-Off organisatie bestaat uit een groep overenthousiaste studenten die zich vrijwillig maandenlang inzetten om elk jaar opnieuw aan het begin van het academiejaar meer dan 30.000 studenten te mogen verwelkomen in hun favoriete studentenstad! Wat 11 jaar geleden begon met een groepje van 7 studenten is op vandaag uitgegroeid tot een organisatie met meer dan 55 team leden. </p>
-<p>De kern bestaat uit:</p>
-<ul>
-  <li>1 <a href="/crew/<%= @item[:year] %>/algemeencoordinator">Algemeen Coördinator</a></li>
-  <li>1 <a href="/crew/<%= @item[:year] %>/juridische">Finance and Law</a></li>
-  <li>7 Team Leads</li>
-</ul>
-<p>Ieder team bestaat uit:</p>
-<ul>
-  <li>1 Team Lead</li>
-  <li>3 tot 6 Coördinatoren</li>
-  <li>0 tot 13 Crew Leads</li>
-</ul>
-<% end %>
-
-<% section :red do %>
-<h1>Meet the Teams</h1>
-
-<div class="team-grid">
-  <% crew_of(@item[:year]).each do |team| %>
-  <div class="team-card">
-    <a href="<%= team.path %>">
-      <p><%= team[:teamnaam] %></p>
-      <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
-    </a>
+<div class="crew-info">
+  <div class="crewphoto">
+    <figure style="z-index: 2;">
+      <img class="img-responsive" src="/assets/images/org/<%= @item[:year] %>/organisatie.jpg" alt="">
+    </figure>
   </div>
-<% end %>
+
+  <div class="description">
+    <h3>De organisatie</h3>
+    <p>De Student Kick-Off organisatie bestaat uit een groep overenthousiaste studenten die zich vrijwillig maandenlang inzetten om elk jaar opnieuw aan het begin van het academiejaar meer dan 30.000 studenten te mogen verwelkomen in hun favoriete studentenstad! Wat 11 jaar geleden begon met een groepje van 7 studenten is op vandaag uitgegroeid tot een organisatie met meer dan 55 team leden. </p>
+  </div>
+
+  <div class="kerninfo">
+    <p>De kern bestaat uit:</p>
+    <ul>
+      <li>1 <a href="/crew/<%= @item[:year] %>/algemeencoordinator">Algemeen Coördinator</a></li>
+      <li>1 <a href="/crew/<%= @item[:year] %>/juridische">Finance and Law</a></li>
+      <li>7 Team Leads</li>
+    </ul>
+  </div>
+
+  <div class="teaminfo">
+    <p>Ieder team bestaat uit:</p>
+    <ul>
+      <li>1 Team Lead</li>
+      <li>3 tot 6 Coördinatoren</li>
+      <li>0 tot 13 Crew Leads</li>
+    </ul>
+  </div>
 </div>
 <% end %>
+
+<%= render '/crew/_meet-the-teams.*' %>

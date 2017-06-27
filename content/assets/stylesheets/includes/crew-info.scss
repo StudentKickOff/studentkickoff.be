@@ -1,0 +1,41 @@
+.crew-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > .crewphoto {
+    width: 60%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  > .description {
+    width: 35%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  > .kerninfo {
+    width: 50%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  > .teaminfo {
+    width: 50%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}

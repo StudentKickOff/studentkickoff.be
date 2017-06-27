@@ -2,4 +2,8 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  > .team-member-card {
+    max-width: 340px;
+  }
 }

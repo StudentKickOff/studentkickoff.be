@@ -98,8 +98,11 @@ $page-segment-font-color: #fff;
 }
 
 .page-segment.-footer {
-  // We use the before pseudo element to get opacity working
   padding-bottom: 341px;
+
+  p {
+    font-size: 120%;
+  }
 
   @include mobile {
     padding-bottom: 200px;
@@ -118,6 +121,7 @@ $page-segment-font-color: #fff;
     }
   }
 
+  // We use the before pseudo element to get opacity working
   &::before {
     content: '';
     margin-top: -60px;
