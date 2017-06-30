@@ -1,36 +1,81 @@
-<% render '/partials/header.*', image: '/assets/images/design/header2.png' do %>
+<% render '/partials/header.*', image: '/assets/images/design/header_sv2.jpg' do %>
 Student Village
 <% end %>
 
 <% section :blue do %>
-<h1>Registratie</h1>
-Deze registraties lopen tot 10 augustus, waarna wij als organisatie op basis van de registraties kijken wie wij plaats kunnen bieden.
-Een registratie is dus niet hetzelfde als een zekerheid dat je aanwezig zal kunnen zijn.
-Iedereen wordt na 10 augustus gecontacteerd en wie weerhouden wordt, zal dan ook op de hoogte gebracht worden van het verdere verloop van de procedure om materiaal aan te vragen en contactpersonen door te geven.
-<form class="basic-form" action="index.html" method="post">
-  <div class="row">
-    <input type="text" placeholder="Vereniging" name="" value="">
-  </div>
-  <div class="row">
-    <input type="text" placeholder="Naam" name="name">
-    <input type="text" placeholder="Voornaam" name="first_name">
-  </div>
-  <div class="row">
-    <input type="text" placeholder="E-mail" name="name">
-  </div>
+<div class="_relative">
+  <h1>Registratie</h1>
+  <form id="registratie" class="basic-form" action="http://localhost:3000//" method="post">
+    <p>
+      Deze registraties lopen tot 10 augustus, waarna wij als organisatie op basis van de registraties kijken wie wij plaats kunnen bieden.
+      Een registratie is dus niet hetzelfde als een zekerheid dat je aanwezig zal kunnen zijn.
+      Iedereen wordt na 10 augustus gecontacteerd en wie weerhouden wordt, zal dan ook op de hoogte gebracht worden van het verdere verloop van de procedure om materiaal aan te vragen en contactpersonen door te geven.
+    </p>
+    <div class="row">
+      <input type="text" placeholder="Vereniging" name="Vereniging" required>
+    </div>
+    <div class="row">
+      <input type="text" placeholder="Naam" name="Naam" required>
+      <input type="text" placeholder="Voornaam" name="Voornaam" required>
+    </div>
+    <div class="row">
+      <input type="text" placeholder="Functie" name="Functie" required>
+      <input type="text" placeholder="GSM-nummer" name="GSM-nummer" required>
+    </div>
+    <div class="row">
+      <input type="email" placeholder="E-mail" name="E-mail" required>
+    </div>
 
-  <label for="beschrijving">
-    Duidelijke beschrijving geplande activiteit
-  </label>
-  <textarea name="beschrijving" rows="8"></textarea>
+    <div>
+      <p>
+        We verzoeken alle standhouders een korte tekst omtrent de stand en activiteit door te zenden, deze komt dan binnen de rubriek Student Village op de website van de Student Kick-Off.
 
-  <input type="checkbox" name="" value="" required>
+        De tekst dient:
+      </p>
+      <ul>
+        <li>
+          De meerwaarde voor een bezoek aan de infostand te duiden
+        </li>
+        <li>
+          Een omschrijving van de activiteit te bevatten (kan in vorm van teaser)
+        </li>
+        <li>
+          Maximum 75 woorden te bedragen
+        </li>
+      </ul>
+      <p>
+        De organisatie is vrij deze tekst te weigeren en niet te publiceren indien niet toepasselijk of ongepast.
+      </p>
+    </div>
 
-  <div class="row">
-    <input type="submit" name="" value="Indienen">
+    <textarea name="Beschrijving" rows="8" placeholder="Duidelijke beschrijving geplande activiteit" required></textarea>
+
+    <div class="row">
+      <label for="Akkoord">
+        Ik ga akkoord met het reglement bijhorende bij mijn status als partner of niet-partner.
+      </label>
+      <input type="checkbox" name="Akkoord" required>
+    </div>
+
+    <div class="row">
+      <input id="submit" type="submit" name="" value="Indienen">
+    </div>
+  </form>
+
+  <div id="status" class="status-message -success _hidden">
+    Uw inzending is goed ontvangen!
   </div>
-</form>
+</div>
 <% end %>
 
-<% section :red do %>
-<% end %>
+<script type="text/javascript">
+  $('#registratie').submit(function (e) {
+    e.preventDefault();
+
+    $('#registratie').fadeTo(1000, .3);
+    $('#registratie').addClass('_nopointer');
+
+    $('#status').removeClass('_hidden');
+    $('#status').addClass('animated fadeIn');
+  });
+</script>
