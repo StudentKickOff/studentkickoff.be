@@ -50,7 +50,7 @@ a:hover {
 
 input, button {
   border: 3px solid white;
-  background-color: #7eb4e2;
+  background-color: rgba(255, 255, 255, .5);
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
@@ -85,7 +85,7 @@ blockquote {
   }
 }
 
-ul,
-ol {
+ul ul,
+ol ol {
   margin-left: 2em;
 }

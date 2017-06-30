@@ -1,0 +1,36 @@
+<% render '/partials/header.*', image: '/assets/images/design/header2.png' do %>
+Student Village
+<% end %>
+
+<% section :blue do %>
+<h1>Registratie</h1>
+Deze registraties lopen tot 10 augustus, waarna wij als organisatie op basis van de registraties kijken wie wij plaats kunnen bieden.
+Een registratie is dus niet hetzelfde als een zekerheid dat je aanwezig zal kunnen zijn.
+Iedereen wordt na 10 augustus gecontacteerd en wie weerhouden wordt, zal dan ook op de hoogte gebracht worden van het verdere verloop van de procedure om materiaal aan te vragen en contactpersonen door te geven.
+<form class="basic-form" action="index.html" method="post">
+  <div class="row">
+    <input type="text" placeholder="Vereniging" name="" value="">
+  </div>
+  <div class="row">
+    <input type="text" placeholder="Naam" name="name">
+    <input type="text" placeholder="Voornaam" name="first_name">
+  </div>
+  <div class="row">
+    <input type="text" placeholder="E-mail" name="name">
+  </div>
+
+  <label for="beschrijving">
+    Duidelijke beschrijving geplande activiteit
+  </label>
+  <textarea name="beschrijving" rows="8"></textarea>
+
+  <input type="checkbox" name="" value="" required>
+
+  <div class="row">
+    <input type="submit" name="" value="Indienen">
+  </div>
+</form>
+<% end %>
+
+<% section :red do %>
+<% end %>

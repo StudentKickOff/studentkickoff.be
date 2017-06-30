@@ -48,42 +48,51 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
   })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" integrity="sha256-00w68NO3TLuHjKRHJmjrrgJBDtG/6OhbJEu1gtHcsuo=" crossorigin="anonymous" />
+
 </head>
 
 <body id="body">
   <!-- Navigation -->
   <nav class="nav-bar">
-    <!-- <button type="button" class="nav-bar-toggle">
-    </button> -->
-    <ul class="navigation">
-      <li class="brand">
+    <div class="navigation">
+      <span class="brand">
         <a href="/">Home</a>
-      </li>
-      <!-- <li>
-        <a href="/#lineup">Line-Up</a>
-      </li> -->
-      <!-- <li>
-        <a href="/info">Info</a>
-      </li> -->
-      <!-- <li>
-        <a href="http://join.studentkickoff.be">Join</a>
-      </li> -->
-      <li>
-        <a href="/historiek">Historiek</a>
-      </li>
-      <!-- <li>
-        <a href="<%= latest_crew_overview.path %>">Crew</a>
-      </li> -->
-      <li>
-        <a href="/partners">Partners</a>
-      </li>
-      <li>
-        <a href="http://blog.studentkickoff.be">Nieuws</a>
-      </li>
-      <!-- <li>
-        <a href="http://wedstrijd.studentkickoff.be">Wedstrijd</a>
-      </li> -->
-    </ul>
+      </span>
+
+      <div class="navitems">
+        <!-- <li>
+          <a href="/#lineup">Line-Up</a>
+        </li> -->
+        <!-- <li>
+          <a href="/info">Info</a>
+        </li> -->
+        <!-- <li>
+          <a href="http://join.studentkickoff.be">Join</a>
+        </li> -->
+        <span class="item">
+          <a href="/historiek">Historiek</a>
+        </span>
+        <!-- <li>
+          <a href="<%= latest_crew_overview.path %>">Crew</a>
+        </li> -->
+        <span class="item">
+          <a href="/partners">Partners</a>
+        </span>
+        <span class="item">
+          <a href="http://blog.studentkickoff.be">Nieuws</a>
+        </span>
+        <!-- <li>
+          <a href="http://wedstrijd.studentkickoff.be">Wedstrijd</a>
+        </li> -->
+      </div>
+    </div>
+
+    <div class="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </nav>
 
   <%= yield %>
@@ -98,7 +107,7 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
         9000 Gent</p>
         <p>BTW BE 0886.847.343</p>
       </div>
-      <form class="contact-form" action="https://formspree.io/info@studentkickoff.be" method="POST">
+      <form class="basic-form" action="https://formspree.io/info@studentkickoff.be" method="POST">
         <input type="hidden" name="_format" value="plain" />
         <div class="row">
           <input type="email" placeholder="E-Mail" name="_replyto">
@@ -112,7 +121,7 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
         <div class="row">
           <textarea rows="5" placeholder="Tekst" name="Content"></textarea>
         </div>
-  
+
         <button type="submit">Verzenden</button>
 
         <textarea class="gotcha" rows="5" placeholder="Tekst" name="_gotcha"></textarea>
@@ -140,5 +149,11 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script type="text/javascript">
+      $('.toggle').click(function () {
+        $('.navitems').toggleClass('-active');
+      });
+    </script>
 </body>
 </html>

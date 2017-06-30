@@ -3,13 +3,18 @@ $rot: -4deg;
 $colblue: $sko_blue;
 $colyel: $sko_yellow;
 $colred: $sko_red;
-$header-color: rgba(27, 149, 212, .9);
 $magic-pct: 7.9%;
 
 $page-segment-colors: (
   "red": $colred,
   "yellow": $colyel,
   "blue": $colblue,
+);
+
+$text-colors: (
+  "red": white,
+  "yellow": #484848,
+  "blue": white,
 );
 
 $complements: (
@@ -77,6 +82,7 @@ $page-segment-font-color: #fff;
 @each $color-name, $color-code in $page-segment-colors {
   .page-segment.-#{$color-name} {
     background-color: $color-code;
+    color: map-get($text-colors, $color-name);
 
     & > .topbar > svg {
       fill: $color-code;

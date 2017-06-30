@@ -1,0 +1,139 @@
+$header-color: rgba(27, 149, 212, .9);
+$nav-bar-height: 50px;
+
+$mobile-padding: 20px;
+
+.nav-bar {
+  font-size: x-large;
+  margin-bottom: 0;
+  z-index: 100;
+
+  font-family: 'LeagueGothic-Regular';
+  text-transform: uppercase;
+  font-weight: initial;
+  margin: 0;
+
+  background-color: $header-color;
+
+  // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+  transform: matrix(1, -0.07, 0.07, 1, -20, -200);
+
+  position: absolute;
+
+  padding-top: 200px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-transform: uppercase;
+
+  border: 0;
+
+  a {
+    color: $sko_yellow !important;
+  }
+
+  @include mobile {
+    background-color: $sko_blue;
+    padding: 0;
+    transform: none;
+    position: fixed;
+    height: $nav-bar-height;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
+  }
+
+  > .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+
+    > .brand {
+      margin-right: 20px;
+    }
+    > .navitems {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      background-color: $sko_blue;
+      width: 100%;
+      padding: 0;
+
+      & > .brand {
+        display: initial;
+      }
+
+      & > .navitems {
+        position: absolute;
+        top: $nav-bar-height;
+        left: 0;
+        padding-left: $mobile-padding;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        background-color: $sko_blue;
+        border-top: solid 1px rgba(255, 255, 255, .2);
+
+        width: 100%;
+
+        flex-direction: column;
+
+        & > .item:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        display: none;
+        &.-active {
+          display: flex;
+        }
+      }
+    }
+
+    @include tablet {
+      width: 50vw;
+    }
+
+    @include desktop {
+      width: 35vw;
+    }
+
+  }
+
+  > .toggle {
+    justify-content: space-around;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    height: 40px;
+    width: 45px;
+    padding: 10px;
+
+    > .bar {
+      background-color: white;
+      height: 2px;
+      width: 100%;
+    }
+
+    display: none;
+    @include mobile {
+      display: flex;
+    }
+  }
+}
+
+.nav-bar>.navigation>.item>a:hover {
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: inherit;
+  }
+}

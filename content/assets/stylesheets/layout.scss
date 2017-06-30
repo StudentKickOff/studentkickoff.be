@@ -8,9 +8,10 @@
 @import 'includes/minireset';
 @import 'includes/base';
 
+@import 'includes/nav-bar';
 @import 'includes/page-segment';
 @import 'includes/historiek-section';
-@import 'includes/contact-form';
+@import 'includes/basic-form';
 @import 'includes/crew-info';
 @import 'includes/team-selector';
 @import 'includes/team-member-card';
@@ -49,67 +50,6 @@
   }
 }
 // Markup
-
-.nav-bar {
-  font-size: x-large;
-  margin-bottom: 0;
-  z-index: 100;
-
-  font-family: 'LeagueGothic-Regular';
-  text-transform: uppercase;
-  font-weight: initial;
-  margin: 0;
-
-  background-color: $header-color;
-
-  // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
-  transform: matrix(1, -0.07, 0.07, 1, -20, -200);
-
-  position: absolute;
-
-  padding-top: 200px;
-  padding-bottom: 10px;
-  width: 100%;
-  text-transform: uppercase;
-
-  border: 0;
-
-  .icon-bar {
-    background-color: white;
-  }
-
-  a {
-    color: $colyel !important;
-  }
-
-  @include mobile {
-    background-color: $colblue;
-    padding: 0;
-    transform: none;
-    position: fixed;
-  }
-}
-
-.navigation {
-  margin-left: 10%;
-
-  & > li {
-    display: inline;
-
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-  }
-}
-
-.nav-bar>.navigation>li>a:hover {
-  display: inline-block;
-
-  &:hover {
-    transform: scale(1.2);
-    background-color: inherit;
-  }
-}
 
 .main-hero {
   position: relative;
