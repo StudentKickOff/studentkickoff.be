@@ -38,8 +38,13 @@ h5, {
   margin: 0;
 }
 
-p:not(:last-child) {
-  margin-bottom: 10px;
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul {
+  padding-left: 40px;
 }
 
 a,

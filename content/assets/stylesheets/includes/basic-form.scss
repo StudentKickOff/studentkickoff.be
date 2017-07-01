@@ -8,6 +8,14 @@
     justify-content: space-between;
     width: 100%;
 
+    &.-center {
+      justify-content: center;
+
+      > * {
+        width: initial;
+      }
+    }
+
     @include mobile {
       flex-wrap: wrap;
     }

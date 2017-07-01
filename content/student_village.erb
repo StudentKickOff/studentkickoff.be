@@ -2,10 +2,10 @@
 Student Village
 <% end %>
 
-<% section :blue do %>
+<% section :red do %>
 <div class="_relative">
   <h1>Registratie</h1>
-  <form id="registratie" class="basic-form" action="http://localhost:3000//" method="post">
+  <form id="registratie" class="basic-form" method="post">
     <p>
       Deze registraties lopen tot 10 augustus, waarna wij als organisatie op basis van de registraties kijken wie wij plaats kunnen bieden.
       Een registratie is dus niet hetzelfde als een zekerheid dat je aanwezig zal kunnen zijn.
@@ -50,12 +50,12 @@ Student Village
 
     <textarea name="Beschrijving" rows="8" placeholder="Duidelijke beschrijving geplande activiteit" required></textarea>
 
-    <div class="row">
-      <label for="Akkoord">
+    <div class="row -center">
+      <p>
         Ik ga akkoord met het reglement bijhorende bij mijn status als partner of niet-partner.
-      </label>
-      <input type="checkbox" name="Akkoord" required>
+      </p>
     </div>
+    <input type="checkbox" name="Akkoord" required>
 
     <div class="row">
       <input id="submit" type="submit" name="" value="Indienen">
@@ -72,10 +72,12 @@ Student Village
   $('#registratie').submit(function (e) {
     e.preventDefault();
 
-    $('#registratie').fadeTo(1000, .3);
-    $('#registratie').addClass('_nopointer');
+    var jqxhr = $.post( "/form", $("#registratie").serialize(), function() {
+      $('#registratie').fadeTo(1000, .3);
+      $('#registratie').addClass('_nopointer');
 
-    $('#status').removeClass('_hidden');
-    $('#status').addClass('animated fadeIn');
+      $('#status').removeClass('_hidden');
+      $('#status').addClass('animated fadeIn');
+    });
   });
 </script>
