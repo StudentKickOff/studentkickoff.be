@@ -1,3 +1,11 @@
 .team-selector {
-  
+  > .item.is-active {
+    background-color: #fff;
+    color: $sko_red;
+  }
+
+  > .item:hover {
+    background-color: #fff;
+    color: $sko_red;
+  }
 }

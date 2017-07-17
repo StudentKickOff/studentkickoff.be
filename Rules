@@ -136,6 +136,10 @@ compile '/assets/images/org/*/members/*.{jpg,png}' do
   filter :img_resize, size: '300x300'
 end
 
+compile '/assets/images/org/*/team*.{jpg,png}' do
+  filter :img_resize, size: '1920x1080'
+end
+
 compile '/assets/images/**/*.{jpg,png}' do
   # filter :img_compress
 end

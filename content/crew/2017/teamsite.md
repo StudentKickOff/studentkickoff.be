@@ -43,7 +43,7 @@ teamleden:
     naam: Yoran Dons
     functie: Crew Lead
   -
-    naam: Maarten de Ridder
+    naam: Maarten De Ridder
     functie: Crew Lead
   -
     naam: Lukas Petit

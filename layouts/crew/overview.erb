@@ -2,15 +2,10 @@
 Crew of
 <!-- Single button -->
 <div class="team-selector">
-  <span class="toggle">
-    <%= @item[:year] %> <%= fa 'caret-down' %>
-  </span>
-  <div class="menu">
-    <% crew_years.each do |y| %>
-    <a class="item" href="<%= crew_item_of(y).path %>"><%= y %></a>
-    </li>
-    <% end %>
-  </div>
+  <% crew_years.each do |y| %>
+  <a class="item<%=" is-active" if @item[:year] == y %>" href="<%= crew_item_of(y).path %>"><%= y %></a>
+  </li>
+  <% end %>
 </div>
 <% end %>
 
