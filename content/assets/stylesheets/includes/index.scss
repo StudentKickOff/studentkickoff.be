@@ -172,33 +172,6 @@ $photoslidertextsize: 50px;
       width: 72%;
     }
   }
-
-  .headline .container {
-    h1 {
-      font-size: 3em;
-    }
-
-    h2 {
-      font-size: 2em;
-    }
-
-    .countercontainer {
-      > * {
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-
-      .counter {
-        background-size: 100%;
-        font-size: 1em;
-
-        .number {
-          font-size: 7em;
-          line-height: 100%;
-        }
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 650px) {

@@ -3,12 +3,12 @@
 
 <div class="team-grid">
   <% crew_of(@item[:year]).each do |team| %>
-  <div class="team-card">
-    <a href="<%= team.path %>">
-      <p><%= team[:teamnaam] %></p>
-      <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
-    </a>
-  </div>
+  <a class="team-card" href="<%= team.path %>">
+    <div class="teamname">
+      <%= team[:teamnaam] %>
+    </div>
+    <img class="img-responsive portfolio-item" src="<%= team[:foto] %>" alt="">
+  </a>
   <% end %>
 </div>
 <% end %>

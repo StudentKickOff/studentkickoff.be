@@ -1,0 +1,59 @@
+.main-hero {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  // Variants
+  &.-large {
+    margin-bottom: 7.93650794%;
+  }
+
+  .background {
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    z-index: -5;
+  }
+
+  @include mobile {
+    .headline .container {
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 3em;
+      }
+
+      .countercontainer {
+        > * {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .counter {
+          background-size: 100%;
+          font-size: 1em;
+
+          .number {
+            font-size: 7em;
+            line-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
