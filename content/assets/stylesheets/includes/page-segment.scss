@@ -92,7 +92,8 @@ $page-segment-font-color: #fff;
       h1,
       h2,
       h3,
-      strong {
+      strong,
+      a {
         color: map-get($complements, $color-code);
       }
 
