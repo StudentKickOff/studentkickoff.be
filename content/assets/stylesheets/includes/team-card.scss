@@ -6,6 +6,10 @@
     text-align: center;
     width: 100%;
     font-size: 2em;
+
+/*     @include mobile {
+  font-size: 1em;
+} */
   }
 
   a {

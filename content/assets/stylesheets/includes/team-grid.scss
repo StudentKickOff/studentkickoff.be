@@ -1,8 +1,9 @@
 .team-grid {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   > .team-card {
-    width: 25%;
+    max-width: 300px;
   }
 }
