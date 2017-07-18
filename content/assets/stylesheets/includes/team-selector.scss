@@ -1,11 +1,12 @@
 .team-selector {
-  > .item.is-active {
-    background-color: #fff;
-    color: $sko_red;
+  > .text {
+    margin-bottom: 20px;
   }
 
-  > .item:hover {
-    background-color: #fff;
-    color: $sko_red;
+  > .item {
+    &.is-active, &:hover {
+      background-color: #fff;
+      color: $sko_red;
+    }
   }
 }

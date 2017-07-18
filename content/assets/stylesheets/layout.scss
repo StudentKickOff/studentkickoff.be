@@ -15,6 +15,7 @@
 @import 'includes/status-message';
 @import 'includes/basic-form';
 @import 'includes/crew-info';
+@import 'includes/main-hero';
 @import 'includes/team-selector';
 @import 'includes/team-member-card';
 @import 'includes/team-grid';
@@ -52,37 +53,6 @@
   }
 }
 // Markup
-
-.main-hero {
-  position: relative;
-  width: 100%;
-  text-align: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 100vh;
-
-  // Variants
-  &.-large {
-    margin-bottom: 7.93650794%;
-  }
-
-  .background {
-    position: fixed;
-    background-size: cover;
-    background-position: center;
-
-    height: 100%;
-    width: 100%;
-
-    top: 0;
-    left: 0;
-
-    z-index: -5;
-  }
-}
 
 .gotcha {
   display: none;

@@ -4,6 +4,11 @@
   flex-wrap: wrap;
 
   > .team-card {
-    max-width: 300px;
+    max-width: 25%;
+    margin-top: 20px;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 }
