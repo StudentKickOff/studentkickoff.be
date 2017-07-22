@@ -8,7 +8,7 @@ teamleden:
     functie: Team Lead
   -
     naam: Josianne Tas
-    functie: Coördinator Externe Communicatie
+    functie: Coörd. Externe Communicatie
   -
     naam: Jasper Bergeman
     functie: Coördinator Pers

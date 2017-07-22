@@ -26,7 +26,19 @@ Team <%= item[:teamnaam] %> <%= item[:year] %>
   <% section :blue do %>
     <h1>Teamleden</h1>
     <div class="team-members-grid">
-      <% item[:teamleden].each do |lid| %>
+      <% team_lead = item[:teamleden][0] %>
+      <div class="team-member-card -teamlead">
+        <h3 class="name"><%= team_lead[:naam] %></h3>
+        <p>
+          <%= team_lead[:functie] %><br>
+          <%= team_lead[:opleiding] %><br>
+          <%= team_lead[:school] %><br>
+        </p>
+        <img class="picture" src="/assets/images/org/<%= team_lead[:photo] %>" alt="">
+      </div>
+    </div>
+    <div class="team-members-grid">
+      <% item[:teamleden][1..-1].each do |lid| %>
         <div class="team-member-card">
           <h3 class="name"><%= lid[:naam] %></h3>
           <p>

@@ -3,8 +3,23 @@
   padding: 20px;
   margin-bottom: 30px;
   display: inline-block;
+  position: relative;
+
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.15);
 
   > .name {
     font-size: 1.5em;
+  }
+
+  &.-teamlead::before {
+    content: '';
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/25/Simple_gold_crown.svg);
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    transform: rotate(30deg);
   }
 }
