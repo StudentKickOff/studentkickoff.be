@@ -68,8 +68,12 @@ Student Village
     </div>
   </form>
 
-  <div id="status" class="status-message -success _hidden">
+  <div id="success" class="status-message -success _hidden">
     Uw inzending is goed ontvangen!
+  </div>
+
+  <div id="failure" class="status-message -failure _hidden">
+     Er trad een fout op. Gelieve <a href="mailto:it@studentkickoff.be">it@studentkickoff.be</a> te contacteren.
   </div>
 </div>
 <% end %>
@@ -78,12 +82,18 @@ Student Village
   $('#registratie').submit(function (e) {
     e.preventDefault();
 
-    var jqxhr = $.post( "/form", $("#registratie").serialize(), function() {
+    var jqxhr = $.post("/form", $("#registratie").serialize(), function() {
       $('#registratie').fadeTo(1000, .3);
       $('#registratie').addClass('_nopointer');
 
-      $('#status').removeClass('_hidden');
-      $('#status').addClass('animated fadeIn');
+      $('#success').removeClass('_hidden');
+      $('#success').addClass('animated fadeIn');
+    }).fail(function () {
+      $('#registratie').fadeTo(1000, .3);
+      $('#registratie').addClass('_nopointer');
+
+      $('#failure').removeClass('_hidden');
+      $('#failure').addClass('animated fadeIn');
     });
   });
 </script>
