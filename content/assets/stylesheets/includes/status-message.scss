@@ -36,4 +36,13 @@
     background-color: #49c500;
     color: white;
   }
+
+  &.-failure {
+    &::before {
+      content: "\f00d";
+    }
+
+    background-color: #ff351e;
+    color: white;
+  }
 }
