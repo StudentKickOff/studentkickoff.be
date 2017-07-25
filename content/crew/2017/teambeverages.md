@@ -56,7 +56,7 @@ In een sponsordeal zit natuurlijk ook heel wat logistieke sponsoring. Onze Coör
 Als derde gaan we naar de VIP, verdeeld in twee ruimtes: de VIP-tent en het VIP-dek. Coördinator VIP zorgt voor het meubilair, belichting, koeling,… en ziet ook dat alles op het moment van opening onberispelijk klaar staat. Hij zorgt ook voor alle uitnodigingen naar onze belangrijke partners, maar wel met een juiste verdeelsleutel zodat er geen klachten van drukte binnenstromen.
 
 
-Al deze bars kunnen natuurlijk niet draaien zonder crew. Een team van 500 vrijwilligers staat elk jaar met een glimlach klaar om onze bezoekers te bedienen. Deze mensen worden aangestuurd door onze Coördinator Verkoop. In nauwe samenwerking met Team HR zorgt zij voor een perfecte schatting en planning.
+Al deze bars kunnen natuurlijk niet draaien zonder crew. Een team van 500 vrijwilligers staat elk jaar met een glimlach klaar om onze bezoekers te bedienen. Deze mensen worden aangestuurd door onze Coördinator Verkoop. In nauwe samenwerking met Team HR zorgt hij voor een perfecte schatting en planning.
 
 
 Last but not least, onze Coördinator Duurzaamheid. Als een drankje leeg is, moet er natuurlijk iets gebeuren met dat plastic. Deze man zorgt voor een proper plein en stuurt een team van milieumedewerkers aan die meewerken aan dit verhaal. Misschien halen we dit jaar wel de Groenevent Award binnen!
