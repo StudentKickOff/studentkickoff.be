@@ -180,4 +180,6 @@ passthrough '/assets/**/*'
 passthrough '/crew/leden.yml'
 passthrough '/signature/logo2013.png'
 
+passthrough '**/*'
+
 layout '/**/*', :erb
