@@ -92,5 +92,5 @@ checks:
 deploy:
   public:
     kind: rsync
-    dst:  beta@studentkickoff.be:/var/www/beta.studentkickoff.be/build
+    dst:  sko@studentkickoff.be:/var/www/studentkickoff.be/public
     options: [ '-aP', '--delete-after' ]
