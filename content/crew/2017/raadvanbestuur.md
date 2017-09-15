@@ -21,12 +21,6 @@ teamleden:
   -
     naam: Cedric Philippe
     functie: Bestuurder
-  -
-    naam: Matti Desmet
-    functie: Adviseur
-  -
-    naam: Stefanie Celen
-    functie: Adviseur
 ---
 
 De raad van bestuur zorgt voor de dagdagelijkse werking van de vzw en bestaat daarvoor uit 6 doorwinterde SKO’ers. Zij proberen om de organisatie op een vlotte manier te laten verlopen en daarvoor zoeken en bieden zij de nodige ondersteuning. Zij staan in voor de rekrutering van het kernteam, de veilige werking en de financiële gezondheid van de vzw. Waar moet SKO binnen 5 jaar staan? Wat kan er verbeteren? Hoe kunnen de doelstellingen bereikt worden? Dat zijn vragen waar deze bestuurders hun hand niet voor omdraaien.
