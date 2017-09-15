@@ -12,13 +12,13 @@ questions:
     a: Er staat geen leeftijdslimiet op de Student Kick-Off. Jong tot oud is welkom, maar de focus ligt natuurlijk op het studentenpubliek.
   -
     q: Wat mag ik absoluut niet meenemen
-    a: Rugzakken groter dan een A4 - formaat, wapens, glas, grote stokken (vlaggenmasten) of andere gevaarlijke voorwerpen zijn niet toegelaten op het terrein.
+    a: Rugzakken groter dan een A4-formaat, wapens, glas, grote stokken (vlaggenmasten) of andere gevaarlijke voorwerpen zijn niet toegelaten op het terrein.
   -
     q: Hoe geraak ik tot op het festivalterrein
     a: De ingang van het het festivalterrein bevindt zich op de Graaf Arnulfstraat, recht tegenover de ingang van het Blandijngebouw (de trabla).
   -
     q: Ticketverkoop
-    a: Inkom kost slechts een (1) volledige euro. Er is geen ticketverkoop voorzien. Aan de ingang kan je je euro inwisselen voor een polsbandje. De inkomsten hiervan gaan integraal naar een van de gekozen goede doelen van die editie.
+    a: Inkom kost slechts €1. Er is geen ticketverkoop voorzien. Aan de ingang kan je je euro inwisselen voor een polsbandje. De inkomsten hiervan gaan integraal naar een van de gekozen goede doelen van die editie.
   -
     q: Waar kan ik de organisatie contacteren
     a: Onderaan de pagina kan u een contactformulier vinden. U kan ons ook rechtstreeks mailen via info@studentkickoff.be
@@ -51,7 +51,7 @@ Praktische Info
 <h1 id="rugzakkenverbod">
   Rugzakkenverbod
 </h1>
-Omwille van veiligheidsredenen delen wij mee dat <b>rugzakken helaas niet worden toegelaten</b> op 28 september op Student Kick-Off.
+Omwille van veiligheidsredenen delen wij mee dat <b>rugzakken helaas niet worden toegelaten</b> op 27 september op Student Kick-Off.
 Daarom vragen wij om alle tassen en rugzakken groter dan A4 formaat <b>thuis te laten</b>.
 Indien jullie toch een rugzak wensen mee te nemen zijn er <b>lockers</b> voorzien ter hoogte van Blandijnberg.
 <small>(€5 per locker, plaats voor meerdere rugzakken in 1 locker).</small>
@@ -63,7 +63,7 @@ Indien jullie toch een rugzak wensen mee te nemen zijn er <b>lockers</b> voorzie
 
 <h3>Met de fiets?</h3>
 
-<p>Student Kick-Off zorgt voor fietsstallingen dicht bij het plein. Deze bevinden zich in de Kunstlaan (middenberm) en in de Sint-Amandstraat. Uw fiets behoorlijk wegzetten is heel belangrijk.Gebruik daarom de ter beschikking gestelde stallingen. <strong>Fietsen die tegen de omheiningen en dergelijke geplaatst worden zullen spijtig genoeg verwijderd worden.</strong></p>
+<p>Student Kick-Off zorgt voor fietsstallingen dicht bij het plein. Deze bevinden zich in de Kunstlaan (middenberm) en in de Sint-Amandstraat. Uw fiets behoorlijk wegzetten is heel belangrijk. Gebruik daarom de ter beschikking gestelde stallingen. <strong>Fietsen die tegen de omheiningen en dergelijke geplaatst worden zullen spijtig genoeg verwijderd worden.</strong></p>
 
 <h3>Rolstoelgebruiker?</h3>
 
@@ -73,7 +73,7 @@ Indien jullie toch een rugzak wensen mee te nemen zijn er <b>lockers</b> voorzie
 <% section :red do %>
 <h1>Inkom: 1 Euro! WAT?!</h1>
 
-<p>Sinds een aantal jaar wordt er 1 inkom gevraagd. Deze euro gaat integraal naar Student for Students, een initiatief van Student Kick-Off vzw dat ervoor zorgt dat ook kinderen in derdewereldlanden kans op onderwijs krijgen. Verschillende organisaties die zich inzetten voor het goede doel, kunnen meewerken. Zo kan de opbrengst verdeeld worden over verschillende projecten, van verschillende verenigingen. In ruil voor die ene euro, krijg je van ons een hip polsbandje. Je kan dit gewoon aan de hoofdingang doen, of in voorverkoop tijdens onze Campus Tour waar er nog tal van extra's bij voorzien zijn!</p>
+<p>Sinds een aantal jaar wordt er €1 inkom gevraagd. Deze euro gaat integraal naar Student for Students, een initiatief van Student Kick-Off vzw dat ervoor zorgt dat ook kinderen in derdewereldlanden kans op onderwijs krijgen. Verschillende organisaties die zich inzetten voor het goede doel, kunnen meewerken. Zo kan de opbrengst verdeeld worden over verschillende projecten, van verschillende verenigingen. In ruil voor die ene euro, krijg je van ons een hip polsbandje. Je kan dit gewoon aan de hoofdingang doen, of in voorverkoop tijdens onze Campus Tour waar er nog tal van extra's bij voorzien zijn!</p>
 
 <p><strong>Je bent actief in een vereniging die zich inzet voor het goede doel, en wil kans maken op een deel euro's? Kom dan met een deel medewerkers een handje toesteken aan onze bars! Voor meer info, contacteer Team HR: hr@studentkickoff.be</strong> </p>
 
@@ -98,18 +98,12 @@ Opgelet: Happy hour geldt alleen voor bier!
 
 <% section :yellow do %>
 <h1>FAQ</h1>
-<div class="panel-group" id="faqAccordion">
-  <% item[:questions].each_with_index do |lid, index| %>
-  <div class="panel">
-    <div class="accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question<%= index %>">
-      <h3>Q: <%= lid[:q] %>?</h3>
-    </div>
-    <div class="panel-collapse collapse" id="question<%= index %>">
-      <div class="panel-body">
-        <%= lid[:a] %>
-      </div>
-    </div>
-  </div>
-  <% end %>
+<% item[:questions].each_with_index do |faq, index| %>
+<div class="faq-panel">
+  <h3>Q: <%= faq[:q] %>?</h3>
+  <p>
+    <%= faq[:a] %>
+  </p>
 </div>
+<% end %>
 <% end %>

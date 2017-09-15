@@ -8,13 +8,22 @@ preprocess do
     item[:jaar] = jaar
   end
 
-  artists.each do |artist|
-    stage = artist.identifier.to_s.split('/')[-2]
+  @items.find_all('/artists/**/*.md') .each do |artist|
+    split_s = artist.identifier.without_ext.split('/')
+    # Extract the three last elements
+    *_, edition, stage, ident = *split_s
 
     artist[:start] = DateTime.parse(artist[:start] + '+0200')
     artist[:end]   = DateTime.parse(artist[:end] + '+0200')
     artist[:title] = artist[:name]
     artist[:stage] = stage
+
+    # Set artist image, with a default
+    if artist[:image]
+      artist[:image] = "/assets/images/artists/#{edition}/#{artist[:image]}"
+    else
+      artist[:image] = "/assets/images/artists/#{edition}/#{ident}.jpg"
+    end
   end
 
   crew_years.each do |year|
@@ -90,14 +99,14 @@ compile '/**/*.md' do
   filter :erb
 end
 
-compile '/artists/*/*.md' do
+compile '/artists/**/*.md' do
   filter :kramdown
   layout '/artist_page.*'
   layout '/default.*'
   filter :erb
 end
 
-compile '/artists/*/*.md', rep: :json do
+compile '/artists/**/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
   filter :json, item.attributes.merge(
@@ -138,6 +147,10 @@ end
 
 compile '/assets/images/org/*/team*.{jpg,png}' do
   filter :img_resize, size: '1920x1080'
+end
+
+compile '/assets/images/artists/**/*.{jpg,png}' do
+  filter :img_resize, size: '400x400'
 end
 
 compile '/assets/images/**/*.{jpg,png}' do

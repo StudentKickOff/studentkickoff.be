@@ -1,14 +1,10 @@
 module ArtistHelper
-  def mainstageartists
-    items.find_all('/artists/Main Stage/*.md').sort_by { |artist| artist[:start] }
+  def artists_for(stage, edition = @config[:edition])
+    @items.find_all("/artists/#{edition}/#{stage}/*.md").sort_by { |artist| artist[:start] }
   end
 
-  def secondstageartists
-    items.find_all('/artists/Second Stage/*.md').sort_by { |artist| artist[:start] }
-  end
-
-  def artists
-  	mainstageartists + secondstageartists
+  def artists(edition: @config[:edition])
+    @items.find_all("/artists/#{edition}/**/*.md")
   end
 
   def pretty_time(t)

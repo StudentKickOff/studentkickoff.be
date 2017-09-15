@@ -6,15 +6,17 @@ class ImgResizeFilter < Nanoc::Filter
   type :binary
 
   def run(filename, **params)
-    img = MiniMagick::Image.open(filename)
-
     size = params[:size]
 
-    # Cropping
-    img.resize "#{size}^"
-    img.crop "#{size}+0+0"
-    img.gravity 'Center'
+    MiniMagick::Tool::Convert.new do |convert|
+      convert << filename
 
-    img.write(output_filename)
+      convert.resize "#{size}^"
+      convert.gravity 'Center'
+      convert.crop "#{size}+0+0"
+      convert.repage.+
+
+      convert << output_filename
+    end
   end
 end

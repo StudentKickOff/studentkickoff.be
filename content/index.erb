@@ -17,16 +17,6 @@ title: Home
   <h1>See you then!</h1>
 <% end %>
 
-<% section :red do %>
-<h1>Bekijk de aftermovie</h1>
-<div class="videorapper">
-  <div id='video' class="videosection">
-    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FStudentKickOff%2Fvideos%2F1263575390360469%2F&show_text=0" allowFullscreen="true" ></iframe>
-    <img id='tv' src="/assets/images/design/TV.png">
-  </div>
-</div>
-<% end %>
-
 <!-- Page Content -->
 <% section :yellow do %>
 <h1>STUDENT KICK-OFF</h1>
@@ -40,7 +30,42 @@ title: Home
 </div>
 <% end %>
 
+<% section :blue do %>
+<h1>ZEG ME WIE &amp; WANNEER?</h1>
+<h2>MAIN STAGE</h2>
+<div class="artist-grid">
+<% artists_for('Main Stage').each do |artist| %>
+<div class="artist-card" style="background-image:url('<%= artist[:image] %>')">
+  <!-- <div class="imgwrapper">
+    <img src="<%= artist[:image] %>"/>
+  </div> -->
+
+  <div class="info">
+    <div class="name">
+      <%= artist[:name] %>
+    </div>
+    <div class="time">
+      <%= pretty_time(artist[:start]) %>
+    </div>
+  </div>
+</div>
+<% end %>
+</div>
+<!-- <h3><span>Red Bull Elektropedia Stage</span> hosted by Decadance</h3> -->
+<% end %>
+
 <% section :red do %>
+<h1>Bekijk de aftermovie</h1>
+<div class="videorapper">
+  <div id='video' class="videosection">
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FStudentKickOff%2Fvideos%2F1263575390360469%2F&show_text=0" allowFullscreen="true" ></iframe>
+    <img id='tv' src="/assets/images/design/TV.png">
+  </div>
+</div>
+<% end %>
+
+
+<% section :yellow do %>
 <h1>#throwback</h1>
 <!-- 16:9 aspect ratio -->
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->

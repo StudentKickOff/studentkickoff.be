@@ -84,24 +84,21 @@ $page-segment-font-color: #fff;
     background-color: $color-code;
     color: map-get($text-colors, $color-name);
 
+    h1,
+    h2,
+    h3,
+    strong,
+    a {
+      color: map-get($complements, $color-code);
+    }
+
     & > .topbar > svg {
       fill: $color-code;
     }
 
-    & > .content {
-      h1,
-      h2,
-      h3,
-      strong,
-      a {
-        color: map-get($complements, $color-code);
-        text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-      }
-
-      .sneaky {
-        color: $color-code;
-        text-shadow: none;
-      }
+    .sneaky {
+      color: $color-code;
+      text-shadow: none;
     }
   }
 }

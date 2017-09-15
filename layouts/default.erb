@@ -65,12 +65,12 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
         <!-- <li>
           <a href="/#lineup">Line-Up</a>
         </li> -->
-        <!-- <li>
+        <span class="item">
           <a href="/info">Info</a>
-        </li> -->
-        <!-- <li>
+        </span>
+        <span class="item">
           <a href="http://join.studentkickoff.be">Join</a>
-        </li> -->
+        </span>
         <span class="item">
           <a href="/historiek">Historiek</a>
         </span>
@@ -132,6 +132,7 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
       </form>
     </div>
   </div>
+  <% end %>
   <a href="#body">
     <img class="totop" src="/assets/images/design/back_to_top.png">
   </a>
@@ -149,12 +150,12 @@ SKO pakte al uit met grote namen zoals Gorki, Absynthe Minded, Nicole & Hugo, Ed
         <%= fa 'twitter-square', fw: true %>
       </a>
     </span>
-    <% end %>
+  </div>
 
-    <script type="text/javascript">
-      $('.toggle').click(function () {
-        $('.navitems').toggleClass('-active');
-      });
-    </script>
+  <script type="text/javascript">
+  $('.toggle').click(function () {
+    $('.navitems').toggleClass('-active');
+  });
+  </script>
 </body>
 </html>

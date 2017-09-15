@@ -1,11 +1,12 @@
 .team-member-card {
-  background-color: $colblue * .9;
+  background-color: rgba(0, 0, 0, .05);
+
   padding: 20px;
   margin-bottom: 30px;
   display: inline-block;
   position: relative;
 
-  box-shadow: 7px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.13);
 
   > .name {
     font-size: 1.5em;

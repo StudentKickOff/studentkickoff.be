@@ -1,0 +1,14 @@
+.artist-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+  > .artist-card {
+    margin-top: 20px;
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}
