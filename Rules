@@ -60,7 +60,7 @@ preprocess do
       end
 
       # Set the photo url dependent on year
-      e[:photo] = "#{i[:year]}/members/#{e[:photo]}"
+      e[:photo] = "members/#{e[:photo]}"
 
       e
     end

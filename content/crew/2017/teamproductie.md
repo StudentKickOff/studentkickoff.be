@@ -4,26 +4,26 @@ teamnaam: Productie
 foto: /assets/images/org/2016/teamproductie.jpg
 teamleden:
   -
-    naam: Wouter Schelfhout
+    naam: Alexander Ballegeer
     functie: Team Lead
   -
-    naam: Celine Marechal
-    functie: Hospitality
-  -
-    naam: Alexander Ballegeer
+    naam: Ilanja Van Zandycke
     functie: Productie Manager
   -
-    naam: Jan Brain
-    functie: Second Stage
+    naam: Celine Marechal
+    functie: Coördinator Hospitality
   -
-    naam: Bram Van De Velde
-    functie: Crew Lead Productie
-  -
-    naam: Simon Lamont
+    naam: Matthias Vanluchene
     functie: Stage Manager
+  -
+    naam: Hannes Strobbe
+    functie: Stage Manager Second Stage
   -
     naam: Niek Valcke
     functie: Crew Lead Hospitality
+  -
+    naam: Bram Van De Velde
+    functie: Crew Lead Productie
 ---
 
 Team productie is verantwoordelijk voor de muzikale kant van Student Kick-Off. Dankzij dit team kunnen de studenten genieten van de meest uiteenlopende concerten. Team productie bestaat uit zeven leden, waaronder één team lead, drie coördinatoren en drie crew leads. De leden van productie kan je terugvinden in de Sint-pietersabdij, het artiestendorp, de mainstage of second stage. Als je ze daar niet kan vinden, kan je nog eens proberen in de backstage of frontstage.

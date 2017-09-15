@@ -8,7 +8,7 @@ teamleden:
     functie: Team Lead
   -
     naam: Sébastien Vandenhouten
-    functie: Coördinator Site
+    functie: Coördinator Site Management
   -
     naam: Jan Vanlerberghe
     functie: Coördinator Veiligheid

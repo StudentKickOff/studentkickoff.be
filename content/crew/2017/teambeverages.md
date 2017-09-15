@@ -7,14 +7,14 @@ teamleden:
     naam: Jonas Nuyttens
     functie: Team Lead
   -
+    naam: Maxime Pans
+    functie: Coördinator Partners
+  -
     naam: Nick De Clercq
     functie: Coördinator Logistiek
   -
     naam: Martijn Van Der Stap
     functie: Coördinator Verkoop
-  -
-    naam: Dylan Sabot
-    functie: Coördinator Partners
   -
     naam: Viktor De Mulder
     functie: Coördinator VIP
@@ -27,9 +27,6 @@ teamleden:
   -
     naam: Ismene Ledegen
     functie: Crew Lead Duurzaamheid
-  -
-    naam: Maxime Pans
-    functie: Crew Lead
   -
     naam: Stef Moens
     functie: Crew Lead
