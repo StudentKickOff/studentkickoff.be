@@ -8,6 +8,9 @@
 
   > .partner {
     @include partner(200px, 20px);
+    img {
+      width: 100%;
+    }
   }
 }
 

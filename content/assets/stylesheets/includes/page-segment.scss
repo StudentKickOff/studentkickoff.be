@@ -84,6 +84,8 @@ $page-segment-font-color: #fff;
     background-color: $color-code;
     color: map-get($text-colors, $color-name);
 
+    fill: map-get($complements, $color-code);
+    
     h1,
     h2,
     h3,
