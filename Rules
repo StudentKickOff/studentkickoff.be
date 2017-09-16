@@ -110,7 +110,7 @@ compile '/artists/**/*.md', rep: :json do
   filter :kramdown
   filter :strip_html
   filter :json, item.attributes.merge(
-    image: "https://studentkickoff.be/assets/images/artists/#{item[:image]}"
+    image: "https://studentkickoff.be#{item[:image]}"
   )
 end
 
