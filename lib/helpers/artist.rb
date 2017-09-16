@@ -4,7 +4,7 @@ module ArtistHelper
   end
 
   def artists(edition: @config[:edition])
-    @items.find_all("/artists/#{edition}/**/*.md")
+    @items.find_all("/artists/#{edition}/**/*.md").sort_by { |artist| artist[:start] }
   end
 
   def pretty_time(t)
