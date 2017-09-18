@@ -1,0 +1,52 @@
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+
+    height: 160px;
+
+    // TODO: Move this to a better spot
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    img {
+      width: 95px;
+    }
+
+    > * {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .counter {
+      font-family: 'LeagueGothic-Regular';
+
+      min-width: 100px;
+      text-align: left;
+      color: white;
+
+      text-transform: uppercase;
+      font-size: 2rem;
+
+      .number {
+        position: relative;
+        color: $colred;
+
+        line-height: 135px;
+        font-size: 90pt;
+        text-align: center;
+
+        height: 100%;
+
+        background-image: url("/assets/images/TELLER2.svg");
+
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }

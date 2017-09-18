@@ -1,5 +1,5 @@
 # * 1000 because milliseconds
-sko_time = 1475056800
+sko_time = 1506513600
 
 time_parts = () ->
 

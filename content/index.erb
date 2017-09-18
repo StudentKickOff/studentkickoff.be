@@ -10,11 +10,40 @@ title: Home
 
 -->
 
-
 <% render '/partials/header.*', image: '/assets/images/design/header5.jpg' do %>
-  <img src="/assets/images/logo_sko_animated.svg" width="150">
-  <h2>27 september 2017</h2>
-  <h1>See you then!</h1>
+  <!-- <img src="/assets/images/logo_sko_animated.svg" width="150"> -->
+  <h1>27 september 2017</h1>
+  <h2>Sint-Pietersplein</h2>
+  <!-- <h1>See you then!</h1> -->
+  <div class="countdown-timer">
+    <div class="counter">
+      Days
+      <div class="number">
+      </div>
+    </div>
+    <div class="counter">
+      Hours
+      <div class="number">
+      </div>
+    </div>
+
+    <img src="/assets/images/logo_sko.svg">
+
+    <div class="counter">
+      Minutes
+      <div class="number">
+      </div>
+    </div>
+    <div class="counter">
+      Seconds
+      <div class="number">
+      </div>
+    </div>
+  </div>
+
+  <a href="https://studentkickoff.beeple.eu/" class="button">Join the crew!</a>
+
+  <script src="/assets/javascripts/sko_afteller.js" charset="utf-8"></script>
 <% end %>
 
 <!-- Page Content -->
@@ -30,6 +59,8 @@ title: Home
 </div>
 <% end %>
 
+<!-- Artists will not be empty if there are artists filled in for the current edition (nanoc.yaml) -->
+<% if !artists.empty? %>
 <% section :blue do %>
 <h1>ZEG ME WIE &amp; WANNEER?</h1>
 <h2>MAIN STAGE</h2>
@@ -52,6 +83,7 @@ title: Home
 <% end %>
 </div>
 <!-- <h3><span>Red Bull Elektropedia Stage</span> hosted by Decadance</h3> -->
+<% end %>
 <% end %>
 
 <% section :red do %>
