@@ -12,7 +12,7 @@ title: Home
 
 <% render '/partials/header.*', image: '/assets/images/design/header5.jpg' do %>
   <!-- <img src="/assets/images/logo_sko_animated.svg" width="150"> -->
-  <h1>27 september 2017</h1>
+  <h1><%= pretty_show_time %></h1>
   <h2>Sint-Pietersplein</h2>
   <!-- <h1>See you then!</h1> -->
   <div class="countdown-timer">
@@ -70,7 +70,6 @@ title: Home
   <div class="imgwrapper">
     <img src="<%= artist[:image] %>"/>
   </div>
-
   <div class="info">
     <div class="name">
       <%= artist[:name] %>

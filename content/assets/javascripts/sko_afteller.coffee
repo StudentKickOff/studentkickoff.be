@@ -1,5 +1,7 @@
 # * 1000 because milliseconds
-sko_time = 1506513600
+# We might as well make use of the erb capability to "hardcode"
+# this value
+sko_time = <%= show_time.to_time.to_i %>
 
 time_parts = () ->
 

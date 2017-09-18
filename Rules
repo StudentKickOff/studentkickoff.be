@@ -137,7 +137,7 @@ end
 
 compile '/assets/images/gallery/*.{jpg,png}', rep: :thumbnail do
   filter :img_resize, size: '150x150'
-  filter :img_compress
+  # filter :img_compress
   write "#{item.identifier.without_ext}_thumbnail.jpg"
 end
 
@@ -184,6 +184,7 @@ compile '/**/*.scss' do
 end
 
 compile '/**/*.coffee' do
+  filter :erb
   filter :coffeescript
 
   write ext: 'js'
@@ -196,3 +197,8 @@ passthrough '/signature/logo2013.png'
 passthrough '**/*'
 
 layout '/**/*', :erb
+
+# TODO: Clean up this hot mess
+postprocess do
+  File.rename('output/assets/stylesheets/layout.css', 'output'+cache_busted_path('/assets/stylesheets/layout.scss'))
+end

@@ -13,3 +13,5 @@ include FontAwesomeHelper
 include SectionHelper
 include EnvironmentHelper
 include CrewHelper
+include EditionHelper
+include CacheBustingHelper
