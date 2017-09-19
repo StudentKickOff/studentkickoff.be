@@ -15,3 +15,4 @@ include EnvironmentHelper
 include CrewHelper
 include EditionHelper
 include CacheBustingHelper
+include GoedeDoelenHelper
