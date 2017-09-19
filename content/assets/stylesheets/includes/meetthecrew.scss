@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1200px) {
-  figure {
+  .crewphoto {
     transform: rotate($rot);
     display: inline-block;
     overflow: hidden;
@@ -18,7 +18,7 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1100px) {
-  figure {
+  .crewphoto {
     transform: rotate($rot);
     display: inline-block;
     overflow: hidden;
@@ -35,7 +35,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  figure {
+  .crewphoto {
     display: inline-block;
     height: auto;
   }
