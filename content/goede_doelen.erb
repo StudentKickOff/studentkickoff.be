@@ -1,0 +1,22 @@
+---
+title: Goede Doelen
+---
+<% render '/partials/header.*', image: '/assets/images/design/header3.png' do %>
+Goede Doelen
+<% end %>
+
+<% goededoelen.zip([:red, :blue, :yellow].cycle).each do |goed_doel, colour| %>
+  <% section colour do %>
+    <div class="container">
+      <div class="historiek-section">
+        <h1><%= goed_doel[:name] %></h1>
+        <div class="poster">
+          <img src="/assets/images/goededoelen/<%= goed_doel[:logo]%>" alt="">
+        </div>
+        <div class="description">
+          <%= goed_doel.compiled_content %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>

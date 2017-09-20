@@ -80,6 +80,10 @@ compile '/historiek/*.md' do
   filter :kramdown
 end
 
+compile '/goededoelen/*.md' do
+  filter :kramdown
+end
+
 compile '/crew/*/*.md' do
   filter :kramdown
   layout '/crew/teampagina.*'
@@ -157,8 +161,9 @@ compile '/assets/images/**/*.{jpg,png}' do
   # filter :img_compress
 end
 
-# Empty route block prevents item from being written out
+# Empty route blocks prevent items from being written out
 route '/historiek/*.md' do; end
+route '/goededoelen/*.md' do; end
 
 route '/artists/*/*.md' do
   split_path = @item.identifier.without_ext.split('/')
