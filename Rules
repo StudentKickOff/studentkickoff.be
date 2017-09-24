@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'byebug'
 # frozen_string_literal: true
 
 preprocess do
@@ -8,7 +9,12 @@ preprocess do
     item[:jaar] = jaar
   end
 
-  @items.find_all('/artists/**/*.md') .each do |artist|
+  @items.find_all('/studentvillage/**/*.md').each do |sv|
+    raise "SV item has no name! #{sv.identifier}" unless sv[:name]
+    sv[:naam] = sv[:name]
+  end
+
+  @items.find_all('/artists/**/*.md').each do |artist|
     split_s = artist.identifier.without_ext.split('/')
     # Extract the three last elements
     *_, edition, stage, ident = *split_s
@@ -120,7 +126,6 @@ end
 
 ignore '/studentvillage/**/*.md'
 compile '/studentvillage/**/*.md', rep: :json do
-  raise "SV item has no name! #{@item.identifier}" unless @item[:name]
   filter :kramdown
   filter :strip_html
 
