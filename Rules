@@ -120,6 +120,7 @@ end
 
 ignore '/studentvillage/**/*.md'
 compile '/studentvillage/**/*.md', rep: :json do
+  raise "SV item has no name! #{@item.identifier}" unless @item[:name]
   filter :kramdown
   filter :strip_html
 

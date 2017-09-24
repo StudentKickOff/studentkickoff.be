@@ -1,5 +1,5 @@
 ---
-naam: NSV
+name: NSV
 logo: nsv.jpg
 ---
 Ook dit jaar geven we wat gratis lekkers weg! Win een gratis suikerspin aan ons standje terwijl je meer over onze club te weten komt.

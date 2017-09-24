@@ -1,5 +1,5 @@
 ---
-naam: Home Konvent
+name: Home Konvent
 logo: HK.png
 ---
 Het Home Konvent (HK) is de overkoepelende organisatie boven de individuele homes.

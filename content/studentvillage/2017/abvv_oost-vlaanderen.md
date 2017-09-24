@@ -1,5 +1,5 @@
 ---
-naam: ABVV Oost-Vlaanderen
+name: ABVV Oost-Vlaanderen
 ---
 ABVV-jongeren is de organisatie voor schoolgaande en studerende jongeren tussen 15 en 25 jaar en voor jongeren in de overgang tussen school en werk. Lidmaatschap is volledig gratis én omvat een volwaardig pakket aan diensten, informatie en het 3-maandelijkse tijdschrift ‘Magik?’.
 
