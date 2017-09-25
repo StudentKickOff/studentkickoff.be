@@ -1,5 +1,5 @@
 ---
-naam: Comac
+name: Comac
 logo: comac.jpg
 ---
 Comac verenigt alle jongeren, scholieren en studenten, die de huidige maatschappij niet aanvaarden. Jongeren die het niet aanvaarden hun toekomst gehypothekeeerd te zien door een minderheid die enkel uit is op winst, die weigeren toe te kijken hoe de natuur vernietigd wordt door hebzucht en oorlogen voor olie of geld niet aanvaarden. Jongeren die een rechtvaardige maatschappij willen, een maatschappij die beantwoordt aan de behoeften van de mensen en niet aan de winst. Comac wil alle jongeren bijeenbrengen die de racistische, nationalistische en fascistische logica weigeren.

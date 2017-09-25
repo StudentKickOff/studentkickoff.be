@@ -1,5 +1,5 @@
 ---
-naam: Noord-Zuid studenten
+name: Noord-Zuid studenten
 logo: noordzuid.png
 ---
 "Noord-Zuidt ge mee?!
