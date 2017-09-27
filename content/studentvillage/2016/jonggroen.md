@@ -1,5 +1,5 @@
 ---
-naam: Jong Groen StuGent
+name: Jong Groen StuGent
 logo: jonggroen.jpg
 ---
 Net zoals vorig jaar is Jong Groen StuGent weer paraat op de Student Kick-Off!

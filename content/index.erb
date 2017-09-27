@@ -82,7 +82,27 @@ title: Home
 </div>
 <% end %>
 </div>
-<!-- <h3><span>Red Bull Elektropedia Stage</span> hosted by Decadance</h3> -->
+<p>
+  <h2>The Desperados Club hosted by Decadance</h2>
+  <div class="artist-grid">
+  <% artists_for('Second Stage').each do |artist| %>
+  <div class="artist-card">
+    <div class="imgwrapper">
+      <img src="<%= artist[:image] %>"/>
+    </div>
+    <div class="info">
+      <div class="name">
+        <%= artist[:name] %>
+      </div>
+      <div class="time">
+        <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+</p>
 <% end %>
 <% end %>
 

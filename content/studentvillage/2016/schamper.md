@@ -1,5 +1,5 @@
 ---
-naam: Schamper
+name: Schamper
 logo: schamper.png
 ---
 Schamper is het officiële studentenblad van de Universiteit Gent. Van enkele zwart-wit pagina’s zijn we over de jaren heen geëvolueerd naar een degelijk en fris ogend magazine in kleur dat gratis verspreid wordt over de hele universiteit. Sinds 2014 hebben we ons uitdeelbereik uitgebreid naar de Hogeschool Gent.

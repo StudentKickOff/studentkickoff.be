@@ -1,5 +1,5 @@
 ---
-naam: Moeder Theepot
+name: Moeder Theepot
 logo: theepot.jpg
 ---
 "De warmste studentenvereniging van Gent is dit jaar weer op de Student Kick-Off te vinden!
