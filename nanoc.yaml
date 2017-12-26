@@ -1,4 +1,4 @@
-edition: 27 september 2017 12:00
+edition: 26 september 2018 12:00
 
 # The syntax to use for patterns in the Rules file. Can be either `"glob"`
 # (default) or `"legacy"`. The former will enable glob patterns, which behave
