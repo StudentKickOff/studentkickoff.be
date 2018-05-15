@@ -4,46 +4,31 @@ teamnaam: Site & Safety
 foto: /assets/images/org/2016/teamsite.jpg
 teamleden:
   -
-    naam: Bram De Nil
+    naam: Francis Begyn
     functie: Team Lead
   -
-    naam: Sébastien Vandenhouten
+    naam: Maarten de Ridder
     functie: Coördinator Site
   -
-    naam: Valerie Vermeire
+    naam: Gert-Jan Schollaert
     functie: Coördinator Veiligheid
   -
-    naam: Wannes Van Dorpe
+    naam: Lukas Petit
     functie: Coördinator Elektriciteit
   -
-    naam: Julien Marbaix
-    functie: Coördinator Mobiliteit
-  -
-    naam: Ben Deckers
-    functie: Crew Lead
-  -
-    naam: Jeroen De Lange
-    functie: Crew Lead
+    naam: Maximilien Roberti
+    functie: Coördinator Logistiek
   -
     naam: Benny Reubens
-    functie: Crew Lead
-  -
-    naam: Caroline De Brouwer
     functie: Crew Lead
   -
     naam: Yannick Dandois
     functie: Crew Lead
   -
-    naam: Tijl Garré
+    naam: Bryan Verfaille
     functie: Crew Lead
   -
-    naam: Francis Begyn
-    functie: Crew Lead
-  -
-    naam: Michiel Dasseville
-    functie: Crew Lead
-  -
-    naam: Daan Schaubroeck
+    naam: Niels Van Bocxlaer
     functie: Crew Lead
 ---
 
