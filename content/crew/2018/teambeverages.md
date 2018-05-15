@@ -16,7 +16,7 @@ teamleden:
     naam: Martijn Van Der Stap
     functie: Coördinator Verkoop
   -
-    naam: Servais Dhont
+    naam: Servais Dhondt
     functie: Coördinator Partners
   -
     naam: Finlay Van Wymeersch

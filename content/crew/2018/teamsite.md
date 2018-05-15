@@ -7,7 +7,7 @@ teamleden:
     naam: Francis Begyn
     functie: Team Lead
   -
-    naam: Maarten de Ridder
+    naam: Maarten De Ridder
     functie: Coördinator Site
   -
     naam: Gert-Jan Schollaert
@@ -25,7 +25,7 @@ teamleden:
     naam: Yannick Dandois
     functie: Crew Lead
   -
-    naam: Bryan Verfaille
+    naam: Bryan Verfaillie
     functie: Crew Lead
   -
     naam: Niels Van Bocxlaer
