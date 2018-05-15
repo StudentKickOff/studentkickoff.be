@@ -4,22 +4,22 @@ teamnaam: Partners
 foto: /assets/images/org/2016/teampartners.jpg
 teamleden:
   -
-    naam: Valerie Appelmans
+    naam: Ellen Van Den Broeck
     functie: Team Lead
   -
-    naam: Phaedra Gabriels
+    naam: Marie-Louise Baesen
     functie: Coördinator Commercial Partners
   -
-    naam: Matthias Baetens
+    naam: Maxime Pans
     functie: Coördinator Commercial Partners
   -
-    naam: Amon De Keyser
+    naam: Peter Yorck
     functie: Coördinator Commercial Partners
   -
-    naam: Marwein El Bekri
+    naam: Naomi Vanden Abeele
     functie: Coördinator Non-Commercial
   -
-    naam: Manon De Winne
+    naam: Lena Vandeputte
     functie: Coördinator Student Village
 ---
 

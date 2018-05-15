@@ -4,34 +4,46 @@ teamnaam: Beverages
 foto: /assets/images/org/2016/teambeverages.jpg
 teamleden:
   -
-    naam: Cedric Philippe
+    naam: Jonas Nuyttens
     functie: Team Lead
   -
-    naam: Jonas Nuyttens
-    functie: Coördinator Logistiek
-  -
-    naam: Charlotte Maenhaut
-    functie: Coördinator Verkoop
-  -
-    naam: Dylan Sabot
-    functie: Coördinator Partners
+    naam: Arnout Audenaert
+    functie: Coördinator Duurzaamheid
   -
     naam: Viktor De Mulder
-    functie: Coördinator VIP
-  -
-    naam: Antoine De Vogelaere
-    functie: Crew Lead
+    functie: Coördinator Logistiek
   -
     naam: Martijn Van Der Stap
+    functie: Coördinator Verkoop
+  -
+    naam: Servais Dhont
+    functie: Coördinator Partners
+  -
+    naam: Finlay Van Wymeersch
+    functie: Coördinator VIP
+  -
+    naam: Roxane Van Rie
+    functie: Coördinator Food
+  -
+    naam: Manon De Winne
+    functie: Crew Lead VIP
+  -
+    naam: Maarten Van Sande
     functie: Crew Lead
   -
-    naam: Thomas Lauwereins
+    naam: Lies Vandevyvere
     functie: Crew Lead
   -
-    naam: Servais Dhondt
+    naam: Ismene Ledegen
+    functie: Crew Lead Duurzaamheid
+  -
+    naam: Jacob De Vriendt
     functie: Crew Lead
   -
-    naam: Sander Phlips
+    naam: Jorn Van Polfliet
+    functie: Crew Lead
+  -
+    naam: Stijn Van Peel
     functie: Crew Lead
 ---
 
