@@ -24,6 +24,7 @@ module CrewHelper
     @items.find_all('/crew/*/*.md')
           .map { |e| e.identifier.to_s.split('/')[2] }
           .uniq
+          .sort
   end
 
   def latest_crew_year
