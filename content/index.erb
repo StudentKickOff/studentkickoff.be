@@ -64,7 +64,7 @@ title: Home
 <% if !artists.empty? %>
 <% section :blue do %>
 <h1>ZEG ME WIE &amp; WANNEER?</h1>
-<h2>MAIN STAGE</h2>
+<h2 id="lineup">MAIN STAGE</h2>
 <div class="artist-grid">
 <% artists_for('Main Stage').each do |artist| %>
 <div class="artist-card">
@@ -83,7 +83,7 @@ title: Home
 <% end %>
 </div>
 <p>
-  <h2>The Desperados Club hosted by Decadance</h2>
+  <!--<h2>The Desperados Club hosted by Decadance</h2>-->
   <div class="artist-grid">
   <% artists_for('Second Stage').each do |artist| %>
   <div class="artist-card">
