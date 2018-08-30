@@ -67,7 +67,7 @@ title: Home
 <h2 id="lineup">MAIN STAGE</h2>
 <div class="artist-grid">
 <% artists_for('Main Stage').each do |artist| %>
-<div class="artist-card">
+<%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
   <div class="imgwrapper">
     <img src="<%= artist[:image] %>"/>
   </div>

@@ -31,6 +31,9 @@ preprocess do
     else
       artist[:image] = "/assets/images/artists/#{edition}/#{ident}.jpg"
     end
+    unless File.exists?("content/" + artist[:image])
+      artist[:image] = ""
+    end
   end
 
   crew_years.each do |year|

@@ -48,3 +48,10 @@
     }
   }
 }
+.no-image {
+  background-color: black;
+  > .info {
+    height: 55%;
+    bottom: unset;
+  }
+}
