@@ -85,10 +85,10 @@ title: Home
 <% end %>
 </div>
 <p>
-  <!--<h2>The Desperados Club hosted by Decadance</h2>-->
+  <h2>The Eristoff stage hosted by Moonday</h2>
   <div class="artist-grid">
   <% artists_for('Second Stage').each do |artist| %>
-  <div class="artist-card">
+<%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
     <div class="imgwrapper">
       <img src="<%= artist[:image] %>"/>
     </div>
@@ -96,9 +96,11 @@ title: Home
       <div class="name">
         <%= artist[:name] %>
       </div>
-      <div class="time">
-        <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
-      </div>
+      <% unless artist[:start].blank? || artist[:end].blank? %>
+        <div class="time">
+          <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
+        </div>
+      <% end %>
     </div>
   </div>
   <% end %>
