@@ -1,5 +1,6 @@
 .artist-card {
   position: relative;
+  text-align: center;
 
   @include card-shadow;
 
@@ -46,5 +47,12 @@
     > .time {
       font-size: 1.2em;
     }
+  }
+}
+.no-image {
+  background-color: black;
+  > .info {
+    height: 55%;
+    bottom: unset;
   }
 }

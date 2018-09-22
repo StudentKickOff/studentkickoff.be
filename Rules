@@ -18,8 +18,10 @@ preprocess do
     # Extract the three last elements
     *_, edition, stage, ident = *split_s
 
-    artist[:start] = DateTime.parse(artist[:start] + '+0200')
-    artist[:end]   = DateTime.parse(artist[:end] + '+0200')
+    unless artist[:start].blank? || artist[:end].blank?
+      artist[:start] = DateTime.parse(artist[:start] + '+0200')
+      artist[:end]   = DateTime.parse(artist[:end] + '+0200')
+    end
     artist[:title] = artist[:name]
     artist[:stage] = stage
 
@@ -28,6 +30,9 @@ preprocess do
       artist[:image] = "/assets/images/artists/#{edition}/#{artist[:image]}"
     else
       artist[:image] = "/assets/images/artists/#{edition}/#{ident}.jpg"
+    end
+    unless File.exists?("content/" + artist[:image])
+      artist[:image] = ""
     end
   end
 

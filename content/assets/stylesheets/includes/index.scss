@@ -68,7 +68,7 @@ $photoslidertextsize: 50px;
     width: 50vw;
 
     iframe {
-      height: 43%;
+      height: 40%;
       left: 7%;
       top: 32%;
       width: 71.5%;
@@ -161,6 +161,12 @@ $photoslidertextsize: 50px;
 }
 
 @media only screen and (max-width: 768px) {
+  #links {
+    img {
+      width: 49%;
+      max-width: 245px;
+    }
+  }
   .videosection {
     height: 70vw;
     width: 90vw;
