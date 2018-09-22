@@ -45,6 +45,9 @@ teamleden:
   -
     naam: Stijn Van Peel
     functie: Crew Lead
+  -
+    naam: Niels Gossé
+    functie: Crew Lead
 ---
 
 Team Beverages zorgt voor alle drank en catering op het terrein. Zware onderhandelingen met grote partners zoals Coca-Cola, Jet-Import, Diageo en andere is nog maar het begin van de voorbereiding. Daarnaast komt ook de logistieke inplanting van alle koeling en tapwagens, verdeeld over 10 bars. Neem daarbij nog de volledige organisatie van de VIP-ruimte, een inschatting van het aantal barmedewerkers en het alom gevreesde milieuplan en je komt tot een uitdagende mix van leuke ideeën en persoonlijkheden!
