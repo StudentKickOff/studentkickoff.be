@@ -28,4 +28,4 @@ De Coördinator Planning is degene die verantwoordelijk is om al die 500 vrijwil
 
 De Coördinator Hospitality zorgt ervoor dat al die 500 vrijwilligers goed ontvangen worden op de dag van het event. Zij zorgt ervoor dat die mensen weten waar ze moeten zijn en dat ze hun t-shirt krijgen en iets kunnen eten en drinken.
 
-De Coördinator Interne HR zorgt voor de teambuildings die SKO doet met heel de groep. Zij zorgt ervoor dat iedereen vriendjes is met elkaar voor we aan de opbouw beginnen. Zij zorgt ook voor de catering voor de hele ploeg tijdens de opbouw week.
+De Coördinator Interne HR zorgt voor de teambuildings die SKO doet met heel de groep. Hij zorgt ervoor dat iedereen vriendjes is met elkaar voor we aan de opbouw beginnen. Zij zorgt ook voor de catering voor de hele ploeg tijdens de opbouw week.
