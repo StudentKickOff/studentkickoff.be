@@ -78,7 +78,7 @@ $photoslidertextsize: 50px;
 
 .headline {
   h1 {
-    @include headline-title(150px);
+    @include headline-title(100px);
   }
 
   h2 {
