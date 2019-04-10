@@ -32,8 +32,6 @@ teamleden:
     functie: Crew Lead
 ---
 
-De hele op- en afbouw zou uiteraard niet mogelijk zijn zonder een klein leger aan enthousiaste crew. Hiervoor kunnen we rekenen op de crew-leads. Dit zijn mensen die werken onder één van bovenstaande coördinatoren en die kleine groepjes vrijwilligers aansturen.
-
 Team Site&Safety staat in voor alles wat zich op het terrein afspeelt. Dit gaat van het plaatsen van herashekken tot het contacteren van leveranciers voor bijvoorbeeld kassa's. Daarnaast zorgen wij er ook voor dat elke stand/bar/podium voorzien wordt van elektriciteit. Binnen team Site & Safety zijn er verschillende coördinatoren werkzaam met elk hun vakgebied.
 
 Zo hebben we de coördinator Site. Hij is de rechterhand van de teamlead. Deze persoon staat in voor het contacteren van alle leveranciers, het opmaken van de grondplannen en het aansturen van crew tijdens de op- en afbouw.
