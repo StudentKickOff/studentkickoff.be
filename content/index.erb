@@ -77,7 +77,7 @@ title: Home
     <div class="name">
       <%= artist[:name] %>
     </div>
-    <% unless artist[:start].blank? || artist[:end].blank? %>
+    <% unless artist.key?(:start) && (artist[:start].blank? || artist[:end].blank?) %>
     <div class="time">
       <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
     </div>
