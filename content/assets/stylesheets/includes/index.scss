@@ -78,11 +78,16 @@ $photoslidertextsize: 50px;
 
 .headline {
   h1 {
-    @include headline-title(100px);
+    @include headline-title(90px);
   }
 
   h2 {
-    @include headline-title(50px);
+    @include headline-title(40px);
+  }
+
+  #join {
+    margin-bottom: 100px;
+    margin-top: 20px;
   }
 
   a {
