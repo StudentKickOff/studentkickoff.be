@@ -7,17 +7,82 @@ Student Village
 
   Student Village is het infodorp van Student Kick-Off dat als doel heeft de studenten te informeren over allerlei faciliteiten die studentenverenigingen, onderwijsinstellingen, de stad Gent en andere organisaties aanbieden. Gedurende de hele namiddag (van 12u tot 18u) wordt een deel van het Sint- Pietersplein gevuld met entertainment door verschillende partners, onderwijsinstellingen en studentenverenigingen. In 2015 mocht Student Village maar liefst 15.000 Gentse studenten ontvangen. Er heerst een goedlachse sfeer, studenten vinden elkaar en dagen elkaar uit voor de talloze activiteiten. Naast het entertainment is zoals op elk festival ook de muziek uiteraard niet weg te denken. Namen zoals De Jeugd Van Tegenwoordig, Das Pop, ’t Hof van Commerce, Eddy Wally, Bart Peeters, Flip Kowlier, 2 Fabiola, Gorki en nog veel meer, hebben de voorbije jaren de muzikale kant van ons verhaal mogen helpen verwezenlijken
 <% end %>
-<% if false %> <!--Inschrijvingen aan/uit-->
+<% if true %> <!--Inschrijvingen aan/uit-->
 <% section :red do %>
 <div class="_relative">
   <h1>Registratie</h1>
-    <p>Zit jij in de leukste studentenvereniging van Gent? Willen jullie de nieuwe studenten aanspreken op het grootste en tofste feest van het jaar? Maak dan kans op een gratis tentje op de Student Village van Student Kick-Off 2019!
-Op woensdag 25 september om 12u openen we weer onze deuren. Van 12u tot 18u kan je met de tofste activiteiten een tentje op onze Student Village vullen. Dit is natuurlijk een grote eer, dus moedigen we jullie aan om er een beetje voor te werken. Wij geven dit jaar 10 tentjes weg, aan 10 verschillende studentenverenigingen.
-Wat moet je daarvoor doen? Schrijf je studentenvereniging alvast in via <a href="https://docs.google.com/forms/d/e/1FAIpQLScCgEMu6hNF5w4gjtA51mts6gNOsDWHB8voikrty6sBgaSCvg/viewform?fbclid=IwAR32C8XQzU9lSOymYwcvpx-sZvtN0_q9k292b2s127Tl844bX-fkVUigwB8">deze link</a>.
-Na de inschrijving kunnen jullie meteen aan de slag gaan. Deel op Facebook een groepsfoto van jullie studentenvereniging. Geen gewone, saaie klasfoto maar een foto die iets te maken heeft met Student Kick-Off, de zomer of festivals. Vergeet zeker Student Kick-Off niet te taggen zodat wij de likes kunnen volgen.
-De 5 foto’s met de meeste likes op zaterdag 31 augustus om 18u krijgen een voorsprong in de tweede ronde: zoek de SKO-stoel. Deze ronde loopt van 2 t.e.m. 6 september. Meer info hierover volgt later.
+  <form id="registratie" class="basic-form" method="post">
+    <p>
+      Deze registraties lopen tot 6 september, waarna wij als organisatie op basis van de registraties kijken wie wij plaats kunnen bieden.
+      Een registratie is dus niet hetzelfde als een zekerheid dat je aanwezig zal kunnen zijn.
+      Iedereen wordt na 9 september gecontacteerd en wie weerhouden wordt, zal dan ook op de hoogte gebracht worden van het verdere verloop van de procedure om materiaal aan te vragen en contactpersonen door te geven.
     </p>
+    <div class="row">
+      <input type="text" placeholder="Vereniging" name="Vereniging" required>
+    </div>
+    <div class="row">
+      <input type="text" placeholder="Naam" name="Naam" required>
+      <input type="text" placeholder="Voornaam" name="Voornaam" required>
+    </div>
+    <div class="row">
+      <input type="text" placeholder="Functie" name="Functie" required>
+      <input type="text" placeholder="GSM-nummer" name="GSM-nummer" required>
+    </div>
+    <div class="row">
+      <input type="email" placeholder="E-mail" name="E-mail" required>
+    </div>
+
+    <div>
+      <p>
+        We verzoeken alle standhouders een korte tekst omtrent de stand en activiteit door te zenden, deze komt dan binnen de rubriek Student Village op de website van de Student Kick-Off.
+
+        De tekst dient:
+      </p>
+      <ul>
+        <li>
+          De meerwaarde voor een bezoek aan de infostand te duiden
+        </li>
+        <li>
+          Een omschrijving van de activiteit te bevatten (kan in vorm van teaser)
+        </li>
+        <li>
+          Maximum 75 woorden te bedragen
+        </li>
+      </ul>
+      <p>
+        De organisatie is vrij deze tekst te weigeren en niet te publiceren indien niet toepasselijk of ongepast.
+      </p>
+    </div>
+
+    <textarea name="Beschrijving" rows="8" placeholder="Duidelijke beschrijving geplande activiteit" required></textarea>
+
+    <div class="row -center">
+      <p>
+        <a href="/sv-nietpartners.pdf" target="_blank">
+          Reglement Niet-Partners
+        </a>
+      </p>
+    </div>
+    <div class="row -center">
+      <p>
+        Ik ga akkoord met het reglement.
+      </p>
+    </div>
+    <input type="checkbox" name="Akkoord" required>
+
+    <div class="row">
+      <input id="submit" type="submit" name="" value="Indienen">
+    </div>
+  </form>
+
+  <div id="success" class="status-message -success _hidden">
+    Uw inzending is goed ontvangen!
   </div>
+
+  <div id="failure" class="status-message -failure _hidden">
+     Er trad een fout op. Gelieve <a href="mailto:it@studentkickoff.be">it@studentkickoff.be</a> te contacteren.
+  </div>
+</div>
 <% end %>
 <% end %>
 <script type="text/javascript">
