@@ -9,6 +9,10 @@
   min-height: 400px;
   max-height: 400px;
 
+  .modal {
+    max-width: none;
+  }
+
   transition: all .2s;
   &:hover {
     transform: translate(0, -7px);
