@@ -82,7 +82,7 @@ title: Home
     <div class="name">
       <%= artist[:name] %>
     </div>
-    <% unless artist.key?(:start) && (artist[:start].blank? || artist[:end].blank?) %>
+    <% if artist.key?(:start) %>
     <div class="time">
       <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
     </div>
@@ -92,7 +92,7 @@ title: Home
 <% end %>
 </div>
 <p>
-  <h2>The Eristoff stage hosted by Moonday</h2>
+  <h2>The Eristoff club hosted by Moonday</h2>
   <div class="artist-grid">
   <% artists_for('Second Stage').each do |artist| %>
 <%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
