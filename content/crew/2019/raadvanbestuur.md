@@ -7,8 +7,11 @@ teamleden:
     naam: Frederik Loys
     functie: Voorzitter
   -
-    naam: Jeroen De Clerck
+    naam: Jonas Nuyttens
     functie: AC Student Kick-Off
+  -
+    naam: Kelly Vandenbouhede
+    functie: Bestuurder
   -
     naam: Bram  De Nil
     functie: Bestuurder
