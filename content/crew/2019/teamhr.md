@@ -1,7 +1,7 @@
 ---
 title: Team HR
 teamnaam: HR
-foto: /assets/images/org/2016/teamhr.jpg
+foto: /assets/images/org/2019/teamhr.jpg
 teamleden:
   -
     naam: Adriaan Snoeck
