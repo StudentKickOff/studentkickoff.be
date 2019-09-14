@@ -1,7 +1,7 @@
 ---
 title: Team Productie
 teamnaam: Productie
-foto: /assets/images/org/2016/teamproductie.jpg
+foto: /assets/images/org/2019/teamproductie.jpg
 teamleden:
   -
     naam: Tibo Allaert
