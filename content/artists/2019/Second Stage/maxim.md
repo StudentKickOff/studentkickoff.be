@@ -1,4 +1,4 @@
 ---
 name: Maxim Lany
-index: 4
+index: 3
 ---
