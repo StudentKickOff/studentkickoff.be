@@ -1,4 +1,5 @@
 ---
 name: Neo Minor
 index: 3
+description: "Op zoek naar een eigen sound en een nieuwe uitdaging vonden vier vrienden elkaar in de zomer van 2015. Neo Minor is melodische sound post-rock: gesofisticeerde pianomelodieën en melodische baslijnen ondersteund door strakke drumlijnen en zwevend engelengezang."
 ---

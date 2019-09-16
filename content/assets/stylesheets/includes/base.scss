@@ -8,9 +8,22 @@
 }
 
 .modal {
-  max-width: none;
+  max-width: 1000px !important;
+  background-color: #fab73e !important;
+  h2 {
+    font-size: 30px;
+  }
+  img {
+    width: 300px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+    @include mobile {
+      width: 100% !important;
+      font-size: 16px;
+      text-align: center;
+    }
 }
-
 
 @font-face {
   font-family: 'Univers';

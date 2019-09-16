@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 leden:
   -
     naam: Cedric Philippe
@@ -589,3 +590,596 @@ leden:
 
 
 
+=======
+leden:
+  -
+    naam: Cedric Philippe
+    opleiding: Event- en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Jonas Nuyttens
+    opleiding: Handelsingenieur
+    school: Universiteit Gent
+  -
+    naam: Charlotte Maenhaut
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Dylan Sabot
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Viktor De Mulder
+    opleiding: Marketing
+    school: Hogeschool Gent
+  -
+    naam: Antoine De Vogelaere
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Martijn Van Der Stap
+    opleiding: Industrieel Ingenieur Chemie
+    school: Universiteit Gent
+  -
+    naam: Thomas Lauwereins
+    opleiding: Digitale en Grafische Media
+    school: Arteveldehogeschool
+  -
+    naam: Servais Dhondt
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Sander Phlips
+    opleiding: International Business Management
+    school: Arteveldehogeschool
+  -
+    naam: Lennert Noppe
+    opleiding: Politieke Wetenschappen
+    school: Universiteit Gent
+  -
+    naam: Babette Demeester
+    opleiding: Logopedie
+    school: Universiteit Gent
+  -
+    naam: Sylvia Beeckman
+    opleiding: Management Assistent
+    school: Arteveldehogeschool
+  -
+    naam: Dina Boshra
+    opleiding: Music and Entertainment
+    school: hogeschool VIVES
+  -
+    naam: Sara Carton
+    opleiding: ????
+    school: ????
+  -
+    naam: Jeroen De Clerck
+    opleiding: Informatica
+    school: Universiteit Gent
+  -
+    naam: Lorin Werthen
+    opleiding: Computerwetenschappen
+    school: Universiteit Gent
+  -
+    naam: Benjamin Cousaert
+    opleiding: Informatica
+    school: Universiteit Gent
+  -
+    naam: Mats Myncke
+    opleiding: Informatica
+    school: Universiteit Gent
+  -
+    naam: Ruben Haegeman
+    opleiding: Electronica-ICT
+    school: Odissee
+  -
+    naam: Valerie Appelmans
+    opleiding: Bedrijfscommunicatie
+    school: KU Leuven
+  -
+    naam: Phaedra Gabriels
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Matthias Baetens
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Amon De Keyser
+    opleiding: Handelsingenieur
+    school: Universiteit Gent
+  -
+    naam: Marwein El Bekri
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Manon De Winne
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Julie Poppe
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Josianne Tas
+    opleiding: Journalistiek
+    school: Arteveldehogeschool
+  -
+    naam: Jasper Bergeman
+    opleiding: Communicatiewetenschappen
+    school: Universiteit Gent
+  -
+    naam: Roeland Bolle
+    opleiding: Studio Reclame
+    school: Sint-Lucas
+  -
+    naam: Indra De Clercq
+    opleiding: Grafische Vormgeving
+    school: Sint-Lucas
+  -
+    naam: Anne-Laure De Clercq
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Kelly Vandenbouhede
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Wouter Schelfhout
+    opleiding: Internationaal Ondernemen
+    school: Arteveldehogeschool
+  -
+    naam: Celine Marechal
+    opleiding: Geneeskunde
+    school: Universiteit Gent
+  -
+    naam: Alexander Ballegeer
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Jan Brain
+    opleiding: Toegepaste Architectuur
+    school: HoWest Brugge
+  -
+    naam: Bram Van De Velde
+    opleiding: TEW
+    school: Universiteit Gent
+  -
+    naam: Hannes Strobbe
+    opleiding: Leerkracht Secundair Onderwijs
+    school: Hogeschool Gent
+  -
+    naam: Judith Van Hoorde
+    opleiding: Journalistiek
+    school: Arteveldehogeschool
+  -
+    naam: Bram De Nil
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Sébastien Vandenhouten
+    opleiding: Maatschappelijke veiligheid
+    school: Hogeschool VIVES
+  -
+    naam: Valerie Vermeire
+    opleiding: Bestuurskunde
+    school: Universiteit Gent
+  -
+    naam: Wannes Van Dorpe
+    opleiding: ????
+    school: ????
+  -
+    naam: Julien Marbaix
+    opleiding: Informatica
+    school: Universiteit Gent
+  -
+    naam: Ben Deckers
+    opleiding: Bestuurskunde
+    school: Universiteit Gent
+  -
+    naam: Jeroen De Lange
+    opleiding: ????
+    school: ????
+  -
+    naam: Benny Reubens
+    opleiding: Industrieel Ingenieur Electronica-ICT
+    school: Universiteit Gent
+  -
+    naam: Caroline De Brouwer
+    opleiding: Burgerlijk Ingenieur CW
+    school: Universiteit Gent
+  -
+    naam: Yannick Dandois
+    opleiding: Chemie
+    school: Universiteit Gent
+  -
+    naam: Tijl Garré
+    opleiding: Audiovisuele technieken
+    school: LUCA
+  -
+    naam: Francis Begyn
+    opleiding: Industrieel Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Michiel Dasseville
+    opleiding: Preventieadviseur
+    school: KaHo Sint-Lieven
+  -
+    naam: Daan Schaubroeck
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Rien Maertens
+    opleiding: Informatica
+    school: Universiteit Gent
+  -
+    naam: Nick De Clercq
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Ismene Ledegen
+    opleiding: Geografie
+    school: Universiteit Gent
+  -
+    naam: Maxime Pans
+    opleiding: Pedagogie
+    school: Arteveldehogeschool
+  -
+    naam: Hannelore Higuet
+    opleiding: Muziekmanagement
+    school: PXL Hasselt
+  -
+    naam: Jacob De Vriendt
+    opleiding: Journalistiek
+    school: Arteveldehogeschool
+  -
+    naam: Jan Vanlerberghe
+    opleiding: Maatschappelijke Veiligheid
+    school: VIVES Kortrijk
+  -
+    naam: Maarten De Ridder
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Lukas Petit
+    opleiding: Electronica-ICT
+    school: Odissee
+  -
+    naam: Bryan Verfaillie
+    opleiding: Burgerlijk Ingenieur CW
+    school: Universiteit Gent
+  -
+    naam: Kjell De Meester
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Niek Valcke
+    opleiding: Afgestudeerd
+    school:
+  -
+    naam: Margot Balcaen
+    opleiding: Farmaceutische Wetenschappen
+    school: Universiteit Gent
+  -
+    naam: Lorre Platton
+    opleiding: Event- en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Maxim Caby
+    opleiding: Industrieel Ingenieur Biochemie
+    school: Universiteit Gent
+  -
+    naam: Lies Vandevyvere
+    opleiding: Verpleegkunde
+    school: Arteveldehogeschool
+  -
+    naam: Laura Reyné
+    opleiding: Journalistiek
+    school: Arteveldehogeschool
+  -
+    naam: Pieterjan Dekeyser
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Ann-sophie Bracke
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Frederik Loys
+    opleiding: Handelswetenschappen
+    school: Universiteit Gent
+  -
+    naam: Matti Desmet
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Stefanie Celen
+    opleiding: Geneeskunde
+    school: Universiteit Gent
+  -
+    naam: Julie Demasure
+    opleiding: Handelsingenieur
+    school: Universiteit Gent
+  -
+    naam: Stef Moens
+    opleiding: Lager Onderwijs
+    school: Hogeschool Gent
+  -
+    naam: Tjade Catteeuw
+  -
+    naam: Wouter Van Pamel
+  -
+    naam: Yoran Dons
+    opleiding: Electronica-ICT
+    school: Odissee
+  -
+    naam: Maarten De Ridder
+    opleiding: Event en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Simon Lamont
+  -
+    naam: Ellen Van Den Broeck
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Elise D'Hooge
+  -
+    naam: Quirine Supply
+  -
+    naam: Sarah Tonnard
+    opleiding: Event en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Ann-Sophie Bracke
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Ilanja Van Zandycke
+    opleiding: Event en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Matthias Vanluchene
+    opleiding: Psychologie
+    school: Universiteit Gent
+  -
+    naam: Kenneth Van den Driessche
+    opleiding: ICT-Electronica
+    school: Odisee
+  -
+    naam: Simon Vanhaverbeke
+    opleiding: Toegepaste Informatica
+    school: Hogeschool Gent
+  -
+    naam: Nico Ekkart
+    opleiding: Burgerlijk Ingenieur
+    school: Universiteit Gent
+  -
+    naam: Adriaan Snoeck
+    opleiding: Event en Projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Hanne Van de Voort
+    opleiding: Geneeskunde
+    school: Universiteit Gent
+  -
+    naam: Mina Jaidane
+    opleiding: Event en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Caroline Beckers
+    opleiding: Geografie
+    school: Universiteit Gent
+  -
+    naam: Johanna Ghilain
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Julie Christiaens
+    opleiding: Bedrijdsmanagement-marketing
+    school: Arteveldehogeschool
+  -
+    naam: Marie-Louise Baesen
+    opleiding: Event en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Peter Yorck
+    opleiding: Event en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Naomi Vanden Abeele
+    opleiding: X
+    school: X
+  -
+    naam: Lena Vandeputte
+    opleiding: Event en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Arnout Audenaert
+    opleiding: Bedrijfspsychologie
+    school: Universiteit Gent
+  -
+    naam: Finlay Van Wymeersch
+    opleiding: Zang Pop
+    school: KASK
+  -
+    naam: Roxane Van Rie
+    opleiding: Handelsingenieur
+    school: Universiteit Gent
+  -
+    naam: Maarten Van Sande
+    opleiding: Handelswetenschappen
+    school: KU Leuven, Campus Brussel
+  -
+    naam: Jorn Van Polfliet
+    opleiding: Biomedische wetenschappen
+    school: Universiteit Gent
+  -
+    naam: Stijn Van Peel
+    opleiding: Event en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Sinja Ringoet
+    opleiding: Event en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Tibo Allaert
+    opleiding: Handelsingenieur
+    school: Universiteit Gent
+  -
+    naam: Diederik Pattyn
+    opleiding: Informatica
+    school: Universiteit Gent
+  -
+    naam: Gert-Jan Schollaert
+    opleiding: Bestuurskunde & Publiek management
+    school: Universiteit Gent
+  -
+    naam: Maximilien Roberti
+    opleiding: Event- en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Niels Van Bocxlaer
+    opleiding: Bestuurskunde en Publiek Management
+    school: Universiteit Gent
+  -
+    naam: Niels Gossé
+    opleiding: Leerkracht Secundair Onderwijs
+    school: Arteveldehogeschool
+  -
+    naam: Paulien Noyez-Vermont
+    opleiding: TEW
+    school: UGent
+  -
+    naam: Diederick Pattyn
+    opleiding: Computerwetenschappen
+    school: Ugent
+  -
+    naam: Jan Dhertoge
+    opleiding: Industrieel Ingenieur Bouwkunde (UGent)
+    school: UGent
+  -
+    naam: Stan Claeys
+    opleiding: 1e Gemeenschappelijke richting EW/TEW/HIR 
+    school: Ugent
+  -
+    naam: Laura Dick
+    opleiding: Geneeskunde
+    school: Ugent
+  -
+    naam: Pepijn Van Sevenant
+    opleiding: Toegepaste Informatica
+    school: HoGent
+  -
+    naam: Mathilde De Strooper
+    opleiding: Industrieel Ingenieur Bouwkunde
+    school: UGent
+  -
+    naam: Geneviève De Cock
+    opleiding: Psychologie
+    school: Ugent
+  -
+    naam: Sibout De Laender 
+    opleiding: Verpleedkunde
+    school: HoGent
+  -
+    naam: Brecht De Sutter
+    opleiding: Secundair onderwijs - LO
+    school: Arteveldehogeschool
+  -
+    naam: Maikel Annaert
+    opleiding: Event- en projectmanagement 
+    school: Arteveldehogeschool
+  -
+    naam: Bram Hofken
+    opleiding: Psychologie
+    school: UGent
+  -
+    naam: Servais D'hont
+    opleiding: Event- en projectmanagement 
+    school: Arteveldehogeschool
+  -
+    naam: Arthur Petit
+    opleiding: Lerarenopleiding
+    school: /
+  -
+    naam: Nils Casteur
+    opleiding: Handelswetenschappen
+    school: UGent
+  -
+    naam: Maxim Lybaert
+    opleiding: Event- en projectmanagement
+    school: Arteveldehogeschool
+  -
+    naam: Timothy Vanlerberghe
+    opeliding: Meubel & Design
+    school: KASK
+  -
+    naam: Ruben Maesfranckx
+    opleiding: Grafische & Digitale Media 
+    school: Arteveldehogeschool
+  -
+    naam: Rozalia Monkiewicz
+    opleiding: Grafische & Digitale Media 
+    school: Arteveldehogeschool
+  -
+    naam: Maarten Buytaert 
+    opeliding: Geneeskunde
+    school: /
+  -
+    naam: Margot Dekant
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Sien Vanneste
+    opleiding: Communicatiemanagement
+    school: Arteveldehogeschool
+  -
+    naam: Marie-Laure Heyndrickx
+    opleiding: Bouw
+    school: HoGent
+  -
+    naam: Bram De Schepper
+    opeliding: Master bedrijfspsychologie
+    school: Ugent
+  -
+    naam: Bruno Simoens
+    opeliding: Verkort traject verpleegkunde
+    school: HoGent
+  -
+    naam: Cedrik de tandt
+    opeliding: bachelor Energietechnologie
+    school: Odisee
+  -
+    naam: Sim Degrande
+    opeliding: Bachelor of science in de politieke wetenschappen
+    school: UGent
+  -
+    naam: Verfaillie Bryan
+    opleiding: /
+    school: UGent
+  -
+    naam: Hanssens Edinjo
+    opeliding: /
+    school: /
+  -
+    naam: Manu De Buck
+    opeliding: informatica
+    school: UGent
+  -
+   naam: Bavo Passemiers
+   opleiding: /
+   school: /
+
+
+  
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
