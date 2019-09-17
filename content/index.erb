@@ -97,12 +97,11 @@ title: Home
 
 <div id="<%= index %>-modal" class="modal">
   <h2>
-
-        <%= artist[:name] %>
+    <%= artist[:name] %>
   </h2>
   <p>
     <img src="<%= artist[:image] %>" align="left"/>
-        <%= artist[:description] %>
+    <%= artist[:description] %>
   </p>
   <a href="#" rel="modal:close">Close</a>
 </div>
@@ -114,6 +113,7 @@ title: Home
 <h2>The Eristoff club hosted by Moonday</h2>
 <div class="artist-grid">
 <% artists_for('Second Stage').each do |artist| %>
+<a href="#<%= artist[:name].delete(" ") %>-modal" rel="modal:open" class="artist-card">
   <%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
     <div class="imgwrapper">
       <img src="<%= artist[:image] %>"/>
@@ -129,12 +129,14 @@ title: Home
       <% end %>
     </div>
   </div>
+  </a>
   <div id="<%= artist[:name].delete(" ") %>-modal" class="modal">
+    <h2>
+      <%= artist[:name] %>
+    </h2>
     <p>
-          <%= artist[:name] %>
-    </p>
-    <p>
-          <%= artist[:description] %>
+      <img src="<%= artist[:image] %>" align="left"/>
+      <%= artist[:description] %>
     </p>
     <a href="#" rel="modal:close">Close</a>
   </div>
