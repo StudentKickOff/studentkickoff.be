@@ -117,3 +117,18 @@ ol ol {
     text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   }
 }
+
+.bekers {
+  > h2 {
+    margin-bottom: 30px;
+  }
+  .working {
+    > div {
+      display: flex;
+    }
+    .faq-panel > img {
+      width: 100%;
+    }
+
+  }
+}
