@@ -72,31 +72,49 @@ title: Home
 <% section :blue do %>
 <h1>ZEG ME WIE &amp; WANNEER?</h1>
 <h2 id="lineup">MAIN STAGE</h2>
+
 <div class="artist-grid">
-<% artists_for('Main Stage').each do |artist| %>
-<%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
-  <div class="imgwrapper">
-    <img src="<%= artist[:image] %>"/>
-  </div>
-  <div class="info">
-    <div class="name">
-      <%= artist[:name] %>
+
+<% artists_for('Main Stage').each_with_index do |artist, index| %>
+<a href="#<%= index %>-modal" rel="modal:open" class="artist-card">
+  <%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
+    <div class="imgwrapper">
+      <img src="<%= artist[:image] %>"/>
     </div>
-    <% if artist.key?(:start) %>
-    <div class="time">
-      <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
+
+    <div class="info">
+      <div class="name">
+        <%= artist[:name] %>
+      </div>
+      <% unless artist[:start].blank? || artist[:end].blank? %>
+        <div class="time">
+          <%= pretty_time(artist[:start]) %> - <%= pretty_time(artist[:end]) %>
+        </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
+</a>
+
+<div id="<%= index %>-modal" class="modal">
+  <h2>
+    <%= artist[:name] %>
+  </h2>
+  <p>
+    <img src="<%= artist[:image] %>" align="left"/>
+    <%= artist[:description] %>
+  </p>
+  <a href="#" rel="modal:close">Close</a>
 </div>
+
 <% end %>
+
 </div>
-<p>
-  <h2>The Eristoff club hosted by Moonday</h2>
-  <div class="artist-grid">
-  <% artists_for('Second Stage').each do |artist| %>
-  <div class="artist-card">
-<%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
+
+<h2>The Eristoff club hosted by Moonday</h2>
+<div class="artist-grid">
+<% artists_for('Second Stage').each do |artist| %>
+<a href="#<%= artist[:name].delete(" ") %>-modal" rel="modal:open" class="artist-card">
+  <%= artist[:image].blank? ? '<div class="artist-card no-image">' : '<div class="artist-card">' %>
     <div class="imgwrapper">
       <img src="<%= artist[:image] %>"/>
     </div>
@@ -111,12 +129,20 @@ title: Home
       <% end %>
     </div>
   </div>
+  </a>
+  <div id="<%= artist[:name].delete(" ") %>-modal" class="modal">
+    <h2>
+      <%= artist[:name] %>
+    </h2>
+    <p>
+      <img src="<%= artist[:image] %>" align="left"/>
+      <%= artist[:description] %>
+    </p>
+    <a href="#" rel="modal:close">Close</a>
   </div>
-  <% end %>
-</div>
+<% end %>
 </div>
 
-</p>
 <% end %>
 <% end %>
 
