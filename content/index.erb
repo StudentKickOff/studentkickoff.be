@@ -14,7 +14,7 @@ title: Home
    <img src="/assets/images/logo_sko_animated.svg" width="100">
   <!-- <h1><%= pretty_show_time %></h1> -->
   <h1> Student Kick-Off</h1>
-  <h1> 25 september 2019 </h1>
+  <h1> 23 september 2020 </h1>
   <h1> See you soon</h1>
    <h2><a href="https://join.studentkickoff.be"> Join the Crew!</a></h2>
    <!--<h2 id="join"><a href="https://studentkickoff.beeple.eu/" class="button">Join the crew!</a>-->
@@ -191,7 +191,29 @@ title: Home
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <% end %>
 
-<div id="ex1" class="modal">
-  <p>Thanks for clicking. That felt good.</p>
+<div id="badnewsmodal" class="modal">
+  <h2>Nieuws editie Student Kick-Off 2020 - Corona</h2>
+  <br>
+  <h3>Beste studenten</h3>
+  <br>
+  <p>
+    We hebben er maandenlang in geloofd en vele nieuwe concepten uitgedacht om jullie toch een veilige, kwalitatieve corona-proof editie van Student Kick-Off te kunnen voorschotelen. Helaas mocht het niet zijn. Met pijn in ons hart moeten we meedelen dat Student Kick-Off 2020 niet zal kunnen doorgaan. Na lange gesprekken met de stadsdiensten konden we niet tot een overeenkomst komen om een veilige, leuke en degelijke editie van Student Kick-Off te organiseren op het Sint-Pietersplein, volgens alle geldende regelgeving omtrent corona.
+  </p>
+  <p>
+    We vinden dit enorm jammer, onze organisatie bestaat grotendeels uit studenten die weten hoe hard vele studenten naar een nieuwe editie uitkeken. De inzet van de crew dit jaar was dan ook fenomenaal. De creativiteit, vindingrijkheid en verantwoordelijkheid die door elke student in de organisatie werden gehanteerd getuigen van een grote verantwoordelijkheidszin en professionaliteit. Ook voor de vele goeie doelen en studentenverenigingen is dit geen fijn nieuws. Zij stonden klaar om in alle veiligheid opnieuw naar het Sint-Pietersplein te kunnen afzakken. 
+  </p>
+  <p>  
+    Maar, we kijken naar de toekomst. In 2021 gaan wij alvast opnieuw voor een veilige start van het academiejaar met veel vuurwerk, feest, gejuich en drank. Het zal een editie worden met alles erop en eraan, volgens de geldende regelgeving en in nauwe samenwerking met stadsdiensten, hoger onderwijsinstelling en alle andere partners van ons zo fantastische festival. 
+  </p>
+  <p>
+    <b>Let’s party twice as hard in 2021 and for now, stay safe!<b>
+  </p>
   <a href="#" rel="modal:close">Close</a>
 </div>
+
+<script>
+  $(window).on('load',function(){
+      $('#badnewsmodal').modal('show');
+  });
+</script>
+
